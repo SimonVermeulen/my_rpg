@@ -1,0 +1,103 @@
+{
+    "buffer": {
+        "Colors": [
+            {
+                "r": 1,
+                "g": 1,
+                "b": 255,
+                "name": "blue"
+            },
+            {
+                "r": 255,
+                "g": 1,
+                "b": 1,
+                "name": "red"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "circle",
+            "entity": {
+                "type": "CircleShape",
+                "order": 0,
+                "parameters": {
+                    "FillColor": "blue",
+                    "Radius": 50.0
+                }
+            },
+            "addons": {
+                "example": {
+                    "data": 5
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
+                        "x": 50.0,
+                        "y": 50.0,
+                        "radius": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "circle",
+            "entity": {
+                "type": "CircleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Radius": 50.0,
+                    "Position": {
+                        "x": 250.0,
+                        "y": 250.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
+                        "x": 50.0,
+                        "y": 50.0,
+                        "radius": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 150.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 155.0,
+                        "y": 150.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 150.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        }
+    ]
+}

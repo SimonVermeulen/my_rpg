@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "audio.h": "c",
+        "music.h": "c",
+        "inputstream.h": "c",
+        "soundbuffer.h": "c",
+        "sound.h": "c"
+    }
+}
