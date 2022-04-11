@@ -9,10 +9,10 @@
 
 bool init_texture(scene_t *scene, list_t *list)
 {
-    char *name = get_value_list(list, "name", 3);
+    char *name = get_value_list(list, "name", 4);
     int *smooth = get_value_list(list, "smooth", 3);
     int *repeat = get_value_list(list, "repeat", 3);
-    char *path = get_value_list(list, "path", 3);
+    char *path = get_value_list(list, "path", 4);
     sfTexture *texture = NULL;
 
     if (!path || !name)

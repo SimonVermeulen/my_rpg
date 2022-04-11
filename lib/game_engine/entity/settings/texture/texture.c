@@ -71,7 +71,7 @@ bool set_rect_by_list(sfIntRect *rect, list_t *list)
 
 bool set_texture_list(object_t *object, list_t *list)
 {
-    char *name = get_value_list(list, "TextureName", 4);
+    char *name = get_value_list(list, "Name", 4);
     sfIntRect rect;
 
     if (!name || !set_texture(object, name, false))
