@@ -3,7 +3,8 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/sea.png"
+                "path": "./assets/intro_1/sea.png",
+                "smooth": 1
             }
         ]
     },
@@ -19,7 +20,7 @@
                         "Rect": {
                             "left": 0,
                             "top": 260,
-                            "width": 577,
+                            "width": 1155,
                             "height": 383
                         }
                     },
@@ -35,12 +36,19 @@
             },
             "addons": {
                 "translation_animation": {
-                    "speed": 30.0,
                     "waitBeforeStart": 0.0,
+                    "infini": 1,
+                    "reverse": 0,
                     "paths": [
                         {
-                            "x": -200.0,
-                            "y": -530.0
+                            "x": 1.0,
+                            "y": -530.0,
+                            "speed": 60.0
+                        },
+                        {
+                            "x": -577.5,
+                            "y": -530.0,
+                            "speed": 60.0
                         }
                     ] 
                 }
