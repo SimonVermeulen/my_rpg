@@ -3,7 +3,8 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/title_screen.png"
+                "path": "./assets/intro_1/title_screen.png",
+                "smooth": 1
             }
         ]
     },
