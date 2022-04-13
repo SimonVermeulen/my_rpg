@@ -1,0 +1,84 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/intro_3.png"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 192,
+                            "width": 385,
+                            "height": 180
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 3.2
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "speed": 1.0,
+                    "waitBeforeStart": 0.0,
+                    "paths": [
+                        {
+                            "x": -55.0,
+                            "y": 0.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "sac_aventurier",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 361,
+                            "top": 192,
+                            "width": 385,
+                            "height": 180
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.9,
+                        "y": 2.8
+                    },
+                    "Position": {
+                        "x": 75.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "speed": 4.0,
+                    "waitBeforeStart": 0.0,
+                    "paths": [
+                        {
+                            "x": -150.0,
+                            "y": 0.0
+                        }
+                    ] 
+                }
+            }
+        }
+    ]
+}

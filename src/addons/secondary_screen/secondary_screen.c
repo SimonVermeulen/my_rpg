@@ -43,12 +43,12 @@ int start_secondary_screen(object_t *object, engine_t *engine)
 
     sfView_setViewport(secondary_screen->bloc_2, (sfFloatRect)
         {0, 0, 1, 0.5f});
-    sfView_setSize(secondary_screen->bloc_2, (sfVector2f) {540, 540});
-    sfView_setCenter(secondary_screen->bloc_2, (sfVector2f) {270, 270});
+    sfView_setSize(secondary_screen->bloc_2, (sfVector2f) {700, 500});
+    sfView_setCenter(secondary_screen->bloc_2, (sfVector2f) {350, 250});
     sfView_setViewport(secondary_screen->bloc_1, (sfFloatRect)
         {0, 0.5f, 1, 0.5f});
-    sfView_setSize(secondary_screen->bloc_1, (sfVector2f) {540, 540});
-    sfView_setCenter(secondary_screen->bloc_1, (sfVector2f) {270, 270});
+    sfView_setSize(secondary_screen->bloc_1, (sfVector2f) {700, 500});
+    sfView_setCenter(secondary_screen->bloc_1, (sfVector2f) {350, 250});
     return 0;
 }
 
