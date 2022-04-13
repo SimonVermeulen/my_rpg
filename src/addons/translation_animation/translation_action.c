@@ -16,15 +16,23 @@ int move_translation_animation(engine_t *engine, sfVector2f normal,
     return 0;
 }
 
-int update_step_translation_animation(translation_animation_t *trans,
-    vector_speed_t *vector, object_t *object)
+int update_reverse_step_translation(translation_animation_t *trans)
 {
-    if (trans->is_reverse) {
-        if (trans->step == 0)
-            trans->is_reverse = 0;
+    if (trans->step == 0)
+        trans->is_reverse = 0;
+    else
         trans->step--;
-        return 0;
-    }
+    trans->normal = (sfVector2f) {0, 0};
+    return 0;
+}
+
+int update_step_translation_animation(translation_animation_t *trans,
+    object_t *object)
+{
+    vector_speed_t *vector = get_node_id(trans->positions, 0)->value;
+
+    if (trans->is_reverse)
+        return update_reverse_step_translation(trans);
     if (trans->step == trans->positions->nb_elements - 1) {
         if (trans->infini) {
             trans->step = 0;
@@ -32,9 +40,11 @@ int update_step_translation_animation(translation_animation_t *trans,
         }
         if (trans->reverse)
             trans->is_reverse = 1;
+        trans->normal = (sfVector2f) {0, 0};
         return 0;
     }
     trans->step++;
+    trans->normal = (sfVector2f) {0, 0};
     return 0;
 }
 
@@ -55,10 +65,9 @@ int tick_translation_animation(object_t *object, engine_t *engine)
     vector = direction->value;
     normal = get_normalize_vector(get_position(object), vector->position);
     if (!equal_vector2f_pov(normal, trans->normal, 0.00001f) &&
-        !equal_vector2f(trans->normal, (sfVector2f) {0, 0})) {
-        update_step_translation_animation(trans, vector, object);
-        trans->normal = (sfVector2f) {0, 0};
-    } else
+        !equal_vector2f(trans->normal, (sfVector2f) {0, 0}))
+        update_step_translation_animation(trans, object);
+    else
         trans->normal = normal;
     return move_translation_animation(engine, normal, object, vector->speed);
 }
