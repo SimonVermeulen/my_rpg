@@ -31,12 +31,14 @@
             },
             "addons": {
                 "translation_animation": {
-                    "speed": 1.0,
                     "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
                     "paths": [
                         {
                             "x": -35.0,
-                            "y": 0.0
+                            "y": 0.0,
+                            "speed": 1.0
                         }
                     ] 
                 }
@@ -71,10 +73,13 @@
                 "translation_animation": {
                     "speed": 4.0,
                     "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
                     "paths": [
                         {
                             "x": -150.0,
-                            "y": -30.0
+                            "y": -30.0,
+                            "speed": 4.0
                         }
                     ] 
                 }

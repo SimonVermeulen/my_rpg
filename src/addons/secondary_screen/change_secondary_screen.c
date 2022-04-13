@@ -39,3 +39,25 @@ bool change_secondary_screen(const char *name, engine_t *engine)
     on_start(secondary_screen->second->object, engine);
     return sfTrue;
 }
+
+int destroy_secondary_screen(object_t *object, engine_t *engine)
+{
+    secondary_screen_t *view_controller = get_addon_data("secondary_screen",
+        object);
+
+    destroy_scene(view_controller->second);
+    sfView_destroy(view_controller->bloc_1);
+    sfView_destroy(view_controller->bloc_2);
+    return 0;
+}
+
+int end_secondary_screen(object_t *object, engine_t *engine)
+{
+    secondary_screen_t *view_controller = get_addon_data("secondary_screen",
+        object);
+
+    if (view_controller->second)
+        on_end(view_controller->second->object, engine);
+    add_function(destroy_secondary_screen, 0, object, engine);
+    return 0;
+}
