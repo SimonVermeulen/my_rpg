@@ -33,5 +33,6 @@ bool change_secondary_screen(const char *name, engine_t *engine);
 
 int init_secondary_screen_addons(engine_t *engine);
 int init_translation_animation_addons(engine_t *engine);
+int init_set_position_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

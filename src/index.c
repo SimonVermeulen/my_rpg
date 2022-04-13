@@ -11,6 +11,7 @@ int (*const load_addons_func[])(engine_t *) =
 {
     init_secondary_screen_addons,
     init_translation_animation_addons,
+    init_set_position_addons,
     NULL
 };
 
