@@ -40,7 +40,7 @@ bool init_buffer(list_t *buffer, scene_t *scene)
         search_from_key(buffer, "Musics")};
 
     if (!buffer)
-        return false;
+        return true;
     for (int i = 0; i < 5; i++) {
         if (!execute_array_buffer(lists[i], scene, init_component[i]))
             return false;

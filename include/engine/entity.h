@@ -16,6 +16,7 @@
 
 bool init_entity(list_t *entity_list, object_t *object);
 int print_entity(object_t *object, engine_t *engine);
+int add_print_list_entity(object_t *object, list_t *print);
 bool destroy_entity(object_t *object);
 void init_data_entity(list_t *entity_list, object_t *object);
 

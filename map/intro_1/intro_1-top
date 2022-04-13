@@ -1,0 +1,34 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/sky.png"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 255,
+                            "height": 551
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    }
+                }
+            }
+        }
+    ]
+}

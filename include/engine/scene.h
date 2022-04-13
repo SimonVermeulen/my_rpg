@@ -17,6 +17,8 @@
 bool init_scenes_path(const char *path, engine_t *engine);
 bool init_scene_path(const char *path, const char *name, engine_t *engine);
 int change_scene(char const *name, engine_t *engine);
+sfBool set_const_scene(char const *name, engine_t *engine);
+scene_t *load_scene_by_path(char const *path, engine_t *engine);
 list_t *init_objects_list(list_t *object, engine_t *engine, object_t *parent);
 scene_t *init_scene_by_list(list_t *scene_list, engine_t *engine);
 int destroy_scene(scene_t *scene);

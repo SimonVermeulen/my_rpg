@@ -7,15 +7,24 @@
 
 #include "game.h"
 
-int (*const load_addons_func[])(engine_t *) = {init_example_addons, NULL};
+int (*const load_addons_func[])(engine_t *) =
+{
+    init_secondary_screen_addons,
+    init_translation_animation_addons,
+    NULL
+};
 
 int main(int argc, char **argv)
 {
-    engine_t *engine = init_game((sfVideoMode) {1920, 1080, 32}, "bonjour");
+    engine_t *engine = init_game((sfVideoMode) {540, 1080, 32},
+        "[HACK ROM] Pokemon dunjeon mystery");
 
-    load_addons(engine, load_addons_func);
-    init_scenes_path("./map", engine);
-    if (!change_scene("a", engine))
+    if (!engine || !load_addons(engine, load_addons_func) ||
+        !init_scenes_path("./map", engine))
+        return 84;
+    if (!set_const_scene("manager", engine) ||
+        !change_scene("intro_1-down", engine) ||
+        !change_secondary_screen("intro_1-top", engine))
         return 84;
     return open_game(engine, 60);
 }

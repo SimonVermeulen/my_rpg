@@ -1,0 +1,60 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/sky.png"
+            }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "intro_music",
+                "path": "./assets/intro_1/intro_song.ogg"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 255,
+                            "height": 551
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "speed": 10.0,
+                    "waitBeforeStart": 5000.0,
+                    "paths": [
+                        {
+                            "x": 500.0,
+                            "y": 0.0
+                        },
+                        {
+                            "x": 250.0,
+                            "y": 25.0
+                        }
+                    ] 
+                }
+            }
+        }
+    ]
+}

@@ -42,14 +42,14 @@ static void (*const print_entities[])(sfRenderWindow *, const void *,
     sfRenderWindow_drawText
 };
 
-int print_list(engine_t *engine)
+int print_list(list_t *print, engine_t *engine)
 {
     node_t *current = NULL;
     entity_t *entity = NULL;
 
-    make_bubble_sort_print(engine->print);
-    current = engine->print->head;
-    for (int i = 0; i < engine->print->nb_elements; i++,
+    make_bubble_sort_print(print);
+    current = print->head;
+    for (int i = 0; i < print->nb_elements; i++,
         current = current->next) {
         entity = current->value;
         if (entity->type >= 5)

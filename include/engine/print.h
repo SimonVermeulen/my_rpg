@@ -20,7 +20,7 @@ typedef struct print_node_s {
     int order;
 } print_node_t;
 
-int print_list(engine_t *engine);
+int print_list(list_t *print, engine_t *engine);
 sfBool add_print(void *data, int type, int order, engine_t *engine);
 int destroy_print_list(engine_t *engine, sfBool final);
 

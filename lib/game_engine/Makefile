@@ -66,6 +66,7 @@ SRC	=	addon/addon.c	\
 		scene/scene.c	\
 		utils/equal_vector.c	\
 		utils/get_normalize_vector.c	\
+		utils/create_vector_list.c	\
 
 OBJ	=	$(SRC:.c=.o)
 

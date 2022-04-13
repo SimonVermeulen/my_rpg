@@ -1,0 +1,12 @@
+{
+    "objects": [
+        {
+            "name": "secondary_screen",
+            "addons": {
+                "secondary_screen": {
+                    "empty": 0
+                }
+            }
+        }
+    ]
+}

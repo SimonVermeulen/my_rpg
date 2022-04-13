@@ -29,15 +29,15 @@ int core_game(engine_t *engine)
         destroy_scene(engine->prev_scene);
         engine->prev_scene = NULL;
     }
+    if (engine->const_scene) {
+        execute_game(engine->const_scene->object, engine);
+        check_collision_event(engine, engine->const_scene->object);
+    }
     if (engine->actual_scene) {
         execute_game(engine->actual_scene->object, engine);
         check_collision_event(engine, engine->actual_scene->object);
     }
-    if (engine->const_scene) {
-        execute_game(engine->const_scene->object, engine);
-        check_collision_event(engine, engine->actual_scene->object);
-    }
-    print_list(engine);
+    print_list(engine->print, engine);
     return 0;
 }
 
@@ -47,6 +47,7 @@ int execute_end_event(engine_t *engine)
         on_end(engine->actual_scene->object, engine);
     if (engine->const_scene)
         on_end(engine->const_scene->object, engine);
+    execute_functions(engine);
 }
 
 int open_game(engine_t *engine, int fps)
@@ -63,6 +64,7 @@ int open_game(engine_t *engine, int fps)
         sfClock_restart(engine->time.delta);
         sfRenderWindow_display(engine->window);
     }
+    execute_end_event(engine);
     sfClock_destroy(engine->time.delta);
     sfClock_destroy(engine->time.time);
     code = engine->code;

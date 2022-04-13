@@ -33,3 +33,18 @@ void free_list(list_t *list)
     }
     free(list);
 }
+
+node_t *get_node_id(list_t *list, int id)
+{
+    node_t *node = NULL;
+
+    if (!list || id < 0 || id >= list->nb_elements)
+        return NULL;
+    node = list->head;
+    for (int i = 0; i < list->nb_elements; i++) {
+        if (i == id)
+            return node;
+        node = node->next;
+    }
+    return NULL;
+}

@@ -140,4 +140,6 @@ int set_value_list(list_t *list, const char *name, void *value);
 
 node_t *create_add_node(void *value, int type, const char *name, list_t *list);
 
+node_t *get_node_id(list_t *list, int id);
+
 #endif

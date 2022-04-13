@@ -1,0 +1,28 @@
+{
+    "buffer": {
+        "Colors": [
+            {
+                "name": "white",
+                "r": 255,
+                "g": 255,
+                "b": 255
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 0,
+                "parameters": {
+                    "FillColor": "white",
+                    "Size": {
+                        "x": 540.0,
+                        "y": 540.0
+                    }
+                }
+            }
+        }
+    ]
+}

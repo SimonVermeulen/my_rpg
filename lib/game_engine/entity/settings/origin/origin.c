@@ -38,11 +38,11 @@ bool set_origin_list(object_t *object, list_t *list)
 bool set_origin_anchor(object_t *object, int type)
 {
     sfFloatRect rect = get_local_bounds(object);
-    int anchors[9][2] = {{0, 0}, {rect.width / 2, 0}, {rect.width, 0},
+    float anchors[9][2] = {{0, 0}, {rect.width / 2, 0}, {rect.width, 0},
         {0, rect.height / 2}, {rect.width / 2, rect.height / 2},
         {rect.width, rect.height / 2}, {0, rect.height},
         {rect.width / 2, rect.height}, {rect.width, rect.height}};
-    
+
     if (type < 0 || type >= 8)
         return false;
     return set_origin(object, (sfVector2f) {anchors[type][0],

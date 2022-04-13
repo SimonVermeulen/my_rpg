@@ -31,10 +31,8 @@ int window_on_end(list_t *scene, engine_t *engine)
     node = scene->head;
     for (int i = 0; i < scene->nb_elements; i++, node = node->next) {
         object = node->value;
-        if (object->addons != NULL && object->is_active == sfTrue)
-            loop_execution_end(object, engine);
-        if (object->is_active == sfTrue)
-            on_start(object->childs, engine);
+        loop_execution_end(object, engine);
+        on_start(object->childs, engine);
     }
     return 0;
 }

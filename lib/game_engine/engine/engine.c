@@ -32,6 +32,7 @@ engine_t *init_game(sfVideoMode video, char const *title)
         sfClose | sfResize, NULL);
     instance->actual_scene = NULL;
     instance->const_scene = NULL;
+    instance->prev_scene = NULL;
     if (check_init_game(instance) == 84)
         return NULL;
     return instance;

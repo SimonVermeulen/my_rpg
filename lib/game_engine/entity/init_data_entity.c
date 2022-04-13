@@ -37,38 +37,24 @@ static bool (*const function_list[])(object_t *object, list_t *list) = {
 
 static const char *parameter_float[] = {
     "Rotation",
-    "Anchor",
     "Radius",
-    "PointCount",
-    "CharacterSize",
     "LineSpacing",
     "LetterSpacing",
-    "Style",
-    "Loop",
     "Pitch",
     "Volume",
-    "Relative",
     "MinDistance",
     "Attenuation",
-    "PlayingOffset",
     0
 };
 static bool (*const function_float[])(object_t *object, float list) = {
     set_rotation,
-    set_origin_anchor,
     set_radius,
-    set_point_count,
-    set_character_size,
     set_line_spacing,
     set_letter_spacing,
-    set_style,
-    set_loop,
     set_pitch,
     set_volume,
-    set_relative,
     set_min_distance,
     set_attenuation,
-    set_playing_offset,
     0
 };
 
@@ -97,6 +83,43 @@ static bool (*const function_char[])(object_t *object, char *list) = {
     0
 };
 
+///////
+// TYPE INT
+////////////
+
+static const char *parameter_int[] = {
+    "Anchor",
+    "PointCount",
+    "CharacterSize",
+    "Style",
+    "Loop",
+    "Relative",
+    "PlayingOffset",
+    0
+};
+static bool (*const function_int[])(object_t *object, int list) = {
+    set_origin_anchor,
+    set_point_count,
+    set_character_size,
+    set_style,
+    set_loop,
+    set_relative,
+    set_playing_offset,
+    0
+};
+
+void get_int_parameter(list_t *list, object_t *object)
+{
+    int *value = NULL;
+
+    for (int i = 0; parameter_int[i] != 0; i++) {
+        value = get_value_list(list, parameter_int[i], 3);
+        if (!value)
+            continue;
+        (*function_int[i])(object, *value);
+    }
+}
+
 void get_float_parameter(list_t *list, object_t *object)
 {
     double *value = NULL;
@@ -117,9 +140,10 @@ void init_data_entity(list_t *entity_list, object_t *object)
         (*function_list[i])(object, get_value_list(entity_list,
             parameter_list[i], 1));   
     }
-    for (int i = 0; parameter_list[i] != 0; i++) {
+    for (int i = 0; parameter_char[i] != 0; i++) {
         (*function_char[i])(object, get_value_list(entity_list,
             parameter_char[i], 4));
     }
     get_float_parameter(entity_list, object);
+    get_int_parameter(entity_list, object);
 }

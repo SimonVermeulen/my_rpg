@@ -6,6 +6,14 @@
 */
 
 #include "game_engine.h"
+#include <math.h>
+
+bool equal_vector2f_pov(sfVector2f a, sfVector2f b, float pov)
+{
+    if (abs(a.x - b.x) <= pov && abs(a.y - b.y) <= pov)
+        return true;
+    return false;
+}
 
 bool equal_vector2f(sfVector2f a, sfVector2f b)
 {

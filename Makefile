@@ -6,11 +6,14 @@
 ##
 
 SRC				=		src/index.c	\
-						src/addon.c	\
+						src/addons/secondary_screen/secondary_screen.c	\
+						src/addons/secondary_screen/change_secondary_screen.c	\
+						src/addons/translation_animation/translation_animation.c	\
+						src/addons/translation_animation/translation_action.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 
-NAME 			= 		my_defender
+NAME 			= 		my_rpg
 
 LIBFLAG 		= 		lib/game_engine.a -Lcsfml-window -lcsfml-graphics -lcsfml-system -lcsfml-audio lib/liblist.a lib/libjson_parser.a lib/libmy.a -lm
 
