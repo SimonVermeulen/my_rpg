@@ -1,0 +1,50 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/sea.png"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 577,
+                            "height": 450
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.9,
+                        "y": 2.7
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": -500.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "speed": 30.0,
+                    "waitBeforeStart": 0.0,
+                    "paths": [
+                        {
+                            "x": -100.0,
+                            "y": -500.0
+                        }
+                    ] 
+                }
+            }
+        }
+    ]
+}

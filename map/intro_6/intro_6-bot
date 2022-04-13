@@ -1,0 +1,163 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/keunotor_map.png",
+                "smooth": 1
+            },
+            {
+                "name": "keunotor1",
+                "path": "./assets/intro_1/walk_keunotor.png",
+                "smooth": 1
+            },
+            {
+                "name": "keunotor2",
+                "path": "./assets/intro_1/walk_keunotor.png",
+                "smooth": 1
+            },
+            {
+                "name": "keunotor3",
+                "path": "./assets/intro_1/walk_keunotor.png",
+                "smooth": 1
+            },
+            {
+                "name": "castorno",
+                "path": "./assets/intro_1/walk_castorno.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 725,
+                            "height": 537
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.8,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "keunotor1",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "keunotor1",
+                        "Rect": {
+                            "left": 67,
+                            "top": 197,
+                            "width": 24,
+                            "height": 18
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.5,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 350.0,
+                        "y": 170.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "keunotor2",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "keunotor2",
+                        "Rect": {
+                            "left": 67,
+                            "top": 197,
+                            "width": 24,
+                            "height": 18
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.5,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 420.0,
+                        "y": 310.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "keunotor3",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "keunotor3",
+                        "Rect": {
+                            "left": 67,
+                            "top": 197,
+                            "width": 24,
+                            "height": 18
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.5,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 310.0,
+                        "y": 250.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "castorno",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "castorno",
+                        "Rect": {
+                            "left": 64,
+                            "top": 246,
+                            "width": 30,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.5,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 410.0,
+                        "y": 220.0
+                    }
+                }
+            }
+        }
+    ]
+}
