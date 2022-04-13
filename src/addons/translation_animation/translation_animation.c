@@ -9,6 +9,8 @@
 
 int tick_translation_animation(object_t *object, engine_t *engine);
 
+void *init_translation_animation(list_t *list);
+
 int end_translation_animation(object_t *object, engine_t *engine)
 {
     translation_animation_t *translation =
@@ -16,49 +18,6 @@ int end_translation_animation(object_t *object, engine_t *engine)
     
     free_json_object(translation->positions);
     return 0;
-}
-
-list_t *create_list_positions(list_t **positions, int length)
-{
-    sfVector2f *position = NULL;
-    list_t *positions_final = create_empty_list();
-    node_t *node = NULL;
-
-    if (!positions_final)
-        return NULL;
-    for (int i = 0; i < length; i++) {
-        position = malloc_vector2f_list(positions[i]);
-        if (!position)
-            return NULL;
-        node = create_add_node(position, 0, "path", positions_final);
-        if (!node)
-            return NULL;
-    }
-    return positions_final;
-}
-
-void *init_translation_animation(list_t *list)
-{
-    double *speed = get_value_list(list, "speed", 2);
-    double *wait = get_value_list(list, "waitBeforeStart", 2);
-    node_t *positions = search_from_key(list, "paths");
-    translation_animation_t *translation = NULL;
-
-    if (!speed || !wait || !positions || positions->type != 10)
-        return NULL;
-    translation = malloc(sizeof(translation_animation_t));
-    if (!translation)
-        return NULL;
-    translation->step = 0;
-    translation->count_wait = 0;
-    translation->speed = *speed;
-    translation->wait = *wait;
-    translation->normal = (sfVector2f) {0, 0};
-    translation->positions = create_list_positions(positions->value,
-        positions->len);
-    if (!translation->positions)
-        return NULL;
-    return translation;
 }
 
 int init_translation_animation_addons(engine_t *engine)

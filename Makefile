@@ -10,6 +10,7 @@ SRC				=		src/index.c	\
 						src/addons/secondary_screen/change_secondary_screen.c	\
 						src/addons/translation_animation/translation_animation.c	\
 						src/addons/translation_animation/translation_action.c	\
+						src/addons/translation_animation/init_translation.c	\
 						src/addons/set_position/set_position.c	\
 
 OBJ 			=		$(SRC:.c=.o)

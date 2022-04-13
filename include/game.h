@@ -17,13 +17,20 @@ typedef struct secondary_screen_s {
 } secondary_screen_t;
 
 typedef struct translation_animation_s {
-    float speed;
     float wait;
     list_t *positions;
     int step;
     float count_wait;
     sfVector2f normal;
+    bool infini;
+    bool reverse;
+    bool is_reverse;
 } translation_animation_t;
+
+typedef struct vector_speed_s {
+    sfVector2f position;
+    float speed;
+} vector_speed_t;
 
 bool change_secondary_screen(const char *name, engine_t *engine);
 
