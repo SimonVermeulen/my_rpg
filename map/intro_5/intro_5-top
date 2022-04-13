@@ -3,7 +3,7 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/intro_3.png"
+                "path": "./assets/intro_1/title_screen.png"
             }
         ]
     },
@@ -19,13 +19,17 @@
                         "Rect": {
                             "left": 257,
                             "top": 0,
-                            "width": 385,
-                            "height": 361
+                            "width": 257,
+                            "height": 193
                         }
                     },
                     "Scale": {
-                        "x": 2.0,
-                        "y": 2.8
+                        "x": 2.12,
+                        "y": 3.1
+                    },
+                    "Position": {
+                        "x": -2.0,
+                        "y": 0.0
                     }
                 }
             }
