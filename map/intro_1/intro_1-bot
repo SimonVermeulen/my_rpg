@@ -43,7 +43,7 @@
             "addons": {
                 "translation_animation": {
                     "waitBeforeStart": 5000.0,
-                    "infini": 1,
+                    "infini": 0,
                     "reverse": 0,
                     "paths": [
                         {

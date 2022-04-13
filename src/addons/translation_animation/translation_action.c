@@ -34,12 +34,15 @@ int update_step_translation_animation(translation_animation_t *trans,
     if (trans->is_reverse)
         return update_reverse_step_translation(trans);
     if (trans->step == trans->positions->nb_elements - 1) {
+        trans->step++;
         if (trans->infini) {
             trans->step = 0;
             set_position_vector(object, vector->position);
         }
-        if (trans->reverse)
+        if (trans->reverse) {
+            trans->step--;
             trans->is_reverse = 1;
+        }
         trans->normal = (sfVector2f) {0, 0};
         return 0;
     }

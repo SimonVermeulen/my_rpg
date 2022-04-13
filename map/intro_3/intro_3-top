@@ -3,7 +3,8 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/intro_3.png"
+                "path": "./assets/intro_1/intro_3.png",
+                "smooth": 1
             }
         ]
     },
@@ -36,7 +37,7 @@
                     "reverse": 0,
                     "paths": [
                         {
-                            "x": -35.0,
+                            "x": -55.0,
                             "y": 0.0,
                             "speed": 1.0
                         }
