@@ -7,6 +7,8 @@
 
 #include "game.h"
 
+int end_secondary_screen(object_t *object, engine_t *engine);
+
 int tick_secondary_screen(object_t *object, engine_t *engine)
 {
     secondary_screen_t *secondary_screen = get_addon_data("secondary_screen",
@@ -24,17 +26,6 @@ int tick_secondary_screen(object_t *object, engine_t *engine)
     sfRenderWindow_setView(engine->window, secondary_screen->bloc_1);
 }
 
-int end_secondary_screen(object_t *object, engine_t *engine)
-{
-    secondary_screen_t *view_controller = get_addon_data("secondary_screen",
-        object);
-
-    if (view_controller->second)
-        on_end(view_controller->second->object, engine);
-    destroy_scene(view_controller->second);
-    sfView_destroy(view_controller->bloc_1);
-    sfView_destroy(view_controller->bloc_2);
-}
 
 int start_secondary_screen(object_t *object, engine_t *engine)
 {

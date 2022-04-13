@@ -44,7 +44,7 @@
                 "translation_animation": {
                     "waitBeforeStart": 5000.0,
                     "infini": 0,
-                    "reverse": 1,
+                    "reverse": 0,
                     "paths": [
                         {
                             "x": 500.0,

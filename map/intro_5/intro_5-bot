@@ -1,0 +1,140 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/intro_5.png"
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/intro_1/Walk-Anim-Pikatchu.png"
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/intro_1/Walk-Anim-Evoli.png"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "montagne",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 385,
+                            "top": 0,
+                            "width": 385,
+                            "height": 217
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "speed": 1.0,
+                    "waitBeforeStart": 0.0,
+                    "paths": [
+                        {
+                            "x": -25.0,
+                            "y": 0.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "chemin",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 385,
+                            "height": 217
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "speed": 4.0,
+                    "waitBeforeStart": 0.0,
+                    "paths": [
+                        {
+                            "x": -228.0,
+                            "y": 0.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 82,
+                            "width": 32,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 150.0,
+                        "y": 415.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 100,
+                            "width": 40,
+                            "height": 25
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 200.0,
+                        "y": 415.0
+                    }
+                }
+            }
+        }
+    ]
+}
