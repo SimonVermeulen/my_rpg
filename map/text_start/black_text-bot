@@ -1,0 +1,66 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/lib/black.png",
+                "smooth": 1
+            },
+            {
+                "name": "button",
+                "path": "./assets/intro_1/lib/white_arrow_down.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "black",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 385,
+                            "height": 217
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 3.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "arrow",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "button",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 31,
+                            "height": 22
+                        }
+                    },
+                    "Position": {
+                        "x": 250.0,
+                        "y": 300.0
+                    },
+                    "Scale": {
+                        "x": 0.8,
+                        "y": 0.8
+                    }
+                }
+            }
+        }
+    ]
+}

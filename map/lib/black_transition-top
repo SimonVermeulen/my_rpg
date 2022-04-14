@@ -3,14 +3,14 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/black.png",
+                "path": "./assets/intro_1/lib/black.png",
                 "smooth": 1
             }
         ]
     },
     "objects": [
         {
-            "name": "white",
+            "name": "black",
             "entity": {
                 "type": "Sprite",
                 "order": 0,

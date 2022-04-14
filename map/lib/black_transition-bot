@@ -10,7 +10,7 @@
     },
     "objects": [
         {
-            "name": "white",
+            "name": "black",
             "entity": {
                 "type": "Sprite",
                 "order": 0,

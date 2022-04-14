@@ -27,7 +27,7 @@ int main(int argc, char **argv)
         return 84;
     if (!set_const_scene("manager", engine) ||
         !change_scene("intro_start-bot", engine) ||
-        !change_secondary_screen("intro_5-top", engine))
+        !change_secondary_screen("help", engine))
         return 84;
     return open_game(engine, 60);
 }

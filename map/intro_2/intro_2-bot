@@ -5,53 +5,78 @@
                 "name": "main_texture",
                 "path": "./assets/intro_1/sea.png",
                 "smooth": 1
+            },
+            {
+                "name": "cloud",
+                "path": "./assets/intro_1/cloud.png",
+                "smooth": 1
             }
         ]
     },
     "objects": [
         {
-            "name": "background",
-            "entity": {
-                "type": "Sprite",
-                "order": 0,
-                "parameters": {
-                    "Texture": {
-                        "Name": "main_texture",
-                        "Rect": {
-                            "left": 0,
-                            "top": 260,
-                            "width": 1155,
-                            "height": 383
-                        }
-                    },
-                    "Scale": {
-                        "x": 1.9,
-                        "y": 2.8
-                    },
-                    "Position": {
-                        "x": 0.0,
-                        "y": -530.0
-                    }
+            "name": "parallaxWater",
+            "addons": {
+                "parallax": {
+                    "speed": 20.0,
+                    "width": 577.0
                 }
             },
-            "addons": {
-                "translation_animation": {
-                    "waitBeforeStart": 0.0,
-                    "infini": 1,
-                    "reverse": 0,
-                    "paths": [
-                        {
-                            "x": 1.0,
-                            "y": -530.0,
-                            "speed": 60.0
-                        },
-                        {
-                            "x": -577.5,
-                            "y": -530.0,
-                            "speed": 60.0
+            "children": {
+                "objects": [
+                    {
+                        "name": "parallax1",
+                        "entity": {
+                            "order": 1,
+                            "type": "Sprite",
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "main_texture",
+                                    "Rect": {
+                                        "left": 0,
+                                        "top": 0,
+                                        "width": 577,
+                                        "height": 645
+                                    }
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 2.2
+                                },
+                                "Position": {
+                                    "x": 0.0,
+                                    "y": -1000.0
+                                }
+                            }
                         }
-                    ] 
-                }
+                    },
+                    {
+                        "name": "parallax2",
+                        "entity": {
+                            "order": 1,
+                            "type": "Sprite",
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "main_texture",
+                                    "Rect": {
+                                        "left": 0,
+                                        "top": 0,
+                                        "width": 577,
+                                        "height": 645
+                                    }
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 2.2
+                                },
+                                "Position": {
+                                    "x": 577.0,
+                                    "y": -1000.0
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         }
     ]
