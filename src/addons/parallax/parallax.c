@@ -10,16 +10,15 @@
 int tick_parallax(object_t *object, engine_t *engine)
 {
     parallax_t *parallax = get_addon_data("parallax", object);
-    sfFloatRect rect = get_local_bounds(parallax->element_1);
     sfVector2f move = (sfVector2f) {-1, 0};
 
-    move.x = move.x * parallax->speed * get_delta(engine);
+    move.x = move.x * parallax->speed * (get_delta(engine) / 100);
     move_vector(parallax->element_1, move);
     move_vector(parallax->element_2, move);
-    if (get_position(parallax->element_1).x < -rect.width)
-        set_position_float(parallax->element_1, rect.width + 540, 0);
-    if (get_position(parallax->element_2).x < -rect.width)
-        set_position_float(parallax->element_2, rect.width + 540, 0);
+    if (get_position(parallax->element_1).x <= -parallax->width)
+        set_position_float(parallax->element_1, parallax->width, 0);
+    if (get_position(parallax->element_2).x <= -parallax->width)
+        set_position_float(parallax->element_2, parallax->width, 0);
     return 0;
 }
 
@@ -39,14 +38,16 @@ int start_parallax(object_t *object, engine_t *engine)
 void *init_parallax(list_t *list)
 {
     double *speed = get_value_list(list, "speed", 2);
+    double *width = get_value_list(list, "width", 2);
     parallax_t *parallax = NULL;
 
-    if (!speed)
+    if (!speed || !width)
         return NULL;
     parallax = malloc(sizeof(parallax_t));
-    if (parallax)
+    if (!parallax)
         return NULL;
     parallax->speed = *speed;
+    parallax->width = *width;
     parallax->element_1 = NULL;
     parallax->element_2 = NULL;
     return parallax;

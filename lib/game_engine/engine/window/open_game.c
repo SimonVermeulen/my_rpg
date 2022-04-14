@@ -25,6 +25,8 @@ int execute_game(list_t *scene, engine_t *engine)
 int core_game(engine_t *engine)
 {
     execute_functions(engine);
+    if (!sfRenderWindow_isOpen(engine->window))
+        return 0;
     if (engine->prev_scene != NULL) {
         destroy_scene(engine->prev_scene);
         engine->prev_scene = NULL;

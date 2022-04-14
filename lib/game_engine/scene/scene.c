@@ -68,6 +68,7 @@ int destroy_objects_list(list_t *scene)
         node = scene->head;
         destroy_object(node->value);
     }
+    free(scene);
     return 0;
 }
 
@@ -76,7 +77,6 @@ int destroy_scene(scene_t *scene)
     if (scene == NULL)
         return ERROR;
     destroy_objects_list(scene->object);
-    free(scene->object);
     destroy_buffer(scene->buffer);
     free(scene);
     return 0;

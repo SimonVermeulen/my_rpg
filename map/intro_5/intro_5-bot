@@ -17,55 +17,140 @@
     },
     "objects": [
         {
-            "name": "chemin",
-            "entity": {
-                "type": "Sprite",
-                "order": 0,
-                "parameters": {
-                    "Texture": {
-                        "Name": "main_texture",
-                        "Rect": {
-                            "left": 0,
-                            "top": 0,
-                            "width": 629,
-                            "height": 217
-                        }
-                    },
-                    "Scale": {
-                        "x": 2.0,
-                        "y": 2.5
-                    },
-                    "Position": {
-                        "x": -5.0,
-                        "y": 0.0
-                    }
+            "name": "parallaxChemin",
+            "addons": {
+                "parallax": {
+                    "speed": 10.0,
+                    "width": 766.0
                 }
             },
-            "addons": {
-                "translation_animation": {
-                    "waitBeforeStart": 0.0,
-                    "infini": 1,
-                    "reverse": 0,
-                    "paths": [
-                        {
-                            "x": -5.0,
-                            "y": 0.0,
-                            "speed": 4.0
-                        },
-                        {
-                            "x": -720.0,
-                            "y": 0.0,
-                            "speed": 4.0
+            "children": {
+                "objects": [
+                    {
+                        "name": "parallax1",
+                        "entity": {
+                            "order": 1,
+                            "type": "Sprite",
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "main_texture",
+                                    "Rect": {
+                                        "left": 0,
+                                        "top": 0,
+                                        "width": 384,
+                                        "height": 217
+                                    }
+                                },
+                                "Scale": {
+                                    "x": 2.0,
+                                    "y": 2.5
+                                },
+                                "Position": {
+                                    "x": 0.0,
+                                    "y": 0.0
+                                }
+                            }
                         }
-                    ] 
+                    },
+                    {
+                        "name": "parallax2",
+                        "entity": {
+                            "order": 1,
+                            "type": "Sprite",
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "main_texture",
+                                    "Rect": {
+                                        "left": 0,
+                                        "top": 0,
+                                        "width": 384,
+                                        "height": 217
+                                    }
+                                },
+                                "Scale": {
+                                    "x": 2.0,
+                                    "y": 2.5
+                                },
+                                "Position": {
+                                    "x": 768.0,
+                                    "y": 0.0
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "parallaxMontagne",
+            "addons": {
+                "parallax": {
+                    "speed": 4.0,
+                    "width": 765.0
                 }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "parallax1",
+                        "entity": {
+                            "order": 0,
+                            "type": "Sprite",
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "main_texture",
+                                    "Rect": {
+                                        "left": 386,
+                                        "top": 0,
+                                        "width": 384,
+                                        "height": 217
+                                    }
+                                },
+                                "Scale": {
+                                    "x": 2.0,
+                                    "y": 2.5
+                                },
+                                "Position": {
+                                    "x": 0.0,
+                                    "y": 0.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "parallax2",
+                        "entity": {
+                            "order": 0,
+                            "type": "Sprite",
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "main_texture",
+                                    "Rect": {
+                                        "left": 386,
+                                        "top": 0,
+                                        "width": 384,
+                                        "height": 217
+                                    }
+                                },
+                                "Scale": {
+                                    "x": 2.0,
+                                    "y": 2.5
+                                },
+                                "Position": {
+                                    "x": 766.0,
+                                    "y": 0.0
+                                }
+                            }
+                        }
+                    }
+                ]
             }
         },
         {
             "name": "1er_poke",
             "entity": {
                 "type": "Sprite",
-                "order": 0,
+                "order": 2,
                 "parameters": {
                     "Texture": {
                         "Name": "1er_poke",
@@ -91,7 +176,7 @@
             "name": "2eme_poke",
             "entity": {
                 "type": "Sprite",
-                "order": 0,
+                "order": 2,
                 "parameters": {
                     "Texture": {
                         "Name": "2eme_poke",

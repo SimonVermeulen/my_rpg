@@ -36,6 +36,7 @@ typedef struct parallax_s {
     object_t *element_1;
     object_t *element_2;
     float speed;
+    float width;
 } parallax_t;
 
 bool change_secondary_screen(const char *name, engine_t *engine);
