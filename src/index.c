@@ -20,7 +20,7 @@ int (*const load_addons_func[])(engine_t *) =
 int main(int argc, char **argv)
 {
     engine_t *engine = init_game((sfVideoMode) {700, 1080, 32},
-        "[HACK ROM] Pokemon dunjeon mystery");
+        "[HACK-ROM] Pokemon donjon mystère lihme-line");
 
     if (!engine || !load_addons(engine, load_addons_func) ||
         !init_scenes_path("./map", engine))
