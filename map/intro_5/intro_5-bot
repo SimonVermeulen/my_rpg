@@ -12,6 +12,10 @@
             {
                 "name": "2eme_poke",
                 "path": "./assets/intro_1/Walk-Anim-Evoli.png"
+            },
+            {
+                "name": "explorateur_logo",
+                "path": "./assets/intro_1/explorateur_logo.png"
             }
         ]
     },
@@ -194,6 +198,22 @@
                     "Position": {
                         "x": 200.0,
                         "y": 415.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "Logo",
+            "entity": {
+                "order": 5,
+                "type": "Sprite",
+                "parameters": {
+                    "Texture": {
+                        "Name": "explorateur_logo"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 270.0
                     }
                 }
             }
