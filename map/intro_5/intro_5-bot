@@ -3,19 +3,23 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/intro_5.png"
+                "path": "./assets/intro_1/intro_5.png",
+                "smooth": 1
             },
             {
                 "name": "1er_poke",
-                "path": "./assets/intro_1/Walk-Anim-Pikatchu.png"
+                "path": "./assets/intro_1/Walk-Anim-Pikatchu.png",
+                "smooth": 1
             },
             {
                 "name": "2eme_poke",
-                "path": "./assets/intro_1/Walk-Anim-Evoli.png"
+                "path": "./assets/intro_1/Walk-Anim-Evoli.png",
+                "smooth": 1
             },
             {
                 "name": "explorateur_logo",
-                "path": "./assets/intro_1/explorateur_logo.png"
+                "path": "./assets/intro_1/explorateur_logo.png",
+                "smooth": 1
             }
         ]
     },
@@ -211,9 +215,13 @@
                     "Texture": {
                         "Name": "explorateur_logo"
                     },
+                    "Scale": {
+                        "x": 0.7,
+                        "y": 0.7
+                    },
                     "Position": {
-                        "x": 0.0,
-                        "y": 270.0
+                        "x": 70.0,
+                        "y": 230.0
                     }
                 }
             }
