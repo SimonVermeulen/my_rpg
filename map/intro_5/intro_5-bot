@@ -17,40 +17,6 @@
     },
     "objects": [
         {
-            "name": "montagne",
-            "entity": {
-                "type": "Sprite",
-                "order": 0,
-                "parameters": {
-                    "Texture": {
-                        "Name": "main_texture",
-                        "Rect": {
-                            "left": 385,
-                            "top": 0,
-                            "width": 385,
-                            "height": 217
-                        }
-                    },
-                    "Scale": {
-                        "x": 2.0,
-                        "y": 2.5
-                    }
-                }
-            },
-            "addons": {
-                "translation_animation": {
-                    "speed": 1.0,
-                    "waitBeforeStart": 0.0,
-                    "paths": [
-                        {
-                            "x": -25.0,
-                            "y": 0.0
-                        }
-                    ] 
-                }
-            }
-        },
-        {
             "name": "chemin",
             "entity": {
                 "type": "Sprite",
@@ -61,24 +27,35 @@
                         "Rect": {
                             "left": 0,
                             "top": 0,
-                            "width": 385,
+                            "width": 629,
                             "height": 217
                         }
                     },
                     "Scale": {
                         "x": 2.0,
                         "y": 2.5
+                    },
+                    "Position": {
+                        "x": -5.0,
+                        "y": 0.0
                     }
                 }
             },
             "addons": {
                 "translation_animation": {
-                    "speed": 4.0,
                     "waitBeforeStart": 0.0,
+                    "infini": 1,
+                    "reverse": 0,
                     "paths": [
                         {
-                            "x": -228.0,
-                            "y": 0.0
+                            "x": -5.0,
+                            "y": 0.0,
+                            "speed": 4.0
+                        },
+                        {
+                            "x": -720.0,
+                            "y": 0.0,
+                            "speed": 4.0
                         }
                     ] 
                 }

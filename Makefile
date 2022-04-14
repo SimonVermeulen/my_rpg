@@ -12,6 +12,7 @@ SRC				=		src/index.c	\
 						src/addons/translation_animation/translation_action.c	\
 						src/addons/translation_animation/init_translation.c	\
 						src/addons/set_position/set_position.c	\
+						src/addons/parallax/parallax.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

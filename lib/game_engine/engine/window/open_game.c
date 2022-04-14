@@ -61,11 +61,12 @@ int open_game(engine_t *engine, int fps)
     while (sfRenderWindow_isOpen(engine->window)) {
         sfRenderWindow_clear(engine->window, sfBlack);
         core_game(engine);
-        sfClock_restart(engine->time.delta);
+        engine->time.delta = get_delta(engine);
+        sfClock_restart(engine->time.delta_time);
         sfRenderWindow_display(engine->window);
     }
     execute_end_event(engine);
-    sfClock_destroy(engine->time.delta);
+    sfClock_destroy(engine->time.delta_time);
     sfClock_destroy(engine->time.time);
     code = engine->code;
     destroy_game(engine);

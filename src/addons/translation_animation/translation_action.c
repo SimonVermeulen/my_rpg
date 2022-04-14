@@ -10,8 +10,8 @@
 int move_translation_animation(engine_t *engine, sfVector2f normal,
     object_t *object, float speed)
 {
-    normal.x = normal.x * speed * (get_delta(engine) / 100);
-    normal.y = normal.y * speed * (get_delta(engine) / 100);
+    normal.x = normal.x * speed * (engine->time.delta / 100);
+    normal.y = normal.y * speed * (engine->time.delta / 100);
     move_vector(object, normal);
     return 0;
 }
@@ -43,11 +43,11 @@ int update_step_translation_animation(translation_animation_t *trans,
             trans->step--;
             trans->is_reverse = 1;
         }
-        trans->normal = (sfVector2f) {0, 0};
+        trans->normal = (sfVector2f) {2, 2};
         return 0;
     }
     trans->step++;
-    trans->normal = (sfVector2f) {0, 0};
+    trans->normal = (sfVector2f) {2, 2};
     return 0;
 }
 
@@ -67,10 +67,10 @@ int tick_translation_animation(object_t *object, engine_t *engine)
         return 0;
     vector = direction->value;
     normal = get_normalize_vector(get_position(object), vector->position);
-    if (!equal_vector2f_pov(normal, trans->normal, 0.00001f) &&
-        !equal_vector2f(trans->normal, (sfVector2f) {0, 0}))
-        update_step_translation_animation(trans, object);
-    else
-        trans->normal = normal;
+    if ((!equal_vector2f_pov(normal, trans->normal, 0.00001f) &&
+        !equal_vector2f(trans->normal, (sfVector2f) {2, 2})) ||
+        equal_vector2f(normal, (sfVector2f) {0, 0}))
+        return update_step_translation_animation(trans, object);
+    trans->normal = normal;
     return move_translation_animation(engine, normal, object, vector->speed);
 }

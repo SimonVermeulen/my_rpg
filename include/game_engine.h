@@ -32,8 +32,9 @@
 ///////
 
 typedef struct times_s {
-    sfClock *delta;
+    sfClock *delta_time;
     sfClock *time;
+    double delta;
 } times_t;
 
 ///////
