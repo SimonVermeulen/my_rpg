@@ -39,6 +39,10 @@ typedef struct parallax_s {
     float width;
 } parallax_t;
 
+typedef struct sparkles_s {
+    int order;
+} sparkles_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 
 ///////
@@ -49,5 +53,6 @@ int init_secondary_screen_addons(engine_t *engine);
 int init_translation_animation_addons(engine_t *engine);
 int init_set_position_addons(engine_t *engine);
 int init_parallax_addons(engine_t *engine);
+int init_sparkles_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */
