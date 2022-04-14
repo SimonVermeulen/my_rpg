@@ -3,8 +3,7 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/sea.png",
-                "smooth": 1
+                "path": "./assets/intro_1/sea.png"
             },
             {
                 "name": "cloud",

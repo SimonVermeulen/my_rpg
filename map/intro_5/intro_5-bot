@@ -3,8 +3,7 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/intro_5.png",
-                "smooth": 1
+                "path": "./assets/intro_1/intro_5.png"
             },
             {
                 "name": "1er_poke",
@@ -94,7 +93,7 @@
             "addons": {
                 "parallax": {
                     "speed": 4.0,
-                    "width": 765.0
+                    "width": 763.0
                 }
             },
             "children": {
@@ -108,9 +107,9 @@
                                 "Texture": {
                                     "Name": "main_texture",
                                     "Rect": {
-                                        "left": 386,
+                                        "left": 388,
                                         "top": 0,
-                                        "width": 384,
+                                        "width": 382,
                                         "height": 217
                                     }
                                 },
@@ -134,9 +133,9 @@
                                 "Texture": {
                                     "Name": "main_texture",
                                     "Rect": {
-                                        "left": 386,
+                                        "left": 388,
                                         "top": 0,
-                                        "width": 384,
+                                        "width": 382,
                                         "height": 217
                                     }
                                 },
@@ -145,7 +144,7 @@
                                     "y": 2.5
                                 },
                                 "Position": {
-                                    "x": 766.0,
+                                    "x": 764.0,
                                     "y": 0.0
                                 }
                             }

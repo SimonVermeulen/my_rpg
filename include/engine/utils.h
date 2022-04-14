@@ -26,4 +26,6 @@ sfVector2i *malloc_vector2i_list(list_t *list);
 sfVector2f create_vector2f_list(list_t *list);
 sfVector2i create_vector2i_list(list_t *list);
 
+bool equal_prov(float a, float b, float pov);
+
 #endif

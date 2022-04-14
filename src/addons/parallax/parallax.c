@@ -17,9 +17,11 @@ int tick_parallax(object_t *object, engine_t *engine)
     move_vector(parallax->element_1, move);
     move_vector(parallax->element_2, move);
     if (get_position(parallax->element_1).x <= -parallax->width)
-        set_position_float(parallax->element_1, -get_position(parallax->element_1).x, y_pos);
+        set_position_float(parallax->element_1, parallax->width -
+        (-get_position(parallax->element_1).x - parallax->width), y_pos);
     if (get_position(parallax->element_2).x <= -parallax->width)
-        set_position_float(parallax->element_2, -get_position(parallax->element_2).x, y_pos);
+        set_position_float(parallax->element_2, parallax->width -
+        (-get_position(parallax->element_2).x - parallax->width), y_pos);
     return 0;
 }
 
