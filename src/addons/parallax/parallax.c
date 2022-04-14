@@ -11,14 +11,15 @@ int tick_parallax(object_t *object, engine_t *engine)
 {
     parallax_t *parallax = get_addon_data("parallax", object);
     sfVector2f move = (sfVector2f) {-1, 0};
+    int y_pos = get_position(parallax->element_1).y;
 
     move.x = move.x * parallax->speed * (get_delta(engine) / 100);
     move_vector(parallax->element_1, move);
     move_vector(parallax->element_2, move);
     if (get_position(parallax->element_1).x <= -parallax->width)
-        set_position_float(parallax->element_1, parallax->width, 0);
+        set_position_float(parallax->element_1, -get_position(parallax->element_1).x, y_pos);
     if (get_position(parallax->element_2).x <= -parallax->width)
-        set_position_float(parallax->element_2, parallax->width, 0);
+        set_position_float(parallax->element_2, -get_position(parallax->element_2).x, y_pos);
     return 0;
 }
 

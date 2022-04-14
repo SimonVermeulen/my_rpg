@@ -18,7 +18,7 @@
             "name": "parallaxWater",
             "addons": {
                 "parallax": {
-                    "speed": 20.0,
+                    "speed": 100.0,
                     "width": 577.0
                 }
             },
