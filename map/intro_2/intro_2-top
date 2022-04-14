@@ -3,7 +3,8 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/sea.png"
+                "path": "./assets/intro_1/sea.png",
+                "smooth": 1
             }
         ]
     },
@@ -39,6 +40,11 @@
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
+                        {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "speed": 0.0
+                        },
                         {
                             "x": -100.0,
                             "y": -500.0,
