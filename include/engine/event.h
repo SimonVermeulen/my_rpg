@@ -14,24 +14,134 @@
 
     #include "../game_engine.h"
 
+////////////////////////////////////////////////////////////
+/// \brief Renvoie la position global de la souris
+///
+/// La position global de la souris c'est en gros ou est le curseur sur la map
+///
+/// \return la position de l'object, renvoie les valeurs à 0 si l'object est pas compatible
+///
+////////////////////////////////////////////////////////////
 sfVector2f get_mouse_position(engine_t *engine);
 
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si le clic gauche est pressé
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool get_left_click_pressed(engine_t *engine);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si le clic droit est pressé
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool get_right_click_pressed(engine_t *engine);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si le clic de la mollet est pressé
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool get_middle_click_pressed(engine_t *engine);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si le numero du clic est pressé
+///
+/// utile si il y a plusieurs bouton sur la souris (inutile en gros)
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool get_extra_click_pressed(engine_t *engine, int number);
 
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si le clic gauche est relâché
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool get_left_click_released(engine_t *engine);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si le clic droit est relâché
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool get_right_click_released(engine_t *engine);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si le clic de la mollet est relâché
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool get_middle_click_released(engine_t *engine);
+
+////////////////////////////////////////////////////////////
+/// \brief ta compris c'est pareil que les autres juste en relâché
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool get_extra_click_released(engine_t *engine, int number);
 
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si l'utilisateur est entrain de scroll
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool is_scrolling(engine_t *engine);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie les paramètres du scroll (voir la structure)
+///
+/// \return return NULL si l'utilisateur ne scroll pas
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 sfMouseWheelScrollEvent *get_scrolling(engine_t *engine);
 
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si l'utilisateur a pressé sur le touche que tu m'as donné
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool if_key_pressed(engine_t *engine, int key);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie si l'utilisateur a relâché sur le touche que tu m'as donné
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 bool if_key_released(engine_t *engine, int key);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie les paramètres du clic lorsqu'il a pressé la touche
+///
+/// \return return NULL si l'action n'a pas était effectué
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 sfKeyEvent *get_key_pressed(engine_t *engine, int key);
+
+////////////////////////////////////////////////////////////
+/// \brief Renvoie les paramètres du clic lorsqu'il a relâché la touche
+///
+/// \return return NULL si l'action n'a pas était effectué
+///
+/// \warning Fonctionne seulement dans le on_event
+///
+////////////////////////////////////////////////////////////
 sfKeyEvent *get_key_released(engine_t *engine, int key);
 
 #endif
