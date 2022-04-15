@@ -7,17 +7,7 @@
                 "smooth": 1
             },
             {
-                "name": "keunotor1",
-                "path": "./assets/intro_1/walk_keunotor.png",
-                "smooth": 1
-            },
-            {
-                "name": "keunotor2",
-                "path": "./assets/intro_1/walk_keunotor.png",
-                "smooth": 1
-            },
-            {
-                "name": "keunotor3",
+                "name": "keunotor",
                 "path": "./assets/intro_1/walk_keunotor.png",
                 "smooth": 1
             },
@@ -62,7 +52,7 @@
                 "order": 1,
                 "parameters": {
                     "Texture": {
-                        "Name": "keunotor1",
+                        "Name": "keunotor",
                         "Rect": {
                             "left": 67,
                             "top": 197,
@@ -84,7 +74,7 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 10.0,
+                    "count" : 0.0,
                     "start-time": 0.0,
                     "stop-time": 1500.0,
                     "rects": [
@@ -144,7 +134,7 @@
                 "order": 1,
                 "parameters": {
                     "Texture": {
-                        "Name": "keunotor2",
+                        "Name": "keunotor",
                         "Rect": {
                             "left": 67,
                             "top": 197,
@@ -166,7 +156,7 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 10.0,
+                    "count" : 0.0,
                     "start-time": 0.0,
                     "stop-time": 1000.0,
                     "rects": [
@@ -226,7 +216,7 @@
                 "order": 1,
                 "parameters": {
                     "Texture": {
-                        "Name": "keunotor3",
+                        "Name": "keunotor",
                         "Rect": {
                             "left": 67,
                             "top": 197,
@@ -248,7 +238,7 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 10.0,
+                    "count" : 0.0,
                     "start-time": 0.0,
                     "stop-time": 4000.0,
                     "rects": [

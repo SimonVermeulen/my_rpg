@@ -9,6 +9,11 @@
                 "name": "cloud",
                 "path": "./assets/intro_1/cloud.png",
                 "smooth": 1
+            },
+            {
+                "name": "bekipan",
+                "path": "./assets/intro_1/walk-bekipan.png",
+                "smooth": 1
             }
         ]
     },
@@ -44,7 +49,7 @@
                                 },
                                 "Position": {
                                     "x": 0.0,
-                                    "y": -1000.0
+                                    "y": -880.0
                                 }
                             }
                         }
@@ -70,12 +75,156 @@
                                 },
                                 "Position": {
                                     "x": 577.0,
-                                    "y": -1000.0
+                                    "y": -880.0
                                 }
                             }
                         }
                     }
                 ]
+            }
+        },
+        {
+            "name": "bekipan1",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "bekipan",
+                        "Rect": {
+                            "left": 0,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.6,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 175.0,
+                        "y": 200.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 1,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "rects": [
+                        {
+                            "left": 96,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 64,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 32,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "bekipan2",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "bekipan",
+                        "Rect": {
+                            "left": 0,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.6,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 75.0,
+                        "y": 100.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "rects": [
+                        {
+                            "left": 96,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 64,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 32,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 240,
+                            "width": 28,
+                            "height": 23,
+                            "time": 125.0
+                        }
+                    ]
+                }
             }
         }
     ]
