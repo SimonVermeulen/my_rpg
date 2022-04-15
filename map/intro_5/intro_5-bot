@@ -183,6 +183,8 @@
                     "infini": 1,
                     "start": 0,
                     "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 10000.0,
                     "rects": [
                         {
                             "left": 0,

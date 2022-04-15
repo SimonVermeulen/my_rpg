@@ -7,7 +7,8 @@
 
 #include "game_engine.h"
 
-int set_rect_with_list(object_t *object, list_t *list)
+int set_rect_with_list(object_t *object, list_t *list, int *start,
+    double *count)
 {
     int *left = get_value_list(list, "left", 3);
     int *top = get_value_list(list, "top", 3);
@@ -17,6 +18,8 @@ int set_rect_with_list(object_t *object, list_t *list)
     if (!left || !top || !width || !height)
         return 0;
     set_texture_rect(object, (sfIntRect) {*left, *top, *width, *height});
+    *start += 1;
+    *count = 0;
     return 0;
 }
 
@@ -29,15 +32,17 @@ int tick_rect_animation(object_t *object, engine_t *engine)
     int *infini = get_value_list(rect, "infini", 3);
     double *count = get_value_list(rect, "count", 2);
     double *time = get_value_list(rects[*start % length], "time", 2);
+    double *start_time = get_value_list(rect, "start-time", 2);
+    double *stop_time = get_value_list(rect, "stop-time", 2);
 
     if (!time)
         return exit_game(engine, 84);
     *count += get_delta(engine);
-    if (*count < *time || (*start == length && *infini == 0))
+    *start_time += get_delta(engine);
+    if (*count < *time || (*start == length && *infini == 0)
+        || (*start_time >= *stop_time && *stop_time > 0))
         return 0;
-    set_rect_with_list(object, rects[*start % length]);
-    *start += 1;
-    *count = 0;
+    set_rect_with_list(object, rects[*start % length], start, count);
     return 0;
 }
 
@@ -59,8 +64,10 @@ void *init_rect_animation(list_t *list)
     int *start = get_value_list(list, "start", 3);
     double *count = get_value_list(list, "count", 2);
     list_t **rects = get_value_list(list, "rects", 10);
+    double *start_time = get_value_list(list, "start-time", 2);
+    double *stop_time = get_value_list(list, "stop-time", 2);
 
-    if (!infini || !start || !rects || !count)
+    if (!infini || !start || !rects || !count || !start_time || !stop_time)
         return NULL;
     return copy_list(list);
 }
