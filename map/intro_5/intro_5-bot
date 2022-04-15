@@ -184,28 +184,28 @@
                     "start": 0,
                     "count" : 0.0,
                     "start-time": 0.0,
-                    "stop-time": 10000.0,
+                    "stop-time": 0.0,
                     "rects": [
                         {
                             "left": 0,
                             "top": 82,
-                            "width": 32,
-                            "height": 24,
-                            "time": 500.0
+                            "width": 25,
+                            "height": 25,
+                            "time": 275.0
                         },
                         {
-                            "left": 32,
+                            "left": 97,
                             "top": 82,
-                            "width": 32,
-                            "height": 24,
-                            "time": 500.0
+                            "width": 25,
+                            "height": 25,
+                            "time": 275.0
                         },
                         {
-                            "left": 0,
-                            "top": 106,
-                            "width": 32,
-                            "height": 24,
-                            "time": 500.0
+                            "left": 33,
+                            "top": 82,
+                            "width": 25,
+                            "height": 25,
+                            "time": 275.0
                         }
                     ]
                 }
@@ -234,6 +234,45 @@
                         "x": 200.0,
                         "y": 415.0
                     }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 124,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        }
+                    ]
                 }
             }
         },
