@@ -1,0 +1,980 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/stoned_area.png",
+                "smooth": 1
+            },
+            {
+                "name": "tenefix",
+                "path": "./assets/intro_1/jump_tenefix.png",
+                "smooth": 1
+            },
+            {
+                "name": "massko",
+                "path": "./assets/intro_1/walk_massko.png",
+                "smooth": 1
+            },
+            {
+                "name": "noctunoir",
+                "path": "./assets/intro_1/walk_noctunoir.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 456,
+                            "height": 408
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.2,
+                        "y": 1.35
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "massko",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "massko",
+                        "Rect": {
+                            "left": 3,
+                            "top": 228,
+                            "width": 27,
+                            "height": 36
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.7,
+                        "y": 2.1
+                    },
+                    "Position": {
+                        "x": 280.0,
+                        "y": 235.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 280.0,
+                            "y": 235.0,
+                            "speed": 8.0
+                        },
+                        {
+                            "x": 250.0,
+                            "y": 235.0,
+                            "speed": 8.0
+                        }
+                    ] 
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 150.0,
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top": 228,
+                            "width": 27,
+                            "height": 36,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 36,
+                            "top": 228,
+                            "width": 27,
+                            "height": 36,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 131,
+                            "top": 228,
+                            "width": 27,
+                            "height": 36,
+                            "time": 250.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "noctunoir",
+            "entity": {
+                "type": "Sprite",
+                "order": 3,
+                "parameters": {
+                    "Texture": {
+                        "Name": "noctunoir",
+                        "Rect": {
+                            "left": 8,
+                            "top": 5,
+                            "width": 33,
+                            "height": 34
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.5,
+                        "y": 1.8
+                    },
+                    "Position": {
+                        "x": 215.0,
+                        "y": 285.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 215.0,
+                            "y": 285.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 246.0,
+                            "y": 285.0,
+                            "speed": 8.0
+                        }
+                    ] 
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 8,
+                            "top": 4,
+                            "width": 33,
+                            "height": 34,
+                            "time": 0.0
+                        },
+                        {
+                            "left": 58,
+                            "top": 4,
+                            "width": 33,
+                            "height": 34,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 4,
+                            "width": 33,
+                            "height": 34,
+                            "time": 300.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "tenefix1",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tenefix",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.6,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 247.0,
+                        "y": 135.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 2600.0,
+                    "waitBeforeStart": 800.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 290,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 129,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 161,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 191,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 223,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 255,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 287,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "tenefix2",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tenefix",
+                        "Rect": {
+                            "left": 0,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.6,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 175.0,
+                        "y": 185.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 2600.0,
+                    "waitBeforeStart": 800.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 290,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 129,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 161,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 191,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 223,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 255,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 287,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 80,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "tenefix3",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tenefix",
+                        "Rect": {
+                            "left": 0,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.6,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 175.0,
+                        "y": 265.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 2800.0,
+                    "waitBeforeStart": 1000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 290,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 129,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 161,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 191,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 223,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 255,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 287,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 241,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "tenefix4",
+            "entity": {
+                "type": "Sprite",
+                "order": 4,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tenefix",
+                        "Rect": {
+                            "left": 0,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.6,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 246.0,
+                        "y": 295.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 2800.0,
+                    "waitBeforeStart": 1000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 290,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 129,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 161,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 191,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 223,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 255,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 287,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 322,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "tenefix5",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tenefix",
+                        "Rect": {
+                            "left": 0,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.6,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 319.0,
+                        "y": 265.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 2800.0,
+                    "waitBeforeStart": 1000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 290,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 129,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 161,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 191,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 223,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 255,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 287,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 400,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "tenefix6",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tenefix",
+                        "Rect": {
+                            "left": 0,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.6,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 319.0,
+                        "y": 185.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 2600.0,
+                    "waitBeforeStart": 800.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 290,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 129,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 161,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 191,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 223,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 255,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 287,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 560,
+                            "width": 31,
+                            "height": 48,
+                            "time": 60.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
