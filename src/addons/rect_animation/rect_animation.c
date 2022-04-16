@@ -34,16 +34,17 @@ int tick_rect_animation(object_t *object, engine_t *engine)
     double *time = get_value_list(rects[*start % length], "time", 2);
     double *start_time = get_value_list(rect, "start-time", 2);
     double *stop_time = get_value_list(rect, "stop-time", 2);
+    double *wait = get_value_list(rect, "waitBeforeStart", 2);
 
     if (!time)
         return exit_game(engine, 84);
     *count += get_delta(engine);
     *start_time += get_delta(engine);
     if (*count < *time || (*start == length && *infini == 0)
-        || (*start_time >= *stop_time && *stop_time > 0))
+        || (*start_time >= *stop_time && *stop_time > 0) ||
+        *start_time <= *wait)
         return 0;
-    set_rect_with_list(object, rects[*start % length], start, count);
-    return 0;
+    return (set_rect_with_list(object, rects[*start % length], start, count));
 }
 
 int end_rect_animation(object_t *object, engine_t *engine)
@@ -60,14 +61,14 @@ int end_rect_animation(object_t *object, engine_t *engine)
 
 void *init_rect_animation(list_t *list)
 {
+    double *wait = get_value_list(list, "waitBeforeStart", 2);
     int *infini = get_value_list(list, "infini", 3);
     int *start = get_value_list(list, "start", 3);
     double *count = get_value_list(list, "count", 2);
     list_t **rects = get_value_list(list, "rects", 10);
-    double *start_time = get_value_list(list, "start-time", 2);
     double *stop_time = get_value_list(list, "stop-time", 2);
 
-    if (!infini || !start || !rects || !count || !start_time || !stop_time)
+    if (!infini || !start || !rects || !count || !stop_time || !wait)
         return NULL;
     return copy_list(list);
 }
