@@ -19,15 +19,15 @@ int (*const load_addons_func[])(engine_t *) =
 
 int main(int argc, char **argv)
 {
-    engine_t *engine = init_game((sfVideoMode) {700, 1080, 32},
+    engine_t *engine = init_game((sfVideoMode) {800, 1080, 32},
         "[HACK-ROM] Pokemon donjon mystere lihme-line");
 
     if (!engine || !load_addons(engine, load_addons_func) ||
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("intro_5-bot", engine) ||
-        !change_secondary_screen("intro_5-top", engine))
+        !change_scene("intro_11-bot", engine) ||
+        !change_secondary_screen("intro_11-top", engine))
         return 84;
     return open_game(engine, 60);
 }

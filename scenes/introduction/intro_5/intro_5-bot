@@ -3,21 +3,21 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/intro_5.png"
+                "path": "./assets/sprites/introduction/intro_5.png"
             },
             {
                 "name": "1er_poke",
-                "path": "./assets/intro_1/Walk-Anim-Pikatchu.png",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
                 "smooth": 1
             },
             {
                 "name": "2eme_poke",
-                "path": "./assets/intro_1/Walk-Anim-Evoli.png",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
                 "smooth": 1
             },
             {
                 "name": "explorateur_logo",
-                "path": "./assets/intro_1/explorateur_logo.png",
+                "path": "./assets/sprites/lib/explorateur_logo.png",
                 "smooth": 1
             }
         ]
@@ -182,9 +182,10 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 0.0,
+                    "count": 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 0,
@@ -240,9 +241,10 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 0.0,
+                    "count": 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 0,

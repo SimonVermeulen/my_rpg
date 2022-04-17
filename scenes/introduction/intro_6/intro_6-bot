@@ -3,17 +3,17 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/keunotor_map.png",
+                "path": "./assets/sprites/introduction/keunotor_map.png",
                 "smooth": 1
             },
             {
                 "name": "keunotor",
-                "path": "./assets/intro_1/walk_keunotor.png",
+                "path": "./assets/sprites/introduction/walk_keunotor.png",
                 "smooth": 1
             },
             {
                 "name": "castorno",
-                "path": "./assets/intro_1/walk_castorno.png",
+                "path": "./assets/sprites/introduction/walk_castorno.png",
                 "smooth": 1
             }
         ]

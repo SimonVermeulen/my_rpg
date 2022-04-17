@@ -3,22 +3,22 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/stoned_area.png",
+                "path": "./assets/sprites/introduction/stoned_area.png",
                 "smooth": 1
             },
             {
                 "name": "tenefix",
-                "path": "./assets/intro_1/jump_tenefix.png",
+                "path": "./assets/sprites/pokemons/tenefix/jump.png",
                 "smooth": 1
             },
             {
                 "name": "massko",
-                "path": "./assets/intro_1/walk_massko.png",
+                "path": "./assets/sprites/pokemons/massko/walk.png",
                 "smooth": 1
             },
             {
                 "name": "noctunoir",
-                "path": "./assets/intro_1/walk_noctunoir.png",
+                "path": "./assets/sprites/pokemons/noctunoir/walk.png",
                 "smooth": 1
             }
         ]

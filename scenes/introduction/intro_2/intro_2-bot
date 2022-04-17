@@ -3,16 +3,16 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/sea.png"
+                "path": "./assets/sprites/introduction/sea.png"
             },
             {
                 "name": "cloud",
-                "path": "./assets/intro_1/cloud.png",
+                "path": "./assets/sprites/introduction/cloud.png",
                 "smooth": 1
             },
             {
                 "name": "bekipan",
-                "path": "./assets/intro_1/walk-bekipan.png",
+                "path": "./assets/sprites/introduction/walk-bekipan.png",
                 "smooth": 1
             }
         ]

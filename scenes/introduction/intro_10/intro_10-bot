@@ -1,0 +1,82 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/introduction/dialga_roar.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 665,
+                            "top": 0,
+                            "width": 648,
+                            "height": 3078
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.85,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": -2535.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 1000.0,
+                    "rects": [
+                        {
+                            "left": 665,
+                            "top": 0,
+                            "width": 648,
+                            "height": 3078,
+                            "time": 0.0
+                        },
+                        {
+                            "left": 7,
+                            "top": 0,
+                            "width": 648,
+                            "height": 3078,
+                            "time": 0.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "waitBeforeStart": 1000.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 0.0,
+                            "y": -2535.0,
+                            "speed": 150.0
+                        },
+                        {
+                            "x": 0.0,
+                            "y": -590.0,
+                            "speed": 150.0
+                        }
+                    ] 
+                }
+            }
+        }
+    ]
+}

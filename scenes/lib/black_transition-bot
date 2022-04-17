@@ -3,7 +3,7 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/intro_1/lib/black.png",
+                "path": "./assets/sprites/introduction/lib/black.png",
                 "smooth": 1
             }
         ]
