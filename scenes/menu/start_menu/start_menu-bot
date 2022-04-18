@@ -3,7 +3,7 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/sprites/introduction/start_menu.png",
+                "path": "./assets/sprites/introduction/start_background.png",
                 "smooth": 1
             },
             {

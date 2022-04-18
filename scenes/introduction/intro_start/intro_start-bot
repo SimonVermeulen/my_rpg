@@ -1,0 +1,96 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/introduction/intro_start/start_background.png",
+                "smooth": 1
+            },
+            {
+                "name": "button_start_texture",
+                "path": "./assets/sprites/introduction/intro_start/push_start.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 651,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.85,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "button_start",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "button_start_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 244,
+                            "height": 19
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 155.0,
+                        "y": 375.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 500.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 244,
+                            "height": 19,
+                            "time": 500.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

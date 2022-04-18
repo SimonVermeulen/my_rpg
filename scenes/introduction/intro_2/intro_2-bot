@@ -12,7 +12,7 @@
             },
             {
                 "name": "bekipan",
-                "path": "./assets/sprites/introduction/walk-bekipan.png",
+                "path": "./assets/sprites/pokemons/bekipan/walk.png",
                 "smooth": 1
             }
         ]
@@ -115,6 +115,7 @@
                     "count" : 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 96,
@@ -187,6 +188,7 @@
                     "count" : 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 96,
