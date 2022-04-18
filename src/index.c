@@ -26,7 +26,7 @@ int main(int argc, char **argv)
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("intro_11-bot", engine) ||
+        !change_scene("intro_12-bot", engine) ||
         !change_secondary_screen("intro_11-top", engine))
         return 84;
     return open_game(engine, 60);

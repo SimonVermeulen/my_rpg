@@ -3,7 +3,8 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/sprites/introduction/intro_5.png"
+                "path": "./assets/sprites/introduction/cliff.png",
+                "smooth": 1
             },
             {
                 "name": "1er_poke",
@@ -77,39 +78,20 @@
                     "Texture": {
                         "Name": "main_texture",
                         "Rect": {
-                            "left": 0,
-                            "top": 218,
-                            "width": 383,
-                            "height": 216
+                            "left": 2,
+                            "top": 980,
+                            "width": 644,
+                            "height": 1500
                         }
                     },
                     "Scale": {
-                        "x": 2.0,
-                        "y": 2.5
+                        "x": 0.85,
+                        "y": 1.1
                     },
                     "Position": {
                         "x": 0.0,
                         "y": 0.0
                     }
-                }
-            },
-            "addons": {
-                "translation_animation": {
-                    "waitBeforeStart": 0.0,
-                    "infini": 0,
-                    "reverse": 0,
-                    "paths": [
-                        {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "speed": 10.0
-                        },
-                        {
-                            "x": -200.0,
-                            "y": 0.0,
-                            "speed": 10.0
-                        }
-                    ] 
                 }
             }
         },
@@ -129,12 +111,12 @@
                         }
                     },
                     "Scale": {
-                        "x": 2.0,
-                        "y": 2.5
+                        "x": 1.8,
+                        "y": 2.3
                     },
                     "Position": {
-                        "x": 150.0,
-                        "y": 415.0
+                        "x": 225.0,
+                        "y": 585.0
                     }
                 }
             },
@@ -144,28 +126,28 @@
                     "start": 0,
                     "count": 0.0,
                     "start-time": 0.0,
-                    "stop-time": 0.0,
+                    "stop-time": 3100.0,
                     "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 0,
-                            "top": 82,
+                            "top": 162,
                             "width": 25,
-                            "height": 25,
+                            "height": 26,
                             "time": 275.0
                         },
                         {
                             "left": 97,
-                            "top": 82,
+                            "top": 162,
                             "width": 25,
-                            "height": 25,
+                            "height": 26,
                             "time": 275.0
                         },
                         {
                             "left": 33,
-                            "top": 82,
+                            "top": 162,
                             "width": 25,
-                            "height": 25,
+                            "height": 26,
                             "time": 275.0
                         }
                     ]
@@ -173,16 +155,16 @@
                 "translation_animation": {
                     "infini": 0,
                     "reverse": 0,
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "paths": [
                         {
-                            "x": 150.0,
-                            "y": 415.0,
+                            "x": 225.0,
+                            "y": 585.0,
                             "speed": 15.0
                         },
                         {
-                            "x": 550.0,
-                            "y": 415.0,
+                            "x": 225.0,
+                            "y": 175.0,
                             "speed": 15.0
                         }
                     ] 
@@ -209,8 +191,8 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": 200.0,
-                        "y": 415.0
+                        "x": 275.0,
+                        "y": 540.0
                     }
                 }
             },
@@ -220,52 +202,59 @@
                     "start": 0,
                     "count": 0.0,
                     "start-time": 0.0,
-                    "stop-time": 0.0,
+                    "stop-time": 3000.0,
                     "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 0,
-                            "top": 99,
+                            "top": 195,
                             "width": 35,
                             "height": 35,
                             "time": 150.0
                         },
                         {
                             "left": 40,
-                            "top": 99,
+                            "top": 195,
                             "width": 35,
                             "height": 35,
                             "time": 150.0
                         },
                         {
                             "left": 81,
-                            "top": 99,
+                            "top": 195,
                             "width": 35,
                             "height": 35,
                             "time": 150.0
                         },
                         {
-                            "left": 124,
-                            "top": 99,
+                            "left": 120,
+                            "top": 195,
                             "width": 35,
                             "height": 35,
-                            "time": 150.0
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
                         }
                     ]
                 },
                 "translation_animation": {
                     "infini": 0,
                     "reverse": 0,
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "paths": [
                         {
-                            "x": 200.0,
-                            "y": 415.0,
+                            "x": 275.0,
+                            "y": 540.0,
                             "speed": 15.0
                         },
                         {
-                            "x": 550.0,
-                            "y": 415.0,
+                            "x": 275.0,
+                            "y": 175.0,
                             "speed": 15.0
                         }
                     ] 
@@ -288,12 +277,12 @@
                         }
                     },
                     "Scale": {
-                        "x": 2.0,
-                        "y": 2.5
+                        "x": 1.8,
+                        "y": 2.3
                     },
                     "Position": {
-                        "x": -50.0,
-                        "y": 415.0
+                        "x": 185.0,
+                        "y": 635.0
                     }
                 }
             },
@@ -303,34 +292,34 @@
                     "start": 0,
                     "count": 0.0,
                     "start-time": 0.0,
-                    "stop-time": 0.0,
+                    "stop-time": 3250.0,
                     "waitBeforeStart": 0.0,
                     "rects": [
                         {
-                            "left": 72,
-                            "top": 81,
-                            "width": 17,
+                            "left": 67,
+                            "top": 162,
+                            "width": 26,
                             "height": 27,
                             "time": 275.0
                         },
                         {
-                            "left": 104,
-                            "top": 82,
-                            "width": 25,
+                            "left": 99,
+                            "top": 162,
+                            "width": 26,
                             "height": 25,
                             "time": 275.0
                         },
                         {
-                            "left": 72,
-                            "top": 81,
-                            "width": 17,
+                            "left": 67,
+                            "top": 162,
+                            "width": 26,
                             "height": 27,
                             "time": 275.0
                         },
                         {
-                            "left": 40,
-                            "top": 82,
-                            "width": 25,
+                            "left": 35,
+                            "top": 162,
+                            "width": 26,
                             "height": 25,
                             "time": 275.0
                         }
@@ -339,16 +328,16 @@
                 "translation_animation": {
                     "infini": 0,
                     "reverse": 0,
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "paths": [
                         {
-                            "x": -50.0,
-                            "y": 415.0,
+                            "x": 185.0,
+                            "y": 635.0,
                             "speed": 15.0
                         },
                         {
-                            "x": 550.0,
-                            "y": 415.0,
+                            "x": 185.0,
+                            "y": 225.0,
                             "speed": 15.0
                         }
                     ] 
@@ -375,8 +364,8 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": -115.0,
-                        "y": 375.0
+                        "x": 220.0,
+                        "y": 675.0
                     }
                 }
             },
@@ -386,33 +375,33 @@
                     "start": 0,
                     "count": 0.0,
                     "start-time": 0.0,
-                    "stop-time": 0.0,
+                    "stop-time": 3250.0,
                     "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 0,
-                            "top": 98,
+                            "top": 194,
                             "width": 27,
                             "height": 30,
                             "time": 200.0
                         },
                         {
-                            "left": 34,
-                            "top": 98,
+                            "left": 33,
+                            "top": 194,
                             "width": 27,
                             "height": 30,
                             "time": 200.0
                         },
                         {
                             "left": 0,
-                            "top": 98,
+                            "top": 194,
                             "width": 27,
                             "height": 30,
                             "time": 200.0
                         },
                         {
-                            "left": 68,
-                            "top": 98,
+                            "left": 65,
+                            "top": 194,
                             "width": 27,
                             "height": 30,
                             "time": 200.0
@@ -422,16 +411,16 @@
                 "translation_animation": {
                     "infini": 0,
                     "reverse": 0,
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "paths": [
                         {
-                            "x": -115.0,
-                            "y": 375.0,
+                            "x": 245.0,
+                            "y": 675.0,
                             "speed": 15.0
                         },
                         {
-                            "x": 550.0,
-                            "y": 375.0,
+                            "x": 220.0,
+                            "y": 275.0,
                             "speed": 15.0
                         }
                     ] 
@@ -458,8 +447,8 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": -150.0,
-                        "y": 435.0
+                        "x": 275.0,
+                        "y": 650.0
                     }
                 }
             },
@@ -469,52 +458,52 @@
                     "start": 0,
                     "count" : 0.0,
                     "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 600.0,
+                    "stop-time": 2850.0,
+                    "waitBeforeStart": 500.0,
                     "rects": [
                         {
                             "left": 67,
-                            "top": 69,
+                            "top": 131,
                             "width": 27,
-                            "height": 18,
+                            "height": 20,
                             "time": 275.0
                         },
                         {
                             "left": 36,
-                            "top": 69,
+                            "top": 131,
                             "width": 27,
-                            "height": 18,
+                            "height": 20,
                             "time": 275.0
                         },
                         {
                             "left": 67,
-                            "top": 69,
+                            "top": 131,
                             "width": 27,
-                            "height": 18,
+                            "height": 20,
                             "time": 275.0
                         },
                         {
                             "left": 99,
-                            "top": 69,
+                            "top": 131,
                             "width": 27,
-                            "height": 18,
+                            "height": 20,
                             "time": 275.0
                         }
                     ]
                 },
                 "translation_animation": {
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
                         {
-                            "x": -150.0,
-                            "y": 435.0,
+                            "x": 275.0,
+                            "y": 650.0,
                             "speed": 15.0
                         },
                         {
-                            "x": 550.0,
-                            "y": 435.0,
+                            "x": 275.0,
+                            "y": 255.0,
                             "speed": 15.0
                         }
                     ]
@@ -541,8 +530,8 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": -190.0,
-                        "y": 375.0
+                        "x": 400.0,
+                        "y": 700.0
                     }
                 }
             },
@@ -552,45 +541,45 @@
                     "start": 0,
                     "count" : 0.0,
                     "start-time": 0.0,
-                    "stop-time": 0.0,
+                    "stop-time": 3250.0,
                     "waitBeforeStart": 600.0,
                     "rects": [
                         {
-                            "left": 10,
-                            "top": 99,
-                            "width": 21,
+                            "left": 5,
+                            "top": 196,
+                            "width": 26,
                             "height": 29,
                             "time": 200.0
                         },
                         {
-                            "left": 104,
-                            "top": 99,
-                            "width": 21,
+                            "left": 99,
+                            "top": 196,
+                            "width": 26,
                             "height": 29,
                             "time": 200.0
                         },
                         {
-                            "left": 39,
-                            "top": 99,
-                            "width": 21,
+                            "left": 34,
+                            "top": 196,
+                            "width": 26,
                             "height": 29,
                             "time": 200.0
                         }
                     ]
                 },
                 "translation_animation": {
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
                         {
-                            "x": -190.0,
-                            "y": 375.0,
+                            "x": 400.0,
+                            "y": 700.0,
                             "speed": 15.0
                         },
                         {
-                            "x": 550.0,
-                            "y": 375.0,
+                            "x": 400.0,
+                            "y": 300.0,
                             "speed": 15.0
                         }
                     ]
@@ -662,7 +651,7 @@
                     ]
                 },
                 "translation_animation": {
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
@@ -745,7 +734,7 @@
                     ]
                 },
                 "translation_animation": {
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
@@ -835,7 +824,7 @@
                     ]
                 },
                 "translation_animation": {
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
@@ -918,7 +907,7 @@
                     ]
                 },
                 "translation_animation": {
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
@@ -963,7 +952,7 @@
             },
             "addons": {
                 "translation_animation": {
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
@@ -1008,7 +997,7 @@
             },
             "addons": {
                 "translation_animation": {
-                    "waitBeforeStart": 2000.0,
+                    "waitBeforeStart": 500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
