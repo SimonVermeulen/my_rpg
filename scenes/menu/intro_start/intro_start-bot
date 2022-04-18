@@ -1,0 +1,132 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/intro_1/start_menu.png",
+                "smooth": 1
+            },
+            {
+                "name": "button_start_texture",
+                "path": "./assets/intro_1/start_game_button.png",
+                "smooth": 1
+            },
+            {
+                "name": "arrow_texture",
+                "path": "./assets/intro_1/lib/yellow_arrow_right.png",
+                "smooth": 1
+            },
+            {
+                "name": "info",
+                "path": "./assets/intro_1/info_menu.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 256,
+                            "height": 192
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.13,
+                        "y": 2.8
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "button_start",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "button_start_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 223,
+                            "height": 94
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.9,
+                        "y": 1.4
+                    },
+                    "Position": {
+                        "x": 15.0,
+                        "y": 25.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "arrow",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "arrow_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 223,
+                            "height": 94
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.9,
+                        "y": 1.4
+                    },
+                    "Position": {
+                        "x": 35.0,
+                        "y": 47.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "info",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "info",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 613,
+                            "height": 122
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.8,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 23.0,
+                        "y": 387.0
+                    }
+                }
+            }
+        }
+    ]
+}
