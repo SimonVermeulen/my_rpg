@@ -1,0 +1,39 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/introduction/cliff.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 2,
+                            "top": 490,
+                            "width": 644,
+                            "height": 1500
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.85,
+                        "y": 1.1
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        }
+    ]
+}
