@@ -4,6 +4,10 @@
             {
                 "name": "main_texture",
                 "path": "./assets/sprites/introduction/sky.png"
+            },
+            {
+                "name": "white",
+                "path": "./assets/sprites/lib/white.png"
             }
         ]
     },
@@ -20,13 +24,156 @@
                             "left": 0,
                             "top": 0,
                             "width": 255,
-                            "height": 551
+                            "height": 720
                         }
                     },
                     "Scale": {
                         "x": 2.2,
-                        "y": 2.2
+                        "y": 2.5
                     }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 1500.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "speed": 20.0
+                        },
+                        {
+                            "x": 0.0,
+                            "y": -340.0,
+                            "speed": 20.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "shine",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 295,
+                            "top": 172,
+                            "width": 219,
+                            "height": 169
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.5,
+                        "y": 1.2
+                    },
+                    "Position": {
+                        "x": 140.0,
+                        "y": 95.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 295,
+                            "top": 172,
+                            "width": 219,
+                            "height": 169,
+                            "time": 100.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 1500.0,
+                    "paths": [
+                        {
+                            "x": 140.0,
+                            "y": 95.0,
+                            "speed": 20.0
+                        },
+                        {
+                            "x": 140.0,
+                            "y": -500.0,
+                            "speed": 20.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "white",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "white",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.5
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 1400.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 255,
+                            "height": 720,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 100.0
+                        }
+                    ]
                 }
             }
         }
