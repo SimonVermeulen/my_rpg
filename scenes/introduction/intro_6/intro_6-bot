@@ -8,12 +8,12 @@
             },
             {
                 "name": "keunotor",
-                "path": "./assets/sprites/introduction/walk_keunotor.png",
+                "path": "./assets/sprites/pokemons/keunotor/walk.png",
                 "smooth": 1
             },
             {
                 "name": "castorno",
-                "path": "./assets/sprites/introduction/walk_castorno.png",
+                "path": "./assets/sprites/pokemons/castorno/walk.png",
                 "smooth": 1
             }
         ]

@@ -53,7 +53,7 @@ secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 int init_secondary_screen_addons(engine_t *engine);
 int init_translation_animation_addons(engine_t *engine);
 int init_parallax_addons(engine_t *engine);
-int init_sparkles_addons(engine_t *engine);
 int init_rect_animation_addons(engine_t *engine);
+int init_move_view_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

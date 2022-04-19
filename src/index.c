@@ -12,8 +12,8 @@ int (*const load_addons_func[])(engine_t *) =
     init_secondary_screen_addons,
     init_translation_animation_addons,
     init_parallax_addons,
-    init_sparkles_addons,
     init_rect_animation_addons,
+    init_move_view_addons,
     NULL
 };
 
@@ -26,8 +26,8 @@ int main(int argc, char **argv)
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("intro_start-bot", engine) ||
-        !change_secondary_screen("intro_5-top", engine))
+        !change_scene("intro_2-bot", engine) ||
+        !change_secondary_screen("intro_2-top", engine))
         return 84;
     return open_game(engine, 60);
 }

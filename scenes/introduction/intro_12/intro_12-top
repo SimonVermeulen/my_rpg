@@ -19,7 +19,7 @@
                         "Name": "main_texture",
                         "Rect": {
                             "left": 2,
-                            "top": 490,
+                            "top": 0,
                             "width": 644,
                             "height": 1500
                         }
@@ -30,7 +30,21 @@
                     },
                     "Position": {
                         "x": 0.0,
-                        "y": 0.0
+                        "y": -535.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "move_view": {
+                    "bloc": 2,
+                    "speed": 20.0,
+                    "waitBeforeStart": 3750.0,
+                    "path": {
+                        "x": 270.0,
+                        "y": -250.0
                     }
                 }
             }
