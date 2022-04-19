@@ -1,0 +1,128 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/mer_orage.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "lightning",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.9,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 660,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 1320,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 1980,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 2640,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 3960,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 4620,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 5280,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 6580,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 7237,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 7886,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540,
+                            "time": 250.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
