@@ -10,6 +10,15 @@
                 "name": "bekipan",
                 "path": "./assets/sprites/pokemons/bekipan/walk.png",
                 "smooth": 1
+            },
+            {
+                "name": "lapras",
+                "path": "./assets/sprites/introduction/lapras.png",
+                "smooth": 1
+            },
+            {
+                "name": "cloud",
+                "path": "./assets/sprites/introduction/cloud.png"
             }
         ]
     },
@@ -36,7 +45,7 @@
                                         "left": 0,
                                         "top": 0,
                                         "width": 577,
-                                        "height": 645
+                                        "height": 1336
                                     }
                                 },
                                 "Scale": {
@@ -45,7 +54,7 @@
                                 },
                                 "Position": {
                                     "x": 0.0,
-                                    "y": -320.0
+                                    "y": -1850.0
                                 }
                             }
                         }
@@ -62,7 +71,7 @@
                                         "left": 0,
                                         "top": 0,
                                         "width": 577,
-                                        "height": 645
+                                        "height": 1336
                                     }
                                 },
                                 "Scale": {
@@ -71,7 +80,72 @@
                                 },
                                 "Position": {
                                     "x": 577.0,
-                                    "y": -320.0
+                                    "y": -1850.0
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "parallaxCloud",
+            "addons": {
+                "parallax": {
+                    "speed": 10.0,
+                    "width": 577.0
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "parallax1",
+                        "entity": {
+                            "order": 1,
+                            "type": "Sprite",
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "cloud",
+                                    "Rect": {
+                                        "left": 0,
+                                        "top": 0,
+                                        "width": 577,
+                                        "height": 87
+                                    }
+                                },
+                                "Scale": {
+                                    "x": 1.4,
+                                    "y": 2.2
+                                },
+                                "Position": {
+                                    "x": 0.0,
+                                    "y": 275.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "parallax2",
+                        "entity": {
+                            "order": 1,
+                            "type": "Sprite",
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "cloud",
+                                    "Rect": {
+                                        "left": 0,
+                                        "top": 0,
+                                        "width": 577,
+                                        "height": 87
+                                    }
+                                },
+                                "Scale": {
+                                    "x": 1.4,
+                                    "y": 2.2
+                                },
+                                "Position": {
+                                    "x": 577.0,
+                                    "y": 275.0
                                 }
                             }
                         }
@@ -100,7 +174,7 @@
                     },
                     "Position": {
                         "x": 175.0,
-                        "y": 500.0
+                        "y": 400.0
                     }
                 }
             },
@@ -173,7 +247,7 @@
                     },
                     "Position": {
                         "x": 75.0,
-                        "y": 400.0
+                        "y": 300.0
                     }
                 }
             },
@@ -246,7 +320,7 @@
                     },
                     "Position": {
                         "x": 125.0,
-                        "y": 250.0
+                        "y": 0.0
                     }
                 }
             },
@@ -319,7 +393,7 @@
                     },
                     "Position": {
                         "x": 385.0,
-                        "y": 300.0
+                        "y": 50.0
                     }
                 }
             },
@@ -392,7 +466,7 @@
                     },
                     "Position": {
                         "x": 250.0,
-                        "y": 100.0
+                        "y": -150.0
                     }
                 }
             },
@@ -465,7 +539,7 @@
                     },
                     "Position": {
                         "x": 537.0,
-                        "y": 195.0
+                        "y": -55.0
                     }
                 }
             },
@@ -516,21 +590,94 @@
                     ]
                 },
                 "translation_animation": {
-                    "waitBeforeStart": 0.0,
+                    "waitBeforeStart": 2000.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
                         {
                             "x": 537.0,
-                            "y": 195.0,
+                            "y": -55.0,
                             "speed": 20.0
                         },
                         {
                             "x": -100.0,
-                            "y": 195.0,
+                            "y": -55.0,
                             "speed": 20.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "lapras",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "lapras",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 128,
+                            "height": 81
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.4,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 370.0,
+                        "y": 375.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 128,
+                            "height": 81,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 81,
+                            "width": 128,
+                            "height": 81,
+                            "time": 125.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 160,
+                            "width": 128,
+                            "height": 81,
+                            "time": 125.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "move_view": {
+                    "bloc": 2,
+                    "speed": 20.0,
+                    "waitBeforeStart": 1000.0,
+                    "path": {
+                        "x": 270.0,
+                        "y": -100.0
+                    }
                 }
             }
         }
