@@ -1,0 +1,23 @@
+{
+    "buffer": {
+        "Colors": [
+            {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "name": "black"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "black",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "fill": "black"
+        }
+    ]
+}
