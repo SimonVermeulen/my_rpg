@@ -3,12 +3,12 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/sprites/introduction/lib/black.png",
+                "path": "./assets/sprites/lib/black.png",
                 "smooth": 1
             },
             {
                 "name": "button",
-                "path": "./assets/sprites/introduction/lib/white_arrow_down.png",
+                "path": "./assets/sprites/lib/white_arrow_down.png",
                 "smooth": 1
             }
         ]
