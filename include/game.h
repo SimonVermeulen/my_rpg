@@ -44,6 +44,7 @@ typedef struct sparkles_s {
 } sparkles_t;
 
 bool change_secondary_screen(const char *name, engine_t *engine);
+secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 
 ///////
 // ADDONS PROTOTYPE
