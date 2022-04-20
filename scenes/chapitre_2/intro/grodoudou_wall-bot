@@ -1,0 +1,53 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_2/grodoudou_wall.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 403,
+                            "height": 595
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.4,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": -10.0,
+                        "y": -690.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "move_view": {
+                    "bloc": 1,
+                    "speed": 10.0,
+                    "waitBeforeStart": 1000.0,
+                    "path": {
+                        "x": 270.0,
+                        "y": 110.0
+                    }
+                }
+            }
+        }
+    ]
+}

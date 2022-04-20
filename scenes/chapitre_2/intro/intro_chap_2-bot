@@ -1,0 +1,39 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_2/chapitre_2.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.85,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": -3.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        }
+    ]
+}
