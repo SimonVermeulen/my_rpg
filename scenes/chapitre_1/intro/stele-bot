@@ -120,12 +120,12 @@
                         }
                     },
                     "Scale": {
-                        "x": 0.5,
-                        "y": 0.5
+                        "x": 0.8,
+                        "y": 0.8
                     },
                     "Position": {
-                        "x": 150.0,
-                        "y": 200.0
+                        "x": 65.0,
+                        "y": 125.0
                     }
                 }
             },
@@ -136,7 +136,7 @@
                     "count": 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
-                    "waitBeforeStart": 4000.0,
+                    "waitBeforeStart": 6000.0,
                     "rects": [
                         {
                             "left": 0,
@@ -151,13 +151,6 @@
                             "width": 529,
                             "height": 327,
                             "time": 300.0
-                        },
-                        {
-                            "left": 0,
-                            "top": 0,
-                            "width": 0,
-                            "height": 0,
-                            "time": 2000.0
                         }
                     ]
                 }
