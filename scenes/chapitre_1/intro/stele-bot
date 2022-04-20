@@ -1,0 +1,167 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/stele.png",
+                "smooth": 1
+            },
+            {
+                "name": "caracursed",
+                "path": "./assets/sprites/chapitre_1/caracursed_transparent.png",
+                "smooth": 1
+            },
+            {
+                "name": "logo",
+                "path": "./assets/sprites/lib/logo_game.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 712,
+                            "height": 511
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.8,
+                        "y": 1.1
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "caracursed",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "caracursed",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 220.0,
+                        "y": 200.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 2000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 131,
+                            "height": 140,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 2000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "logo",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "logo",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.5,
+                        "y": 0.5
+                    },
+                    "Position": {
+                        "x": 150.0,
+                        "y": 200.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 4000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 529,
+                            "height": 327,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 2000.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
