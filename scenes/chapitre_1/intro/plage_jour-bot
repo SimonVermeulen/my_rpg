@@ -5,6 +5,11 @@
                 "name": "main_texture",
                 "path": "./assets/sprites/chapitre_1/plage_jour.png",
                 "smooth": 1
+            },
+            {
+                "name": "pokemons",
+                "path": "./assets/sprites/pokemons/pikachu/laying.png",
+                "smooth": 1
             }
         ]
     },
@@ -79,6 +84,32 @@
                             "time": 300.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "pokemons",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pokemons",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 21,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 250.0,
+                        "y": 280.0
+                    }
                 }
             }
         }
