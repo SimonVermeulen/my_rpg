@@ -1,0 +1,58 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_2/taupiqueur_hole.png",
+                "smooth": 1
+            },
+            {
+                "name": "taupiqueur",
+                "path": "./assets/sprites/pokemons/taupiqueur/charge.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 715,
+                            "height": 1690
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.8,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "move_view": {
+                    "bloc": 2,
+                    "speed": 15.0,
+                    "waitBeforeStart": 2000.0,
+                    "path": {
+                        "x": 270.0,
+                        "y": 880.0
+                    }
+                }
+            }
+        }
+    ]
+}

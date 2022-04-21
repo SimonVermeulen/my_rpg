@@ -1,0 +1,398 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_first_stage.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "keunotor",
+                "path": "./assets/sprites/pokemons/keunotor/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "heliatronc",
+                "path": "./assets/sprites/pokemons/heliatronc/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "grainipiot",
+                "path": "./assets/sprites/pokemons/grainipiot/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "roucool",
+                "path": "./assets/sprites/pokemons/roucool/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "heledelle",
+                "path": "./assets/sprites/pokemons/heledelle/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "chenipotte",
+                "path": "./assets/sprites/pokemons/chenipotte/idle.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 699,
+                            "height": 456
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.0
+                    },
+                    "Position": {
+                        "x": -420.0,
+                        "y": -200.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 32,
+                            "height": 25
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 210.0,
+                        "y": 165.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 265.0,
+                        "y": 150.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "keunotor",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "keunotor",
+                        "Rect": {
+                            "left": 0,
+                            "top": 130,
+                            "width": 27,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 400.0,
+                        "y": 200.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 130,
+                            "width": 27,
+                            "height": 21,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 32,
+                            "top": 130,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "heliatronc",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "heliatronc",
+                        "Rect": {
+                            "left": 4,
+                            "top": 196,
+                            "width": 28,
+                            "height": 29
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 475.0,
+                        "y": 193.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 196,
+                            "width": 28,
+                            "height": 29,
+                            "time": 2000.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 293,
+                            "width": 28,
+                            "height": 29,
+                            "time": 2000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "grainipiot",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "grainipiot",
+                        "Rect": {
+                            "left": 4,
+                            "top":  193,
+                            "width": 16,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 375.0,
+                        "y": 330.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top":  193,
+                            "width": 16,
+                            "height": 21,
+                            "time": 750.0
+                        },
+                        {
+                            "left": 30,
+                            "top":  193,
+                            "width": 16,
+                            "height": 21,
+                            "time": 750.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "roucool",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "roucool",
+                        "Rect": {
+                            "left": 3,
+                            "top":  84,
+                            "width": 20,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.7
+                    },
+                    "Position": {
+                        "x": 325.0,
+                        "y": 320.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top":  84,
+                            "width": 20,
+                            "height": 23,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 27,
+                            "top":  84,
+                            "width": 20,
+                            "height": 23,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 51,
+                            "top":  84,
+                            "width": 20,
+                            "height": 23,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "heledelle",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "heledelle",
+                        "Rect": {
+                            "left": 7,
+                            "top":  467,
+                            "width": 23,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 165.0,
+                        "y": 295.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "chenipotte",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "chenipotte",
+                        "Rect": {
+                            "left": 3,
+                            "top":  98,
+                            "width": 19,
+                            "height": 22
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 125.0,
+                        "y": 325.0
+                    }
+                }
+            }
+        }
+    ]
+}
