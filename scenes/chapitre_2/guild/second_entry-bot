@@ -1,0 +1,250 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_second_stage.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "keunotor",
+                "path": "./assets/sprites/pokemons/keunotor/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "heliatronc",
+                "path": "./assets/sprites/pokemons/heliatronc/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "grainipiot",
+                "path": "./assets/sprites/pokemons/grainipiot/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "roucool",
+                "path": "./assets/sprites/pokemons/roucool/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "heledelle",
+                "path": "./assets/sprites/pokemons/heledelle/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "chenipotte",
+                "path": "./assets/sprites/pokemons/chenipotte/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "coxy",
+                "path": "./assets/sprites/pokemons/coxy/idle.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 699,
+                            "height": 456
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": -430.0,
+                        "y": -150.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 32,
+                            "height": 25
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 215.0,
+                        "y": 215.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 2000.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 215.0,
+                            "y": 215.0,
+                            "speed": 5.0
+                        },
+                        {
+                            "x": 215.0,
+                            "y": 400.0,
+                            "speed": 5.0
+                        }
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 5750.0,
+                    "waitBeforeStart": 2000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 32,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 32,
+                            "top": 0,
+                            "width": 32,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 32,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 96,
+                            "top": 0,
+                            "width": 32,
+                            "height": 27,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 280.0,
+                        "y": 200.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 2000.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 280.0,
+                            "y": 200.0,
+                            "speed": 5.0
+                        },
+                        {
+                            "x": 280.0,
+                            "y": 400.0,
+                            "speed": 5.0
+                        }
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 6250.0,
+                    "waitBeforeStart": 2000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35,
+                            "time": 250.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
