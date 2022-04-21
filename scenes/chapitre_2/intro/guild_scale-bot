@@ -1,0 +1,292 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_scale.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_pokemon",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_pokemon",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 256,
+                            "height": 192
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.25,
+                        "y": 2.8
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 225.0,
+                        "y": 335.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 1000,
+                            "top": 1000,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 1000.0,
+                    "paths": [
+                        {
+                            "x": 265.0,
+                            "y": 280.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 265.0,
+                            "y": 220.0,
+                            "speed": 10.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "2eme_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_pokemon",
+                        "Rect": {
+                            "left": 81,
+                            "top": 194,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 300.0,
+                        "y": 335.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 81,
+                            "top": 194,
+                            "width": 35,
+                            "height": 35,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 194,
+                            "width": 35,
+                            "height": 35,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 194,
+                            "width": 35,
+                            "height": 35,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 1000,
+                            "top": 1000,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 500.0,
+                    "paths": [
+                        {
+                            "x": 265.0,
+                            "y": 280.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 260.0,
+                            "y": 220.0,
+                            "speed": 10.0
+                        }
+                    ] 
+                }
+            }
+        }
+    ]
+}
