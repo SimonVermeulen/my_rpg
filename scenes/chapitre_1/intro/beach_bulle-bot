@@ -1,0 +1,466 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/beach_sun_rise.png",
+                "smooth": 1
+            },
+            {
+                "name": "pokemon_1",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "beach_sun_rise",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 720,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 720,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 2160,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 1440,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 2880,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 3600,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 4320,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pokemon_1",
+                        "Rect": {
+                            "left": 1000,
+                            "top": 1000,
+                            "width": 22,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 500.0,
+                        "y": 310.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 2000.0,
+                    "rects": [
+                        {
+                            "left": 1000,
+                            "top": 1000,
+                            "width": 22,
+                            "height": 24,
+                            "time": 1000.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 37,
+                            "top": 163,
+                            "width": 23,
+                            "height": 25,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 162,
+                            "width": 22,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 37,
+                            "top": 163,
+                            "width": 23,
+                            "height": 25,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 162,
+                            "width": 22,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 37,
+                            "top": 163,
+                            "width": 23,
+                            "height": 25,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 162,
+                            "width": 22,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 2000.0,
+                    "paths": [
+                        {
+                            "x": 560.0,
+                            "y": 310.00,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": 260.0,
+                            "y": 310.0,
+                            "speed": 8.0
+                        },
+                        {
+                            "x": 260.0,
+                            "y": 220.0,
+                            "speed": 8.0
+                        }
+                    ] 
+                }
+            }
+        }
+    ]
+}
