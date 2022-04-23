@@ -1,0 +1,198 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/beach_sun_rise.png",
+                "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/chapitre_1/bulles.png",
+                "smooth": 1
+            },
+            {
+                "name": "pokemon_1",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "beach_sun_rise",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 720,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 720,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 2160,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 1440,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 2880,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 3600,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 4320,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pokemon_1",
+                        "Rect": {
+                            "left": 3,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 260.0,
+                        "y": 220.0,
+                    }
+                }
+            }
+        },
+        {
+            "name": "bulles",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "bulle",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 1440,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 1440,
+                            "height": 540,
+                            "time": 500.0
+                        },
+                        {
+                            "left": 720,
+                            "top": 0,
+                            "width": 1440,
+                            "height": 540,
+                            "time": 500.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 1,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": -540.0,
+                            "y": 0.0,
+                            "speed": 4.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
