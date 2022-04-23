@@ -103,7 +103,7 @@
             "name": "1er_poke",
             "entity": {
                 "type": "Sprite",
-                "order": 2,
+                "order": 0,
                 "parameters": {
                     "Texture": {
                         "Name": "pokemon_1",
@@ -119,7 +119,7 @@
                         "y": 2.3
                     },
                     "Position": {
-                        "x": 500.0,
+                        "x": 550.0,
                         "y": 310.0
                     }
                 }
@@ -134,11 +134,46 @@
                     "waitBeforeStart": 2000.0,
                     "rects": [
                         {
-                            "left": 1000,
-                            "top": 1000,
+                            "left": 72,
+                            "top": 242,
                             "width": 22,
                             "height": 24,
-                            "time": 1000.0
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 242,
+                            "width": 25,
+                            "height": 26,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
                         },
                         {
                             "left": 8,
