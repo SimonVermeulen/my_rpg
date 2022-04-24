@@ -10,6 +10,7 @@
 int set_time(engine_t *engine)
 {
     engine->time.delta_time = sfClock_create();
+    engine->time.delta = 0;
     engine->time.time = sfClock_create();
     if (engine->time.delta_time == NULL || engine->time.time == NULL)
         return 84;

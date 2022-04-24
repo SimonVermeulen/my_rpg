@@ -588,23 +588,6 @@
                             "time": 125.0
                         }
                     ]
-                },
-                "translation_animation": {
-                    "waitBeforeStart": 2000.0,
-                    "infini": 0,
-                    "reverse": 0,
-                    "paths": [
-                        {
-                            "x": 537.0,
-                            "y": -55.0,
-                            "speed": 20.0
-                        },
-                        {
-                            "x": -100.0,
-                            "y": -55.0,
-                            "speed": 20.0
-                        }
-                    ]
                 }
             }
         },

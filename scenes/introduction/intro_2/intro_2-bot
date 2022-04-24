@@ -29,12 +29,6 @@
     "objects": [
         {
             "name": "parallaxWater",
-            "addons": {
-                "parallax": {
-                    "speed": 100.0,
-                    "width": 577.0
-                }
-            },
             "children": {
                 "objects": [
                     {
@@ -57,9 +51,29 @@
                                     "y": 2.2
                                 },
                                 "Position": {
-                                    "x": 0.0,
+                                    "x": -577.0,
                                     "y": -2400.0
                                 }
+                            }
+                        },
+                        "addons": {
+                            "translation_animation": {
+                                "waitBeforeStart": 0.0,
+                                "infini": 1,
+                                "reverse": 0,
+                                "spawn": 1,
+                                "paths": [
+                                    {
+                                        "x": -577.0,
+                                        "y": -2400.0,
+                                        "speed": 50.0
+                                    },
+                                    {
+                                        "x": 577.0,
+                                        "y": -2400.0,
+                                        "speed": 50.0
+                                    }
+                                ]
                             }
                         }
                     },
@@ -83,9 +97,29 @@
                                     "y": 2.2
                                 },
                                 "Position": {
-                                    "x": 577.0,
+                                    "x": 0.0,
                                     "y": -2400.0
                                 }
+                            }
+                        },
+                        "addons": {
+                            "translation_animation": {
+                                "waitBeforeStart": 0.0,
+                                "infini": 1,
+                                "reverse": 0,
+                                "spawn": 1,
+                                "paths": [
+                                    {
+                                        "x": -577.0,
+                                        "y": -2400.0,
+                                        "speed": 50.0
+                                    },
+                                    {
+                                        "x": 577.0,
+                                        "y": -2400.0,
+                                        "speed": 50.0
+                                    }
+                                ]
                             }
                         }
                     }

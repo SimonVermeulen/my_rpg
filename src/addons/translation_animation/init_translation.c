@@ -44,26 +44,37 @@ list_t *create_list_positions(list_t **positions, int length)
     return positions_final;
 }
 
-void *init_translation_animation(list_t *list)
+static int write_data(translation_animation_t *translation, list_t *list)
 {
     double *wait = get_value_list(list, "waitBeforeStart", 2);
     int *infini = get_value_list(list, "infini", 3);
     int *reverse = get_value_list(list, "reverse", 3);
+    char *name = get_value_list(list, "name", 4);
+    int *spawn = get_value_list(list, "spawn", 3);
+
+    if (!wait || !infini || !reverse)
+        return false;
+    translation->infini = *infini;
+    translation->reverse = *reverse;
+    translation->step = (spawn) ? *spawn : 0;
+    translation->count_wait = 0;
+    translation->wait = *wait;
+    translation->is_reverse = 0;
+    translation->object = NULL;
+    translation->name = (name) ? name : NULL;
+    return true;
+}
+
+void *init_translation_animation(list_t *list)
+{
     node_t *positions = search_from_key(list, "paths");
     translation_animation_t *translation = NULL;
 
-    if (!wait || !positions || positions->type != 10 || !infini || !reverse)
+    if (!positions || positions->type != 10)
         return NULL;
     translation = malloc(sizeof(translation_animation_t));
-    if (!translation)
+    if (!translation || !write_data(translation, list))
         return NULL;
-    translation->infini = *infini;
-    translation->reverse = *reverse;
-    translation->step = 0;
-    translation->count_wait = 0;
-    translation->wait = *wait;
-    translation->normal = (sfVector2f) {0, 0};
-    translation->is_reverse = 0;
     translation->positions = create_list_positions(positions->value,
         positions->len);
     if (!translation->positions)

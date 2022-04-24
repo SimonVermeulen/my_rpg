@@ -68,6 +68,7 @@ SRC	=	addon/addon.c	\
 		utils/get_normalize_vector.c	\
 		utils/create_vector_list.c	\
 		utils/equal_prov.c	\
+		utils/vector_distance.c	\
 
 OBJ	=	$(SRC:.c=.o)
 

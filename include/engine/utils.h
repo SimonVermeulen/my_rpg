@@ -45,4 +45,6 @@ sfVector2i create_vector2i_list(list_t *list);
 ////////////////////////////////////////////////////////////
 bool equal_prov(float a, float b, float pov);
 
+double calc_distance(sfVector2f a, sfVector2f b);
+
 #endif
