@@ -18,6 +18,8 @@ typedef struct secondary_screen_s {
 
 typedef struct translation_animation_s {
     char *name;
+    char *name_enable;
+    object_t *enable;
     object_t *object;
     float wait;
     list_t *positions;

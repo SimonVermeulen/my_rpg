@@ -49,7 +49,6 @@ static int write_data(translation_animation_t *translation, list_t *list)
     double *wait = get_value_list(list, "waitBeforeStart", 2);
     int *infini = get_value_list(list, "infini", 3);
     int *reverse = get_value_list(list, "reverse", 3);
-    char *name = get_value_list(list, "name", 4);
     int *spawn = get_value_list(list, "spawn", 3);
 
     if (!wait || !infini || !reverse)
@@ -61,7 +60,8 @@ static int write_data(translation_animation_t *translation, list_t *list)
     translation->wait = *wait;
     translation->is_reverse = 0;
     translation->object = NULL;
-    translation->name = (name) ? name : NULL;
+    translation->name = get_value_list(list, "name", 4);
+    translation->name_enable = get_value_list(list, "name_enable", 4);
     return true;
 }
 

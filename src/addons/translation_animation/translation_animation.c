@@ -31,6 +31,8 @@ static int start_addons(object_t *object, engine_t *engine)
         translation->object = object_trans;
     else
         translation->object = object;
+    translation->enable = seek_object_scene(object->actual_scene,
+        translation->name_enable);
 }
 
 int init_translation_animation_addons(engine_t *engine)

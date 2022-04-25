@@ -51,6 +51,7 @@ int update_step_translation_animation(translation_animation_t *trans,
         return update_reverse_step_translation(trans);
     if (trans->step == trans->positions->nb_elements - 1) {
         trans->step++;
+        set_active(true, trans->enable, object->engine);
         if (trans->infini) {
             trans->step = 0;
             get_respawn(trans, object);
