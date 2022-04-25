@@ -28,7 +28,7 @@ static int execute_event(object_t *object, engine_t *engine, list_t *data,
     int *type = get_value_list(data, "type", 3);
     int *value = get_value_list(data, "value", 3);
     object_t *object_enable = seach_object(engine,
-        get_value_list(data, "object", 4));
+        get_value_list(data, "object_enable", 4));
     int *disable = get_value_list(data, "disable", 3);
 
     if (!type || !value || !disable)
