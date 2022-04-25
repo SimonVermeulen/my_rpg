@@ -1020,12 +1020,15 @@
             "addons": {
                 "move_view": {
                     "bloc": 1,
-                    "speed": 20.0,
+                    "start": 0,
                     "waitBeforeStart": 3750.0,
-                    "path": {
-                        "x": 270.0,
-                        "y": -249.0
-                    }
+                    "path": [
+                        {
+                            "x": 270.0,
+                            "y": -249.0,
+                            "speed": 20.0
+                        }
+                    ]
                 }
             }
         }
