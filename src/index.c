@@ -16,6 +16,7 @@ int (*const load_addons_func[])(engine_t *) =
     init_move_view_addons,
     init_follow_view_addons,
     init_change_scene_addons,
+    init_event_manager_addons,
     NULL
 };
 

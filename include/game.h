@@ -43,6 +43,13 @@ typedef struct parallax_s {
     float width;
 } parallax_t;
 
+typedef struct event_manager_s {
+    list_t *data;
+    list_t **actions;
+    int length;
+    int count;
+} event_manager_t;
+
 typedef struct sparkles_s {
     int order;
 } sparkles_t;
@@ -61,5 +68,6 @@ int init_rect_animation_addons(engine_t *engine);
 int init_move_view_addons(engine_t *engine);
 int init_follow_view_addons(engine_t *engine);
 int init_change_scene_addons(engine_t *engine);
+int init_event_manager_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */
