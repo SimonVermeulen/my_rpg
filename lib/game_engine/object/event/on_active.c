@@ -23,7 +23,9 @@ int on_active(object_t *object, engine_t *engine)
     if (!object->childs)
         return 0;
     node = object->childs->head;
-    for (int i = 0; i < object->childs->nb_elements; i++, node = node->next)
+    for (int i = 0; i < object->childs->nb_elements; i++, node = node->next) {
+        ((object_t *) node->value)->is_active = object->is_active;
         on_active(node->value, engine);
+    }
     return 0;
 }

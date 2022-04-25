@@ -92,5 +92,6 @@ sfBool set_active(sfBool value, object_t *object, engine_t *engine)
     if (object == NULL || engine == NULL || object->is_active == value)
         return sfFalse;
     object->is_active = value;
+    on_active(object, engine);
     return sfTrue;
 }
