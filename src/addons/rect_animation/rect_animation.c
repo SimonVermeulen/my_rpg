@@ -15,10 +15,11 @@ int end_rect_animation(object_t *object, engine_t *engine)
     node_t *objecta = NULL;
 
     node = search_from_key(object->addons_data, "rect_animation");
-    objecta = search_from_key(node->value, "object");
-    objecta->value = NULL;
     if (node == NULL)
-        return NULL;
+        return 0;
+    objecta = search_from_key(node->value, "object");
+    if (objecta)
+        objecta->value = NULL;    
     free_json_object(node->value);
     node->value = NULL;
     return 0;

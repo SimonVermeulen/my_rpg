@@ -29,9 +29,9 @@ object_t *add_object_child(list_t *object_list,
     object_t *object, engine_t *engine)
 {
     list_t *scene = get_value_list(object_list, "children", 1);
-    int *disable = get_value_list(object, "disable", 3);
+    int *disable = get_value_list(object_list, "disable", 3);
 
-    object->is_active = (disable) ? true : false;
+    object->is_active = (disable) ? false : true;
     if (scene == NULL)
         return object;
     object->childs = init_objects_list(scene, engine, object);
