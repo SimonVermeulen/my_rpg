@@ -1,0 +1,194 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_grodoudou_room.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "pijako",
+                "path": "./assets/sprites/pokemons/pijako/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "grodoudou",
+                "path": "./assets/sprites/pokemons/grodoudou/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "explorer_chest",
+                "path": "./assets/sprites/chapitre_2/explorer_chest.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 500,
+                            "height": 416
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.7,
+                        "y": 1.7
+                    },
+                    "Position": {
+                        "x": -130.0,
+                        "y": -100.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 122,
+                            "width": 25,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 215.0,
+                        "y": 300.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 242,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 280.0,
+                        "y": 290.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "pijako",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pijako",
+                        "Rect": {
+                            "left": 3,
+                            "top": 291,
+                            "width": 27,
+                            "height": 30
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 350.0,
+                        "y": 250.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "grodoudou",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "grodoudou",
+                        "Rect": {
+                            "left": 3,
+                            "top": 0,
+                            "width": 26,
+                            "height": 27
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 258.0,
+                        "y": 185.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "explorer_chest",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "explorer_chest",
+                        "Rect": {
+                            "left": 37,
+                            "top": 0,
+                            "width": 74,
+                            "height": 58
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.8,
+                        "y": 0.8
+                    },
+                    "Position": {
+                        "x": 267.0,
+                        "y": 260.0
+                    }
+                }
+            }
+        }
+    ]
+}
