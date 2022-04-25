@@ -105,8 +105,8 @@
                         "Name": "1er_poke",
                         "Rect": {
                             "left": 0,
-                            "top": 0,
-                            "width": 32,
+                            "top": 242,
+                            "width": 30,
                             "height": 25
                         }
                     },
@@ -115,9 +115,64 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": 215.0,
-                        "y": 215.0
+                        "x": 550.0,
+                        "y": 350.0
                     }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 2600.0,
+                    "waitBeforeStart": 700.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 242,
+                            "width": 30,
+                            "height": 25,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 242,
+                            "width": 30,
+                            "height": 25,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 242,
+                            "width": 30,
+                            "height": 25,
+                            "time": 275.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 700.0,
+                    "paths": [
+                        {
+                            "x": 550.0,
+                            "y": 350.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 380.0,
+                            "y": 350.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 365.0,
+                            "y": 325.0,
+                            "speed": 10.0
+                        }
+                    ] 
                 }
             }
         },
@@ -125,13 +180,13 @@
             "name": "2eme_poke",
             "entity": {
                 "type": "Sprite",
-                "order": 2,
+                "order": 1,
                 "parameters": {
                     "Texture": {
                         "Name": "2eme_poke",
                         "Rect": {
                             "left": 0,
-                            "top": 0,
+                            "top": 99,
                             "width": 35,
                             "height": 35
                         }
@@ -141,9 +196,71 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": 280.0,
-                        "y": 200.0
+                        "x": 600.0,
+                        "y": 330.0
                     }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 3850.0,
+                    "waitBeforeStart": 700.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 124,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 700.0,
+                    "paths": [
+                        {
+                            "x": 600.0,
+                            "y": 330.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 380.0,
+                            "y": 330.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 360.0,
+                            "y": 260.0,
+                            "speed": 10.0
+                        }
+                    ] 
                 }
             }
         },
@@ -169,32 +286,6 @@
                     "Position": {
                         "x": 315.0,
                         "y": 175.0
-                    }
-                }
-            }
-        },
-        {
-            "name": "grodoudou",
-            "entity": {
-                "type": "Sprite",
-                "order": 2,
-                "parameters": {
-                    "Texture": {
-                        "Name": "grodoudou",
-                        "Rect": {
-                            "left": 72,
-                            "top": 81,
-                            "width": 17,
-                            "height": 27
-                        }
-                    },
-                    "Scale": {
-                        "x": 1.8,
-                        "y": 2.3
-                    },
-                    "Position": {
-                        "x": 260.0,
-                        "y": 125.0
                     }
                 }
             }
@@ -261,9 +352,9 @@
                         "Name": "ecrapince",
                         "Rect": {
                             "left": 3,
-                            "top": 66,
+                            "top": 129,
                             "width": 24,
-                            "height": 23
+                            "height": 27
                         }
                     },
                     "Scale": {
@@ -271,8 +362,8 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": 345.0,
-                        "y": 730.0
+                        "x": 200.0,
+                        "y": 345.0
                     }
                 }
             }
@@ -338,9 +429,9 @@
                     "Texture": {
                         "Name": "ramboum",
                         "Rect": {
-                            "left": 6,
-                            "top": 80,
-                            "width": 21,
+                            "left": 0,
+                            "top": 161,
+                            "width": 30,
                             "height": 31
                         }
                     },
@@ -349,8 +440,8 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": 250.0,
-                        "y": 780.0
+                        "x": 245.0,
+                        "y": 340.0
                     }
                 }
             }
