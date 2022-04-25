@@ -60,5 +60,6 @@ int init_parallax_addons(engine_t *engine);
 int init_rect_animation_addons(engine_t *engine);
 int init_move_view_addons(engine_t *engine);
 int init_follow_view_addons(engine_t *engine);
+int init_change_scene_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */
