@@ -15,6 +15,11 @@
                 "name": "2eme_poke",
                 "path": "./assets/sprites/pokemons/evoli/pain.png",
                 "smooth": 1
+            },
+            {
+                "name": "ramboum",
+                "path": "./assets/sprites/pokemons/ramboum/appeal.png",
+                "smooth": 1
             }
         ]
     },
@@ -94,6 +99,157 @@
                         "x": 330.0,
                         "y": 295.0
                     }
+                }
+            }
+        },
+        {
+            "name": "ramboum",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "ramboum",
+                        "Rect": {
+                            "left": 0,
+                            "top": 58,
+                            "width": 29,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 105.0,
+                        "y": 275.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 62,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 95,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 127,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 158,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 189,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 220,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 256,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 286,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 318,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 351,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 382,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 415,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 480,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        }
+                        
+                    ]
                 }
             }
         }
