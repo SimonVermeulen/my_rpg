@@ -14,6 +14,7 @@ int (*const load_addons_func[])(engine_t *) =
     init_parallax_addons,
     init_rect_animation_addons,
     init_move_view_addons,
+    init_follow_view_addons,
     NULL
 };
 

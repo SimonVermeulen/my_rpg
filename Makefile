@@ -16,6 +16,7 @@ SRC				=		src/index.c	\
 						src/addons/rect_animation/rect_action.c	\
 						src/addons/move_view/move_view.c	\
 						src/addons/move_view/view_action.c	\
+						src/addons/follow_view/follow_view.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 
