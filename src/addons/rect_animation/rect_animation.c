@@ -7,51 +7,16 @@
 
 #include "game_engine.h"
 
-int set_rect_with_list(object_t *object, list_t *list, int *start,
-    double *count)
-{
-    int *left = get_value_list(list, "left", 3);
-    int *top = get_value_list(list, "top", 3);
-    int *width = get_value_list(list, "width", 3);
-    int *height = get_value_list(list, "height", 3);
-
-    if (!left || !top || !width || !height)
-        return 0;
-    set_texture_rect(object, (sfIntRect) {*left, *top, *width, *height});
-    *start += 1;
-    *count = 0;
-    return 0;
-}
-
-int tick_rect_animation(object_t *object, engine_t *engine)
-{
-    list_t *rect = get_addon_data("rect_animation", object);
-    list_t **rects = get_value_list(rect, "rects", 10);
-    int length = search_from_key(rect, "rects")->len;
-    int *start = get_value_list(rect, "start", 3);
-    int *infini = get_value_list(rect, "infini", 3);
-    double *count = get_value_list(rect, "count", 2);
-    double *time = get_value_list(rects[*start % length], "time", 2);
-    double *start_time = get_value_list(rect, "start-time", 2);
-    double *stop_time = get_value_list(rect, "stop-time", 2);
-    double *wait = get_value_list(rect, "waitBeforeStart", 2);
-
-    if (!time)
-        return exit_game(engine, 84);
-    *count += get_delta(engine);
-    *start_time += get_delta(engine);
-    if (*count < *time || (*start == length && *infini == 0)
-        || (*start_time >= *stop_time && *stop_time > 0) ||
-        *start_time <= *wait)
-        return 0;
-    return (set_rect_with_list(object, rects[*start % length], start, count));
-}
+int tick_rect_animation(object_t *object, engine_t *engine);
 
 int end_rect_animation(object_t *object, engine_t *engine)
 {
     node_t *node = NULL;
+    node_t *objecta = NULL;
 
     node = search_from_key(object->addons_data, "rect_animation");
+    objecta = search_from_key(node->value, "object");
+    objecta->value = NULL;
     if (node == NULL)
         return NULL;
     free_json_object(node->value);
@@ -73,6 +38,20 @@ void *init_rect_animation(list_t *list)
     return copy_list(list);
 }
 
+static int start_addon(object_t *object, engine_t *engine)
+{
+    list_t *list = get_addon_data("rect_animation", object);
+    char *name = get_value_list(list, "object_name", 4);
+    object_t *object_ta = seek_object_scene(object->actual_scene, name);
+    node_t *text = search_from_key(list, "object");
+
+    if (!object_ta)
+        object_ta = object;
+    if (text || !create_add_node(object_ta, 4, "object", list))
+        return exit_game(engine, 84);
+    return 0;
+}
+
 int init_rect_animation_addons(engine_t *engine)
 {
     addon_t *addon = malloc(sizeof(addon_t));
@@ -82,7 +61,7 @@ int init_rect_animation_addons(engine_t *engine)
     addon->on_enable = NULL;
     addon->on_disable = NULL;
     addon->on_end = end_rect_animation;
-    addon->on_start = NULL;
+    addon->on_start = start_addon;
     addon->on_event = NULL;
     addon->on_tick = tick_rect_animation;
     addon->init = init_rect_animation;
