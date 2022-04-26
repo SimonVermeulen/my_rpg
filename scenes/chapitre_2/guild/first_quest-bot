@@ -1,0 +1,544 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_first_stage.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "pijako",
+                "path": "./assets/sprites/pokemons/pijako/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 699,
+                            "height": 456
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": -480.0,
+                        "y": -150.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 290.0,
+                        "y": 175.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 5000.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 150.0,
+                            "y": 383.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": 85.0,
+                            "y": 383.0,
+                            "speed": 15.0
+                        }
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 4000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 32,
+                            "height": 28,
+                            "time": 0.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 279,
+                            "width": 32,
+                            "height": 28,
+                            "time": 1000.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 279,
+                            "width": 32,
+                            "height": 28,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 279,
+                            "width": 32,
+                            "height": 28,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 279,
+                            "width": 32,
+                            "height": 28,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 279,
+                            "width": 32,
+                            "height": 28,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 242,
+                            "width": 32,
+                            "height": 28,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 242,
+                            "width": 32,
+                            "height": 28,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 242,
+                            "width": 32,
+                            "height": 28,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 32,
+                            "height": 28,
+                            "time": 275.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 280.0,
+                        "y": 175.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 3500.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 150.0,
+                            "y": 375.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": 10.0,
+                            "y": 375.0,
+                            "speed": 15.0
+                        }
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 2500.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35,
+                            "time": 0.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 1000.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 345,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 291,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "pijako",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pijako",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 290.0,
+                        "y": 170.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 2000.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 175.0,
+                            "y": 275.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 85.0,
+                            "y": 275.0,
+                            "speed": 10.0
+                        }
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 1000.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 28,
+                            "height": 30,
+                            "time": 0.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 342,
+                            "width": 28,
+                            "height": 30,
+                            "time": 1000.0
+                        },
+                        {
+                            "left": 34,
+                            "top": 342,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 342,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 68,
+                            "top": 342,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 342,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 34,
+                            "top": 342,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 342,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 68,
+                            "top": 342,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 291,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 34,
+                            "top": 291,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 291,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 68,
+                            "top": 291,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 291,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 291,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 3,
+                            "width": 28,
+                            "height": 30,
+                            "time": 1000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "move_view": {
+                    "bloc": 1,
+                    "start": 0,
+                    "waitBeforeStart": 5000.0,
+                    "path": [
+                        {
+                            "x": 100.0,
+                            "y": 270.0,
+                            "speed": 8.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
