@@ -16,7 +16,7 @@ bool is_click_event(engine_t *engine, object_t *object, void *event)
 
 bool is_time_event(engine_t *engine, object_t *object, void *event)
 {
-    int *time = event;
+    double *time = event;
 
     if (*time <= 0)
         return true;

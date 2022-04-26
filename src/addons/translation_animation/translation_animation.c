@@ -15,7 +15,7 @@ int end_translation_animation(object_t *object, engine_t *engine)
 {
     translation_animation_t *translation =
         get_addon_data("translation_animation", object);
-    
+
     free_json_object(translation->positions);
     return 0;
 }

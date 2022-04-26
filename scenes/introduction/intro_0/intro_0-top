@@ -30,6 +30,35 @@
                     }
                 }
             }
+        },
+        {
+            "name": "event_manager",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 10000.0,
+                            "object_enable": "change_bloc" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 2,
+                                "name": "intro_1-top"
+                            }
+                        }
+                    }
+                ]
+            }
         }
     ]
 }

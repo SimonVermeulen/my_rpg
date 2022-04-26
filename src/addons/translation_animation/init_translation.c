@@ -37,7 +37,7 @@ list_t *create_list_positions(list_t **positions, int length)
         position = create_vector_speed(positions[i]);
         if (!position)
             return NULL;
-        node = create_add_node(position, 0, "path", positions_final);
+        node = create_add_node(position, 4, "path", positions_final);
         if (!node)
             return NULL;
     }
@@ -77,7 +77,7 @@ void *init_translation_animation(list_t *list)
         return NULL;
     translation->positions = create_list_positions(positions->value,
         positions->len);
-    if (!translation->positions)
+    if (!translation->positions || translation->positions->nb_elements == 0)
         return NULL;
     return translation;
 }
