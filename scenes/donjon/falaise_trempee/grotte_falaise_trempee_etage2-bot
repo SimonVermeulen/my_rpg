@@ -1,0 +1,35 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/donjon/falaise_trempee/etage2.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 647,
+                            "height": 522
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.9,
+                        "y": 1.0
+                    }
+                }
+            }
+        }
+    ]
+}
