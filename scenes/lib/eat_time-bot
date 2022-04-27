@@ -1,0 +1,845 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_lunge.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "keunotor",
+                "path": "./assets/sprites/pokemons/keunotor/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "heliatronc",
+                "path": "./assets/sprites/pokemons/heliatronc/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "grodoudou",
+                "path": "./assets/sprites/pokemons/grodoudou/rotate.png",
+                "smooth": 1
+            },
+            {
+                "name": "pomme",
+                "path": "./assets/sprites/item/pomme.png",
+                "smooth": 1
+            },
+            {
+                "name": "pijako",
+                "path": "./assets/sprites/pokemons/pijako/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "ramboum",
+                "path": "./assets/sprites/pokemons/ramboum/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "eoko",
+                "path": "./assets/sprites/pokemons/eoko/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "taupiqueur",
+                "path": "./assets/sprites/pokemons/taupiqueur/hop.png",
+                "smooth": 1
+            },
+            {
+                "name": "triopikeur",
+                "path": "./assets/sprites/pokemons/triopikeur/hop.png",
+                "smooth": 1
+            },
+            {
+                "name": "cradopaud",
+                "path": "./assets/sprites/pokemons/cradopaud/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "keunotor",
+                "path": "./assets/sprites/pokemons/keunotor/eat.png",
+                "smooth": 1
+            },
+            {
+                "name": "ecrapince",
+                "path": "./assets/sprites/pokemons/ecrapince/eat.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 493,
+                            "height": 285
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": -450.0,
+                        "y": -25.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 3,
+                            "top": 3,
+                            "width": 21,
+                            "height": 27
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": -79.0,
+                        "y": 205.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top": 3,
+                            "width": 21,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 27,
+                            "top": 3,
+                            "width": 21,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 3,
+                            "width": 21,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 74,
+                            "top": 3,
+                            "width": 21,
+                            "height": 27,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 3,
+                            "top": 1,
+                            "width": 19,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": -133.0,
+                        "y": 220.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top": 1,
+                            "width": 19,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 28,
+                            "top": 1,
+                            "width": 19,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 1,
+                            "width": 19,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 78,
+                            "top": 1,
+                            "width": 19,
+                            "height": 22,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ramboum",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "ramboum",
+                        "Rect": {
+                            "left": 3,
+                            "top": 3,
+                            "width": 26,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": -33.0,
+                        "y": 215.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top": 3,
+                            "width": 26,
+                            "height": 23,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 37,
+                            "top": 3,
+                            "width": 26,
+                            "height": 23,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 3,
+                            "width": 26,
+                            "height": 23,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 101,
+                            "top": 3,
+                            "width": 26,
+                            "height": 23,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "keunotor",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "keunotor",
+                        "Rect": {
+                            "left": 4,
+                            "top": 1,
+                            "width": 17,
+                            "height": 16
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 28.0,
+                        "y": 230.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 1,
+                            "width": 17,
+                            "height": 16,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 27,
+                            "top": 1,
+                            "width": 17,
+                            "height": 16,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 1,
+                            "width": 17,
+                            "height": 16,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 77,
+                            "top": 1,
+                            "width": 17,
+                            "height": 16,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "ecrapince",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "ecrapince",
+                        "Rect": {
+                            "left": 4,
+                            "top": 2,
+                            "width": 24,
+                            "height": 22
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 75.0,
+                        "y": 220.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 2,
+                            "width": 24,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 2,
+                            "width": 24,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 2,
+                            "width": 24,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 101,
+                            "top": 2,
+                            "width": 24,
+                            "height": 22,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "eoko",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "eoko",
+                        "Rect": {
+                            "left": 4,
+                            "top": 3,
+                            "width": 12,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 138.0,
+                        "y": 215.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 6,
+                            "top": 3,
+                            "width": 12,
+                            "height": 24,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 30,
+                            "top": 3,
+                            "width": 12,
+                            "height": 24,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 6,
+                            "top": 3,
+                            "width": 12,
+                            "height": 24,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 78,
+                            "top": 3,
+                            "width": 12,
+                            "height": 24,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "pijako",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pijako",
+                        "Rect": {
+                            "left": 12,
+                            "top": 1,
+                            "width": 28,
+                            "height": 22
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 175.0,
+                        "y": 280.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 12,
+                            "top": 1,
+                            "width": 28,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 49,
+                            "top": 1,
+                            "width": 28,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 12,
+                            "top": 1,
+                            "width": 28,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 129,
+                            "top": 1,
+                            "width": 28,
+                            "height": 22,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "taupiqueur",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "taupiqueur",
+                        "Rect": {
+                            "left": 196,
+                            "top": 102,
+                            "width": 26,
+                            "height": 19
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 125.0,
+                        "y": 350.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 196,
+                            "top": 102,
+                            "width": 26,
+                            "height": 19,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 196,
+                            "top": 77,
+                            "width": 26,
+                            "height": 19,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 196,
+                            "top": 102,
+                            "width": 26,
+                            "height": 19,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 196,
+                            "top": 125,
+                            "width": 26,
+                            "height": 19,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "heliatronc",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "heliatronc",
+                        "Rect": {
+                            "left": 4,
+                            "top": 196,
+                            "width": 28,
+                            "height": 29
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 485.0,
+                        "y": 273.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 196,
+                            "width": 28,
+                            "height": 29,
+                            "time": 2000.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 293,
+                            "width": 28,
+                            "height": 29,
+                            "time": 2000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "grodoudou",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "grodoudou",
+                        "Rect": {
+                            "left": 3,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 245.0,
+                        "y": 320.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26,
+                            "time": 75.0
+                        },
+                        {
+                            "left": 26,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26,
+                            "time": 75.0
+                        },
+                        {
+                            "left": 49,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26,
+                            "time": 75.0
+                        },
+                        {
+                            "left": 76,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26,
+                            "time": 400.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26,
+                            "time": 75.0
+                        },
+                        {
+                            "left": 121,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26,
+                            "time": 75.0
+                        },
+                        {
+                            "left": 145,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26,
+                            "time": 75.0
+                        },
+                        {
+                            "left": 171,
+                            "top": 241,
+                            "width": 22,
+                            "height": 26,
+                            "time": 400.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "pomme",
+            "entity": {
+                "type": "Sprite",
+                "order": 3,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pomme",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 20,
+                            "height": 20
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 248.0,
+                        "y": 295.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 1,
+                    "paths": [
+                        {
+                            "x": 248.0,
+                            "y": 295.0,
+                            "speed": 3.0
+                        },
+                        {
+                            "x": 248.0,
+                            "y": 288.0,
+                            "speed": 3.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "move_view": {
+                    "bloc": 1,
+                    "start": 0,
+                    "waitBeforeStart": 0.0,
+                    "path": [
+                        {
+                            "x": -100.0,
+                            "y": 275.0,
+                            "speed": 6.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
