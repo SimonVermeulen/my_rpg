@@ -40,7 +40,7 @@
                             "type": 4,
                             "disable": 1,
                             "value": 0.0,
-                            "object_enable": "change_bloc_bot" 
+                            "object_enable": "skip_introduction" 
                         }
                     ]
                 }
@@ -54,7 +54,7 @@
                         {
                             "type": 1,
                             "disable": 1,
-                            "value": 10000.0,
+                            "value": 3000.0,
                             "object_enable": "change_bloc_bot" 
                         }
                     ]
@@ -69,6 +69,16 @@
                             "change_scene": {
                                 "bloc": 1,
                                 "name": "intro_1-bot"
+                            }
+                        }
+                    },
+                    {
+                        "name": "skip_introduction",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 1,
+                                "name": "intro_start-bot"
                             }
                         }
                     }

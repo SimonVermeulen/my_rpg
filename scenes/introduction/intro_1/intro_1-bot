@@ -32,7 +32,7 @@
         "Fonts": [
             {
                 "name": "Outfit",
-                "path": "./assets/outfit.ttf"
+                "path": "./assets/fonts/font.ttf"
             }
         ]
     },

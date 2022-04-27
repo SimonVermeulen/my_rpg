@@ -71,6 +71,16 @@
                                 "name": "intro_1-top"
                             }
                         }
+                    },
+                    {
+                        "name": "skip_introduction",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 2,
+                                "name": "intro_-top"
+                            }
+                        }
                     }
                 ]
             }
