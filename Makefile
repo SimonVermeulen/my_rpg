@@ -20,6 +20,8 @@ SRC				=		src/index.c	\
 						src/addons/change_scene/change_scene.c	\
 						src/addons/event_manager/event_manager.c	\
 						src/addons/event_manager/func_checker_event.c	\
+						src/addons/event_manager/event_controller.c	\
+						src/addons/event_manager/tick_controller.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

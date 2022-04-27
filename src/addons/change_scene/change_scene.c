@@ -24,7 +24,7 @@ static int start_addon(object_t *object, engine_t *engine)
     list_t *list = get_addon_data("change_scene", object);
     int *bloc = get_value_list(list, "bloc", 3);
     char *name = get_value_list(list, "name", 4);
-    
+
     if (!bloc || !name)
         return exit_game(engine, 84);
     if (*bloc == 1)
@@ -43,7 +43,7 @@ int init_change_scene_addons(engine_t *engine)
 
     if (addon == NULL)
         return 84;
-    addon->on_enable = NULL;
+    addon->on_enable = start_addon;
     addon->on_disable = NULL;
     addon->on_end = end_addon;
     addon->on_start = start_addon;
