@@ -10,6 +10,16 @@
                 "name": "1er_poke",
                 "path": "./assets/sprites/pokemons/evoli/walk.png",
                 "smooth": 1
+            },
+            {
+                "name": "smogo",
+                "path": "./assets/sprites/pokemons/smogo/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "nosfe",
+                "path": "./assets/sprites/pokemons/nosferapti/walk.png",
+                "smooth": 1
             }
         ]
     },
@@ -47,12 +57,12 @@
                     "paths": [
                         {
                             "x": 0.0,
-                            "y": 0.0,
+                            "y": -293.0,
                             "speed": 7.0
                         },
                         {
                             "x": 0.0,
-                            "y": -293.0,
+                            "y": 0.0,
                             "speed": 7.0
                         }
                     ] 
@@ -565,12 +575,581 @@
                         {
                             "x": 252.0,
                             "y": 280.0,
-                            "speed": 5.0
+                            "speed": 7.0
                         },
                         {
                             "x": 252.0,
-                            "y": 540.0,
-                            "speed": 5.0
+                            "y": 542.0,
+                            "speed": 7.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "nosfe",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "nosfe",
+                        "Rect": {
+                            "left": 7,
+                            "top": 118,
+                            "width": 18,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": -41.4,
+                        "y": 280.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 10000.0,
+                    "rects": [
+                        {
+                            "left": 42,
+                            "top": 117,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 117,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 107,
+                            "top": 117,
+                            "width": 17,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 136,
+                            "top": 116,
+                            "width": 18,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 169,
+                            "top": 115,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 198,
+                            "top": 116,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 234,
+                            "top": 116,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 42,
+                            "top": 117,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 117,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 107,
+                            "top": 117,
+                            "width": 17,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 136,
+                            "top": 116,
+                            "width": 18,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 169,
+                            "top": 115,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 198,
+                            "top": 116,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 234,
+                            "top": 116,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 42,
+                            "top": 117,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 117,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 107,
+                            "top": 117,
+                            "width": 17,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 136,
+                            "top": 116,
+                            "width": 18,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 169,
+                            "top": 115,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 198,
+                            "top": 116,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 234,
+                            "top": 116,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 42,
+                            "top": 117,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 117,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 107,
+                            "top": 117,
+                            "width": 17,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 136,
+                            "top": 116,
+                            "width": 18,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 169,
+                            "top": 115,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 198,
+                            "top": 116,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 234,
+                            "top": 116,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                         {
+                            "left": 42,
+                            "top": 117,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 117,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 107,
+                            "top": 117,
+                            "width": 17,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 136,
+                            "top": 116,
+                            "width": 18,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 169,
+                            "top": 115,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 198,
+                            "top": 116,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 234,
+                            "top": 116,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 8,
+                            "width": 25,
+                            "height": 19,
+                            "time": 150.0
+                        }
+                    ] 
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 10000.0,
+                    "paths": [
+                        {
+                            "x": 290.0,
+                            "y": 280.0,
+                            "speed": 7.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "smogo",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "smogo",
+                        "Rect": {
+                            "left": 7,
+                            "top": 118,
+                            "width": 17,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": -82.8,
+                        "y": 280.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 10000.0,
+                    "rects": [
+                        {
+                            "left": 39,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 71,
+                            "top": 116,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 103,
+                            "top": 115,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 135,
+                            "top": 113,
+                            "width": 17,
+                            "height": 31,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 167,
+                            "top": 116,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 199,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 231,
+                            "top": 116,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 39,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 117,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 103,
+                            "top": 115,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 135,
+                            "top": 113,
+                            "width": 17,
+                            "height": 31,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 167,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 199,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 231,
+                            "top": 116,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 39,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 117,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 103,
+                            "top": 115,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 135,
+                            "top": 113,
+                            "width": 17,
+                            "height": 31,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 167,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 199,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 231,
+                            "top": 116,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 39,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 117,
+                            "width": 19,
+                            "height": 21,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 103,
+                            "top": 115,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 135,
+                            "top": 113,
+                            "width": 17,
+                            "height": 31,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 167,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 199,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 231,
+                            "top": 116,
+                            "width": 17,
+                            "height": 28,
+                            "time": 150.0
+                        },
+                         {
+                            "left": 42,
+                            "top": 117,
+                            "width": 16,
+                            "height": 25,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 39,
+                            "top": 117,
+                            "width": 17,
+                            "height": 26,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 8,
+                            "width": 23,
+                            "height": 21,
+                            "time": 150.0
+                        }
+                    ] 
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 10000.0,
+                    "paths": [
+                        {
+                            "x": 220.0,
+                            "y": 280.0,
+                            "speed": 7.0
                         }
                     ] 
                 }
