@@ -14,6 +14,8 @@ static bool (*const event_func[])(engine_t *, object_t *, void *) =
     NULL,
     is_time_event,
     NULL,
+    NULL,
+    NULL,
     NULL
 };
 
@@ -32,8 +34,8 @@ static int execute_event(object_t *object, engine_t *engine, list_t *data,
         return exit_game(engine, 84);
     if (!object_info)
         object_info = object;
-    if (event_func[*type % 4] &&
-        (*event_func[*type % 4])(engine, object_info, value)) {
+    if (event_func[*type % 6] &&
+        (*event_func[*type % 6])(engine, object_info, value)) {
         event->count++;
         set_active(true, object_enable, engine);
         if (*disable)

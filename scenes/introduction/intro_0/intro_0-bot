@@ -32,7 +32,22 @@
             }
         },
         {
-            "name": "event_manager",
+            "name": "SkyByPressAA",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 4,
+                            "disable": 1,
+                            "value": 0.0,
+                            "object_enable": "change_bloc_bot" 
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "skipByTime",
             "addons": {
                 "event_manager": {
                     "actions": [

@@ -9,6 +9,20 @@
 
 int end_secondary_screen(object_t *object, engine_t *engine);
 
+int window_on_tick(list_t *scene, engine_t *engine);
+
+int loop_track_on_event(list_t *scene, engine_t *engine);
+
+int event_secondary_screen(object_t *object, engine_t *engine)
+{
+    secondary_screen_t *secondary_screen = get_addon_data("secondary_screen",
+        object);
+    
+    if (secondary_screen->second)
+        return loop_track_on_event(secondary_screen->second->object, engine);
+    return 0;
+}
+
 int tick_secondary_screen(object_t *object, engine_t *engine)
 {
     secondary_screen_t *secondary_screen = get_addon_data("secondary_screen",
@@ -20,7 +34,7 @@ int tick_secondary_screen(object_t *object, engine_t *engine)
         secondary_screen->prev = NULL;
     }
     if (secondary_screen->second) {
-        execute_game(secondary_screen->second->object, engine);
+        window_on_tick(secondary_screen->second->object, engine);
         print_list(engine->print, engine);
     }
     sfRenderWindow_setView(engine->window, secondary_screen->bloc_1);
@@ -68,7 +82,7 @@ int init_secondary_screen_addons(engine_t *engine)
     addon->on_disable = NULL;
     addon->on_end = end_secondary_screen;
     addon->on_start = start_secondary_screen;
-    addon->on_event = NULL;
+    addon->on_event = event_secondary_screen;
     addon->on_tick = tick_secondary_screen;
     addon->init = init_secondary_screen;
     addon->on_collision = NULL;

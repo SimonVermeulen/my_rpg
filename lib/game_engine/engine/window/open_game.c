@@ -9,7 +9,7 @@
 
 int window_on_tick(list_t *scene, engine_t *engine);
 
-int window_on_event(list_t *scene, engine_t *engine);
+int window_on_event(engine_t *engine);
 
 int execute_game(list_t *scene, engine_t *engine)
 {
@@ -31,12 +31,13 @@ int core_game(engine_t *engine)
         destroy_scene(engine->prev_scene);
         engine->prev_scene = NULL;
     }
+    window_on_event(engine);
     if (engine->const_scene) {
-        execute_game(engine->const_scene->object, engine);
+        window_on_tick(engine->const_scene->object, engine);
         check_collision_event(engine, engine->const_scene->object);
     }
     if (engine->actual_scene) {
-        execute_game(engine->actual_scene->object, engine);
+        window_on_tick(engine->actual_scene->object, engine);
         check_collision_event(engine, engine->actual_scene->object);
     }
     print_list(engine->print, engine);

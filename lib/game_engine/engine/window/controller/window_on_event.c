@@ -42,14 +42,16 @@ int loop_track_on_event(list_t *scene, engine_t *engine)
     return 0;
 }
 
-int window_on_event(list_t *scene, engine_t *engine)
+int window_on_event(engine_t *engine)
 {
-    if (scene == NULL)
-        return 0;
+    list_t *c = (engine->const_scene) ? engine->const_scene->object : NULL;
+    list_t *a = (engine->actual_scene) ? engine->actual_scene->object : NULL;
+
     while (sfRenderWindow_pollEvent(engine->window, &engine->event)) {
         if (engine->event.type == sfEvtClosed)
             exit_game(engine, 0);
-        loop_track_on_event(scene, engine);
+        loop_track_on_event(c, engine);
+        loop_track_on_event(a, engine);
     }
     return 0;
 }
