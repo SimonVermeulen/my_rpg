@@ -24,11 +24,15 @@ static int start_addon(object_t *object, engine_t *engine)
     list_t *list = get_addon_data("change_scene", object);
     int *bloc = get_value_list(list, "bloc", 3);
     char *name = get_value_list(list, "name", 4);
+    secondary_screen_t *screens = get_secondary_screen_data(engine);
 
-    if (!bloc || !name)
+    if (!bloc || !name || !screens || !screens->bloc_1 || !screens->bloc_2)
         return exit_game(engine, 84);
-    if (*bloc == 1)
+    if (*bloc == 1) {
+        sfView_setCenter(screens->bloc_1, (sfVector2f) {270, 270});
         return change_scene(name, engine);
+    }
+    sfView_setCenter(screens->bloc_2, (sfVector2f) {270, 270});
     return change_secondary_screen(name, engine);
 }
 

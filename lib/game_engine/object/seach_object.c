@@ -33,8 +33,9 @@ object_t *seach_object(engine_t *engine, char const *name)
 {
     object_t *object = NULL;
 
-    object = seek_object_scene(engine->actual_scene->object, name);
-    if (object == NULL)
+    if (engine->actual_scene)
+        object = seek_object_scene(engine->actual_scene->object, name);
+    if (object == NULL && engine->const_scene)
         object = seek_object_scene(engine->const_scene->object, name);
     return object;
 }

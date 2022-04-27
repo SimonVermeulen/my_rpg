@@ -20,7 +20,7 @@ bool is_time_event(engine_t *engine, object_t *object, void *event)
 
     if (*time <= 0)
         return true;
-    *time -= get_delta(engine);
+    *time -= engine->time.delta;
     return false;
 }
 
