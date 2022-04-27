@@ -91,6 +91,64 @@
                     ]
                 }
             }
+        },
+        {
+            "name": "SkyByPressAA",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 4,
+                            "disable": 1,
+                            "value": 0.0,
+                            "object_enable": "change_bloc_bot" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_bot",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 1,
+                                "name": "start_menu-bot"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "SkyByPressAA2",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 4,
+                            "disable": 1,
+                            "value": 0.0,
+                            "object_enable": "change_bloc_top" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_top",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 2,
+                                "name": "help"
+                            }
+                        }
+                    }
+                ]
+            }
         }
     ]
 }

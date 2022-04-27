@@ -3,22 +3,22 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/sprites/introduction/start_background.png",
+                "path": "./assets/sprites/menu/start_menu/menu_background.png",
                 "smooth": 1
             },
             {
                 "name": "button_start_texture",
-                "path": "./assets/sprites/introduction/start_game_button.png",
+                "path": "./assets/sprites/menu/start_menu/new_game_button.png",
                 "smooth": 1
             },
             {
                 "name": "arrow_texture",
-                "path": "./assets/sprites/introduction/lib/yellow_arrow_right.png",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
                 "smooth": 1
             },
             {
                 "name": "info",
-                "path": "./assets/sprites/introduction/info_menu.png",
+                "path": "./assets/sprites/menu/start_menu/new_game_info.png",
                 "smooth": 1
             }
         ]
