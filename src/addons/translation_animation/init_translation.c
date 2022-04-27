@@ -6,6 +6,7 @@
 */
 
 #include "game.h"
+#include "my.h"
 
 vector_speed_t *create_vector_speed(list_t *list)
 {
@@ -60,8 +61,9 @@ static int write_data(translation_animation_t *translation, list_t *list)
     translation->wait = *wait;
     translation->is_reverse = 0;
     translation->object = NULL;
-    translation->name = get_value_list(list, "name", 4);
-    translation->name_enable = get_value_list(list, "name_enable", 4);
+    translation->name = my_strdup(get_value_list(list, "name", 4));
+    translation->name_enable = my_strdup(get_value_list(list, "name_enable",
+        4));
     return true;
 }
 

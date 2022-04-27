@@ -11,6 +11,8 @@ char *my_strdup(char const *src)
     char *result;
     int size;
 
+    if (!src)
+        return NULL;
     for (size = 0; src[size] != '\0'; size++);
     result = malloc(sizeof(char) * (size + 1));
     if (result == NULL)

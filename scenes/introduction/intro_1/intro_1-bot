@@ -9,6 +9,10 @@
             {
                 "name": "bulle",
                 "path": "./assets/sprites/lib/text/bulle.png"
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png"
             }
         ],
         "SoundBuffers": [
@@ -28,7 +32,7 @@
         "Fonts": [
             {
                 "name": "Outfit",
-                "path": "./assets/outfit.ttf"
+                "path": "./assets/fonts/font.ttf"
             }
         ]
     },
@@ -147,7 +151,7 @@
                             "wait": 1000.0
                         },
                         {
-                            "type": 1,
+                            "type": 2,
                             "enable": "text2",
                             "wait": 1000.0
                         },
@@ -174,10 +178,36 @@
                                     "y": 75.0
                                 },
                                 "Color": "white",
-                                "String": "Riolu wsh t'es d'orientation sexuelle de type homosexuel",
                                 "Font": "Outfit",
                                 "CharacterSize": 15
                             }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Riolu wsh t'es d'orientation sexuelle de type homosexuel",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 270.0,
+                                                "y": 175.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
                         }
                     },
                     {
@@ -192,10 +222,83 @@
                                     "y": 75.0
                                 },
                                 "Color": "white",
-                                "String": "Nan pk ? C'est parceque j'ai joue au ping pong hier ?",
                                 "Font": "Outfit",
                                 "CharacterSize": 15
                             }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Nan pk ?",
+                                "cursor": "cursor",
+                                "enable": "text2-1"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 75.0,
+                                                "y": 150.0
+                                            },
+                                            "Rotation": 90.0
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "text2-1",
+                                    "disable": 1,
+                                    "entity": {
+                                        "order": 3,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 75.0,
+                                                "y": 150.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "Outfit",
+                                            "CharacterSize": 15
+                                        }
+                                    },
+                                    "addons": {
+                                        "text_animation": {
+                                            "time": 2000.0,
+                                            "string": "Parceque j'ai jouer au ping ?",
+                                            "cursor": "cursor",
+                                            "parent": "dialogueA"
+                                        }
+                                    },
+                                    "children": {
+                                        "objects": [
+                                            {
+                                                "name": "cursor",
+                                                "entity": {
+                                                    "type": "Sprite",
+                                                    "order": 4,
+                                                    "parameters": {
+                                                        "Texture": {
+                                                            "Name": "whiteArrow"
+                                                        },
+                                                        "Position": {
+                                                            "x": 270.0,
+                                                            "y": 175.0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
                         }
                     },
                     {
