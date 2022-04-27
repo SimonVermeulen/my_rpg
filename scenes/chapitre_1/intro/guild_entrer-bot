@@ -1,0 +1,347 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/guild_entrer.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 652,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.83,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 67,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 263.0,
+                        "y": 280.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 1000.0,
+                    "rects": [
+                        {
+                            "left": 2,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 175.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 84,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 66,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 82,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 2,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 175.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 244,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 244,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 244,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 2,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 175.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 84,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 66,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 82,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 2,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 175.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 84,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 66,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 82,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 2,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 175.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 84,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 66,
+                            "top": 82,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 244,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 104,
+                            "top": 242,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 242,
+                            "width": 22,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 244,
+                            "width": 21,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 162,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 1000.0,
+                    "paths": [
+                        {
+                            "x": 360.0,
+                            "y": 280.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": 166.0,
+                            "y": 280.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": 360.0,
+                            "y": 280.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": 263.0,
+                            "y": 280.0,
+                            "speed": 15.0
+                        }
+                    ] 
+                }
+            }
+        }
+    ]
+}
