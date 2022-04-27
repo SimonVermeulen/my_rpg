@@ -65,6 +65,15 @@ typedef struct dialogue_s {
     bool disable;
 } dialogue_t;
 
+typedef struct text_animation_s {
+    list_t *data;
+    double prize;
+    double time;
+    int count;
+    char *string;
+    char *string_display;
+} text_animation_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 
@@ -81,5 +90,6 @@ int init_follow_view_addons(engine_t *engine);
 int init_change_scene_addons(engine_t *engine);
 int init_event_manager_addons(engine_t *engine);
 int init_dialogue_manager_addons(engine_t *engine);
+int init_text_animation_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

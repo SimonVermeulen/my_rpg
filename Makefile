@@ -24,6 +24,7 @@ SRC				=		src/index.c	\
 						src/addons/event_manager/event_controller.c	\
 						src/addons/event_manager/tick_controller.c	\
 						src/addons/dialogue_manager/dialogue_manager.c	\
+						src/addons/dialogue_manager/text_animation/text_animation.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 
