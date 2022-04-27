@@ -359,7 +359,7 @@
                         "addons": {
                             "change_scene": {
                                 "bloc": 1,
-                                "name": "intro_3-bot"
+                                "name": "intro_2-bot"
                             }
                         }
                     },
