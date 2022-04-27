@@ -1,0 +1,39 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/introduction/title_screen.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 257,
+                            "top": 0,
+                            "width": 257,
+                            "height": 193
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.12,
+                        "y": 3.1
+                    },
+                    "Position": {
+                        "x": -2.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        }
+    ]
+}

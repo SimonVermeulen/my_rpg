@@ -40,7 +40,7 @@
                             "type": 4,
                             "disable": 1,
                             "value": 0.0,
-                            "object_enable": "change_bloc_top" 
+                            "object_enable": "skip_introduction" 
                         }
                     ]
                 }
@@ -54,7 +54,7 @@
                         {
                             "type": 1,
                             "disable": 1,
-                            "value": 10000.0,
+                            "value": 3000.0,
                             "object_enable": "change_bloc_top" 
                         }
                     ]
@@ -78,7 +78,7 @@
                         "addons": {
                             "change_scene": {
                                 "bloc": 2,
-                                "name": "intro_-top"
+                                "name": "logo-top"
                             }
                         }
                     }
