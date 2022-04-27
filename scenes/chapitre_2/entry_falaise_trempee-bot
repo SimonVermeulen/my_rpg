@@ -1,0 +1,376 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/donjon/falaise_trempee/entry.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 716,
+                            "height": 518
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.8,
+                        "y": 1.2
+                    },
+                    "Position": {
+                        "x": -25.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 82,
+                            "width": 32,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 225.0,
+                        "y": 585.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 82,
+                            "width": 25,
+                            "height": 26,
+                            "time": 450.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 500.0,
+                    "paths": [
+                        {
+                            "x": 225.0,
+                            "y": 585.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": 225.0,
+                            "y": 300.0,
+                            "speed": 15.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 100,
+                            "width": 40,
+                            "height": 25
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 275.0,
+                        "y": 625.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 290,
+                            "width": 35,
+                            "height": 35,
+                            "time": 300.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 500.0,
+                    "paths": [
+                        {
+                            "x": 275.0,
+                            "y": 625.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": 275.0,
+                            "y": 288.0,
+                            "speed": 15.0
+                        }
+                    ] 
+                }
+            }
+        }
+    ]
+}

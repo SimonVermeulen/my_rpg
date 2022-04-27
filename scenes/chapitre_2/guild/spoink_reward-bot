@@ -1,0 +1,239 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_first_stage.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "pijako",
+                "path": "./assets/sprites/pokemons/pijako/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "spoink",
+                "path": "./assets/sprites/pokemons/spoink/idle.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 699,
+                            "height": 456
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": -280.0,
+                        "y": -150.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 162,
+                            "width": 32,
+                            "height": 28
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 285.0,
+                        "y": 323.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 210.0,
+                        "y": 315.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "pijako",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pijako",
+                        "Rect": {
+                            "left": 0,
+                            "top": 54,
+                            "width": 28,
+                            "height": 30
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 155.0,
+                        "y": 250.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "spoink",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "spoink",
+                        "Rect": {
+                            "left": 2,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 260.0,
+                        "y": 245.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 2,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 26,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 51,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 75,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 51,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 26,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 2,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 26,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 2,
+                            "top": 2,
+                            "width": 20,
+                            "height": 32,
+                            "time": 100.0
+                        }
+                        
+                    ]
+                }
+            }
+        }
+    ]
+}
