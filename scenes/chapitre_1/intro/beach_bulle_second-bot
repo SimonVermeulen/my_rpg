@@ -13,7 +13,7 @@
             },
             {
                 "name": "pokemon_1",
-                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
                 "smooth": 1
             }
         ]
@@ -108,19 +108,19 @@
                     "Texture": {
                         "Name": "pokemon_1",
                         "Rect": {
-                            "left": 3,
-                            "top": 162,
-                            "width": 21,
-                            "height": 24
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35
                         }
                     },
                     "Scale": {
-                        "x": 1.8,
-                        "y": 2.3
+                        "x": 2.0,
+                        "y": 2.5
                     },
                     "Position": {
                         "x": 260.0,
-                        "y": 220.0,
+                        "y": 220.0
                     }
                 }
             }
