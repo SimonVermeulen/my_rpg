@@ -56,6 +56,10 @@ int end_secondary_screen(object_t *object, engine_t *engine)
     secondary_screen_t *view_controller = get_addon_data("secondary_screen",
         object);
 
+    if (view_controller->prev) {
+        destroy_scene(view_controller->prev);
+        view_controller->prev = NULL;
+    }
     if (view_controller->second)
         on_end(view_controller->second->object, engine);
     add_function(destroy_secondary_screen, 0, object, engine);

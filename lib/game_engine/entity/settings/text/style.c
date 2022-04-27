@@ -13,7 +13,7 @@ static void (*const set_fonts[])(void *, const sfFont *) =
     NULL,
     NULL,
     NULL,
-    sfText_setString,
+    sfText_setFont,
     NULL
 };
 
@@ -87,7 +87,7 @@ static void (*const set_styles[])(void *, sfUint32) =
     NULL,
     NULL,
     NULL,
-    sfText_setLetterSpacing,
+    sfText_setStyle,
     NULL
 };
 

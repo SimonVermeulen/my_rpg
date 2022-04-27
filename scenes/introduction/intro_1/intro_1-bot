@@ -5,12 +5,30 @@
                 "name": "main_texture",
                 "path": "./assets/sprites/introduction/sky.png",
                 "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png"
             }
         ],
         "SoundBuffers": [
             {
                 "name": "intro_music",
                 "path": "./assets/sounds/intro_song.ogg"
+            }
+        ],
+        "Colors": [
+            {
+                "r": 255,
+                "g": 255,
+                "b": 255,
+                "name": "white"
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "Outfit",
+                "path": "./assets/outfit.ttf"
             }
         ]
     },
@@ -36,13 +54,13 @@
                     },
                     "Position": {
                         "x": 0.0,
-                        "y": -800.0
+                        "y": 0.0
                     }
                 }
             },
             "addons": {
                 "translation_animation": {
-                    "waitBeforeStart": 1500.0,
+                    "waitBeforeStart": 0.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
@@ -53,7 +71,7 @@
                         },
                         {
                             "x": 0.0,
-                            "y": -1200.0,
+                            "y": 0.0,
                             "speed": 20.0
                         }
                     ] 
@@ -103,6 +121,102 @@
                         }
                     ] 
                 }
+            }
+        },
+        {
+            "name": "dialogueA",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "bulle"
+                    },
+                    "Position": {
+                        "x": 50.0,
+                        "y": 50.0
+                    }
+                }
+            },
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text2",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text3",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 75.0,
+                                    "y": 75.0
+                                },
+                                "Color": "white",
+                                "String": "Riolu wsh t'es d'orientation sexuelle de type homosexuel",
+                                "Font": "Outfit",
+                                "CharacterSize": 15
+                            }
+                        }
+                    },
+                    {
+                        "name": "text2",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 75.0,
+                                    "y": 75.0
+                                },
+                                "Color": "white",
+                                "String": "Nan pk ? C'est parceque j'ai joue au ping pong hier ?",
+                                "Font": "Outfit",
+                                "CharacterSize": 15
+                            }
+                        }
+                    },
+                    {
+                        "name": "text3",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 75.0,
+                                    "y": 75.0
+                                },
+                                "Color": "white",
+                                "String": "Oui..",
+                                "Font": "Outfit",
+                                "CharacterSize": 15
+                            }
+                        }
+                    }
+                ]
             }
         }
     ]

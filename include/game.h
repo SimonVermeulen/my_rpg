@@ -54,6 +54,17 @@ typedef struct sparkles_s {
     int order;
 } sparkles_t;
 
+typedef struct dialogue_s {
+    list_t *data;
+    list_t **texts;
+    int length;
+    int count;
+    double wait;
+    bool active;
+    char *enable;
+    bool disable;
+} dialogue_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 
@@ -69,5 +80,6 @@ int init_move_view_addons(engine_t *engine);
 int init_follow_view_addons(engine_t *engine);
 int init_change_scene_addons(engine_t *engine);
 int init_event_manager_addons(engine_t *engine);
+int init_dialogue_manager_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */
