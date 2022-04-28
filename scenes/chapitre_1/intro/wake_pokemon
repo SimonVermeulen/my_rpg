@@ -1,0 +1,420 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/map_palge_sun_rise.png",
+                "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/chapitre_1/bulles.png",
+                "smooth": 1
+            },
+            {
+                "name": "pika",
+                "path": "./assets/sprites/pokemons/pikachu/laying.png",
+                "smooth": 1
+            },
+            {
+                "name": "evoli",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "beach_sun_rise",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 720,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 720,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 2160,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 3600,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 5040,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 6480,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 7920,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 3000.0,
+                    "paths": [
+                        {
+                            "x": 720.0,
+                            "y": 0.0,
+                            "speed": 20.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "beach_sun_rise_left",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": -540.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 1440,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 2880,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 4320,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 5760,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 7200,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540,
+                            "time": 300.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 3000.0,
+                    "paths": [
+                        {
+                            "x": 3.0,
+                            "y": 0.0,
+                            "speed": 20.0
+                        }
+                    ] 
+                }
+            }
+        },
+        {
+            "name": "pika",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pika",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 21,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": -300.2,
+                        "y": 280.0
+                    }
+                }
+            },
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 3000.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 250.0,
+                            "y": 280.0,
+                            "speed": 20.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "evoli",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "evoli",
+                        "Rect": {
+                            "left": 10,
+                            "top": 296,
+                            "width": 22,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 250.0,
+                        "y": 280.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 5600.0,
+                    "waitBeforeStart": 3000.0,
+                    "rects": [
+                        {
+                            "left": 10,
+                            "top": 296,
+                            "width": 22,
+                            "height": 21,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 49,
+                            "top": 297,
+                            "width": 25,
+                            "height": 18,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 88,
+                            "top": 295,
+                            "width": 25,
+                            "height": 18,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 127,
+                            "top": 291,
+                            "width": 23,
+                            "height": 21,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 166,
+                            "top": 293,
+                            "width": 23,
+                            "height": 21,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 206,
+                            "top": 296,
+                            "width": 22,
+                            "height": 21,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 248,
+                            "top": 296,
+                            "width": 22,
+                            "height": 21,
+                            "time": 20.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "waitBeforeStart": 3000.0,
+                    "infini": 1,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 290.0,
+                            "y": 280.0,
+                            "speed": 2.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "bulles",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "bulle",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 1440,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 1440,
+                            "height": 540,
+                            "time": 500.0
+                        },
+                        {
+                            "left": 720,
+                            "top": 0,
+                            "width": 1440,
+                            "height": 540,
+                            "time": 500.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 1,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "speed": 15.0
+                        },
+                        {
+                            "x": -540.0,
+                            "y": 0.0,
+                            "speed": 4.0
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
