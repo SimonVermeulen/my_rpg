@@ -11,8 +11,17 @@ static int get_decimal_size(const char *line)
 {
     int size = 0;
 
-    for (; line[size] && line[size] != ','; size++);
+    for (; line[size] && (line[size] >= '0' && line[size] <= '9'); size++);
     return (size);
+}
+
+static double get_dividend(int index)
+{
+    double result = 10;
+
+    for (int i = 1; i < index; i++)
+        result *= 10;
+    return (result);
 }
 
 static double get_decimal_value(const char *line, int sign)
@@ -23,7 +32,7 @@ static double get_decimal_value(const char *line, int sign)
 
     siz = get_decimal_size(line);
     for (int i = 0; i < siz; i++, j++)
-        result += (line[j] - 48) / (double)(my_compute_power_rec(10, i + 1));
+        result += (line[j] - 48.0) / get_dividend(i + 1);
     result = (sign == 1) ? -result : result;
     return (result);
 }
@@ -40,6 +49,5 @@ double my_atof(const char *line)
     if (result < 0)
         sign = 1;
     result += get_decimal_value(&line[i + 1], sign);
-    printf("result = %f\n", result);
     return (result);
 }
