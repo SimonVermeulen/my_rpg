@@ -16,7 +16,7 @@ static int event_addon(object_t *object, engine_t *engine)
         object->parent;
 
     if (animation->count >= my_strlen(animation->string) &&
-        if_key_released(engine, sfKeyA)) {
+        if_key_pressed(engine, sfKeyA)) {
         set_active(false, seek_object_scene(object->childs,
             get_value_list(animation->data, "cursor", 4)), engine);
         set_active(true, seek_object_scene(object->actual_scene,
