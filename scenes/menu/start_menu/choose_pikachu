@@ -3,22 +3,12 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/sprites/menu/start_menu/menu_background.png",
-                "smooth": 1
-            },
-            {
-                "name": "button_start_texture",
-                "path": "./assets/sprites/menu/start_menu/new_game_button.png",
+                "path": "./assets/sprites/menu/choose_pikachu.png",
                 "smooth": 1
             },
             {
                 "name": "arrow_texture",
-                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
-                "smooth": 1
-            },
-            {
-                "name": "info",
-                "path": "./assets/sprites/menu/start_menu/new_game_info.png",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
                 "smooth": 1
             }
         ]
@@ -35,43 +25,17 @@
                         "Rect": {
                             "left": 0,
                             "top": 0,
-                            "width": 256,
-                            "height": 192
+                            "width": 500,
+                            "height": 540
                         }
                     },
                     "Scale": {
-                        "x": 2.13,
-                        "y": 2.8
+                        "x": 1.1,
+                        "y": 1.0
                     },
                     "Position": {
                         "x": 0.0,
                         "y": 0.0
-                    }
-                }
-            }
-        },
-        {
-            "name": "button_start",
-            "entity": {
-                "type": "Sprite",
-                "order": 0,
-                "parameters": {
-                    "Texture": {
-                        "Name": "button_start_texture",
-                        "Rect": {
-                            "left": 0,
-                            "top": 0,
-                            "width": 223,
-                            "height": 94
-                        }
-                    },
-                    "Scale": {
-                        "x": 0.9,
-                        "y": 1.4
-                    },
-                    "Position": {
-                        "x": 15.0,
-                        "y": 25.0
                     }
                 }
             }
@@ -87,17 +51,17 @@
                         "Rect": {
                             "left": 0,
                             "top": 0,
-                            "width": 223,
-                            "height": 94
+                            "width": 31,
+                            "height": 22
                         }
                     },
                     "Scale": {
-                        "x": 0.9,
-                        "y": 1.4
+                        "x": 1.0,
+                        "y": 1.0
                     },
                     "Position": {
-                        "x": 35.0,
-                        "y": 47.0
+                        "x": 90.0,
+                        "y": 425.0
                     }
                 }
             }
@@ -129,7 +93,7 @@
             }
         },
         {
-            "name": "SkyByPressAA",
+            "name": "SkipByPressA",
             "addons": {
                 "event_manager": {
                     "actions": [
@@ -150,36 +114,7 @@
                         "addons": {
                             "change_scene": {
                                 "bloc": 1,
-                                "name": "welcome_game"
-                            }
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "SkyByPressAA2",
-            "addons": {
-                "event_manager": {
-                    "actions": [
-                        {
-                            "type": 4,
-                            "disable": 1,
-                            "value": 0.0,
-                            "object_enable": "change_bloc_top" 
-                        }
-                    ]
-                }
-            },
-            "children": {
-                "objects": [
-                    {
-                        "name": "change_bloc_top",
-                        "disable": 1,
-                        "addons": {
-                            "change_scene": {
-                                "bloc": 2,
-                                "name": "black_screen"
+                                "name": "intro_chap_1-bot"
                             }
                         }
                     }
