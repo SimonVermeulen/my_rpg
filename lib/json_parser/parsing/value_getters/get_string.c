@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "linked_list.h"
+#include "my.h"
 
 static int get_len(const char *buff)
 {
@@ -23,9 +24,17 @@ static int get_len(const char *buff)
 
 static void get_value(const char *buff, char *word, int len)
 {
-    for (int i = 1; i < len; i++)
-        word[i - 1] = buff[i];
-    word[len - 1] = '\0';
+    int offset = 0;
+
+    for (int i = 1; i + offset < len; i++) {
+        if (!my_strncmp(&buff[i + offset], "\\n", 1)) {
+            offset++;
+            word[i - 1] = '\n';
+        } else {
+            word[i - 1] = buff[i + offset];
+        }
+    }
+    word[len - 1 - offset] = '\0';
 }
 
 static int get_single_string(const char *buff, node_t *new_node)

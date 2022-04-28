@@ -10,7 +10,7 @@ int check_string(const char *buff)
     int is_quote = 0;
     int len = 0;
 
-    for (; buff[len] && (buff[len] != ',' && buff[len] != '\n'); len++) {
+    for (; buff[len] && is_quote != 2; len++) {
         if (buff[len] == '"')
             is_quote++;
     }

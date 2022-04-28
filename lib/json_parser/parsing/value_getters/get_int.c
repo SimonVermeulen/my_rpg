@@ -10,13 +10,14 @@
 #include <math.h>
 #include "linked_list.h"
 #include "json_parser.h"
+#include "my.h"
 
 static int get_nb(const char *buff, int index, int *array)
 {
     int len = 0;
 
     for (; buff[len] && (is_number(buff[len]) || buff[len] == '-'); len++);
-    array[index] = atoi(buff);
+    array[index] = my_getnbr(buff);
     return (len);
 }
 

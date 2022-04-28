@@ -10,6 +10,7 @@
 #include <math.h>
 #include "linked_list.h"
 #include "json_parser.h"
+#include "my.h"
 
 static int get_nb(const char *buff, int index, double *result)
 {
@@ -18,7 +19,7 @@ static int get_nb(const char *buff, int index, double *result)
     for (; buff[len] &&
         (is_number(buff[len]) || buff[len] == '.' || buff[len] == '-');
         len++);
-    result[index] = atof(buff);
+    result[index] = my_atof(buff);
     return (len);
 }
 

@@ -21,6 +21,7 @@ char *my_strlowcase(char *str);
 int my_strlen(char const *str);
 char *my_strcapitalize(char *str);
 int my_getnbr(char const *str);
+double my_atof(char const *str);
 int my_str_isalpha(char const *str);
 void my_sort_int_array(int *tab, int size);
 int my_str_isnum(char const *str);
