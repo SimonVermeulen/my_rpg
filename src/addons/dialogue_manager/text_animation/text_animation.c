@@ -8,30 +8,7 @@
 #include "game.h"
 #include "my.h"
 
-static int event_addon(object_t *object, engine_t *engine)
-{
-    text_animation_t *animation = get_addon_data("text_animation", object);
-    dialogue_t *dialogue = NULL;
-    object_t *parent = (object->parent) ? object->parent->parent :
-        object->parent;
-
-    if (animation->count >= my_strlen(animation->string) &&
-        if_key_pressed(engine, sfKeyA)) {
-        set_active(false, seek_object_scene(object->childs,
-            get_value_list(animation->data, "cursor", 4)), engine);
-        set_active(true, seek_object_scene(object->actual_scene,
-            get_value_list(animation->data, "enable", 4)), engine);
-        dialogue = get_addon_data("dialogue_manager", seek_object_scene(
-        object->actual_scene, get_value_list(animation->data, "enable", 4)));
-        if (!dialogue)
-            dialogue = get_addon_data("dialogue_manager", parent);
-        if (dialogue) {
-            dialogue->active = false;
-            dialogue->count++;
-            set_active(false, object->parent, engine);
-        }
-    }
-}
+int event_text_animation(object_t *object, engine_t *engine);
 
 static int tick_addon(object_t *object, engine_t *engine)
 {
@@ -46,11 +23,9 @@ static int tick_addon(object_t *object, engine_t *engine)
         animation->string_display[i] = animation->string[i];
     set_string(object, animation->string_display);
     animation->count = i;
-    if (animation->count >= my_strlen(animation->string))
+    if (animation->count >= my_strlen(animation->string) &&
+        animation->prize != 0)
         set_active(true, seek_object_scene(object->childs,
-            get_value_list(animation->data, "cursor", 4)), engine);
-    else
-        set_active(false, seek_object_scene(object->childs,
             get_value_list(animation->data, "cursor", 4)), engine);
 }
 
@@ -78,6 +53,14 @@ static void *init_addon(list_t *list)
     return animation;
 }
 
+static int end_addon(object_t *object, engine_t *engine)
+{
+    text_animation_t *animation = get_addon_data("text_animation", object);
+
+    free_json_object(animation->data);
+    free(animation->string_display);
+}
+
 int init_text_animation_addons(engine_t *engine)
 {
     addon_t *addon = malloc(sizeof(addon_t));
@@ -86,9 +69,9 @@ int init_text_animation_addons(engine_t *engine)
         return 84;
     addon->on_enable = NULL;
     addon->on_disable = NULL;
-    addon->on_end = NULL;
+    addon->on_end = end_addon;
     addon->on_start = NULL;
-    addon->on_event = event_addon;
+    addon->on_event = event_text_animation;
     addon->on_tick = tick_addon;
     addon->init = init_addon;
     addon->on_collision = NULL;
