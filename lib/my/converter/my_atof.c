@@ -40,6 +40,6 @@ double my_atof(const char *line)
     if (result < 0)
         sign = 1;
     result += get_decimal_value(&line[i + 1], sign);
-
+    printf("result = %f\n", result);
     return (result);
 }
