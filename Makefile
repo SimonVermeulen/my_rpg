@@ -27,6 +27,11 @@ SRC				=		src/index.c	\
 						src/addons/dialogue_manager/tick.c	\
 						src/addons/dialogue_manager/text_animation/text_animation.c	\
 						src/addons/dialogue_manager/text_animation/event.c	\
+						src/addons/dialogue_manager/select_manager/event.c	\
+						src/addons/dialogue_manager/select_manager/tick.c	\
+						src/addons/dialogue_manager/select_manager/init.c	\
+						src/addons/position_by_view/position_by_view.c	\
+						src/addons/multi_enable/multi_enable.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

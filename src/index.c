@@ -19,6 +19,9 @@ int (*const load_addons_func[])(engine_t *) =
     init_event_manager_addons,
     init_dialogue_manager_addons,
     init_text_animation_addons,
+    init_select_manager_addons,
+    init_position_by_view_addons,
+    init_multi_enable_addons,
     NULL
 };
 

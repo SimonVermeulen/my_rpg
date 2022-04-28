@@ -74,6 +74,25 @@ typedef struct text_animation_s {
     char *string_display;
 } text_animation_t;
 
+typedef struct select_manager_s {
+    list_t *data;
+    list_t **items;
+    int length;
+    int count;
+} select_manager_t;
+
+typedef struct position_by_view_s {
+    int bloc;
+    sfVector2f position;
+    bool inited;
+} position_by_view_t;
+
+typedef struct multi_enable_s {
+    list_t *data;
+    char **items;
+    int length;
+} multi_enable_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 
@@ -91,5 +110,8 @@ int init_change_scene_addons(engine_t *engine);
 int init_event_manager_addons(engine_t *engine);
 int init_dialogue_manager_addons(engine_t *engine);
 int init_text_animation_addons(engine_t *engine);
+int init_select_manager_addons(engine_t *engine);
+int init_position_by_view_addons(engine_t *engine);
+int init_multi_enable_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */
