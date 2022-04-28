@@ -41,7 +41,7 @@ int init_translation_animation_addons(engine_t *engine)
 
     if (addon == NULL)
         return 84;
-    addon->on_enable = NULL;
+    addon->on_enable = start_addons;
     addon->on_disable = NULL;
     addon->on_end = end_translation_animation;
     addon->on_start = start_addons;

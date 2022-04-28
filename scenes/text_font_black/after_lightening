@@ -50,16 +50,6 @@
             }
         },
         {
-            "name": "change_bloc_top",
-            "disable": 1,
-            "addons": {
-                "change_scene": {
-                    "bloc": 2,
-                    "name": "beach_sun_rise-top"
-                }
-            }
-        },
-        {
             "name": "bulle",
             "entity": {
                 "type": "Sprite",
@@ -99,11 +89,47 @@
                         }
                     ],
                     "disable": 1,
-                    "enable": "change_bloc_top"
+                    "enable": "change2scene"
                 }
             },
             "children": {
                 "objects": [
+                    {
+                        "name": "change2scene",
+                        "disable": 1,
+                        "addons": {
+                            "multi_enable": {
+                                "objects": [
+                                    "change_bloc_top",
+                                    "change_bloc_bot"
+                                ]
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "change_bloc_top",
+                                    "disable": 1,
+                                    "addons": {
+                                        "change_scene": {
+                                            "bloc": 2,
+                                            "name": "beach_sun_rise-top"
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "change_bloc_bot",
+                                    "disable": 1,
+                                    "addons": {
+                                        "change_scene": {
+                                            "bloc": 1,
+                                            "name": "wake_pokemon"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
                     {
                         "name": "text1",
                         "disable": 1,

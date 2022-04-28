@@ -32,6 +32,7 @@ SRC				=		src/index.c	\
 						src/addons/dialogue_manager/select_manager/init.c	\
 						src/addons/position_by_view/position_by_view.c	\
 						src/addons/multi_enable/multi_enable.c	\
+						src/addons/multi_disable/multi_disable.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

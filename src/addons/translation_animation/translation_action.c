@@ -72,10 +72,11 @@ int tick_translation_animation(object_t *object, engine_t *engine)
         get_addon_data("translation_animation", object);
     node_t *direction = get_node_id(trans->positions, trans->step);
     vector_speed_t *vector = NULL;
-    sfVector2f position = get_position(trans->object);
+    sfVector2f position;
 
-    if (!direction)
+    if (!direction || !trans->object)
         return 0;
+    position = get_position(trans->object);
     trans->count_wait += get_delta(engine);
     if (trans->count_wait < trans->wait)
         return 0;
