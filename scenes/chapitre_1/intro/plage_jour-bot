@@ -10,6 +10,24 @@
                 "name": "pokemons",
                 "path": "./assets/sprites/pokemons/pikachu/laying.png",
                 "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png"
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png"
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png"
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
             }
         ]
     },
@@ -111,6 +129,128 @@
                         "y": 280.0
                     }
                 }
+            }
+        },
+        {
+            "name": "bulle",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "bulle"
+                    },
+                    "Position": {
+                        "x": 33.0,
+                        "y": 350.0
+                    }
+                }
+            },
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 2,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 60.0,
+                                    "y": 360.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "...Je n'y arrive pas...",
+                                "cursor": "cursor2",
+                                "enable": "text1-1"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor2",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 230.0,
+                                                "y": 370.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "text1-1",
+                                    "disable": 1,
+                                    "entity": {
+                                        "order": 3,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 120.0,
+                                                "y": 360.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30
+                                        }
+                                    },
+                                    "addons": {
+                                        "text_animation": {
+                                            "time": 2000.0,
+                                            "string": "                                Je...",
+                                            "cursor": "cursor",
+                                            "parent": "bulle"
+                                        }
+                                    },
+                                    "children": {
+                                        "objects": [
+                                            {
+                                                "name": "cursor",
+                                                "entity": {
+                                                    "type": "Sprite",
+                                                    "order": 4,
+                                                    "parameters": {
+                                                        "Texture": {
+                                                            "Name": "whiteArrow"
+                                                        },
+                                                        "Position": {
+                                                            "x": 265.0,
+                                                            "y": 490.0
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         }
     ]

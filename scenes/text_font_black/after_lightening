@@ -50,6 +50,16 @@
             }
         },
         {
+            "name": "change_bloc_top",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "mer_jour-top"
+                }
+            }
+        },
+        {
             "name": "bulle",
             "entity": {
                 "type": "Sprite",
