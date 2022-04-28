@@ -14,7 +14,7 @@ static int get_type_2(object_t *object, engine_t *engine, dialogue_t *event)
     if (event->count >= event->length)
         return 0;
     type = get_value_list(event->texts[event->count], "type", 3);
-    if (*type == 3 && event->wait <= 0) {
+    if (*type == 3 && event->wait <= 0 && event->active) {
         event->active = true;
         event->count++;
     }
