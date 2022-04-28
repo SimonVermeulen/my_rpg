@@ -116,6 +116,35 @@
                     ]
                 }
             }
+        },
+        {
+            "name": "skipByTime",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 7000.0,
+                            "object_enable": "change_bloc_top" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_top",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 2,
+                                "name": "black_screen"
+                            }
+                        }
+                    }
+                ]
+            }
         }
     ]
 }

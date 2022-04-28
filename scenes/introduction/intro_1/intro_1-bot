@@ -5,34 +5,12 @@
                 "name": "main_texture",
                 "path": "./assets/sprites/introduction/sky.png",
                 "smooth": 1
-            },
-            {
-                "name": "bulle",
-                "path": "./assets/sprites/lib/text/bulle.png"
-            },
-            {
-                "name": "whiteArrow",
-                "path": "./assets/sprites/lib/text/white_arrow_down.png"
             }
         ],
         "SoundBuffers": [
             {
                 "name": "intro_music",
                 "path": "./assets/sounds/intro_song.ogg"
-            }
-        ],
-        "Colors": [
-            {
-                "r": 255,
-                "g": 255,
-                "b": 255,
-                "name": "white"
-            }
-        ],
-        "Fonts": [
-            {
-                "name": "Outfit",
-                "path": "./assets/fonts/font.ttf"
             }
         ]
     },
@@ -58,25 +36,25 @@
                     },
                     "Position": {
                         "x": 0.0,
-                        "y": 0.0
+                        "y": -800.0
                     }
                 }
             },
             "addons": {
                 "translation_animation": {
-                    "waitBeforeStart": 0.0,
+                    "waitBeforeStart": 1500.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
                         {
                             "x": 0.0,
-                            "y": 0.0,
-                            "speed": 20.0
+                            "y": -800.0,
+                            "speed": 8.0
                         },
                         {
                             "x": 0.0,
-                            "y": 0.0,
-                            "speed": 20.0
+                            "y": -1150.0,
+                            "speed": 8.0
                         }
                     ] 
                 }
@@ -109,217 +87,22 @@
             },
             "addons": {
                 "translation_animation": {
-                    "waitBeforeStart": 2250.0,
+                    "waitBeforeStart": 2750.0,
                     "infini": 0,
                     "reverse": 0,
                     "paths": [
                         {
                             "x": 250.0,
                             "y": 350.0,
-                            "speed": 50.0
+                            "speed": 40.0
                         },
                         {
                             "x": -300.0,
                             "y": 0.0,
-                            "speed": 50.0
+                            "speed": 40.0
                         }
                     ] 
                 }
-            }
-        },
-        {
-            "name": "dialogueA",
-            "entity": {
-                "type": "Sprite",
-                "order": 2,
-                "parameters": {
-                    "Texture": {
-                        "Name": "bulle"
-                    },
-                    "Position": {
-                        "x": 50.0,
-                        "y": 50.0
-                    }
-                }
-            },
-            "addons": {
-                "dialogue_manager": {
-                    "actions": [
-                        {
-                            "type": 1,
-                            "enable": "text1",
-                            "wait": 1000.0
-                        },
-                        {
-                            "type": 2,
-                            "enable": "text2",
-                            "wait": 1000.0
-                        },
-                        {
-                            "type": 1,
-                            "enable": "text3",
-                            "wait": 1000.0
-                        }
-                    ],
-                    "disable": 1
-                }
-            },
-            "children": {
-                "objects": [
-                    {
-                        "name": "text1",
-                        "disable": 1,
-                        "entity": {
-                            "order": 3,
-                            "type": "Text",
-                            "parameters": {
-                                "Position": {
-                                    "x": 75.0,
-                                    "y": 75.0
-                                },
-                                "Color": "white",
-                                "Font": "Outfit",
-                                "CharacterSize": 15
-                            }
-                        },
-                        "addons": {
-                            "text_animation": {
-                                "time": 2000.0,
-                                "string": "Riolu wsh t'es d'orientation sexuelle de type homosexuel",
-                                "cursor": "cursor"
-                            }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "whiteArrow"
-                                            },
-                                            "Position": {
-                                                "x": 270.0,
-                                                "y": 175.0
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "text2",
-                        "disable": 1,
-                        "entity": {
-                            "order": 3,
-                            "type": "Text",
-                            "parameters": {
-                                "Position": {
-                                    "x": 75.0,
-                                    "y": 75.0
-                                },
-                                "Color": "white",
-                                "Font": "Outfit",
-                                "CharacterSize": 15
-                            }
-                        },
-                        "addons": {
-                            "text_animation": {
-                                "time": 2000.0,
-                                "string": "Nan pk ?",
-                                "cursor": "cursor",
-                                "enable": "text2-1"
-                            }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "whiteArrow"
-                                            },
-                                            "Position": {
-                                                "x": 75.0,
-                                                "y": 150.0
-                                            },
-                                            "Rotation": 90.0
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "text2-1",
-                                    "disable": 1,
-                                    "entity": {
-                                        "order": 3,
-                                        "type": "Text",
-                                        "parameters": {
-                                            "Position": {
-                                                "x": 75.0,
-                                                "y": 150.0
-                                            },
-                                            "Color": "white",
-                                            "Font": "Outfit",
-                                            "CharacterSize": 15
-                                        }
-                                    },
-                                    "addons": {
-                                        "text_animation": {
-                                            "time": 2000.0,
-                                            "string": "Parceque j'ai jouer au ping ?",
-                                            "cursor": "cursor",
-                                            "parent": "dialogueA"
-                                        }
-                                    },
-                                    "children": {
-                                        "objects": [
-                                            {
-                                                "name": "cursor",
-                                                "entity": {
-                                                    "type": "Sprite",
-                                                    "order": 4,
-                                                    "parameters": {
-                                                        "Texture": {
-                                                            "Name": "whiteArrow"
-                                                        },
-                                                        "Position": {
-                                                            "x": 270.0,
-                                                            "y": 175.0
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "text3",
-                        "disable": 1,
-                        "entity": {
-                            "order": 3,
-                            "type": "Text",
-                            "parameters": {
-                                "Position": {
-                                    "x": 75.0,
-                                    "y": 75.0
-                                },
-                                "Color": "white",
-                                "String": "Oui..",
-                                "Font": "Outfit",
-                                "CharacterSize": 15
-                            }
-                        }
-                    }
-                ]
             }
         },
         {
@@ -345,7 +128,7 @@
                         {
                             "type": 1,
                             "disable": 1,
-                            "value": 7000.0,
+                            "value": 6000.0,
                             "object_enable": "change_bloc_bot" 
                         }
                     ]

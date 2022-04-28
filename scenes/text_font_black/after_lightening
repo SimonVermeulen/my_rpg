@@ -50,12 +50,12 @@
             }
         },
         {
-            "name": "change_bloc_bot",
+            "name": "change_bloc_top",
             "disable": 1,
             "addons": {
                 "change_scene": {
-                    "bloc": 1,
-                    "name": "lightening2"
+                    "bloc": 2,
+                    "name": "beach_sun_rise-top"
                 }
             }
         },
@@ -83,23 +83,23 @@
                             "wait": 1000.0
                         },
                         {
-                            "type": 2,
+                            "type": 1,
                             "enable": "text2",
                             "wait": 1000.0
                         },
                         {
-                            "type": 2,
+                            "type": 1,
                             "enable": "text3",
                             "wait": 1000.0
                         },
                         {
-                            "type": 2,
+                            "type": 1,
                             "enable": "text4",
                             "wait": 1000.0
                         }
                     ],
                     "disable": 1,
-                    "enable": "change_bloc_bot"
+                    "enable": "change_bloc_top"
                 }
             },
             "children": {
@@ -123,7 +123,7 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Wouaaah! Aaah...!",
+                                "string": "....",
                                 "cursor": "cursor"
                             }
                         },
@@ -156,7 +156,7 @@
                             "type": "Text",
                             "parameters": {
                                 "Position": {
-                                    "x": 60.0,
+                                    "x": 53.0,
                                     "y": 360.0
                                 },
                                 "Color": "white",
@@ -167,72 +167,26 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Ca...",
-                                "cursor": "cursor2",
-                                "enable": "text2-1"
+                                "string": ".........",
+                                "cursor": "cursor"
                             }
                         },
                         "children": {
                             "objects": [
                                 {
-                                    "name": "cursor2",
+                                    "name": "cursor",
                                     "entity": {
                                         "type": "Sprite",
                                         "order": 4,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "yellowArrow"
+                                                "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 100.0,
-                                                "y": 370.0
+                                                "x": 265.0,
+                                                "y": 490.0
                                             }
                                         }
-                                    }
-                                },
-                                {
-                                    "name": "text2-1",
-                                    "disable": 1,
-                                    "entity": {
-                                        "order": 3,
-                                        "type": "Text",
-                                        "parameters": {
-                                            "Position": {
-                                                "x": 120.0,
-                                                "y": 360.0
-                                            },
-                                            "Color": "white",
-                                            "Font": "font",
-                                            "CharacterSize": 30
-                                        }
-                                    },
-                                    "addons": {
-                                        "text_animation": {
-                                            "time": 2000.0,
-                                            "string": "Ca va?!",
-                                            "cursor": "cursor",
-                                            "parent": "bulle"
-                                        }
-                                    },
-                                    "children": {
-                                        "objects": [
-                                            {
-                                                "name": "cursor",
-                                                "entity": {
-                                                    "type": "Sprite",
-                                                    "order": 4,
-                                                    "parameters": {
-                                                        "Texture": {
-                                                            "Name": "whiteArrow"
-                                                        },
-                                                        "Position": {
-                                                            "x": 265.0,
-                                                            "y": 490.0
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ]
                                     }
                                 }
                             ]
@@ -246,7 +200,7 @@
                             "type": "Text",
                             "parameters": {
                                 "Position": {
-                                    "x": 60.0,
+                                    "x": 53.0,
                                     "y": 360.0
                                 },
                                 "Color": "white",
@@ -257,72 +211,27 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Non!",
-                                "cursor": "cursor2",
-                                "enable": "text3-1"
+                                "string": "..............",
+                                "cursor": "cursor",
+                                "enable": "change_bloc_top"
                             }
                         },
                         "children": {
                             "objects": [
                                 {
-                                    "name": "cursor2",
+                                    "name": "cursor",
                                     "entity": {
                                         "type": "Sprite",
                                         "order": 4,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "yellowArrow"
+                                                "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 100.0,
-                                                "y": 370.0
+                                                "x": 265.0,
+                                                "y": 490.0
                                             }
                                         }
-                                    }
-                                },
-                                {
-                                    "name": "text3-1",
-                                    "disable": 1,
-                                    "entity": {
-                                        "order": 3,
-                                        "type": "Text",
-                                        "parameters": {
-                                            "Position": {
-                                                "x": 120.0,
-                                                "y": 360.0
-                                            },
-                                            "Color": "white",
-                                            "Font": "font",
-                                            "CharacterSize": 30
-                                        }
-                                    },
-                                    "addons": {
-                                        "text_animation": {
-                                            "time": 2000.0,
-                                            "string": "Tiens bon!",
-                                            "cursor": "cursor",
-                                            "parent": "bulle"
-                                        }
-                                    },
-                                    "children": {
-                                        "objects": [
-                                            {
-                                                "name": "cursor",
-                                                "entity": {
-                                                    "type": "Sprite",
-                                                    "order": 4,
-                                                    "parameters": {
-                                                        "Texture": {
-                                                            "Name": "whiteArrow"
-                                                        },
-                                                        "Position": {
-                                                            "x": 265.0,
-                                                            "y": 490.0
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ]
                                     }
                                 }
                             ]
@@ -336,7 +245,7 @@
                             "type": "Text",
                             "parameters": {
                                 "Position": {
-                                    "x": 60.0,
+                                    "x": 53.0,
                                     "y": 360.0
                                 },
                                 "Color": "white",
@@ -347,72 +256,26 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Allez encore un effort...",
-                                "cursor": "cursor2",
-                                "enable": "text4-1"
+                                "string": "Aaaah...",
+                                "cursor": "cursor"
                             }
                         },
                         "children": {
                             "objects": [
                                 {
-                                    "name": "cursor2",
+                                    "name": "cursor",
                                     "entity": {
                                         "type": "Sprite",
                                         "order": 4,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "yellowArrow"
+                                                "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 270.0,
-                                                "y": 370.0
+                                                "x": 265.0,
+                                                "y": 490.0
                                             }
                                         }
-                                    }
-                                },
-                                {
-                                    "name": "text4-1",
-                                    "disable": 1,
-                                    "entity": {
-                                        "order": 3,
-                                        "type": "Text",
-                                        "parameters": {
-                                            "Position": {
-                                                "x": 290.0,
-                                                "y": 360.0
-                                            },
-                                            "Color": "white",
-                                            "Font": "font",
-                                            "CharacterSize": 30
-                                        }
-                                    },
-                                    "addons": {
-                                        "text_animation": {
-                                            "time": 2000.0,
-                                            "string": "Allez! Tiens le coup!",
-                                            "cursor": "cursor",
-                                            "parent": "bulle"
-                                        }
-                                    },
-                                    "children": {
-                                        "objects": [
-                                            {
-                                                "name": "cursor",
-                                                "entity": {
-                                                    "type": "Sprite",
-                                                    "order": 4,
-                                                    "parameters": {
-                                                        "Texture": {
-                                                            "Name": "whiteArrow"
-                                                        },
-                                                        "Position": {
-                                                            "x": 265.0,
-                                                            "y": 490.0
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ]
                                     }
                                 }
                             ]
