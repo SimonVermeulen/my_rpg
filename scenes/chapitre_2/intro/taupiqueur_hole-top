@@ -45,13 +45,45 @@
             "addons": {
                 "move_view": {
                     "bloc": 2,
-                    "speed": 15.0,
+                    "start": 0,
                     "waitBeforeStart": 2000.0,
-                    "path": {
+                    "path": [
+                        {
                         "x": 270.0,
-                        "y": 880.0
-                    }
+                        "y": 880.0,
+                        "speed": 15.0
+                        }
+                    ]
                 }
+            }
+        },
+        {
+            "name": "SkipByTime",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 0.0,
+                            "object_enable": "change_bloc_bot" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_bot",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 1,
+                                "name": "taupiqueur_hole-bot"
+                            }
+                        }
+                    }
+                ]
             }
         }
     ]

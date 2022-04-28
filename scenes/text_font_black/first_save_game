@@ -85,7 +85,7 @@
                         {
                             "type": 3,
                             "enable": "text2",
-                            "wait": 3000.0
+                            "wait": 5000.0
                         }
                     ],
                     "disable": 1,
@@ -157,29 +157,8 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                               Sauvegarde en cours...\n                Ne pas fermer la machine\n                  ni couper le programme.",
-                                "cursor": "cursor"
+                                "string": "                               Sauvegarde en cours...\n                Ne pas fermer la machine\n                  ni couper le programme."
                             }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "whiteArrow"
-                                            },
-                                            "Position": {
-                                                "x": 265.0,
-                                                "y": 490.0
-                                            }
-                                        }
-                                    }
-                                }
-                            ]
                         }
                     }
                 ]
