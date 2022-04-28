@@ -157,7 +157,7 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                               Sauvegarde en cours...\n                Ne pas fermer la machine\n                  ni couper le programme."
+                                "string": "                               Sauvegarde en cours...\n\n                           Ne pas fermer la machine\n\n                            ni stopper le programme."
                             }
                         }
                     }
