@@ -308,7 +308,8 @@
                             "wait": 1000.0
                         }
                     ],
-                    "disable": 1
+                    "disable": 1,
+                    "enable": "step3"
                 }
             },
             "children": {
@@ -543,6 +544,95 @@
                         }
                     }
                 ]
+            }
+        },
+        {
+            "name": "step3",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 250.0,
+                            "y": 270.0,
+                            "speed": 8.0
+                        },
+                        {
+                            "x": -200.0,
+                            "y": 270.0,
+                            "speed": 8.0
+                        }
+                    ],
+                    "name": "evoli",
+                    "enable": "step4"
+                },
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "evoli",
+                    "rects": [
+                        {
+                            "left": 10,
+                            "top": 296,
+                            "width": 22,
+                            "height": 21,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 49,
+                            "top": 297,
+                            "width": 25,
+                            "height": 18,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 88,
+                            "top": 295,
+                            "width": 25,
+                            "height": 18,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 127,
+                            "top": 291,
+                            "width": 23,
+                            "height": 21,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 166,
+                            "top": 293,
+                            "width": 23,
+                            "height": 21,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 206,
+                            "top": 296,
+                            "width": 22,
+                            "height": 21,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 248,
+                            "top": 296,
+                            "width": 22,
+                            "height": 21,
+                            "time": 20.0
+                        }
+                    ]
+                },
+                "follow_view": {
+                    "bloc": 1,
+                    "object": "evoli"
+                }
             }
         },
         {
