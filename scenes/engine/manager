@@ -1,9 +1,33 @@
 {
+    "buffer": {
+        "SoundBuffers": [
+            {
+                "name": "music-intro",
+                "path": "./assets/sounds/intro_song.ogg"
+            }
+        ]
+    },
     "objects": [
         {
             "name": "secondary_screen",
             "addons": {
                 "secondary_screen": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "SoundBuffer": "music-intro"
+                }
+            },
+            "addons": {
+                "play_sound": {
                     "empty": 0
                 }
             }

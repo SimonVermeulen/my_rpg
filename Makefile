@@ -33,6 +33,7 @@ SRC				=		src/index.c	\
 						src/addons/position_by_view/position_by_view.c	\
 						src/addons/multi_enable/multi_enable.c	\
 						src/addons/multi_disable/multi_disable.c	\
+						src/addons/play_sound/play_sound.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

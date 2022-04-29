@@ -23,6 +23,7 @@ int (*const load_addons_func[])(engine_t *) =
     init_position_by_view_addons,
     init_multi_enable_addons,
     init_multi_disable_addons,
+    init_play_sound_addons,
     NULL
 };
 
@@ -35,7 +36,7 @@ int main(int argc, char **argv)
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("example_select", engine) ||
+        !change_scene("intro_0-bot", engine) ||
         !change_secondary_screen("intro_0-top", engine))
         return 84;
     return open_game(engine, 60);

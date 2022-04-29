@@ -13,7 +13,11 @@ static int start_addon(object_t *object, engine_t *engine)
     object_t *item = NULL;
 
     for (int i = 0; i < multi->length; i++) {
-        item = seek_object_scene(object->actual_scene, multi->items[i]);
+        item = NULL;
+        if (multi->all)
+            item = seach_object(engine, multi->items[i]);
+        if (!item)
+            item = seek_object_scene(object->actual_scene, multi->items[i]);
         set_active(false, item, engine);
     }
     return 0;
@@ -42,6 +46,7 @@ static void *init_addon(list_t *list)
     multi->data = copy;
     multi->items = search_from_key(copy, "objects")->value;
     multi->length = actions_node->len;
+    multi->all = (get_value_list(list, "all", 3)) ? true : false;
     return multi;
 }
 
@@ -54,7 +59,7 @@ int init_multi_disable_addons(engine_t *engine)
     addon->on_enable = start_addon;
     addon->on_disable = NULL;
     addon->on_end = end_addon;
-    addon->on_start = NULL;
+    addon->on_start = start_addon;
     addon->on_event = NULL;
     addon->on_tick = NULL;
     addon->init = init_addon;

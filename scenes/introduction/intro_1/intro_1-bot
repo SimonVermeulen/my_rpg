@@ -6,12 +6,6 @@
                 "path": "./assets/sprites/introduction/sky.png",
                 "smooth": 1
             }
-        ],
-        "SoundBuffers": [
-            {
-                "name": "intro_music",
-                "path": "./assets/sounds/intro_song.ogg"
-            }
         ]
     },
     "objects": [

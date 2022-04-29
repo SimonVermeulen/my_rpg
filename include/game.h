@@ -92,6 +92,7 @@ typedef struct multi_enable_s {
     list_t *data;
     char **items;
     int length;
+    bool all;
 } multi_enable_t;
 
 bool change_secondary_screen(const char *name, engine_t *engine);
@@ -115,5 +116,6 @@ int init_select_manager_addons(engine_t *engine);
 int init_position_by_view_addons(engine_t *engine);
 int init_multi_enable_addons(engine_t *engine);
 int init_multi_disable_addons(engine_t *engine);
+int init_play_sound_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

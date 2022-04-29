@@ -15,6 +15,17 @@
     },
     "objects": [
         {
+            "name": "disableSound",
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "soundIntro"
+                    ],
+                    "all": 1
+                }
+            }
+        },
+        {
             "name": "background",
             "entity": {
                 "type": "Sprite",
