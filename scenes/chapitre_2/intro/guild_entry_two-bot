@@ -356,7 +356,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "evoli: Ensuite, il faut s'entrainer\n\ndpour devenir une equipe d'exploration\n\nde premier ordre.",
+                                "string": "evoli: Ensuite, il faut s'entrainer\n\npour devenir une equipe d'exploration\n\nde premier ordre.",
                                 "cursor": "cursor"
                             }
                         },
@@ -986,7 +986,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Evoly: Aaah!",
+                                "string": "Evoli: Aaah!",
                                 "cursor": "cursor"
                             }
                         },
@@ -1264,7 +1264,8 @@
                             "height": 35,
                             "time": 1500.0
                         }
-                    ]
+                    ],
+                    "enable": "step7"
                 },
                 "translation_animation": {
                     "infini": 0,
@@ -1277,8 +1278,7 @@
                             "speed": 15.0
                         }
                     ],
-                    "name": "2eme_poke",
-                    "name_enable": "step7"
+                    "name": "2eme_poke"
                 }
             }
         },
@@ -1857,7 +1857,8 @@
                             "height": 26,
                             "time": 275.0
                         }
-                    ]
+                    ],
+                    "enable": "step11"
                 },
                 "translation_animation": {
                     "infini": 0,
@@ -1870,8 +1871,7 @@
                             "speed": 15.0
                         }
                     ],
-                    "name": "1er_poke",
-                    "name_enable": "step11"
+                    "name": "1er_poke"
                 }
             }
         },
