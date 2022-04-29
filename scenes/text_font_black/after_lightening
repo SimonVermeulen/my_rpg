@@ -133,7 +133,7 @@
                                     "addons": {
                                         "change_scene": {
                                             "bloc": 1,
-                                            "name": "wake_pokemon"
+                                            "name": "plage_jour"
                                         }
                                     }
                                 }
