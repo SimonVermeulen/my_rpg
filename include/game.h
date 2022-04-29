@@ -79,6 +79,7 @@ typedef struct select_manager_s {
     list_t **items;
     int length;
     int count;
+    double time;
 } select_manager_t;
 
 typedef struct position_by_view_s {

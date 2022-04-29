@@ -10,6 +10,13 @@
 int tick_select_manager(object_t *object, engine_t *engine);
 int event_select_manager(object_t *object, engine_t *engine);
 
+static int disable_addon(object_t *object, engine_t *engine)
+{
+    select_manager_t *select = get_addon_data("select_manager", object);
+
+    select->time = 500;
+}
+
 static void *init_addon(list_t *list)
 {
     node_t *actions_node = search_from_key(list, "items");
@@ -25,6 +32,7 @@ static void *init_addon(list_t *list)
     select->data = copy;
     select->items = search_from_key(copy, "items")->value;
     select->length = actions_node->len;
+    select->time = 500;
     select->count = 0;
     return select;
 }
@@ -35,10 +43,10 @@ int init_select_manager_addons(engine_t *engine)
 
     if (addon == NULL)
         return 84;
-    addon->on_enable = NULL;
-    addon->on_disable = NULL;
+    addon->on_enable = disable_addon;
+    addon->on_disable = disable_addon;
     addon->on_end = NULL;
-    addon->on_start = NULL;
+    addon->on_start = disable_addon;
     addon->on_event = event_select_manager;
     addon->on_tick = tick_select_manager;
     addon->init = init_addon;

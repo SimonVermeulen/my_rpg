@@ -12,7 +12,7 @@ static int apply_select(object_t *object, object_t *cursor,
 {
     sfVector2f position = create_vector2f_list(get_value_list(list,
         "position", 1));
-    char *hover = get_value_list(object, "hover", 4);
+    char *hover = get_value_list(select->data, "hover", 4);
 
     set_position_vector(cursor, position);
     set_active(true, seek_object_scene(object->actual_scene, hover),
@@ -24,7 +24,8 @@ int tick_select_manager(object_t *object, engine_t *engine)
 {
     select_manager_t *select = get_addon_data("select_manager", object);
     object_t *cursor = seek_object_scene(object->actual_scene,
-        get_addon_data("cursor", cursor));
-    
+        get_value_list(select->data, "cursor", 4));
+
+    select->time -= (select->time > 0) ? get_delta(engine) : 0;
     return apply_select(object, cursor, select, select->items[select->count]);
 }
