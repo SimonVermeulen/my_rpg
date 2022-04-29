@@ -2204,6 +2204,26 @@
             }
         },
         {
+            "name": "change_bot",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "taupiqueur_hole-bot"
+                }
+            }
+        },
+        {
+            "name": "change_top",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "taupiqueur_hole-top"
+                }
+            }
+        },
+        {
             "name": "step12",
             "disable": 1,
             "addons": {
@@ -2212,9 +2232,11 @@
                         "step11"
                     ]
                 },
-                "change_scene": {
-                    "bloc": 2,
-                    "name": "taupiqueur_hole-top"
+                "multi_enable": {
+                    "objects": [
+                        "change_top",
+                        "change_bot"
+                    ]
                 }
             }
         }
