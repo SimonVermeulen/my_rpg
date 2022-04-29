@@ -7,7 +7,7 @@
                 "smooth": 1
             },
             {
-                "name": "bulle",
+                "name": "bulles",
                 "path": "./assets/sprites/chapitre_1/bulles.png",
                 "smooth": 1
             },
@@ -22,7 +22,7 @@
                 "smooth": 1
             },
             {
-                "name": "dialogue_bulle",
+                "name": "bulle",
                 "path": "./assets/sprites/lib/text/bulle.png"
             },
             {
@@ -66,59 +66,31 @@
                         "y": 0.0
                     }
                 }
-            },
-            "addons": {
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count": 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 0.0,
-                    "rects": [
-                        {
-                            "left": 720,
+            }
+        },
+        {
+            "name": "beach_sun_rise_left",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
                             "top": 0,
                             "width": 720,
-                            "height": 540,
-                            "time": 300.0
-                        },
-                        {
-                            "left": 2160,
-                            "top": 0,
-                            "width": 720,
-                            "height": 540,
-                            "time": 300.0
-                        },
-                        {
-                            "left": 3600,
-                            "top": 0,
-                            "width": 720,
-                            "height": 540,
-                            "time": 300.0
-                        },
-                        {
-                            "left": 5040,
-                            "top": 0,
-                            "width": 720,
-                            "height": 540,
-                            "time": 250.0
-                        },
-                        {
-                            "left": 6480,
-                            "top": 0,
-                            "width": 720,
-                            "height": 540,
-                            "time": 250.0
-                        },
-                        {
-                            "left": 7920,
-                            "top": 0,
-                            "width": 720,
-                            "height": 540,
-                            "time": 300.0
+                            "height": 540
                         }
-                    ]
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": -540.0,
+                        "y": 0.0
+                    }
                 }
             }
         },
@@ -152,15 +124,15 @@
             "name": "evoli",
             "entity": {
                 "type": "Sprite",
-                "order": 5,
+                "order": 0,
                 "parameters": {
                     "Texture": {
                         "Name": "evoli",
                         "Rect": {
-                            "left": 10,
-                            "top": 296,
-                            "width": 22,
-                            "height": 21
+                            "left": 11,
+                            "top": 202,
+                            "width": 19,
+                            "height": 20
                         }
                     },
                     "Scale": {
@@ -168,470 +140,9 @@
                         "y": 2.3
                     },
                     "Position": {
-                        "x": 500.0,
+                        "x": 250.0,
                         "y": 280.0
                     }
-                }
-            }
-        },
-        {
-            "name": "step1",
-            "addons": {
-                "translation_animation": {
-                    "waitBeforeStart": 0.0,
-                    "infini": 0,
-                    "reverse": 0,
-                    "paths": [
-                        {
-                            "x": 500.0,
-                            "y": 280.0,
-                            "speed": 8.0
-                        },
-                        {
-                            "x": 250.0,
-                            "y": 280.0,
-                            "speed": 8.0
-                        }
-                    ],
-                    "name": "evoli",
-                    "name_enable": "step2"
-                },
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count": 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 0.0,
-                    "object_name": "evoli",
-                    "rects": [
-                        {
-                            "left": 10,
-                            "top": 296,
-                            "width": 22,
-                            "height": 21,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 49,
-                            "top": 297,
-                            "width": 25,
-                            "height": 18,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 88,
-                            "top": 295,
-                            "width": 25,
-                            "height": 18,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 127,
-                            "top": 291,
-                            "width": 23,
-                            "height": 21,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 166,
-                            "top": 293,
-                            "width": 23,
-                            "height": 21,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 206,
-                            "top": 296,
-                            "width": 22,
-                            "height": 21,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 248,
-                            "top": 296,
-                            "width": 22,
-                            "height": 21,
-                            "time": 20.0
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "name": "step2",
-            "disable": 1,
-            "addons": {
-                "multi_disable": {
-                    "objects": [
-                        "step1"
-                    ]
-                },
-                "translation_animation": {
-                    "waitBeforeStart": 0.0,
-                    "infini": 0,
-                    "reverse": 0,
-                    "paths": [
-                        {
-                            "x": 250.0,
-                            "y": 280.0,
-                            "speed": 8.0
-                        },
-                        {
-                            "x": 250.0,
-                            "y": 200.0,
-                            "speed": 8.0
-                        }
-                    ],
-                    "name": "evoli"
-                },
-                "dialogue_manager": {
-                    "actions": [
-                        {
-                            "type": 1,
-                            "enable": "text1",
-                            "wait": 1000.0
-                        },
-                        {
-                            "type": 1,
-                            "enable": "text2",
-                            "wait": 1000.0
-                        },
-                        {
-                            "type": 1,
-                            "enable": "text3",
-                            "wait": 1000.0
-                        },
-                        {
-                            "type": 1,
-                            "enable": "text4",
-                            "wait": 1000.0
-                        }
-                    ],
-                    "disable": 1,
-                    "enable": "step3"
-                }
-            },
-            "children": {
-                "objects": [
-                    {
-                        "name": "dialogue_bulle",
-                        "entity": {
-                            "type": "Sprite",
-                            "order": 2,
-                            "parameters": {
-                                "Texture": {
-                                    "Name": "dialogue_bulle"
-                                },
-                                "Position": {
-                                    "x": 33.0,
-                                    "y": 350.0
-                                }
-                            }
-                        },
-                        "addons": {
-                            "position_by_view": {
-                                "bloc": 1
-                            }
-                        }
-                    },
-                    {
-                        "name": "text1",
-                        "disable": 1,
-                        "entity": {
-                            "order": 3,
-                            "type": "Text",
-                            "parameters": {
-                                "Position": {
-                                    "x": 53.0,
-                                    "y": 360.0
-                                },
-                                "Color": "white",
-                                "Font": "font",
-                                "CharacterSize": 30
-                            }
-                        },
-                        "addons": {
-                            "position_by_view": {
-                                "bloc": 1
-                            },
-                            "text_animation": {
-                                "time": 2000.0,
-                                "string": "....",
-                                "cursor": "cursor"
-                            }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "whiteArrow"
-                                            },
-                                            "Position": {
-                                                "x": 265.0,
-                                                "y": 490.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "text2",
-                        "disable": 1,
-                        "entity": {
-                            "order": 3,
-                            "type": "Text",
-                            "parameters": {
-                                "Position": {
-                                    "x": 53.0,
-                                    "y": 360.0
-                                },
-                                "Color": "white",
-                                "Font": "font",
-                                "CharacterSize": 30
-                            }
-                        },
-                        "addons": {
-                            "text_animation": {
-                                "time": 2000.0,
-                                "string": ".........",
-                                "cursor": "cursor"
-                            },
-                            "position_by_view": {
-                                "bloc": 1
-                            }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "whiteArrow"
-                                            },
-                                            "Position": {
-                                                "x": 265.0,
-                                                "y": 490.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "text3",
-                        "disable": 1,
-                        "entity": {
-                            "order": 3,
-                            "type": "Text",
-                            "parameters": {
-                                "Position": {
-                                    "x": 53.0,
-                                    "y": 360.0
-                                },
-                                "Color": "white",
-                                "Font": "font",
-                                "CharacterSize": 30
-                            }
-                        },
-                        "addons": {
-                            "position_by_view": {
-                                "bloc": 1
-                            },
-                            "text_animation": {
-                                "time": 2000.0,
-                                "string": "..............",
-                                "cursor": "cursor"
-                            }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "whiteArrow"
-                                            },
-                                            "Position": {
-                                                "x": 265.0,
-                                                "y": 490.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "name": "text4",
-                        "disable": 1,
-                        "entity": {
-                            "order": 3,
-                            "type": "Text",
-                            "parameters": {
-                                "Position": {
-                                    "x": 53.0,
-                                    "y": 360.0
-                                },
-                                "Color": "white",
-                                "Font": "font",
-                                "CharacterSize": 30
-                            }
-                        },
-                        "addons": {
-                            "position_by_view": {
-                                "bloc": 1
-                            },
-                            "text_animation": {
-                                "time": 2000.0,
-                                "string": "Aaaah...",
-                                "cursor": "cursor"
-                            }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "whiteArrow"
-                                            },
-                                            "Position": {
-                                                "x": 265.0,
-                                                "y": 490.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "step3",
-            "disable": 1,
-            "addons": {
-                "translation_animation": {
-                    "waitBeforeStart": 0.0,
-                    "infini": 0,
-                    "reverse": 0,
-                    "paths": [
-                        {
-                            "x": 250.0,
-                            "y": 270.0,
-                            "speed": 8.0
-                        },
-                        {
-                            "x": -200.0,
-                            "y": 270.0,
-                            "speed": 8.0
-                        }
-                    ],
-                    "name": "evoli",
-                    "enable": "step4"
-                },
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count": 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 0.0,
-                    "object_name": "evoli",
-                    "rects": [
-                        {
-                            "left": 10,
-                            "top": 296,
-                            "width": 22,
-                            "height": 21,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 49,
-                            "top": 297,
-                            "width": 25,
-                            "height": 18,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 88,
-                            "top": 295,
-                            "width": 25,
-                            "height": 18,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 127,
-                            "top": 291,
-                            "width": 23,
-                            "height": 21,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 166,
-                            "top": 293,
-                            "width": 23,
-                            "height": 21,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 206,
-                            "top": 296,
-                            "width": 22,
-                            "height": 21,
-                            "time": 20.0
-                        },
-                        {
-                            "left": 248,
-                            "top": 296,
-                            "width": 22,
-                            "height": 21,
-                            "time": 20.0
-                        }
-                    ]
-                },
-                "follow_view": {
-                    "bloc": 1,
-                    "object": "evoli"
                 }
             }
         },
@@ -642,7 +153,7 @@
                 "order": 0,
                 "parameters": {
                     "Texture": {
-                        "Name": "bulle",
+                        "Name": "bulles",
                         "Rect": {
                             "left": 0,
                             "top": 0,
@@ -703,6 +214,250 @@
                     ]
                 }
             }
+        },
+        {
+            "name": "step1",
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text2",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text3",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step2"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Quand il fait beau, les Krabby\n\nsortent au coucher du soleil pour faire\n\ndes bulles...",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text2",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Les rayon du soleil couchant\n\nfrappent les vagues et toute ces bulles...",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text3",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Toutes ces couleur... QUel\n\nspectacle magnifique!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "change_bot",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "bulle_sun_rise-bot"
+                }
+            }
+        },
+        {
+            "name": "change_top",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "bulle_sun_rise-top"
+                }
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step1"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "change_top",
+                        "change_bot"
+                    ]
+                }
+            }
         }
     ]
-}
+} 
