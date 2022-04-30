@@ -36,11 +36,11 @@
             },
             "addons": {
                 "rect_animation": {
-                    "infini": 1,
+                    "infini": 0,
                     "start": 0,
                     "count": 0.0,
                     "start-time": 0.0,
-                    "stop-time": 0.0,
+                    "stop-time": 3000.0,
                     "waitBeforeStart": 0.0,
                     "rects": [
                         {
@@ -163,7 +163,7 @@
                             "time": 250.0
                         },
                         {
-                            "left": 12240,
+                            "left": 12240.0,
                             "top": 540,
                             "width": 720,
                             "height": 540,
@@ -192,6 +192,64 @@
                         }
                     ]
                 }
+            }
+        },
+        {
+            "name": "skipByTime",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 2200.0,
+                            "object_enable": "change_bloc_bot" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_bot",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 1,
+                                "name": "wake_pokemon"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "skipByTime2",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 2200.0,
+                            "object_enable": "change_bloc_top" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_top",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 2,
+                                "name": "beach_sun_rise-top"
+                            }
+                        }
+                    }
+                ]
             }
         }
     ]
