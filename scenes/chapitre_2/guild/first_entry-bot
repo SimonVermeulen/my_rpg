@@ -879,7 +879,7 @@
                         }
                     ],
                     "disable": 1,
-                    "enable": "step6"
+                    "enable": "step9"
                 }
             },
             "children": {
@@ -1172,7 +1172,7 @@
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "step5"
+                        "step9"
                     ]
                 },
                 "translation_animation": {
@@ -1181,13 +1181,12 @@
                     "reverse": 0,
                     "paths": [
                         {
-                            "x": 240.0,
-                            "y": 340.0,
+                            "x": 255.0,
+                            "y": 320.0,
                             "speed": 5.0
                         }
                     ],
-                    "name": "pijako",
-                    "name_enable": "step7"
+                    "name": "pijako"
                 },
                 "rect_animation": {
                     "infini": 0,
@@ -1303,6 +1302,72 @@
                             "height": 30,
                             "time": 200.0
                         }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step7",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "2eme_poke",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 250.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step8",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "1er_poke",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 32,
+                            "height": 25,
+                            "time": 250.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step9",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step5"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step6",
+                        "step7",
+                        "step8"
                     ]
                 }
             }
