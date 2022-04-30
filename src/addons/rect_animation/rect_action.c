@@ -15,7 +15,7 @@ int set_rect_with_list(object_t *object, list_t *list, int *start,
     int *width = get_value_list(list, "width", 3);
     int *height = get_value_list(list, "height", 3);
 
-    if (!left || !top || !width || !height)
+    if (!object || !left || !top || !width || !height)
         return 0;
     set_texture_rect(object, (sfIntRect) {*left, *top, *width, *height});
     *start += 1;
