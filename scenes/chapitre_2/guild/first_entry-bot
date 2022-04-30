@@ -90,7 +90,13 @@
                 "name": "pijako2",
                 "path": "./assets/sprites/pokemons/pijako/fly.png",
                 "smooth": 1
+            },
+            {
+                "name": "pijako3",
+                "path": "./assets/sprites/pokemons/pijako/wiggle.png",
+                "smooth": 1
             }
+                
         ],
         "Fonts": [
             {
@@ -225,6 +231,32 @@
                     },
                     "Position": {
                         "x": 255.0,
+                        "y": 320.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "pijako3",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pijako3",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 260.0,
                         "y": 320.0
                     }
                 }
@@ -2474,7 +2506,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Pijako: C'est rare de voir un Pokemon\n\naussi jeune vouloir rejoindre les apprentis de\n\nla Guilde",
+                                "string": "Pijako: C'est rare de voir un Pokemon\n\naussi jeune vouloir rejoindre les apprentis de\n\nla Guilde.",
                                 "cursor": "cursor"
                             }
                         },
@@ -2577,7 +2609,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Pijako: Tout particulierement quand\n\non connait la difficulte de notre entrainement",
+                                "string": "Pijako: Tout particulierement quand\n\non connait la difficulte de notre entrainement.",
                                 "cursor": "cursor"
                             }
                         },
@@ -3447,8 +3479,1292 @@
                             "top": 0,
                             "width": 0,
                             "height": 0,
-                            "time": 0.0
+                            "time": 100.0
                         }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step14",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step13",
+                        "step12"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step15",
+                        "step16"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step15",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step14"
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako2",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 150.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step16",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako3",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 3,
+                            "width": 24,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 24,
+                            "top": 3,
+                            "width": 24,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 48,
+                            "top": 3,
+                            "width": 24,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 3,
+                            "width": 24,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 96,
+                            "top": 3,
+                            "width": 24,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 3,
+                            "width": 24,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 144,
+                            "top": 3,
+                            "width": 24,
+                            "height": 23,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 168,
+                            "top": 3,
+                            "width": 24,
+                            "height": 23,
+                            "time": 150.0
+                        }
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text22",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text23",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text24",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step17"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text22",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Bien, bien! Vous auriez du\n\nme dire des le debut que vous vouliez creer\n\nune equipe d'exploration! Hiii hiiii!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text23",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Quel drole de changement\n\nd'attitude de sa part, tout a coup...",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text24",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: D'accord! Allons inscrire votre\n\nequipe. Suivez-moi!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step17",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step6",
+                        "step15"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step18",
+                        "step19"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step18",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step17"
+                    ]
+                },
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 255.0,
+                            "y": 220.0,
+                            "speed": 5.0
+                        }
+                    ],
+                    "name": "pijako"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 1000.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 291,
+                            "width": 27,
+                            "height": 30,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 3,
+                            "width": 27,
+                            "height": 30,
+                            "time": 100.0
+                        }
+                    ],
+                    "enable": "step20"
+                }
+            }
+        },
+        {
+            "name": "step19",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako3",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step20",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step18",
+                        "step19"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text25",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step21"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text25",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Oh, qu'y a-t-il? Venez!\n\nPar ici! Depechons, s'il vous plait!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step21",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step20"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step22",
+                        "step23",
+                        "step24"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step22",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step21"
+                    ]
+                },
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 290.0,
+                            "y": 180.0,
+                            "speed": 5.0
+                        }
+                    ],
+                    "name": "pijako"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 194,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step23",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 290.0,
+                            "y": 180.0,
+                            "speed": 5.0
+                        }
+                    ],
+                    "name": "1er_poke"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "1er_poke",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 275.0
+                        }
+                    ],
+                    "enable": "step25"
+                }
+            }
+        },
+        {
+            "name": "step24",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "waitBeforeStart": 0.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 290.0,
+                            "y": 180.0,
+                            "speed": 5.0
+                        }
+                    ],
+                    "name": "2eme_poke"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "2eme_poke",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 275.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "change_bot",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "second_entry-bot"
+                }
+            }
+        },
+        {
+            "name": "change_top",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "black_screen"
+                }
+            }
+        },
+        {
+            "name": "step25",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step24",
+                        "step23",
+                        "step22"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "change_top",
+                        "change_bot"
                     ]
                 }
             }
