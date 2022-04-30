@@ -95,6 +95,11 @@ typedef struct multi_enable_s {
     bool all;
 } multi_enable_t;
 
+typedef struct player_contoller_s {
+    bool is_moving;
+    sfVector2f direction;
+} player_contoller_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 
@@ -118,5 +123,6 @@ int init_multi_enable_addons(engine_t *engine);
 int init_multi_disable_addons(engine_t *engine);
 int init_play_sound_addons(engine_t *engine);
 int init_mobs_animation_addons(engine_t *engine);
+int init_player_controller_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */
