@@ -24,6 +24,7 @@ int (*const load_addons_func[])(engine_t *) =
     init_multi_enable_addons,
     init_multi_disable_addons,
     init_play_sound_addons,
+    init_player_controller_addons,
     NULL
 };
 

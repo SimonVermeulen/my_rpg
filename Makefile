@@ -35,6 +35,7 @@ SRC				=		src/index.c	\
 						src/addons/multi_disable/multi_disable.c	\
 						src/addons/play_sound/play_sound.c	\
 						src/addons/mobs_animation/mobs_animation.c	\
+						src/addons/player_controller/player_controller.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 
