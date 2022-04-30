@@ -1662,9 +1662,8 @@
                 "dialogue_manager": {
                     "actions": [
                         {
-                            "type": 1,
-                            "enable": "text20",
-                            "wait": 1000.0
+                            "type": 2,
+                            "enable": "select"
                         }
                     ],
                     "disable": 1,
@@ -1695,7 +1694,173 @@
                         }
                     },
                     {
-                        "name": "text20",
+                        "name": "select",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 443.0,
+                                            "y": 299.0 
+                                        },
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 443.0,
+                                            "y": 346.0 
+                                        },
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    }
+                                ],
+                                "cursor": "select_cursor",
+                                "dialogue_manager": "step12"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0 
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 443.0,
+                                                "y": 299.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "choice",
+                                    "entity": {
+                                        "order": 3,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 470.0,
+                                                "y": 293.0 
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Oui\n\nNon"
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "text",
+                                    "entity": {
+                                        "order": 3,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 53.0,
+                                                "y": 390.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        },
+                                        "text_animation": {
+                                            "time": 2000.0,
+                                            "string": "Le nom CARACURSED vous convient-il?",
+                                            "cursor": "cursor"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step13",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step12"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text21",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text22",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step14"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text21",
                         "disable": 1,
                         "entity": {
                             "order": 3,
@@ -1716,7 +1881,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Le nom CARACURSEDééçàç vous convient-il?",
+                                "string": "evoli: ... CARACURSED?! L'Equipe\n\nCARACURSED!",
                                 "cursor": "cursor"
                             }
                         },
@@ -1734,6 +1899,160 @@
                                             "Position": {
                                                 "x": 255.0,
                                                 "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text22",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "evoli: Ca me plait bien... C'est un nom\n\nsuper! Il nous va bien!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
                                             }
                                         }
                                     },
