@@ -38,8 +38,7 @@ static int check_rect(object_t *object, engine_t *engine, list_t *rect)
     *count += get_delta(engine);
     *start_time += get_delta(engine);
     if ((*start == length && *infini == 0)
-        || (*start_time >= *stop_time && *stop_time > 0) ||
-        *start_time <= *wait) {
+        || (*start_time >= *stop_time && *stop_time > 0)) {
         set_active(true, seek_object_scene(object->actual_scene, enable),
             engine);
         return true;
@@ -63,7 +62,8 @@ int tick_rect_animation(object_t *object, engine_t *engine)
 
     if (!time)
         return exit_game(engine, 84);
-    if (check_rect(object, engine, rect) || *count < *time)
+    if (check_rect(object, engine, rect) || *count < *time ||
+        *start_time <= *wait)
         return 0;
     return (set_rect_with_list(objecta, rects[*start % length], start, count));
 }
