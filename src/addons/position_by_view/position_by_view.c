@@ -7,23 +7,6 @@
 
 #include "game.h"
 
-static int tick_addon(object_t *object, engine_t *engine)
-{
-    secondary_screen_t *screen = get_secondary_screen_data(engine);
-    position_by_view_t *view = get_addon_data("position_by_view", object);
-    sfVector2f position;
-
-    if (!screen || !screen->bloc_1 || !screen->bloc_2 )
-        return exit_game(engine, 84);
-    position = (view->bloc == 1) ? sfView_getCenter(screen->bloc_1) :
-        sfView_getCenter(screen->bloc_2);
-    position.x -= 270;
-    position.y -= 270;
-    position.x += view->position.x;
-    position.y += view->position.y;
-    return 0;
-}
-
 static int start_addon(object_t *object, engine_t *engine)
 {
     position_by_view_t *view = get_addon_data("position_by_view", object);
@@ -32,6 +15,26 @@ static int start_addon(object_t *object, engine_t *engine)
         return 0;
     view->position = get_position(object);
     view->inited = true;
+    return 0;
+}
+
+static int tick_addon(object_t *object, engine_t *engine)
+{
+    secondary_screen_t *screen = get_secondary_screen_data(engine);
+    position_by_view_t *view = get_addon_data("position_by_view", object);
+    sfVector2f position;
+
+    if (!view->inited)
+        start_addon(object, engine);
+    if (!screen || !screen->bloc_1 || !screen->bloc_2 )
+        return exit_game(engine, 84);
+    position = (view->bloc == 1) ? sfView_getCenter(screen->bloc_1) :
+        sfView_getCenter(screen->bloc_2);
+    position.x -= 270;
+    position.y -= 270;
+    position.x += view->position.x;
+    position.y += view->position.y;
+    set_position_vector(object, position);
     return 0;
 }
 
