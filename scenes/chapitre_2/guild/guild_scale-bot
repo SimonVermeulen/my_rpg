@@ -7,14 +7,45 @@
                 "smooth": 1
             },
             {
-                "name": "1er_pokemon",
+                "name": "1er_poke",
                 "path": "./assets/sprites/pokemons/pikachu/walk.png",
                 "smooth": 1
             },
             {
-                "name": "2eme_pokemon",
+                "name": "2eme_poke",
                 "path": "./assets/sprites/pokemons/evoli/walk.png",
                 "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
+                "smooth": 1
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli",
+                "path": "./assets/portrait/evoli/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_pikachu",
+                "path": "./assets/portrait/pikachu/normal.png",
+                "smooth": 1
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
             }
         ]
     },
@@ -46,13 +77,13 @@
             }
         },
         {
-            "name": "1er_pokemon",
+            "name": "1er_poke",
             "entity": {
                 "type": "Sprite",
                 "order": 0,
                 "parameters": {
                     "Texture": {
-                        "Name": "1er_pokemon",
+                        "Name": "1er_poke",
                         "Rect": {
                             "left": 0,
                             "top": 162,
@@ -69,7 +100,198 @@
                         "y": 335.0
                     }
                 }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 81,
+                            "top": 194,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 300.0,
+                        "y": 335.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "step1",
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step2"
+                }
             },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Il y a... il y a une echelle qui\n\nmene sous terre!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step1"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step3",
+                        "step4"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step3",
+            "disable": 1,
             "addons": {
                 "rect_animation": {
                     "infini": 0,
@@ -78,13 +300,14 @@
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
+                    "object_name": "1er_poke",
                     "rects": [
                         {
                             "left": 0,
                             "top": 162,
                             "width": 25,
                             "height": 26,
-                            "time": 275.0
+                            "time": 575.0
                         },
                         {
                             "left": 97,
@@ -135,7 +358,8 @@
                             "height": 26,
                             "time": 275.0
                         }
-                    ]
+                    ],
+                    "enable": "step5"
                 },
                 "translation_animation": {
                     "infini": 0,
@@ -152,36 +376,20 @@
                             "y": 220.0,
                             "speed": 10.0
                         }
-                    ] 
+                    ],
+                    "name": "1er_poke"
                 }
             }
         },
         {
-            "name": "2eme_pokemon",
-            "entity": {
-                "type": "Sprite",
-                "order": 0,
-                "parameters": {
-                    "Texture": {
-                        "Name": "2eme_pokemon",
-                        "Rect": {
-                            "left": 81,
-                            "top": 194,
-                            "width": 35,
-                            "height": 35
-                        }
-                    },
-                    "Scale": {
-                        "x": 1.8,
-                        "y": 2.3
-                    },
-                    "Position": {
-                        "x": 300.0,
-                        "y": 335.0
-                    }
-                }
-            },
+            "name": "step4",
+            "disable": 1,
             "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step2"
+                    ]
+                },
                 "rect_animation": {
                     "infini": 0,
                     "start": 0,
@@ -189,6 +397,7 @@
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
+                    "object_name": "2eme_poke",
                     "rects": [
                         {
                             "left": 81,
@@ -284,7 +493,29 @@
                             "y": 220.0,
                             "speed": 10.0
                         }
-                    ] 
+                    ],
+                    "name": "2eme_poke"
+                }
+            }
+        },
+        {
+            "name": "change_bot",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "first_entry-bot"
+                }
+            }
+        },
+        {
+            "name": "step5",
+            "disable": 1,
+            "addons": {
+                "multi_enable": {
+                    "objects": [
+                        "change_bot"
+                    ]
                 }
             }
         }
