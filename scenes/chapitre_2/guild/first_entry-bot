@@ -75,6 +75,11 @@
                 "name": "portrait_pikachu",
                 "path": "./assets/portrait/pikachu/normal.png",
                 "smooth": 1
+            },
+            {
+                "name": "pijako",
+                "path": "./assets/sprites/pokemons/pijako/walk.png",
+                "smooth": 1
             }
         ],
         "Fonts": [
@@ -159,6 +164,32 @@
                     "Position": {
                         "x": 280.0,
                         "y": 200.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "pijako",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pijako",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 288.0,
+                        "y": 175.0
                     }
                 }
             }
@@ -848,7 +879,7 @@
                         }
                     ],
                     "disable": 1,
-                    "enable": "step10"
+                    "enable": "step6"
                 }
             },
             "children": {
@@ -1133,6 +1164,147 @@
                         }
                     }
                 ]
+            }
+        },
+        {
+            "name": "step6",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step5"
+                    ]
+                },
+                "translation_animation": {
+                    "waitBeforeStart": 1000.0,
+                    "infini": 0,
+                    "reverse": 0,
+                    "paths": [
+                        {
+                            "x": 240.0,
+                            "y": 340.0,
+                            "speed": 5.0
+                        }
+                    ],
+                    "name": "pijako",
+                    "name_enable": "step7"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 20.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 1200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 32,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 32,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 32,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 4,
+                            "width": 28,
+                            "height": 30,
+                            "time": 200.0
+                        }
+                    ]
+                }
             }
         }
     ]

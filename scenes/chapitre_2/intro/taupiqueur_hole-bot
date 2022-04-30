@@ -105,12 +105,14 @@
                         "y": 880.0,
                         "speed": 15.0
                         }
-                    ]
+                    ],
+                    "enable": "step1"
                 }
             }
         },
         {
             "name": "step1",
+            "disable": 1,
             "addons": {
                 "dialogue_manager": {
                     "actions": [
