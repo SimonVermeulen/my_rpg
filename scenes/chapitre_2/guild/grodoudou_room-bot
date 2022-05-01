@@ -1850,6 +1850,10 @@
                         "step12"
                     ]
                 },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "black_screen"
+                },
                 "dialogue_manager": {
                     "actions": [
                         {
@@ -3087,7 +3091,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                                    Grodoudou depose\n\n                                 un Kit d'Exploration",
+                                "string": "                                    Grodoudou depose\n\n                                  un Kit d'Exploration",
                                 "cursor": "cursor"
                             }
                         },
@@ -3639,7 +3643,141 @@
                             "height": 35,
                             "time": 200.0
                         }
+                    ],
+                    "enable": "step25"
+                }
+            }
+        },
+        {
+            "name": "step25",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step24",
+                        "step23"
                     ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "chest",
+                    "rects": [
+                        {
+                            "left": 37,
+                            "top": 0,
+                            "width": 37,
+                            "height": 58,
+                            "time": 200.0
+                        }
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text32",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step26"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text32",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "                                          Evoli ouvre\n\n                                le kit d'Exploration.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step26",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step25"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "chest_background-bot"
                 }
             }
         }
