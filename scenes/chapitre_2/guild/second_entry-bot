@@ -2079,12 +2079,6 @@
                         "step11"
                     ]
                 },
-                "multi_enable": {
-                    "objects": [
-                        "change_top",
-                        "change_bot"
-                    ]
-                }
             }
         }
     ]
