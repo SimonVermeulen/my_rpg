@@ -1390,7 +1390,7 @@
                             "time": 200.0
                         },
                         {
-                            "left": 30,
+                            "left": 60,
                             "top": 0,
                             "width": 30,
                             "height": 26,
@@ -1414,27 +1414,35 @@
                     "object_name": "evoli_pose",
                     "rects": [
                         {
-                            "left": 0,
+                            "left": -6,
                             "top": 0,
-                            "width": 22,
+                            "width": 30,
                             "height": 27,
                             "time": 200.0
                         },
                         {
-                            "left": 27,
+                            "left": 44,
                             "top": 0,
-                            "width": 22,
+                            "width": 29,
                             "height": 27,
                             "time": 200.0
                         },
                         {
-                            "left": 70,
+                            "left": 90,
                             "top": 0,
-                            "width": 22,
+                            "width": 33,
                             "height": 27,
                             "time": 200.0
+                        },
+                        {
+                            "left": 90,
+                            "top": 0,
+                            "width": 33,
+                            "height": 27,
+                            "time": 2200.0
                         }
-                    ]
+                    ],
+                    "enable": "step14"
                 }
             }
         },
@@ -1483,6 +1491,24 @@
                             "time": 200.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "step14",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step13",
+                        "step12",
+                        "step11",
+                        "step10"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "first_entry_bedroom-bot"
                 }
             }
         }
