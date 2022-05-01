@@ -40,7 +40,7 @@ int main(int argc, char **argv)
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("exemple_controller", engine) ||
+        !change_scene("pokemon_anim", engine) ||
         !change_secondary_screen("intro_0-top", engine))
         return 84;
     return open_game(engine, 60);

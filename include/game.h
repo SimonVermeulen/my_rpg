@@ -106,14 +106,14 @@ typedef struct pokemon_anim_s {
     char *object_name;
     object_t *object;
     char *animation;
-    char *texture;
     double time;
+    double count;
     double wait;
     char *enable;
     int infini;
-    int width;
-    int height;
+    int size;
     int row;
+    sfFloatRect bounds;
 } pokemon_anim_t;
 
 bool change_secondary_screen(const char *name, engine_t *engine);

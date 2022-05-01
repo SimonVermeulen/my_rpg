@@ -7,12 +7,20 @@
 
 #include "game.h"
 
+static int pokemon_start(object_t *object, engine_t *engine)
+{
+    list_t *pokemon = get_addon_data("pokemons", object);
+    list_t **buffer = get_value_list(pokemon, "buffer", 10);
+
+    if (!buffer)
+        return 0;
+    for (int i = 0; i < search_from_key(pokemon, "buffer")->len; i++)
+        init_texture(engine->actual_scene, buffer[i]);
+    return 0;
+}
+
 static void *init_pokemon(list_t *list)
 {
-    list_t **animations = get_value_list(list, "animations", 10);
-
-    if (!animations)
-        return (NULL);
     return copy_list(list);
 }
 
@@ -20,7 +28,7 @@ static int pokemon_end(object_t *object, engine_t *engine)
 {
     node_t *node = NULL;
 
-    node = search_from_key(object->addons_data, "pokemon");
+    node = search_from_key(object->addons_data, "pokemons");
     if (node == NULL)
         return NULL;
     free_json_object(node->value);
@@ -37,7 +45,7 @@ int init_pokemons_addons(engine_t *engine)
     addon->on_enable = NULL;
     addon->on_disable = NULL;
     addon->on_end = pokemon_end;
-    addon->on_start = NULL;
+    addon->on_start = pokemon_start;
     addon->on_event = NULL;
     addon->on_tick = NULL;
     addon->init = init_pokemon;
