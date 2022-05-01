@@ -100,6 +100,20 @@ typedef struct player_contoller_s {
     sfVector2f direction;
 } player_contoller_t;
 
+typedef struct pokemon_anim_s {
+    char *object_name;
+    object_t *object;
+    char *animation;
+    char *texture;
+    double time;
+    double wait;
+    char *enable;
+    int infini;
+    int width;
+    int height;
+    int row;
+} pokemon_anim_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 
@@ -124,5 +138,7 @@ int init_multi_disable_addons(engine_t *engine);
 int init_play_sound_addons(engine_t *engine);
 int init_mobs_animation_addons(engine_t *engine);
 int init_player_controller_addons(engine_t *engine);
+int init_pokemons_addons(engine_t *engine);
+int init_pokemons_animation_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */
