@@ -104,7 +104,11 @@
             "name": "controller",
             "addons": {
                 "player_controller": {
-                    "empty": 0
+                    "top": "object à enable pour l'animation",
+                    "bottom": "object à enable pour l'animation",
+                    "left": "object à enable pour l'animation",
+                    "right": "object à enable pour l'animation",
+                    "idle": "object à enable pour l'animation"
                 }
             }
         }

@@ -98,6 +98,8 @@ typedef struct multi_enable_s {
 typedef struct player_contoller_s {
     bool is_moving;
     sfVector2f direction;
+    list_t *list;
+    const char *last;
 } player_contoller_t;
 
 typedef struct pokemon_anim_s {
