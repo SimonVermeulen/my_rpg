@@ -142,5 +142,6 @@ int init_mobs_animation_addons(engine_t *engine);
 int init_player_controller_addons(engine_t *engine);
 int init_pokemons_addons(engine_t *engine);
 int init_pokemons_animation_addons(engine_t *engine);
+int init_interact_zone_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

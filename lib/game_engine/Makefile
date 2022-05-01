@@ -48,6 +48,7 @@ SRC	=	addon/addon.c	\
 		object/collision/init_collision.c	\
 		object/collision/is_hover.c	\
 		object/collision/is_trigger.c	\
+		object/collision/if_collision.c	\
 		object/event/on_active.c	\
 		object/create_object_list.c	\
 		object/object.c	\

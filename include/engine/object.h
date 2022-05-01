@@ -124,4 +124,7 @@ bool get_collision_circle(collision_t *a, collision_t *b);
 bool get_collision_rect(collision_t *a, collision_t *b);
 bool get_collision(collision_t *a, collision_t *b);
 
+bool if_collision(object_t *object_a, object_t *object_b);
+bool check_collision_object(object_t *a, collision_t *b);
+
 #endif

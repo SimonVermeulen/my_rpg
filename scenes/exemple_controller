@@ -95,7 +95,7 @@
             "disable": 1,
             "addons": {
                 "follow_view": {
-                    "object": "mai",
+                    "object": "main_pokemon",
                     "bloc": 1
                 }
             }
@@ -111,6 +111,40 @@
                     "idle": "object à enable pour l'animation"
                 }
             }
+        },
+        {
+            "name": "interact",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "sd"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "presskey": 1,
+                    "enable": "follow_player"
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
         }
     ]
 }
