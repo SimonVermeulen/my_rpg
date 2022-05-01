@@ -114,6 +114,7 @@ typedef struct pokemon_anim_s {
     int size;
     int row;
     sfFloatRect bounds;
+    int init;
 } pokemon_anim_t;
 
 typedef struct data_s {
