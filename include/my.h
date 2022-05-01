@@ -8,15 +8,17 @@
 #ifndef MY_H_
     #define MY_H_
 
-void my_putchar(char c);
+    #include <stdio.h>
+    #define is_printable(c) (c > 32 && c < 127) ? 1 : 0
+
+void my_putchar(FILE *fd, char c);
 char *my_strstr(char *str, char const *to_find);
 int my_isneg(int nb);
 int my_strcmp(char const *s1, char const *s2);
-int my_put_nbr(int nb);
 int my_strncmp(char const *s1, char const *s2, int n);
 void my_swap(int *a, int *b);
 char *my_strupcase(char *str);
-int my_putstr(char const *str);
+int my_putstr(FILE *fd, char const *str);
 char *my_strlowcase(char *str);
 int my_strlen(char const *str);
 char *my_strcapitalize(char *str);
@@ -32,7 +34,7 @@ int my_str_isupper(char const *str);
 int my_is_prime(int nb);
 int my_str_isprintable(char const *str);
 int my_find_prime_sup(int nb);
-int my_showstr(char const *str);
+void my_showstr(FILE *fd, const char *str);
 char *my_strcpy(char *dest, char const *src);
 int my_showmem(char const *str, int size);
 char *my_strncpy(char *dest, char const *src, int n);
@@ -65,9 +67,25 @@ char *check_if_valid(char *str, char const *to_find, int c);
 int check_isalpha(char c);
 int get_valid_int(float nb, float i);
 int my_put_long(long number);
-int my_putnbr_base(unsigned long nbr, char const *base);
+int my_put_unsigned_nbr(FILE *fd, unsigned int nb);
+int my_put_nbr_base_long(FILE *fd, long long nb, char *base);
+int my_put_nbr_base(FILE *fd, int nb, char *base);
 int check_char_pos(char const *string, char found);
 int get_length_long(long nbr);
 char *my_strdup(char const *src);
+int handler_put_nbr_decimal(FILE *fd, va_list ap, char *arguments);
+int handler_put_unsigned_nbr(FILE *fd, va_list ap, char *arguments);
+int handler_put_nbr_long(FILE *fd, va_list ap, char *arguments);
+int handler_convert_base_binary(FILE *fd, va_list ap, char *argument);
+int handler_convert_base_octal(FILE *fd, va_list ap, char *argument);
+int handler_convert_base_hexa(FILE *fd, va_list ap, char *argument);
+int handler_convert_base_maj_hexa(FILE *fd, va_list ap, char *argument);
+int handler_putchar_basic(FILE *fd, va_list ap, char *arguments);
+int handler_putchar_percentage(FILE *fd, va_list ap, char *arguments);
+int handler_putstr(FILE *fd, va_list ap, char *arguments);
+int handler_showstr(FILE *fd, va_list ap, char *arguments);
+int my_get_index(char converted_char, char *str);
+char *my_convert_base(int nb, char *base);
+int my_printf(FILE *fd, const char *format, ...);
 
 #endif
