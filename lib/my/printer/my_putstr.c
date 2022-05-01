@@ -1,15 +1,19 @@
 /*
 ** EPITECH PROJECT, 2021
-** B-CPE-100-TLS-1-1-cpoolday04-younes1.bahri
+** C Pool Day 04
 ** File description:
-** my_putstr.c
+** displays a given string
 */
 
-void my_putchar(char c);
+#include <unistd.h>
+#include <stdio.h>
+#include "my.h"
 
-int my_putstr(char const *str)
+int my_putstr(FILE *fd, char const *str)
 {
-    for (int i = 0; str[i] != '\0'; i++) {
-        my_putchar(str[i]);
-    }
+    int i = 0;
+
+    for (; str[i]; i++)
+        my_putchar(fd, str[i]);
+    return (i);
 }

@@ -1,53 +1,52 @@
 /*
 ** EPITECH PROJECT, 2021
-** B-CPE-100-TLS-1-1-cpoolday03-younes1.bahri
+** CPool day03
 ** File description:
-** my_put_nbr.c
+** prints a given number
 */
 
-void my_putchar(char c);
+#include <unistd.h>
+#include <stdio.h>
+#include "my.h"
 
-void print_number(int n)
+int my_put_nbr_base(FILE *fd, int nb, char *base)
 {
-    int i;
+    int base_len = my_strlen(base);
+    long new_nb = nb;
 
-    if (n > 0) {
-        i = n % 10;
-        n = n / 10;
-        print_number(n);
-        my_putchar(48 + i);
+    if (new_nb < 0) {
+        my_putchar(fd, '-');
+        new_nb = -new_nb;
     }
+    if (new_nb >= base_len)
+        my_put_nbr_base(fd, new_nb / base_len, base);
+    my_putchar(fd, base[new_nb % base_len]);
+    return (0);
 }
 
-void print_min_int(void)
+int my_put_nbr_base_long(FILE *fd, long long nb, char *base)
 {
-    int max = 147483648;
+    int base_len = my_strlen(base);
 
-    my_putchar('-');
-    my_putchar('2');
-    print_number(max);
+    if (nb < 0)
+        nb = -nb;
+    if (nb >= base_len)
+        my_put_nbr_base_long(fd, nb / base_len, base);
+    my_putchar(fd, base[nb % base_len]);
+    return (0);
 }
 
-int verify_min_int(int number)
+int my_put_unsigned_nbr(FILE *fd, unsigned int nb)
 {
-    if (number == -2147483648) {
-        print_min_int();
-        return 0;
-    }
-    return 1;
-}
+    long int new_nb = nb;
 
-int my_put_nbr(int number)
-{
-    int min = verify_min_int(number);
-
-    if (number < 0 && min == 1) {
-        my_putchar('-');
-        number = number * -1;
+    if (new_nb < 0) {
+        my_putstr(fd, "4294967295");
+        return (1);
     }
-    if (number == 0)
-        my_putchar('0');
-    if (min == 1)
-        print_number(number);
-    return 0;
+    if (new_nb > 9) {
+        my_put_nbr_base(fd, new_nb / 10, "0123456789");
+    }
+    my_putchar(fd, new_nb % 10 + 48);
+    return (0);
 }
