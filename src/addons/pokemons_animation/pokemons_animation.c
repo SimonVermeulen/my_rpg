@@ -46,6 +46,7 @@ static int start_addons(object_t *object, engine_t *engine)
     pok->object = objecta;
     set_texture(objecta, get_value_list(anim, "texture", 4), false);
     pok->bounds = get_local_bounds(objecta);
+    printf("%f, %f\n", pok->bounds.height, pok->bounds.width);
     value = get_value_list(anim, "size", 3);
     pok->size = (value) ? *value : 0;
     value = get_value_list(anim, "row", 3);

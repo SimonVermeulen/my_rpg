@@ -116,8 +116,15 @@ typedef struct pokemon_anim_s {
     sfFloatRect bounds;
 } pokemon_anim_t;
 
+typedef struct data_s {
+    char *path;
+    list_t *data;
+} data_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 secondary_screen_t *get_secondary_screen_data(engine_t *engine);
+bool save_data_addon(engine_t *engine);
+data_t *get_data_addon(engine_t *engine);
 
 ///////
 // ADDONS PROTOTYPE
@@ -143,5 +150,7 @@ int init_player_controller_addons(engine_t *engine);
 int init_pokemons_addons(engine_t *engine);
 int init_pokemons_animation_addons(engine_t *engine);
 int init_interact_zone_addons(engine_t *engine);
+int init_data_addons(engine_t *engine);
+int init_load_data_object_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

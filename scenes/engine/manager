@@ -17,6 +17,14 @@
             }
         },
         {
+            "name": "data",
+            "addons": {
+                "data": {
+                    "path": "./data/save.json"
+                }
+            }
+        },
+        {
             "name": "soundIntro",
             "entity": {
                 "type": "Sound",

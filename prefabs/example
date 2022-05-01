@@ -1,0 +1,13 @@
+{
+    "name": "anim",
+    "addons": {
+        "pokemons_animation": {
+            "waitbeforestart": 0.0,
+            "animation": "walk",
+            "enable": "d",
+            "infini": 0,
+            "time": 100.0,
+            "object": "main_pokemon"
+        }
+    }
+}

@@ -41,6 +41,8 @@ SRC				=		src/index.c	\
 						src/addons/pokemons_animation/pokemons_animation.c	\
 						src/addons/pokemons_animation/tick.c	\
 						src/addons/interact_zone/interact_zone.c	\
+						src/addons/data/data.c	\
+						src/addons/load_data_object/load_data_object.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

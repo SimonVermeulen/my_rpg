@@ -15,47 +15,15 @@
     },
     "objects": [
         {
-            "name": "main_pokemon",
-            "entity": {
-                "type": "Sprite",
-                "order": 1,
-                "parameters": {
-                    "Texture": {
-                        "Name": "1eroke"
-                    }
-                }
-            },
+            "name": "load_mainPokemon",
             "addons": {
-                "pokemons": {
-                    "buffer": [
-                        {
-                            "name": "poke_main",
-                            "path": "./assets/sprites/pokemons/pikachu/walk.png",
-                            "smooth": 1
-                        }
-                    ],
-                    "animations": {
-                        "walk": {
-                            "size": 32,
-                            "texture": "poke_main",
-                            "row": 75
-                        }
-                    }
+                "load_data_object": {
+                    "object": "main_pokemon"
                 }
             }
         },
         {
-            "name": "anim",
-            "addons": {
-                "pokemons_animation": {
-                    "waitbeforestart": 0.0,
-                    "animation": "walk",
-                    "enable": "d",
-                    "infini": 0,
-                    "time": 100.0,
-                    "object": "main_pokemon"
-                }
-            }
+            "PrefabPath": "./prefabs/example"
         }
     ]
 }

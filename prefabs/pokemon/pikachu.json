@@ -1,0 +1,30 @@
+{
+    "name": "pikachu",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "pikachu_walk",
+                    "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "walk": {
+                    "size": 32,
+                    "texture": "pikachu_walk",
+                    "row": 75
+                }
+            }
+        }
+    }
+}

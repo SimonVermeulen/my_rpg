@@ -28,6 +28,8 @@ int (*const load_addons_func[])(engine_t *) =
     init_pokemons_addons,
     init_pokemons_animation_addons,
     init_interact_zone_addons,
+    init_data_addons,
+    init_load_data_object_addons,
     NULL
 };
 
