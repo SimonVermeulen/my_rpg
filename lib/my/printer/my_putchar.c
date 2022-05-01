@@ -1,12 +1,17 @@
 /*
 ** EPITECH PROJECT, 2021
-** B-CPE-100-TLS-1-1-cpoolday06-younes1.bahri
+** C Pool Day 07
 ** File description:
-** my_putchar.c
+** putchar
 */
-#include <unistd.h>
 
-void my_putchar(char c)
+#include <unistd.h>
+#include <stdio.h>
+
+void my_putchar(FILE *fd, char c)
 {
-    write(1, &c, 1);
+    char array[1] = {0};
+
+    array[0] = c; 
+    fwrite(array, sizeof(char), 1, fd);
 }

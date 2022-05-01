@@ -28,6 +28,12 @@ SRC	=	parsing/json_parser.c						\
 		utils/copy/copy_json.c						\
 		utils/copy/copy_string.c					\
 		utils/copy/copy_value.c						\
+		writing/launch_writing.c					\
+		writing/loop.c								\
+		writing/writers/double_writer.c				\
+		writing/writers/int_writer.c				\
+		writing/writers/object_writer.c				\
+		writing/writers/string_writer.c				\
 
 OBJ	=	$(SRC:.c=.o)
 

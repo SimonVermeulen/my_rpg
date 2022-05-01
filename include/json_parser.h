@@ -183,83 +183,26 @@ int get_string(const char *buff, node_t *new_node, int nb_elements);
 /*****************WRITING*****************/
 
 /**
-* @brief writes in a given path a json object
-*
-* @param path the path to the new json file
-* @param src the list containings the data to write
-* @return int -1 if error 0 if no errors
+* @brief launches the save of the json object
+* 
+* @param list the json_object to save
+* @param path the path you want the list to be saved to
+* @param type the type of save you want (1 pour rajouter à la fin du fichier) (0 to replace file)
+* @return int returns 1 if error or 0
 */
-int launch_write_file(char *path, list_t *src);
+int launch_writing(list_t *list, char *path, int type);
 
-/**
-* @brief handles the buffer where we writes the datas
-*
-* @param c the char to add
-* @param new_line 1 if you want a newline or 0 if not
-* @param fp the file descriptor to the file
-*/
-void buffer_handler(char c, int new_line, FILE *fp);
+int launch_loop(list_t *list, FILE *fd);
 
-/**
-* @brief handles the indentation in the json_files
-*
-* @param level the level of indentation
-* @param fp the file descriptor to the file
-*/
-void write_level(int level, FILE *fp);
+int double_writer(FILE *fd, node_t *node);
 
-/**
-* @brief writes the given key
-*
-* @param key the key to write in buffer
-* @param fp the file descriptor of the file
-*/
-void write_key(char *key, FILE *fp);
+int integer_writer(FILE *fd, node_t *node);
 
-/**
-* @brief writes the current_node data in the file
-*
-* @param current_node the current_node to write
-* @param level the level of indentation
-* @param fp the file descriptor to the file
-*/
-void write_value(node_t *current_node, int level, FILE *fp);
+int object_writer(FILE *fd, node_t *node);
 
-/**
-* @brief writes a given object in the file
-*
-* @param src the list_t containing the data
-* @param level the level of indentation
-* @param fp the fp;
-*/
-void write_object(list_t *src, int level, FILE *fp);
+int string_writer(FILE *fd, node_t *node);
 
-/**
-* @brief writes a given double from current_node
-*
-* @param current_node the node containing the double
-* @param level the level of indentation
-* @param fp the file descriptor to the file
-*/
-void write_double(node_t *current_node, int level, FILE *fp);
-
-/**
-* @brief writes a given int from current_node
-*
-* @param current_node the node containing the int
-* @param level the level of indentation
-* @param fp the file descriptor to the file
-*/
-void write_int(node_t *current_node, int level, FILE *fp);
-
-/**
-* @brief writes a given string from current_node
-*
-* @param current_node the node containing the string
-* @param level the level of indentation
-* @param fp the file descriptor to the file
-*/
-void write_string(node_t *current_node, int level, FILE *fp);
+void put_comma(int index, int len, FILE *fd);
 
 /*****************UTILS*****************/
 
@@ -315,5 +258,7 @@ int copy_int(node_t *src, node_t *dest);
 * @return int 0 if no errors -1 if error
 */
 int copy_string(node_t *src, node_t *dest);
+
+
 
 #endif

@@ -12,11 +12,16 @@ SRC		=		math/my_compute_power_rec.c \
 				math/my_isneg.c \
 				converter/my_getnbr.c \
 				converter/my_atof.c	\
+				printer/printf_utilities/handler_convert.c \
+				printer/printf_utilities/handler_put_nbr.c \
+				printer/printf_utilities/handler_put_str_and_char.c \
 				printer/my_put_nbr.c \
 				printer/my_putchar.c \
 				printer/my_putstr.c \
-				printer/my_put_long.c \
-				printer/my_putnbr_base.c \
+				printer/my_get_index.c \
+				printer/my_convert_decimal_to_base.c \
+				printer/my_printf.c \
+				printer/my_showstr.c \
 				string/my_revstr.c \
 				array/my_sort_int_array.c \
 				char/check_char_pos.c \
