@@ -13,17 +13,17 @@ static int event_player_controller(object_t *object, engine_t *engine)
         object);
 
     if (if_key_pressed(engine, sfKeyUp))
-        *controller = (player_contoller_t) {true, (sfVector2f) {0, 1}};
-    if (if_key_pressed(engine, sfKeyDown))
         *controller = (player_contoller_t) {true, (sfVector2f) {0, -1}};
+    if (if_key_pressed(engine, sfKeyDown))
+        *controller = (player_contoller_t) {true, (sfVector2f) {0, 1}};
     if (if_key_pressed(engine, sfKeyLeft))
         *controller = (player_contoller_t) {true, (sfVector2f) {-1, 0}};
     if (if_key_pressed(engine, sfKeyRight))
         *controller = (player_contoller_t) {true, (sfVector2f) {1, 0}};
-    // if (if_key_released(engine, sfKeyUp) || if_key_released(engine, sfKeyDown)
-    //     || if_key_released(engine, sfKeyLeft) ||
-    //     if_key_released(engine, sfKeyRight))
-    //     *controller = (player_contoller_t) {false, (sfVector2f) {0, 0}};
+    if (if_key_released(engine, sfKeyUp) || if_key_released(engine, sfKeyDown)
+        || if_key_released(engine, sfKeyLeft) ||
+        if_key_released(engine, sfKeyRight))
+        *controller = (player_contoller_t) {false, (sfVector2f) {0, 0}};
 }
 
 static int tick_player_controller(object_t *object, engine_t *engine)
@@ -33,17 +33,19 @@ static int tick_player_controller(object_t *object, engine_t *engine)
     object_t *main = seach_object(engine, "main_pokemon");
     object_t *second = seach_object(engine, "second_pokemon");
     sfVector2f normal;
+    collision_t *collision = NULL;
 
     if (!main || !second)
         return 0;
-    controller->direction.x *= (get_delta(engine) / 100) * 5;
-    controller->direction.y *= (get_delta(engine) / 100) * 5;
-    if (controller->is_moving)
-        move_vector(main, controller->direction);
-    controller->is_moving = false;
+    normal.x = controller->direction.x * engine->time.delta / 100 * 10;
+    normal.y = controller->direction.y * engine->time.delta / 100 * 10;
+    move_vector(main, normal);
+    collision = is_trigger(engine, main);
+    if (collision && collision->object == second)
+        return 0;
     normal = get_normalize_vector(get_position(second), get_position(main));
-    normal.x *= (get_delta(engine) / 100) * 5;
-    normal.y *= (get_delta(engine) / 100) * 5;
+    normal.x *= engine->time.delta / 100 * 10;
+    normal.y *= engine->time.delta / 100 * 10;
     move_vector(second, normal);
 }
 
