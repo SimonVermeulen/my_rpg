@@ -1,0 +1,302 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/lib/black.png",
+                "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png"
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png"
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png"
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "black",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 385,
+                            "top": 0,
+                            "width": 385,
+                            "height": 217
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 3.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "change_bloc_bot",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "intro_chap_2-bot"
+                }
+            }
+        },
+        {
+            "name": "step1",
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 2,
+                            "enable": "select"
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step2"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "select",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 443.0,
+                                            "y": 299.0 
+                                        },
+                                        "enable": "nuefkndf"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 443.0,
+                                            "y": 346.0 
+                                        },
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    }
+                                ],
+                                "cursor": "select_cursor",
+                                "dialogue_manager": "step1"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0 
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 443.0,
+                                                "y": 299.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "choice",
+                                    "entity": {
+                                        "order": 3,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 470.0,
+                                                "y": 293.0 
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Oui\n\nNon"
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "text",
+                                    "entity": {
+                                        "order": 3,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 53.0,
+                                                "y": 390.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        },
+                                        "text_animation": {
+                                            "time": 2000.0,
+                                            "string": "         Voulez-vous sauvegarder votre aventure ?",
+                                            "cursor": "cursor"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step1"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 3,
+                            "enable": "text1",
+                            "wait": 5000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step3"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "                               Sauvegarde en cours...\n\n                           Ne pas fermer la machine\n\n                            ni stopper le programme."
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step3",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step2"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "save_info"
+                }
+            }
+        }
+    ]
+}
