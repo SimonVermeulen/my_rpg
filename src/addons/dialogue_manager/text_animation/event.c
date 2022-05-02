@@ -31,8 +31,6 @@ int event_text_animation(object_t *object, engine_t *engine)
 
     if (animation->count >= my_strlen(animation->string) &&
         if_key_pressed(engine, sfKeyA)) {
-        set_active(false, seek_object_scene(object->childs,
-            get_value_list(animation->data, "cursor", 4)), engine);
         set_active(true, seek_object_scene(object->actual_scene,
             get_value_list(animation->data, "enable", 4)), engine);
         active_dialogue(object, engine, animation);

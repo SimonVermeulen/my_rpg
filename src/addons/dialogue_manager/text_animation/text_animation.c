@@ -56,9 +56,11 @@ static void *init_addon(list_t *list)
 static int disable_addon(object_t *object, engine_t *engine)
 {
     text_animation_t *animation = get_addon_data("text_animation", object);
+    double *time = get_value_list(animation->data, "time", 2);
 
     animation->count = 0;
     animation->time = 0;
+    animation->prize = *time / my_strlen(animation->string);
     for (int i = 0; animation->string[i] != 0; i++)
         animation->string_display[i] = 0;
 }
