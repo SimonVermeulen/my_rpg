@@ -53,6 +53,16 @@ static void *init_addon(list_t *list)
     return animation;
 }
 
+static int disable_addon(object_t *object, engine_t *engine)
+{
+    text_animation_t *animation = get_addon_data("text_animation", object);
+
+    animation->count = 0;
+    animation->time = 0;
+    for (int i = 0; animation->string[i] != 0; i++)
+        animation->string_display[i] = 0;
+}
+
 static int end_addon(object_t *object, engine_t *engine)
 {
     text_animation_t *animation = get_addon_data("text_animation", object);
@@ -68,7 +78,7 @@ int init_text_animation_addons(engine_t *engine)
     if (addon == NULL)
         return 84;
     addon->on_enable = NULL;
-    addon->on_disable = NULL;
+    addon->on_disable = disable_addon;
     addon->on_end = end_addon;
     addon->on_start = NULL;
     addon->on_event = event_text_animation;

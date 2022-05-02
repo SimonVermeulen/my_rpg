@@ -35,6 +35,8 @@ static int active_dialogue(object_t *object, engine_t *engine,
     if (dialogue) {
         dialogue->active = false;
         dialogue->count = (count) ? *count : dialogue->count + 1;
+        if (dialogue->count < 0 || dialogue->count >= dialogue->length)
+            dialogue->count = 0;
     }
 }
 

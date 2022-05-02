@@ -37,6 +37,16 @@ static int end_addon(object_t *object, engine_t *engine)
     return 0;
 }
 
+static int disable_addon(object_t *object, engine_t *engine)
+{
+    dialogue_t *event = get_addon_data("dialogue_manager", object);
+
+    event->count = 0;
+    event->active = false;
+    event->count = 0;
+    event->wait = 0;
+}
+
 static void *init_addon(list_t *list)
 {
     node_t *actions_node = search_from_key(list, "actions");
@@ -67,7 +77,7 @@ int init_dialogue_manager_addons(engine_t *engine)
     if (addon == NULL)
         return 84;
     addon->on_enable = NULL;
-    addon->on_disable = NULL;
+    addon->on_disable = disable_addon;
     addon->on_end = end_addon;
     addon->on_start = NULL;
     addon->on_event = event_dialogue_manager;
