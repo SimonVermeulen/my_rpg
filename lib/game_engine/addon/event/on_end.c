@@ -32,7 +32,7 @@ int window_on_end(list_t *scene, engine_t *engine)
     for (int i = 0; i < scene->nb_elements; i++, node = node->next) {
         object = node->value;
         loop_execution_end(object, engine);
-        on_start(object->childs, engine);
+        on_end(object->childs, engine);
     }
     return 0;
 }

@@ -111,7 +111,8 @@ typedef struct pokemon_anim_s {
     double wait;
     char *enable;
     int infini;
-    int size;
+    int width;
+    int height;
     int row;
     sfFloatRect bounds;
     int init;

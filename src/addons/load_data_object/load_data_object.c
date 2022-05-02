@@ -34,6 +34,7 @@ static int start_addon(object_t *object, engine_t *engine)
     if (!object->childs || !object_list || !rename_object(object_list, name))
         return exit_game(engine, 84);
     create_object_list(object_list, object->childs, engine, object);
+    on_start(object->childs, engine);
 }
 
 static int end_addon(object_t *object, engine_t *engine)

@@ -21,38 +21,15 @@ static int write_data(pokemon_anim_t *animation, list_t *list)
 
     if (!wait || !name || !enable || !infini || !time || !object_name)
         return (false);
-    animation->size = animation->row = 0;
+    animation->width = animation->height = animation->row = 0;
     animation->object_name = my_strdup(object_name);
     animation->animation = my_strdup(name);
     animation->infini = *infini;
     animation->enable = my_strdup(enable);
     animation->wait = *wait;
     animation->time = *time;
+    animation->init = false;
     return (true);
-}
-
-static int start_addons(object_t *object, engine_t *engine)
-{
-    pokemon_anim_t *pok = get_addon_data("pokemons_animation", object);
-    object_t *objecta = seek_object_scene(object->actual_scene,
-        pok->object_name);
-    list_t *pokemon = get_addon_data("pokemons", objecta);
-    list_t *anim_pok = get_value_list(pokemon, "animations", 1);
-    list_t *anim = get_value_list(anim_pok, pok->animation, 1);
-    int *value = NULL;
-
-    if (!objecta || !pokemon || !anim_pok || !anim || !objecta->entity)
-        return exit_game(engine, 84);
-    pok->object = objecta;
-    set_texture(objecta, get_value_list(anim, "texture", 4), false);
-    pok->bounds = get_local_bounds(objecta);
-    value = get_value_list(anim, "size", 3);
-    pok->size = (value) ? *value : 0;
-    value = get_value_list(anim, "row", 3);
-    pok->row = (value) ? *value : 0;
-    set_texture_rect(objecta, (sfIntRect) {0, pok->row, pok->size,
-        pok->size});
-    pok->count = pok->time;
 }
 
 static void *init_addon(list_t *list)
@@ -83,7 +60,7 @@ int init_pokemons_animation_addons(engine_t *engine)
     addon->on_enable = NULL;
     addon->on_disable = NULL;
     addon->on_end = end_addon;
-    addon->on_start = start_addons;
+    addon->on_start = NULL;
     addon->on_event = NULL;
     addon->on_tick = tick_pokemon_anim;
     addon->init = init_addon;

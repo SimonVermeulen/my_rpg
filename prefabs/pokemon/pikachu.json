@@ -20,9 +20,10 @@
             ],
             "animations": {
                 "walk": {
-                    "size": 32,
+                    "height": 40,
+                    "width": 32,
                     "texture": "pikachu_walk",
-                    "row": 75
+                    "row": 0
                 }
             }
         }
