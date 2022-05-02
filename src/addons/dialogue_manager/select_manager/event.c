@@ -23,6 +23,7 @@ static int active_dialogue(object_t *object, engine_t *engine,
     dialogue_t *dialogue = NULL;
     object_t *parent = (object->parent) ? object->parent->parent :
         object->parent;
+    int *count = get_value_list(select->data, "indexDialogue", 3);
 
     if (!parent)
         parent = object->parent;
@@ -33,7 +34,7 @@ static int active_dialogue(object_t *object, engine_t *engine,
         "dialogue_manager", 4)));
     if (dialogue) {
         dialogue->active = false;
-        dialogue->count++;
+        dialogue->count = (count) ? *count : dialogue->count + 1;
     }
 }
 
