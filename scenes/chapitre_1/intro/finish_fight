@@ -1,0 +1,2039 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/figth_map.png",
+                "smooth": 1
+            },
+            {
+                "name": "smogo",
+                "path": "./assets/sprites/pokemons/smogo/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "smogo_ko",
+                "path": "./assets/sprites/pokemons/smogo/fainted.png",
+                "smooth": 1
+            },
+            {
+                "name": "nosfe",
+                "path": "./assets/sprites/pokemons/nosferapti/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "nosfe_ko",
+                "path": "./assets/sprites/pokemons/nosferapti/fainted.png",
+                "smooth": 1
+            },
+            {
+                "name": "pika",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "evoli",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli",
+                "path": "./assets/portrait/evoli/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_smogo",
+                "path": "./assets/portrait/smogo/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_nosfe",
+                "path": "./assets/portrait/nosferapti/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
+                "smooth": 1
+            },
+            {
+                "name": "caillou",
+                "path": "./assets/sprites/chapitre_1/pierre.png",
+                "smooth": 1
+            }
+        ],
+    "Fonts": [
+        {
+            "name": "font",
+            "path": "./assets/fonts/font.ttf"
+        }
+    ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "caillou",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "caillou",
+                        "Rect": {
+                            "left": 1000,
+                            "top": 1000,
+                            "width": 32,
+                            "height": 33
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.7,
+                        "y": 0.7
+                    },
+                    "Position": {
+                        "x": 260.0,
+                        "y": 260.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "smogo",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "smogo",
+                        "Rect": {
+                            "left": 1000,
+                            "top": 1226,
+                            "width": 32,
+                            "height": 29
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 200.0,
+                        "y": 160.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "smogo_ko",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "smogo_ko",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 200.0,
+                        "y": 160.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "nosfe",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "nosfe",
+                        "Rect": {
+                            "left": 1000,
+                            "top": 2027,
+                            "width": 32,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 265.0,
+                        "y": 160.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "nosfe_ko",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "nosfe_ko",
+                        "Rect": {
+                            "left": 5,
+                            "top": 1,
+                            "width": 24,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 265.0,
+                        "y": 160.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "evoli",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "evoli",
+                        "Rect": {
+                            "left": 0,
+                            "top": 195,
+                            "width": 40,
+                            "height": 30
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 200.0,
+                            "y": 280.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "pika",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "pika",
+                        "Rect": {
+                            "left": 0,
+                            "top": 162,
+                            "width": 32,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                       "x": 265.0,
+                        "y": 280.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "step1",
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text2",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step2"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Smogo: Aie aie aie...",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_smogo",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_smogo"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text2",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Nosferapti: Argh...  On s'est pris une belle\n\nraclee...",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_nosfe",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_nosfe"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_enable": {
+                    "objects": [
+                        "step3",
+                        "step4",
+                        "step5",
+                        "step6",
+                        "step7",
+                        "step8"
+                    ]
+                },
+                "multi_disable": {
+                    "objects": [
+                        "step1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step3",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "smogo",
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 233,
+                            "width": 23,
+                            "height": 20,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 6,
+                            "top": 175,
+                            "width": 19,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 7,
+                            "top": 118,
+                            "width": 17,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 6,
+                            "top": 62,
+                            "width": 20,
+                            "height": 25,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 8,
+                            "width": 23,
+                            "height": 21,
+                            "time": 100.0
+                        }
+                    ],
+                    "enable": "step5"
+                }
+            }
+        },
+        {
+            "name": "step4",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "smogo_ko",
+                    "rects": [
+                        {
+                            "left": 1000,
+                            "top": 1000,
+                            "width": 23,
+                            "height": 20,
+                            "time": 100.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step5",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "nosfe",
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 296,
+                            "width": 25,
+                            "height": 22,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 6,
+                            "top": 284,
+                            "width": 21,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 8,
+                            "top": 342,
+                            "width": 18,
+                            "height": 23,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 6,
+                            "top": 399,
+                            "width": 22,
+                            "height": 21,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 8,
+                            "width": 25,
+                            "height": 19,
+                            "time": 100.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step6",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "nosfe_ko",
+                    "rects": [
+                        {
+                            "left": 1000,
+                            "top": 1000,
+                            "width": 25,
+                            "height": 22,
+                            "time": 100.0
+                        }
+                    ],
+                    "enable": "step9"
+                }
+            }
+        },
+        {
+            "name": "step7",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "nosfe",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 6,
+                            "width": 32,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 64,
+                            "top": 6,
+                            "width": 32,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 96,
+                            "top": 6,
+                            "width": 32,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 128,
+                            "top": 6,
+                            "width": 32,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 6,
+                            "width": 32,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 192,
+                            "top": 6,
+                            "width": 32,
+                            "height": 24,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 224,
+                            "top": 6,
+                            "width": 32,
+                            "height": 24,
+                            "time": 100.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step8",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "smogo",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 32,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 64,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 96,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 128,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 192,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 224,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 256,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 288,
+                            "top": 2,
+                            "width": 32,
+                            "height": 29,
+                            "time": 100.0
+                        }
+                    ],
+                    "enable": "step9"
+                }
+            }
+        },
+        {
+            "name": "step9",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step3",
+                        "step4",
+                        "step5",
+                        "step6",
+                        "step2"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text3",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text4",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step10"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text3",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Smogo: C'est pas vrai... Comment on a\n\npu se faire battre par ces poules mouillees?",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_smogo",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_smogo"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text4",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Nosferapti: Bah! Tiens, le voila.\n\nReprends-le!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_nosfe",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_nosfe"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step10",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step9"
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "caillou",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 32,
+                            "height": 33,
+                            "time": 100.0
+                        }
+                    ],
+                    "enable": "step11"
+                }
+            }
+        },
+        {
+            "name": "step11",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step10"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text5",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text6",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step12"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text5",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Smogo: Mouarf! Te prends pas trop\n\nau serieux. C'est un coups de chance!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_smogo",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_smogo"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text6",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Nosferapti: Oue, oublie jamais ca!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_nosfe",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_nosfe"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step12",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step11"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step13",
+                        "step14"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step13",
+            "disable":1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 0.0,
+                    "paths": [
+                        {
+                            "x": 120.0,
+                            "y": 270.0,
+                            "speed": 20.0
+                        },
+                        {
+                            "x": 120.0,
+                            "y": 590.0,
+                            "speed": 20.0
+                        }
+                    ],
+                    "name": "smogo"
+                }
+            }
+        },
+        {
+            "name": "step14",
+            "disable":1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 500.0,
+                    "paths": [
+                        {
+                            "x": 370.0,
+                            "y": 270.0,
+                            "speed": 20.0
+                        },
+                        {
+                            "x": 370.0,
+                            "y": 590.0,
+                            "speed": 20.0
+                        }
+                    ],
+                    "name": "nosfe",
+                    "name_enable": "step15"
+                }
+            }
+        },
+        {
+            "name": "step15",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step12",
+                        "step13",
+                        "step14",
+                        "step7",
+                        "step8"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text7",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text8",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text9",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text10",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step16"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text7",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Oh! Cesst mon Fragment de\n\nReplique!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0 
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text8",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Je suis si content... j'ai\n\nvraiment reussi a le recupere.!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0 
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text9",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: C'est grace a ton aide,\n\nPikachu",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0 
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text10",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Merci, Pikachu!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0 
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0 
+
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step16",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step15"
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "caillou",
+                    "rects": [
+                        {
+                            "left": 1000,
+                            "top": 1000,
+                            "width": 32,
+                            "height": 33,
+                            "time": 200.0
+                        }
+                    ],
+                    "enable": "step17"
+                }
+            }
+        },
+        {
+            "name": "step17",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step17"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "change_top",
+                        "change_bot"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "change_bot",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "beach_sun_rise2-bot "
+                }
+            }
+        },
+        {
+            "name": "change_top",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "beach_sun_rise-top"
+                }
+            }
+        }
+    ]
+}
