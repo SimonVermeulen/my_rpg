@@ -13,7 +13,11 @@ const sfVector2f position[5] =
     (sfVector2f) {0, 1},
     (sfVector2f) {1, 0},
     (sfVector2f) {1, 0},
-    (sfVector2f) {0, 0}
+    (sfVector2f) {0, 0},
+    (sfVector2f) {-1, -1},
+    (sfVector2f) {1, -1},
+    (sfVector2f) {-1, 1},
+    (sfVector2f) {1, 1},
 };
 
 const char *name[5] =
@@ -22,7 +26,11 @@ const char *name[5] =
     "bottom",
     "left",
     "right",
-    "idle"
+    "idle",
+    "top-left",
+    "top-right",
+    "bottom-left",
+    "bottom-right"
 };
 
 static int enable_object(object_t *object, engine_t *engine,
