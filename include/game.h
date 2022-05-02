@@ -96,7 +96,6 @@ typedef struct multi_enable_s {
 } multi_enable_t;
 
 typedef struct player_contoller_s {
-    bool is_moving;
     sfVector2f direction;
     list_t *list;
     const char *last;

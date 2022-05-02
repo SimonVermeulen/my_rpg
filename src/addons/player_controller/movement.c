@@ -44,22 +44,40 @@ static int enable_object(object_t *object, engine_t *engine,
     }
 }
 
+static int released_move(player_contoller_t *con, engine_t *engine)
+{
+    if (if_key_released(engine, sfKeyUp) && con->direction.y < 1)
+        con->direction.y += 1;
+    if (if_key_released(engine, sfKeyDown) && con->direction.y > -1)
+        con->direction.y += -1;
+    if (if_key_released(engine, sfKeyLeft) && con->direction.x < 1)
+        con->direction.x += 1;
+    if (if_key_released(engine, sfKeyRight) && con->direction.x > -1)
+        con->direction.x += -1;
+}
+
+static int pressed_move(player_contoller_t *con, engine_t *engine)
+{
+    if (if_key_pressed(engine, sfKeyUp) && con->direction.y > -1)
+        con->direction.y += -1;
+    if (if_key_pressed(engine, sfKeyDown) && con->direction.y < 1)
+        con->direction.y += 1;
+    if (if_key_pressed(engine, sfKeyLeft) && con->direction.x > -1)
+        con->direction.x += -1;
+    if (if_key_pressed(engine, sfKeyRight) && con->direction.x < 1)
+        con->direction.x += 1;
+}
+
 int event_player_controller(object_t *object, engine_t *engine)
 {
-    player_contoller_t *controller = get_addon_data("player_controller",
+    player_contoller_t *con = get_addon_data("player_controller",
         object);
 
-    if (if_key_pressed(engine, sfKeyUp))
-        *controller = (player_contoller_t) {true, (sfVector2f) {0, -1}};
-    if (if_key_pressed(engine, sfKeyDown))
-        *controller = (player_contoller_t) {true, (sfVector2f) {0, 1}};
-    if (if_key_pressed(engine, sfKeyLeft))
-        *controller = (player_contoller_t) {true, (sfVector2f) {-1, 0}};
-    if (if_key_pressed(engine, sfKeyRight))
-        *controller = (player_contoller_t) {true, (sfVector2f) {1, 0}};
-    if (if_key_released(engine, sfKeyUp) || if_key_released(engine, sfKeyDown)
-        || if_key_released(engine, sfKeyLeft) ||
-        if_key_released(engine, sfKeyRight))
-        *controller = (player_contoller_t) {false, (sfVector2f) {0, 0}};
-    enable_object(object, engine, controller);
+    pressed_move(con, engine);
+    released_move(con, engine);
+    if (con->direction.x > 1 || con->direction.x < -1)
+        con->direction.x = 0;
+    if (con->direction.y > 1 || con->direction.y < -1)
+        con->direction.y = 0;
+    enable_object(object, engine, con);
 }

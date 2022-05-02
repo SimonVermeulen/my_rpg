@@ -44,7 +44,6 @@ static void *init_addon(list_t *list)
 {
     player_contoller_t *player_controller = malloc(sizeof(player_contoller_t));
 
-    player_controller->is_moving = false;
     player_controller->direction = (sfVector2f) {0, 0};
     player_controller->list = copy_list(list);
     if (!player_controller->list)
