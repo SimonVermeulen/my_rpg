@@ -4830,7 +4830,7 @@
             "addons": {
                 "change_scene": {
                     "bloc": 1,
-                    "name": "black_screen"
+                    "name": "start_team"
                 }
             }
         },
