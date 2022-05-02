@@ -2051,26 +2051,6 @@
             }
         },
         {
-            "name": "change_bot",
-            "disable": 1,
-            "addons": {
-                "change_scene": {
-                    "bloc": 1,
-                    "name": "grodoudou_room-bot"
-                }
-            }
-        },
-        {
-            "name": "change_top",
-            "disable": 1,
-            "addons": {
-                "change_scene": {
-                    "bloc": 2,
-                    "name": "black_screen"
-                }
-            }
-        },
-        {
             "name": "step12",
             "disable": 1,
             "addons": {
@@ -2079,6 +2059,10 @@
                         "step11"
                     ]
                 },
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "grodoudou_room-bot"
+                }
             }
         }
     ]
