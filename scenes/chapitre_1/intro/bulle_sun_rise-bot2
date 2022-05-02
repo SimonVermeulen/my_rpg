@@ -1,0 +1,256 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/bulle_sun_rise.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "bulle_sun_rise",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 3000.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 720,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 1440,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 2160,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 2880,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 3600,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 4320,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 5040,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 5760,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 6480,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 7200,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 7920,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 8640,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 9360,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 10080,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 10800,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 11520,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 12240.0,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 12960,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 13680,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        },
+                        {
+                            "left": 14400,
+                            "top": 540,
+                            "width": 720,
+                            "height": 540,
+                            "time": 250.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "skipByTime",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 4000.0,
+                            "object_enable": "change_bloc_bot" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_bot",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 1,
+                                "name": "wake_pokemon"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "skipByTime2",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 4000.0,
+                            "object_enable": "change_bloc_top" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_top",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 2,
+                                "name": "beach_sun_rise-top"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

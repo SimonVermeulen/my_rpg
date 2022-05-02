@@ -7,7 +7,7 @@
                 "smooth": 1
             },
             {
-                "name": "1er_poke",
+                "name": "evoli",
                 "path": "./assets/sprites/pokemons/evoli/walk.png",
                 "smooth": 1
             },
@@ -64,13 +64,13 @@
             }
         },
         {
-            "name": "1er_poke",
+            "name": "evoli",
             "entity": {
                 "type": "Sprite",
                 "order": 2,
                 "parameters": {
                     "Texture": {
-                        "Name": "1er_poke",
+                        "Name": "evoli",
                         "Rect": {
                             "left": 11,
                             "top": 202,
@@ -249,7 +249,7 @@
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 1000.0,
-                    "object_name": "1er_poke",
+                    "object_name": "evoli",
                     "rects": [
                         {
                             "left": 8,
@@ -826,7 +826,7 @@
                             "speed": 15.0
                         }
                     ],
-                    "name": "1er_poke"
+                    "name": "evoli"
                 }
             }
         },
@@ -1056,7 +1056,7 @@
                             "speed": 15.0
                         }
                     ],
-                    "name": "1er_poke"
+                    "name": "evoli"
                 },
                 "rect_animation": {
                     "infini": 0,
@@ -1065,7 +1065,7 @@
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
-                    "object_name": "1er_poke",
+                    "object_name": "evoli",
                     "rects": [
                         {
                             "left": 40,
@@ -1156,11 +1156,6 @@
                         {
                             "type": 1,
                             "enable": "text11",
-                            "wait": 1000.0
-                        },
-                        {
-                            "type": 1,
-                            "enable": "text12",
                             "wait": 1000.0
                         }
                     ],
@@ -1317,7 +1312,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "C'est l'empreinte d'Evoli\n\nC'est l'empreinte d'Evoli!",
+                                "string": "C'est l'empreinte d'Evoli\n\nC'est l'empreinte de Evoli!",
                                 "cursor": "cursor"
                             }
                         },
@@ -1678,7 +1673,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Evoli: ... Je n'y arrive pas...\n\nJe n'arrive pas a trouver\n\nle courage d'entrer",
+                                "string": "Evoli: ... Je n'y arrive pas...\n\n Finalment je n'arrive pas a trouver\n\nle courage d'entrer",
                                 "cursor": "cursor"
                             }
                         },
@@ -1861,6 +1856,73 @@
                                 }
                             ]
                         }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step6",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step5"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "caillou"
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step7"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step7",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step6"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text12",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step8"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
                     },
                     {
                         "name": "text12",
@@ -1966,6 +2028,370 @@
                         }
                     }
                 ]
+            }
+        },
+        {
+            "name": "step8",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step7"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "guild_sky-top"
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step9"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step9",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step8"
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 0.0,
+                    "paths": [
+                        {
+                            "x": 220.0,
+                            "y": 270.0,
+                            "speed": 15.0
+                        }
+                    ],
+                    "name": "evoli"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "evoli",
+                    "rects": [
+                        {
+                            "left": 40,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 120,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 160,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35,
+                            "time": 150.0
+                        }
+                    ],
+                    "enable": "step10"
+                }
+            }
+        },
+        {
+            "name": "step10",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step9"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text13",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text14",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step11"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text13",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Pfff... Il n'y a rien a faire.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text14",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: C'est vraiment decourageant",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 48.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+            
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step11",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step10"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "guild_leave_to_beach"
+                }
             }
         }
     ]
