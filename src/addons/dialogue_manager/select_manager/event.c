@@ -57,8 +57,8 @@ int event_select_manager(object_t *object, engine_t *engine)
     if (if_key_pressed(engine, sfKeyRight))
         turn_page(object, engine, right);
     if (if_key_pressed(engine, sfKeyA)) {
-        set_active(true, seek_object_scene(object->actual_scene,
-        get_value_list(select->items[select->count], "enable", 4)), engine);
+        set_active(true, seach_object(engine, get_value_list(
+            select->items[select->count], "enable", 4)), engine);
         active_dialogue(object, engine, select);
         set_active(false, object, engine);
     }
