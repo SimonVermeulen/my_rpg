@@ -73,7 +73,7 @@
             },
             {
                 "name": "caillou",
-                "path": "./assets/sprites/lib/pierre.png",
+                "path": "./assets/sprites/chapitre_1/pierre.png",
                 "smooth": 1
             },
             {

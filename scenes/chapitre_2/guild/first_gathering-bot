@@ -65,6 +65,52 @@
                 "name": "triopikeur",
                 "path": "./assets/sprites/pokemons/triopikeur/charge.png",
                 "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
+                "smooth": 1
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli",
+                "path": "./assets/portrait/evoli/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_pikachu",
+                "path": "./assets/portrait/pikachu/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_pijako",
+                "path": "./assets/portrait/pijako/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_ramboum",
+                "path": "./assets/portrait/ramboum/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_grodoudou",
+                "path": "./assets/portrait/grodoudou/normal.png",
+                "smooth": 1
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
             }
         ]
     },
@@ -169,7 +215,7 @@
                         },
                         {
                             "x": 365.0,
-                            "y": 325.0,
+                            "y": 305.0,
                             "speed": 15.0
                         }
                     ] 
@@ -257,10 +303,195 @@
                         },
                         {
                             "x": 360.0,
-                            "y": 260.0,
+                            "y": 240.0,
                             "speed": 15.0
                         }
                     ] 
+                }
+            }
+        },
+        {
+            "name": "step0",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "triopikeur",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 67,
+                            "width": 35,
+                            "height": 25,
+                            "time": 3000.0
+                        }
+                    ],
+                    "enable": "step1"
+                }
+            }
+        },
+        {
+            "name": "step0-1",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "taupiqueur",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 52,
+                            "width": 23,
+                            "height": 17,
+                            "time": 3000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step0-2",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "keunotor",
+                    "rects": [
+                        {
+                            "left": 67,
+                            "top": 69,
+                            "width": 27,
+                            "height": 18,
+                            "time": 3000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step0-3",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ramboum",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 80,
+                            "width": 30,
+                            "height": 33,
+                            "time": 3000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step0-4",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "heliatronc",
+                    "rects": [
+                        {
+                            "left": 10,
+                            "top": 99,
+                            "width": 21,
+                            "height": 29,
+                            "time": 3000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step0-5",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "eoko",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 116,
+                            "width": 22,
+                            "height": 27,
+                            "time": 3000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step0-6",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ecrapince",
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top": 66,
+                            "width": 24,
+                            "height": 23,
+                            "time": 3000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step0-7",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "cradopaud",
+                    "rects": [
+                        {
+                            "left": 5,
+                            "top": 65,
+                            "width": 20,
+                            "height": 22,
+                            "time": 3000.0
+                        }
+                    ]
                 }
             }
         },
@@ -285,7 +516,7 @@
                     },
                     "Position": {
                         "x": 315.0,
-                        "y": 175.0
+                        "y": 155.0
                     }
                 }
             }
@@ -311,27 +542,8 @@
                     },
                     "Position": {
                         "x": 250.0,
-                        "y": 285.0
+                        "y": 265.0
                     }
-                }
-            },
-            "addons": {
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count" : 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 3000.0,
-                    "rects": [
-                        {
-                            "left": 67,
-                            "top": 69,
-                            "width": 27,
-                            "height": 18,
-                            "time": 275.0
-                        }
-                    ]
                 }
             }
         },
@@ -356,27 +568,34 @@
                     },
                     "Position": {
                         "x": 310.0,
-                        "y": 275.0
+                        "y": 255.0
                     }
                 }
-            },
-            "addons": {
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count" : 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 3000.0,
-                    "rects": [
-                        {
-                            "left": 10,
-                            "top": 99,
-                            "width": 21,
-                            "height": 29,
-                            "time": 275.0
+            }
+        },
+        {
+            "name": "grodoudou",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "grodoudou",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
                         }
-                    ]
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 242.0,
+                        "y": 80.0
+                    }
                 }
             }
         },
@@ -401,27 +620,8 @@
                     },
                     "Position": {
                         "x": 200.0,
-                        "y": 345.0
+                        "y": 325.0
                     }
-                }
-            },
-            "addons": {
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count" : 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 3000.0,
-                    "rects": [
-                        {
-                            "left": 3,
-                            "top": 66,
-                            "width": 24,
-                            "height": 23,
-                            "time": 275.0
-                        }
-                    ]
                 }
             }
         },
@@ -446,27 +646,8 @@
                     },
                     "Position": {
                         "x": 150.0,
-                        "y": 285.0
+                        "y": 265.0
                     }
-                }
-            },
-            "addons": {
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count" : 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 3000.0,
-                    "rects": [
-                        {
-                            "left": 5,
-                            "top": 65,
-                            "width": 20,
-                            "height": 22,
-                            "time": 275.0
-                        }
-                    ]
                 }
             }
         },
@@ -491,27 +672,8 @@
                     },
                     "Position": {
                         "x": 190.0,
-                        "y": 270.0
+                        "y": 250.0
                     }
-                }
-            },
-            "addons": {
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count" : 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 3000.0,
-                    "rects": [
-                        {
-                            "left": 10,
-                            "top": 116,
-                            "width": 15,
-                            "height": 27,
-                            "time": 275.0
-                        }
-                    ]
                 }
             }
         },
@@ -525,9 +687,9 @@
                         "Name": "ramboum",
                         "Rect": {
                             "left": 0,
-                            "top": 161,
+                            "top": 159,
                             "width": 30,
-                            "height": 31
+                            "height": 33
                         }
                     },
                     "Scale": {
@@ -536,27 +698,8 @@
                     },
                     "Position": {
                         "x": 245.0,
-                        "y": 340.0
+                        "y": 310.0
                     }
-                }
-            },
-            "addons": {
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count" : 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 3000.0,
-                    "rects": [
-                        {
-                            "left": 6,
-                            "top": 80,
-                            "width": 21,
-                            "height": 31,
-                            "time": 275.0
-                        }
-                    ]
                 }
             }
         },
@@ -581,27 +724,8 @@
                     },
                     "Position": {
                         "x": 308.0,
-                        "y": 355.0
+                        "y": 335.0
                     }
-                }
-            },
-            "addons": {
-                "rect_animation": {
-                    "infini": 1,
-                    "start": 0,
-                    "count" : 0.0,
-                    "start-time": 0.0,
-                    "stop-time": 0.0,
-                    "waitBeforeStart": 3000.0,
-                    "rects": [
-                        {
-                            "left": 0,
-                            "top": 52,
-                            "width": 23,
-                            "height": 17,
-                            "time": 275.0
-                        }
-                    ]
                 }
             }
         },
@@ -626,27 +750,3591 @@
                     },
                     "Position": {
                         "x": 135.0,
-                        "y": 350.0
+                        "y": 330.0
                     }
                 }
-            },
+            }
+        },
+        {
+            "name": "step1",
+            "disable": 1,
             "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step0",
+                        "step0-1",
+                        "step0-2",
+                        "step0-3",
+                        "step0-4",
+                        "step0-5",
+                        "step0-6",
+                        "step0-7"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text2",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text3",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text4",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text5",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text6",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text7",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step2"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Ramboum: Vous etes en RETARD, les novices!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_ramboum",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_ramboum"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text2",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Silence!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text3",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Ta voix est si forte que c'en est\n\nridicule!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text4",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Ramboum: Grrr...",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_ramboum",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_ramboum"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text5",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Apparemment, tout le monde est\n\npresent.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text6",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Bien. Faisons l'allocution\n\ndu matin.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text7",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Maitre! La Guilde est\n\nau complet!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step1"
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 700.0,
+                    "paths": [
+                        {
+                            "x": 242.0,
+                            "y": 140.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "grodoudou"
+                },
                 "rect_animation": {
-                    "infini": 1,
+                    "infini": 0,
                     "start": 0,
-                    "count" : 0.0,
+                    "count": 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
-                    "waitBeforeStart": 3000.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "grodoudou",
                     "rects": [
                         {
                             "left": 0,
-                            "top": 67,
-                            "width": 35,
+                            "top": 0,
+                            "width": 27,
+                            "height": 28,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 2,
+                            "width": 26,
+                            "height": 27,
+                            "time": 500.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 2,
+                            "width": 26,
                             "height": 25,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 27,
+                            "height": 28,
+                            "time": 200.0
+                        }
+                    ],
+                    "enable": "step3"
+                }
+            }
+        },
+        {
+            "name": "step3",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step2"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step4",
+                        "step5",
+                        "step6",
+                        "step7",
+                        "step8",
+                        "step9",
+                        "step10",
+                        "step11",
+                        "step12",
+                        "step13",
+                        "step14"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step4",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step3"
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "taupiqueur",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 100,
+                            "width": 23,
+                            "height": 17,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step5",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "triopikeur",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 97,
+                            "width": 38,
+                            "height": 25,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step6",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ecrapince",
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top": 129,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step7",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ramboum",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 159,
+                            "width": 30,
+                            "height": 33,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step8",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "keunotor",
+                    "rects": [
+                        {
+                            "left": 67,
+                            "top": 131,
+                            "width": 27,
+                            "height": 20,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step9",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step10",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "eoko",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 229,
+                            "width": 23,
+                            "height": 27,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step11",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "heliatronc",
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 196,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step12",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "cradopaud",
+                    "rects": [
+                        {
+                            "left": 2,
+                            "top": 97,
+                            "width": 22,
+                            "height": 22,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step13",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "1er_poke",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 202,
+                            "width": 30,
+                            "height": 25,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step14",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "2eme_poke",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 242,
+                            "width": 35,
+                            "height": 35,
+                            "time": 200.0
+                        }
+                    ],
+                    "enable": "step15"
+                }
+            }
+        },
+        {
+            "name": "step15",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step4",
+                        "step5",
+                        "step6",
+                        "step7",
+                        "step8",
+                        "step9",
+                        "step10",
+                        "step11",
+                        "step12",
+                        "step13",
+                        "step14"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text8",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text9",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text10",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text11",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text12",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text13",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text14",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text15",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text16",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step17"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text8",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Merci infiniment, Maitre!\n\nVeuillez vous adresser a notre equipe.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text9",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Grodoudou: Zzzz... Zzzz... Zzzz",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_grodoudou",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_grodoudou"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text10",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Apprenti: (Waouh! Le Maitre, Grodoudou,\n\nme surprendra toujours!)",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text11",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Apprenti: (Oui, t'as raison!)",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text12",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Apprenti: (Ouais, on dirait qu'il est eveille.)",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text13",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Apprenti: (Hum! Ses yeux sont grands ouverts!\n\nMais il dort!)",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text14",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Merci, Maitre! Nous apprecions\n\ntoute la sagesse de vos paroles!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text15",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Alors, mes amis Pokemon!\n\nPrenez les sages paroles de notre Maitre\n\na coeur!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text16",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Et enfin, n'oublions pas nos\n\nencouragements matinaux! Allez, tous\n\nensemble!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step17",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step16"
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        }
+                    ],
+                    "enable": "step18"
+                }
+            }
+        },
+        {
+            "name": "step18",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step17"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text17",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text18",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text19",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text20",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text21",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text22",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step19"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text17",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Tous: ET UN, ET DEUX... ET UN, DEUX, TROIS!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text18",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Tous: UN! SANS TRAVAIL, PAS DE MEDAILLE!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text19",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Tous: DEUX! LES FROUSSARDS AU PLACARD!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text20",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Tous: TROIS! GARDE LE SOURIRE POUR\n\nREUSSIR!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text21",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Allez, mes amis Pokemon!\n\nAu Travail!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_pijako",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_pijako"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text22",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Tous: HOURRA!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step19",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step18"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step20",
+                        "step21",
+                        "step22",
+                        "step23",
+                        "step24",
+                        "step25",
+                        "step26",
+                        "step27",
+                        "step28"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step20",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step19"
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "taupiqueur",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 500.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step21",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "triopikeur",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 500.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step22",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 700.0,
+                    "paths": [
+                        {
+                            "x": 40.0,
+                            "y": 40.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "ecrapince"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ecrapince",
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 700.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 3,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 162,
+                            "width": 24,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step23",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 50.0,
+                    "paths": [
+                        {
+                            "x": 40.0,
+                            "y": 40.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "keunotor"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "keunotor",
+                    "rects": [
+                        {
+                            "left": 67,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 36,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 36,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 36,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 163,
+                            "width": 27,
+                            "height": 20,
+                            "time": 275.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
                             "time": 275.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "step24",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 1200.0,
+                    "paths": [
+                        {
+                            "x": 40.0,
+                            "y": 40.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "heliatronc"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "heliatronc",
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 1200.0
+                        },
+                        {
+                            "left": 98,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 98,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 98,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 98,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 98,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 244,
+                            "width": 28,
+                            "height": 29,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step25",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 275.0,
+                    "paths": [
+                        {
+                            "x": -100.0,
+                            "y": 265.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "cradopaud"
+                },
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "cradopaud",
+                    "rects": [
+                        {
+                            "left": 2,
+                            "top": 193,
+                            "width": 22,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 24,
+                            "top": 193,
+                            "width": 22,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 2,
+                            "top": 193,
+                            "width": 22,
+                            "height": 22,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 72,
+                            "top": 193,
+                            "width": 22,
+                            "height": 22,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step26",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 275.0,
+                    "paths": [
+                        {
+                            "x": -100.0,
+                            "y": 250.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "eoko"
+                },
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "eoko",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 338,
+                            "width": 23,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 338,
+                            "width": 23,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 338,
+                            "width": 23,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 66,
+                            "top": 338,
+                            "width": 23,
+                            "height": 27,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 98,
+                            "top": 338,
+                            "width": 23,
+                            "height": 27,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step27",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 275.0,
+                    "paths": [
+                        {
+                            "x": -300.0,
+                            "y": 310.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "ramboum",
+                    "name_enable": "step29"
+                },
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ramboum",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 161,
+                            "width": 30,
+                            "height": 31,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 34,
+                            "top": 161,
+                            "width": 30,
+                            "height": 31,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 161,
+                            "width": 30,
+                            "height": 31,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 98,
+                            "top": 161,
+                            "width": 30,
+                            "height": 31,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step28",
+            "disable": 1,
+            "addons": {
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 275.0,
+                    "paths": [
+                        {
+                            "x": 242.0,
+                            "y": 70.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "grodoudou"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "grodoudou",
+                    "rects": [
+                        {
+                            "left": 67,
+                            "top": 162,
+                            "width": 26,
+                            "height": 27,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 99,
+                            "top": 162,
+                            "width": 26,
+                            "height": 25,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 67,
+                            "top": 162,
+                            "width": 26,
+                            "height": 27,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 35,
+                            "top": 162,
+                            "width": 26,
+                            "height": 25,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 100.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step29",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step20",
+                        "step21",
+                        "step22",
+                        "step23",
+                        "step24",
+                        "step25",
+                        "step26",
+                        "step27",
+                        "step28"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text23",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text24",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step30"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "bulle_portrait",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 1,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 48.0,
+                                    "y": 293.0
+                                },
+                                "Scale": {
+                                    "x": 0.14,
+                                    "y": 0.58
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "portrait_pijako",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "portrait_pijako"
+                                },
+                                "Position": {
+                                    "x": 50.0,
+                                    "y": 300.0
+                                },
+                                "Scale": {
+                                    "x": 1.6,
+                                    "y": 1.8
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text23",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: He, vous ne devriez pas\n\nlambiner la, vous deux.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text24",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Pijako: Venez un peu par ici.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step30",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step29"
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 275.0,
+                    "paths": [
+                        {
+                            "x": 30.0,
+                            "y": 100.0,
+                            "speed": 10.0
+                        },
+                        {
+                            "x": 30.0,
+                            "y": 40.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "pijako"
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "pijako",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 65,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 243,
+                            "width": 27,
+                            "height": 30,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 1500.0
+                        }
+                    ],
+                    "enable": "step31"
+                }
+            }
+        },
+        {
+            "name": "step31",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step30"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "first_quest-bot"
                 }
             }
         }
