@@ -63,7 +63,7 @@ static int disable_addon(object_t *object, engine_t *engine)
     animation->prize = *time / my_strlen(animation->string);
     for (int i = 0; animation->string[i] != 0; i++)
         animation->string_display[i] = 0;
-    set_active(true, seek_object_scene(object->childs,
+    set_active(false, seek_object_scene(object->childs,
         get_value_list(animation->data, "cursor", 4)), engine);
 }
 
