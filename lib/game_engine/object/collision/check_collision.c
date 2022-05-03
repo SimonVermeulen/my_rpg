@@ -32,7 +32,7 @@ bool fix_collision(collision_t *a, collision_t *b, object_t *object)
         normal_a = get_normalize_vector(get_position(object),
         object->collision.last_position);
         normal_b = normal_a;
-        for (int i = 0; equal_vector2f(normal_a, normal_b) &&
+        for (int i = 0; equal_vector2f_pov(normal_a, normal_b, 0.01) &&
             get_collision(a, b); i++) {
             move_vector(object, normal_b);
             normal_b = get_normalize_vector(get_position(object),
