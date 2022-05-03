@@ -1,0 +1,395 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/guild_entrer.png",
+                "smooth": 1
+            },
+            {
+                "name": "main_pokemon",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "second_pokemon",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "main_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 25,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 230.0,
+                        "y": 230.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "second_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "second_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 5,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 220.0,
+                        "y": 180.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "follow_player",
+            "disable": 1,
+            "addons": {
+                "follow_view": {
+                    "object": "main_pokemon",
+                    "bloc": 1
+                }
+            }
+        },
+        {
+            "name": "controller",
+            "addons": {
+                "player_controller": {
+                    "top": "object à enable pour l'animation",
+                    "bottom": "object à enable pour l'animation",
+                    "left": "object à enable pour l'animation",
+                    "right": "right",
+                    "idle": "idle",
+                    "top-left": "object à enable pour l'animation",
+                    "top-right": "object à enable pour l'animation",
+                    "bottom-left": "object à enable pour l'animation",
+                    "bottom-right": "object à enable pour l'animation"
+                }
+            }
+        },
+        {
+            "name": "interact",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "invisible"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "presskey": 1,
+                    "enable": "follow_player"
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 185.0,
+                        "y": 200.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 365.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 185.0,
+                        "height": 200.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box1",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 210.0,
+                        "y": 200.0
+                    },
+                    "Position": {
+                        "x": 338.0,
+                        "y": 365.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 210.0,
+                        "height": 200.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box2",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 250.0,
+                        "y": 220.0
+                    },
+                    "Position": {
+                        "x": 320.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 250.0,
+                        "height": 200.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box3",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 210.0,
+                        "y": 220.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 210.0,
+                        "height": 200.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box4",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 160.0,
+                        "y": 270.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 160.0,
+                        "height": 250.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box5",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 74.0,
+                        "y": 450.0
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 74.0,
+                        "height": 450.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box6",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 150.0,
+                        "y": 450.0
+                    },
+                    "Position": {
+                        "x": 418.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 150.0,
+                        "height": 450.0
+                    }
+                }
+            ]
+        }
+    ]
+}
