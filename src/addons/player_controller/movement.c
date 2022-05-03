@@ -41,13 +41,11 @@ static int enable_object(object_t *object, engine_t *engine,
     for (int i = 0; i < 4; i++) {
         if (equal_vector2f(controller->direction, position[i])) {
             last = controller->last;
+            set_active(false, seek_object_scene(object->actual_scene,
+                get_value_list(controller->list, last, 4)), engine);
             controller->last = name[i];
             set_active(true, seek_object_scene(object->actual_scene,
                 get_value_list(controller->list, name[i], 4)), engine);
-        }
-        if (last != controller->last) {
-            set_active(false, seek_object_scene(object->actual_scene,
-                get_value_list(controller->list, last, 4)), engine);
         }
     }
 }
