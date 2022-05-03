@@ -6,6 +6,12 @@
                 "path": "./assets/sprites/chapitre_1/falaise_orage.png",
                 "smooth": 1
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "rain",
+                "path": "./assets/sounds/rain_light.ogg"
+            }
         ]
     },
     "objects": [
@@ -114,6 +120,23 @@
                             "time": 175.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "rain_light"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },

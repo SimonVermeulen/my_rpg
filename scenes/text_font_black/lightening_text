@@ -24,6 +24,16 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "rain",
+                "path": "./assets/sounds/rain.ogg"
+            },
+            {
+                "name": "text",
+                "path": "./assets/sounds/text.ogg"
+            }
         ]
     },
     "objects": [
@@ -56,6 +66,35 @@
                 "change_scene": {
                     "bloc": 1,
                     "name": "lightening2"
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "rain"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "text"
                 }
             }
         },

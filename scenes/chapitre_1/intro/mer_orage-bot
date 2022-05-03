@@ -6,6 +6,12 @@
                 "path": "./assets/sprites/chapitre_1/mer_orage.png",
                 "smooth": 1
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "rain",
+                "path": "./assets/sounds/rain.ogg"
+            }
         ]
     },
     "objects": [
@@ -121,6 +127,23 @@
                             "time": 250.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "rain"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },

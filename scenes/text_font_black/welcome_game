@@ -24,6 +24,12 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "sond_text",
+                "path": "./assets/sounds/intro_song.ogg"
+            }
         ]
     },
     "objects": [
@@ -140,6 +146,9 @@
                                 "time": 2000.0,
                                 "string": "                                                     Bienvenue!",
                                 "cursor": "cursor"
+                            },
+                            "play_sound": {
+                                "empty": 0
                             }
                         },
                         "children": {
@@ -184,6 +193,9 @@
                                 "time": 2000.0,
                                 "string": "                                      Voici le portail qui conduit\n\n                                a un monde peuple de Pokemon",
                                 "cursor": "cursor"
+                                },
+                                "play_sound": {
+                                    "empty": 0
                                 }
                         },
                         "children": {
@@ -228,6 +240,9 @@
                                 "time": 2000.0,
                                 "string": "                       Par-dela ce portail vous attendent moult\n\n                aventures ainsi que de nouvelles experiences!",
                                 "cursor": "cursor"
+                                },
+                                "play_sound": {
+                                    "empty": 0
                                 }
                         },
                         "children": {
@@ -272,6 +287,9 @@
                                 "time": 2000.0,
                                 "string": "                                    Avant de partir a l'aventure\n\n                  vous devez repondre a quelques questions.",
                                 "cursor": "cursor"
+                                },
+                                "play_sound": {
+                                    "empty": 0
                                 }
                         },
                         "children": {
@@ -316,6 +334,9 @@
                                 "time": 2000.0,
                                 "string": "                                      Repondez y-honnetement!",
                                 "cursor": "cursor"
+                                },
+                                "play_sound": {
+                                    "empty": 0
                                 }
                         },
                         "children": {
@@ -353,6 +374,9 @@
                                 "Color": "white",
                                 "Font": "font",
                                 "CharacterSize": 30
+                            },
+                            "play_sound": {
+                                "empty": 0
                             }
                         },
                         "addons": {
@@ -405,6 +429,9 @@
                                 "string": "Alors...",
                                 "cursor": "cursor2",
                                 "enable": "text7-1"
+                            },
+                            "play_sound": {
+                                "empty": 0
                             }
                         },
                         "children": {
@@ -447,6 +474,9 @@
                                             "string": "que les questions commencent!",
                                             "cursor": "cursor",
                                             "parent": "bulle"
+                                        },
+                                        "play_sound": {
+                                            "empty": 0
                                         }
                                     },
                                     "children": {

@@ -39,6 +39,16 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "rain",
+                "path": "./assets/sounds/mer.ogg"
+            },
+            {
+                "name": "text",
+                "path": "./assets/sounds/text.ogg"
+            }
         ]
     },
     "objects": [
@@ -112,6 +122,35 @@
                             "time": 300.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "mer"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "text"
                 }
             }
         },

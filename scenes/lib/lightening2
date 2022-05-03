@@ -6,6 +6,15 @@
                 "path": "./assets/sprites/lib/white.png",
                 "smooth": 1
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "music-intro",
+                "path": "./assets/sounds/lightening.ogg"
+            },            {
+                "name": "rain",
+                "path": "./assets/sounds/rain.ogg"
+            }
         ]
     },
     "objects": [
@@ -65,6 +74,39 @@
                             "time": 200.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "SoundBuffer": "music-intro"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "rain"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },
