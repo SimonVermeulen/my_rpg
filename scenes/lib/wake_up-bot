@@ -888,7 +888,8 @@
                             "enable": "select"
                         }
                     ],
-                    "disable": 1
+                    "disable": 1,
+                    "enable": "dfds"
                 }
             },
             "children": {
@@ -925,7 +926,7 @@
                                             "x": 193.0,
                                             "y": 263.0 
                                         },
-                                        "enable": "save_and_stay"
+                                        "enable": "zzz"
                                     },
                                     {
                                         "position": {
@@ -939,7 +940,7 @@
                                             "x": 193.0,
                                             "y": 337.0 
                                         },
-                                        "enable": "no_save"
+                                        "enable": "cdsnk"
                                     }
                                 ],
                                 "cursor": "select_cursor",

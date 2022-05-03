@@ -18,7 +18,7 @@
             "name": "main_pokemon",
             "entity": {
                 "type": "Sprite",
-                "order": 1,
+                "order": 2,
                 "parameters": {
                     "Texture": {
                         "Name": "1er_poke",

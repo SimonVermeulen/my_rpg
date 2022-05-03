@@ -1,0 +1,324 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_bedroom.png",
+                "smooth": 1
+            },
+            {
+                "name": "main_pokemon",
+                "path": "./assets/sprites/pokemons/pikachu/move.png",
+                "smooth": 1
+            },
+            {
+                "name": "second_pokemon",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
+                "smooth": 1
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
+                "smooth": 1
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 716,
+                            "height": 519
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.76,
+                        "y": 1.1
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "main_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 82,
+                            "width": 25,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 50.0,
+                        "y": 285.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "second_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "second_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 96,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 270.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "follow_player",
+            "disable": 1,
+            "addons": {
+                "follow_view": {
+                    "object": "main_pokemon",
+                    "bloc": 1
+                }
+            }
+        },
+        {
+            "name": "controller",
+            "addons": {
+                "player_controller": {
+                    "top": "object à enable pour l'animation",
+                    "bottom": "object à enable pour l'animation",
+                    "left": "object à enable pour l'animation",
+                    "right": "right",
+                    "idle": "idle",
+                    "top-left": "object à enable pour l'animation",
+                    "top-right": "object à enable pour l'animation",
+                    "bottom-left": "object à enable pour l'animation",
+                    "bottom-right": "object à enable pour l'animation"
+                }
+            }
+        },
+        {
+            "name": "interact",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "invisible"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "presskey": 1,
+                    "enable": "follow_player"
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "right",
+            "disable": 1,
+            "addons": {
+                "multi_enable": {
+                    "objects": [
+                        "right-1",
+                        "right-2"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "right-1",
+            "disable": 0,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "main_pokemon",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 82,
+                            "width": 25,
+                            "height": 25,
+                            "time": 0.0
+                        },
+                        {
+                            "left": 97,
+                            "top": 82,
+                            "width": 25,
+                            "height": 25,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 82,
+                            "width": 25,
+                            "height": 25,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 82,
+                            "width": 25,
+                            "height": 25,
+                            "time": 0.0
+                        }
+                    ],
+                    "disable": 1
+                }
+            }
+        },
+        {
+            "name": "right-2",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "second_pokemon",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 0.0
+                        },
+                        {
+                            "left": 40,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 81,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 124,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 99,
+                            "width": 35,
+                            "height": 35,
+                            "time": 0.0
+                        }
+                    ],
+                    "disable": 1
+                }
+            }
+        }
+    ]
+}
