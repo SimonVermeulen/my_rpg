@@ -1,0 +1,63 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_2/moonlight.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 218,
+                            "width": 288,
+                            "height": 200
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.9,
+                        "y": 2.7
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "step1",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "background",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 218,
+                            "width": 288,
+                            "height": 200,
+                            "time": 5000.0
+                        }
+                    ],
+                    "enable": "step2"
+                }
+            }
+        }
+    ]
+}

@@ -928,7 +928,7 @@
                 },
                 "change_scene": {
                     "bloc": 1,
-                    "name": "eat_time-bot"
+                    "name": "first_eat_time-bot"
                 }
             }
         }

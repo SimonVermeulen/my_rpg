@@ -75,6 +75,27 @@
                 "name": "ecrapince",
                 "path": "./assets/sprites/pokemons/ecrapince/eat.png",
                 "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
+                "smooth": 1
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
+                "smooth": 1
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
             }
         ]
     },
@@ -984,6 +1005,149 @@
                             "speed": 6.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "step1",
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 3,
+                            "enable": "text1",
+                            "wait": 3000.0
+                        },
+                        {
+                            "type": 3,
+                            "enable": "text2",
+                            "wait": 3000.0
+                        },
+                        {
+                            "type": 3,
+                            "enable": "text3",
+                            "wait": 3000.0
+                        }
+                    ],
+                    "disable": 1
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 390.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 400.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 9000.0,
+                                "string": "Cronch chronch! Miam miam! Slurp slurp!\n\nCronch chronch! Miam miam! Slurp slurp!"
+                            },
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text2",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 400.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 9000.0,
+                                "string": "Cronch chronch! Miam miam! Slurp slurp!\n\nCronch chronch! Miam miam! Slurp slurp!"
+                            },
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text3",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 400.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 9000.0,
+                                "string": "Cronch chronch! Miam miam! Slurp slurp!\n\nCronch chronch! Miam miam! Slurp slurp!"
+                            },
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step1"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "after_eat"
                 }
             }
         }

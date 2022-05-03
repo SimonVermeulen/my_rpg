@@ -1,0 +1,872 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_bedroom.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/pain.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/pain.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke2",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke2",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "ramboum",
+                "path": "./assets/sprites/pokemons/ramboum/appeal.png",
+                "smooth": 1
+            },
+            {
+                "name": "ramboum2",
+                "path": "./assets/sprites/pokemons/ramboum/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
+                "smooth": 1
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli",
+                "path": "./assets/portrait/evoli/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_pikachu",
+                "path": "./assets/portrait/pikachu/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_ramboum",
+                "path": "./assets/portrait/ramboum/normal.png",
+                "smooth": 1
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 716,
+                            "height": 519
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.76,
+                        "y": 1.1
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke2",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke2",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 220.0,
+                        "y": 285.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "2eme_poke2",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke2",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 310.0,
+                        "y": 270.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 210,
+                            "top": 6,
+                            "width": 26,
+                            "height": 24
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 230.0,
+                        "y": 295.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "2eme_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 195,
+                            "top": 85,
+                            "width": 24,
+                            "height": 22
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 330.0,
+                        "y": 295.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "ramboum2",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "ramboum2",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 105.0,
+                        "y": 275.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "ramboum",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "ramboum",
+                        "Rect": {
+                            "left": 0,
+                            "top": 58,
+                            "width": 29,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 105.0,
+                        "y": 275.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "step1",
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ramboum",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 33,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 62,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 95,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 127,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 158,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 189,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 220,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 256,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 286,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 318,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 351,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 382,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 415,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 480,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 58,
+                            "width": 33,
+                            "height": 35,
+                            "time": 50.0
+                        }
+                    ],
+                    "enable": "step2"
+                }
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step1"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text2",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step3"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Ramboum: DEBOUT ! ET QUE CA SAUTE!\n\nC'EST L'HEURE! HOP HOP HOP!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_ramboum",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_ramboum"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text2",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Evoli: Arf... Bonjour,\n\nPikachu...",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "bulle_portrait",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 440.0,
+                                                "y": 293.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.14,
+                                                "y": 0.58
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "portrait_evoli",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "portrait_evoli"
+                                            },
+                                            "Position": {
+                                                "x": 442.0,
+                                                "y": 300.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.6,
+                                                "y": 1.8
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step3",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step2"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step4",
+                        "step5"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step4",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step3"
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ramboum2",
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 240,
+                            "width": 23,
+                            "height": 31,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 38,
+                            "top": 240,
+                            "width": 23,
+                            "height": 31,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 4,
+                            "top": 240,
+                            "width": 23,
+                            "height": 31,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 102,
+                            "top": 240,
+                            "width": 23,
+                            "height": 31,
+                            "time": 200.0
+                        }
+                    ]
+                },
+                "translation_animation": {
+                    "infini": 0,
+                    "reverse": 0,
+                    "waitBeforeStart": 300.0,
+                    "paths": [
+                        {
+                            "x": -100.0,
+                            "y": 275.0,
+                            "speed": 10.0
+                        }
+                    ],
+                    "name": "ramboum2",
+                    "name_enable": "step7"
+                }
+            }
+        },
+        {
+            "name": "step5",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "ramboum",
+                    "rects": [
+                        {
+                            "left": 6,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step7",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step6"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step8",
+                        "step9",
+                        "step10",
+                        "step11"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step8",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step7"
+                    ]
+                },
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "1er_poke",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 500.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step9",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "2eme_poke",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 0,
+                            "height": 0,
+                            "time": 500.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step10",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "1er_poke2",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 32,
+                            "height": 25,
+                            "time": 500.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "step11",
+            "disable": 1,
+            "addons": {
+                "rect_animation": {
+                    "infini": 0,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "object_name": "2eme_poke2",
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35,
+                            "time": 500.0
+                        }
+                    ],
+                    "enable": "step12"
+                }
+            }
+        }
+    ]
+}

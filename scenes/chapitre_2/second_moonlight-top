@@ -1,0 +1,97 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_2/moonlight.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 218,
+                            "width": 288,
+                            "height": 200
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.9,
+                        "y": 2.7
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "skipByTime",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 4000.0,
+                            "object_enable": "change_bloc_bot" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_bot",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 1,
+                                "name": "second_sleep-bot"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "skipByTime2",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 4000.0,
+                            "object_enable": "change_bloc_top" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_top",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 2,
+                                "name": "black_screen"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

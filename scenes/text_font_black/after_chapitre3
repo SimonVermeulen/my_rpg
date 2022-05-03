@@ -1,0 +1,356 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/lib/black.png",
+                "smooth": 1
+            },
+            {
+                "name": "invisible",
+                "path": "./assets/sprites/lib/text/invisible.png"
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png"
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png"
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli",
+                "path": "./assets/portrait/evoli/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_pikachu",
+                "path": "./assets/portrait/pikachu/normal.png",
+                "smooth": 1
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "black",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 385,
+                            "top": 0,
+                            "width": 385,
+                            "height": 217
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 3.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "invisible",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "invisible"
+                    },
+                    "Position": {
+                        "x": 33.0,
+                        "y": 350.0
+                    }
+                }
+            },
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text2",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text3",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text4",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text5",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "step2"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 10.0,
+                                    "y": 180.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "                            Il est maintenant temps de montrer\n\n                            tes preuves en tant qu'explorateur!",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 325.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text2",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 10.0,
+                                    "y": 180.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "\n\n                                        Tu es grand aujourd'hui!",
+                                "cursor": "cursor"
+                                }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 325.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text3",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 10.0,
+                                    "y": 180.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "                               Balade toi, decouvre les environs...\n\n                                 et surtout prend du bon temps!",
+                                "cursor": "cursor"
+                                }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 325.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text4",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 10.0,
+                                    "y": 180.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "                                              Explore le village...\n\n                                          Decouvre les donjons...\n\n                                             Monte en niveau et...",
+                                "cursor": "cursor"
+                                }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 325.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text5",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 10.0,
+                                    "y": 180.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "\n\n                                Deviens le meilleur explorateur\n\n                                               de cet univers !",
+                                "cursor": "cursor"
+                                }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 325.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step3"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "wake_up-bot"
+                }
+            }
+        }
+    ]
+}
