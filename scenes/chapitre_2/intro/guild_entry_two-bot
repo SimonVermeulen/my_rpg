@@ -995,7 +995,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Pokemon detecte! Pokemon detecte",
+                                "string": "Pokemon detecte! Pokemon detecte!",
                                 "cursor": "cursor"
                             }
                         },

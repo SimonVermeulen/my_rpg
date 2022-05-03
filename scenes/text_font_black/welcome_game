@@ -138,7 +138,7 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                                                        Bienvenue!",
+                                "string": "                                                     Bienvenue!",
                                 "cursor": "cursor"
                             }
                         },
@@ -154,7 +154,7 @@
                                                 "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 265.0,
+                                                "x": 250.0,
                                                 "y": 325.0
                                             }
                                         }
@@ -182,7 +182,7 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                                     Voici le portail qui conduit\na un monde peuple de Pokemon",
+                                "string": "                                      Voici le portail qui conduit\n\n                                a un monde peuple de Pokemon",
                                 "cursor": "cursor"
                                 }
                         },
@@ -198,7 +198,7 @@
                                                 "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 265.0,
+                                                "x": 250.0,
                                                 "y": 325.0
                                             }
                                         }
@@ -226,7 +226,7 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                     Par-dela ce portail vous attendent moult\naventures ainsi que de nouvelles experiences!",
+                                "string": "                       Par-dela ce portail vous attendent moult\n\n                aventures ainsi que de nouvelles experiences!",
                                 "cursor": "cursor"
                                 }
                         },
@@ -242,7 +242,7 @@
                                                 "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 265.0,
+                                                "x": 250.0,
                                                 "y": 325.0
                                             }
                                         }
@@ -270,7 +270,7 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                                    Avant de partir a l'aventure\n                  vous devez repondre a quelques questions.",
+                                "string": "                                    Avant de partir a l'aventure\n\n                  vous devez repondre a quelques questions.",
                                 "cursor": "cursor"
                                 }
                         },
@@ -286,7 +286,7 @@
                                                 "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 265.0,
+                                                "x": 250.0,
                                                 "y": 325.0
                                             }
                                         }
@@ -314,7 +314,7 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                                           Repondez y-honnetement!",
+                                "string": "                                      Repondez y-honnetement!",
                                 "cursor": "cursor"
                                 }
                         },
@@ -330,7 +330,7 @@
                                                 "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 265.0,
+                                                "x": 250.0,
                                                 "y": 325.0
                                             }
                                         }
@@ -358,7 +358,7 @@
                         "addons": {
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                                         Pouvons-nous commencer?",
+                                "string": "                                     Pouvons-nous commencer?",
                                 "cursor": "cursor"
                                 }
                         },
@@ -374,7 +374,7 @@
                                                 "Name": "whiteArrow"
                                             },
                                             "Position": {
-                                                "x": 265.0,
+                                                "x": 250.0,
                                                 "y": 325.0
                                             }
                                         }
@@ -461,7 +461,7 @@
                                                             "Name": "whiteArrow"
                                                         },
                                                         "Position": {
-                                                            "x": 265.0,
+                                                            "x": 250.0,
                                                             "y": 325.0
                                                         }
                                                     }

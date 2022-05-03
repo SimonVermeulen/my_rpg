@@ -3505,7 +3505,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Evoli: Quoi? Tu dis que tu es\n\nun etre humain",
+                                "string": "Evoli: Quoi? Tu dis que tu es\n\nun etre humain.",
                                 "cursor": "cursor"
                             }
                         },
@@ -7743,7 +7743,7 @@
                             "y": 360.0,
                             "speed": 15.0
                         }
-                    ] ,
+                    ],
                     "name": "pika_clas",
                     "name_enable": "step40"
                 }
@@ -7858,7 +7858,7 @@
             "addons": {
                 "change_scene": {
                     "bloc": 1,
-                    "name": "grotte_litoral_etage1-bot"
+                    "name": "grotte_litorale_etage1-bot"
                 }
             }
         },

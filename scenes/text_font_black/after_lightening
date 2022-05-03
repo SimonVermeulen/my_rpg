@@ -96,6 +96,16 @@
                             "type": 1,
                             "enable": "text4",
                             "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text5",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text6",
+                            "wait": 1000.0
                         }
                     ],
                     "disable": 1,
@@ -133,7 +143,7 @@
                                     "addons": {
                                         "change_scene": {
                                             "bloc": 1,
-                                            "name": "plage_jour"
+                                            "name": "plage_jour-bot"
                                         }
                                     }
                                 }
@@ -294,6 +304,95 @@
                                 "time": 2000.0,
                                 "string": "Aaaah...",
                                 "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 265.0,
+                                                "y": 490.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text5",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 360.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Ou...",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 265.0,
+                                                "y": 490.0
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text6",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 360.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "... ou suis-je?",
+                                "cursor": "cursor",
+                                "enable": "change_bloc_bot"
                             }
                         },
                         "children": {
