@@ -184,17 +184,9 @@
         {
             "name": "camera",
             "addons": {
-                "move_view": {
-                    "bloc": 1,
-                    "start": 0,
-                    "waitBeforeStart": 0.0,
-                    "path": [
-                        {
-                        "x": 270.0,
-                        "y": -150.0,
-                        "speed": 10.0
-                        }
-                    ]
+                "follow_view": {
+                    "object": "main_pokemon",
+                    "bloc": 1
                 }
             }
         },

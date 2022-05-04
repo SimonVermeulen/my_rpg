@@ -317,6 +317,15 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "follow_view": {
+                    "object": "main_pokemon",
+                    "bloc": 1
+                }
+            }
         }
     ]
 }

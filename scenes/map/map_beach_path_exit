@@ -3,7 +3,7 @@
         "Textures": [
             {
                 "name": "main_texture",
-                "path": "./assets/sprites/map/intersection.png",
+                "path": "./assets/sprites/map/beach_path.png",
                 "smooth": 1
             },
             {
@@ -35,12 +35,12 @@
                         }
                     },
                     "Scale": {
-                        "x": 2.2,
+                        "x": 2.0,
                         "y": 2.8
                     },
                     "Position": {
-                        "x": -5.0,
-                        "y": -250.0
+                        "x": 0.0,
+                        "y": -325.0
                     }
                 }
             }
@@ -65,8 +65,8 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": 50.0,
-                        "y": 250.0
+                        "x": 40.0,
+                        "y": 325.0
                     }
                 }
             },
@@ -103,8 +103,8 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": 0.0,
-                        "y": 240.0
+                        "x": -10.0,
+                        "y": 325.0
                     }
                 }
             },
@@ -189,24 +189,24 @@
                 "parameters": {
                     "FillColor": "red",
                     "Size": {
-                        "x": 710.0,
-                        "y": 480.0
+                        "x": 50.0,
+                        "y": 1000.0
                     },
                     "Position": {
-                        "x": -310.0,
-                        "y": -240.0
+                        "x": 515.0,
+                        "y": -325.0
                     }
                 }
             },
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 0,
+                    "trigger": 1,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
-                        "width": 710.0,
-                        "height": 440.0
+                        "width": 50.0,
+                        "height": 1000.0
                     }
                 }
             ]
@@ -219,24 +219,24 @@
                 "parameters": {
                     "FillColor": "red",
                     "Size": {
-                        "x": 700.0,
-                        "y": 480.0
+                        "x": 325.0,
+                        "y": 400.0
                     },
                     "Position": {
-                        "x": 540.0,
-                        "y": -240.0
+                        "x": -15.0,
+                        "y": -325.0
                     }
                 }
             },
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 0,
+                    "trigger": 1,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
-                        "width": 700.0,
-                        "height": 440.0
+                        "width": 325.0,
+                        "height": 400.0
                     }
                 }
             ]
@@ -249,24 +249,24 @@
                 "parameters": {
                     "FillColor": "red",
                     "Size": {
-                        "x": 700.0,
-                        "y": 700.0
+                        "x": 150.0,
+                        "y": 100.0
                     },
                     "Position": {
-                        "x": 540.0,
-                        "y": 345.0
+                        "x": -15.0,
+                        "y": 75.0
                     }
                 }
             },
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 0,
+                    "trigger": 1,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
-                        "width": 700.0,
-                        "height": 700.0
+                        "width": 150.0,
+                        "height": 75.0
                     }
                 }
             ]
@@ -279,12 +279,132 @@
                 "parameters": {
                     "FillColor": "red",
                     "Size": {
-                        "x": 710.0,
-                        "y": 700.0
+                        "x": 50.0,
+                        "y": 110.0
                     },
                     "Position": {
-                        "x": -310.0,
-                        "y": 345.0
+                        "x": -15.0,
+                        "y": 125.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 85.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box4",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 1000.0,
+                        "y": 110.0
+                    },
+                    "Position": {
+                        "x": -15.0,
+                        "y": 425.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 1000.0,
+                        "height": 110.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box5",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 800.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 245.0,
+                        "y": 375.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 800.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box6",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 800.0,
+                        "y": 500.0
+                    },
+                    "Position": {
+                        "x": 415.0,
+                        "y": 255.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 800.0,
+                        "height": 500.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box6",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 50.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 480.0,
+                        "y": 205.0
                     }
                 }
             },
@@ -295,8 +415,8 @@
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
-                        "width": 710.0,
-                        "height": 700.0
+                        "width": 50.0,
+                        "height": 50.0
                     }
                 }
             ]
