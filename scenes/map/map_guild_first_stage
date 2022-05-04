@@ -1,0 +1,1042 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/map/guild_first_stage.png",
+                "smooth": 1
+            },
+            {
+                "name": "main_pokemon",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "second_pokemon",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "keunotor",
+                "path": "./assets/sprites/pokemons/keunotor/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "heliatronc",
+                "path": "./assets/sprites/pokemons/heliatronc/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "grainipiot",
+                "path": "./assets/sprites/pokemons/grainipiot/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "roucool",
+                "path": "./assets/sprites/pokemons/roucool/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "heledelle",
+                "path": "./assets/sprites/pokemons/heledelle/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "chenipotte",
+                "path": "./assets/sprites/pokemons/chenipotte/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "coxy",
+                "path": "./assets/sprites/pokemons/coxy/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
+                "smooth": 1
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli",
+                "path": "./assets/portrait/evoli/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_pikachu",
+                "path": "./assets/portrait/pikachu/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_pijako",
+                "path": "./assets/portrait/pijako/normal.png",
+                "smooth": 1
+            }
+                
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 699,
+                            "height": 456
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": -480.0,
+                        "y": -150.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "main_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 3,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 32,
+                            "height": 25
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 255.0,
+                        "y": 215.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "second_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "second_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 205.0,
+                        "y": 200.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "keunotor",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "keunotor",
+                        "Rect": {
+                            "left": 0,
+                            "top": 130,
+                            "width": 27,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 420.0,
+                        "y": 280.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "heliatronc",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "heliatronc",
+                        "Rect": {
+                            "left": 4,
+                            "top": 196,
+                            "width": 28,
+                            "height": 29
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 485.0,
+                        "y": 273.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top": 196,
+                            "width": 28,
+                            "height": 29,
+                            "time": 2000.0
+                        },
+                        {
+                            "left": 0,
+                            "top": 293,
+                            "width": 28,
+                            "height": 29,
+                            "time": 2000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "grainipiot",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "grainipiot",
+                        "Rect": {
+                            "left": 4,
+                            "top":  193,
+                            "width": 16,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 400.0,
+                        "y": 430.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 4,
+                            "top":  193,
+                            "width": 16,
+                            "height": 21,
+                            "time": 750.0
+                        },
+                        {
+                            "left": 30,
+                            "top":  193,
+                            "width": 16,
+                            "height": 21,
+                            "time": 750.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "roucool",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "roucool",
+                        "Rect": {
+                            "left": 3,
+                            "top":  84,
+                            "width": 20,
+                            "height": 23
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.2,
+                        "y": 2.7
+                    },
+                    "Position": {
+                        "x": 350.0,
+                        "y": 420.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 3,
+                            "top":  84,
+                            "width": 20,
+                            "height": 23,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 27,
+                            "top":  84,
+                            "width": 20,
+                            "height": 23,
+                            "time": 200.0
+                        },
+                        {
+                            "left": 51,
+                            "top":  84,
+                            "width": 20,
+                            "height": 23,
+                            "time": 200.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "heledelle",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "heledelle",
+                        "Rect": {
+                            "left": 7,
+                            "top":  467,
+                            "width": 23,
+                            "height": 21
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 165.0,
+                        "y": 395.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "chenipotte",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "chenipotte",
+                        "Rect": {
+                            "left": 3,
+                            "top":  98,
+                            "width": 19,
+                            "height": 22
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 125.0,
+                        "y": 425.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "coxy",
+            "entity": {
+                "type": "Sprite",
+                "order": 4,
+                "parameters": {
+                    "Texture": {
+                        "Name": "coxy",
+                        "Rect": {
+                            "left": 0,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.3
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 300.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count" : 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 0,
+                            "top":  193,
+                            "width": 33,
+                            "height": 36,
+                            "time": 0.0
+                        },
+                        {
+                            "left": 40,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 80,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 120,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 160,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 200,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 240,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 120,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 80,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 40,
+                            "top":  193,
+                            "width": 36,
+                            "height": 33,
+                            "time": 100.0
+                        },
+                        {
+                            "left": 0,
+                            "top":  193,
+                            "width": 33,
+                            "height": 36,
+                            "time": 100.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "follow_player",
+            "disable": 1,
+            "addons": {
+                "follow_view": {
+                    "object": "main_pokemon",
+                    "bloc": 1
+                }
+            }
+        },
+        {
+            "name": "controller",
+            "addons": {
+                "player_controller": {
+                    "top": "object à enable pour l'animation",
+                    "bottom": "object à enable pour l'animation",
+                    "left": "object à enable pour l'animation",
+                    "right": "right",
+                    "idle": "idle",
+                    "top-left": "object à enable pour l'animation",
+                    "top-right": "object à enable pour l'animation",
+                    "bottom-left": "object à enable pour l'animation",
+                    "bottom-right": "object à enable pour l'animation"
+                }
+            }
+        },
+        {
+            "name": "interact",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "invisible"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "presskey": 1,
+                    "enable": "follow_player"
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box_keunotor",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 30.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 438.0,
+                        "y": 280.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 15.0,
+                        "height": 21.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box_heliatronc",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 30.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 493.0,
+                        "y": 280.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 15.0,
+                        "height": 21.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box_roucool",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 30.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 355.0,
+                        "y": 415.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 30.0,
+                        "height": 30.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box_grainipiot",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 30.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 400.0,
+                        "y": 415.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 20.0,
+                        "height": 30.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box_heliadelle",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 30.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 168.0,
+                        "y": 390.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 20.0,
+                        "height": 30.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box_chenipotte",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 30.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 130.0,
+                        "y": 420.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 20.0,
+                        "height": 30.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box1",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 405.0,
+                        "y": 375.0
+                    },
+                    "Position": {
+                        "x": -200.0,
+                        "y": -100.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 405.0,
+                        "height": 350.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box2",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 1.0,
+                        "y": 310.0
+                    },
+                    "Position": {
+                        "x": 275.0,
+                        "y": -100.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 1.0,
+                        "height": 310.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box3",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 450.0,
+                        "y": 375.0
+                    },
+                    "Position": {
+                        "x": 380.0,
+                        "y": -100.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 450.0,
+                        "height": 340.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box4",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 5000.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": -2000.0,
+                        "y": 575.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 5000.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box5",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 155.0,
+                        "y": 500.0
+                    },
+                    "Position": {
+                        "x": -200.0,
+                        "y": 275.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 155.0,
+                        "height": 500.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box6",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 155.0,
+                        "y": 500.0
+                    },
+                    "Position": {
+                        "x": 600.0,
+                        "y": 275.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 155.0,
+                        "height": 500.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box7",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 105.0,
+                        "y": 100.0
+                    },
+                    "Position": {
+                        "x": -50.0,
+                        "y": 500.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 95.0,
+                        "height": 100.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box8",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 105.0,
+                        "y": 110.0
+                    },
+                    "Position": {
+                        "x": 510.0,
+                        "y": 500.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 95.0,
+                        "height": 100.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "follow_view": {
+                    "object": "main_pokemon",
+                    "bloc": 1
+                }
+            }
+        }
+    ]
+}
