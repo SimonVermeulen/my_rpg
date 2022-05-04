@@ -28,7 +28,7 @@
         "SoundBuffers": [
             {
                 "name": "sond_text",
-                "path": "./assets/sounds/intro_song.ogg"
+                "path": "./assets/sounds/text.ogg"
             }
         ]
     },
@@ -126,6 +126,22 @@
             "children": {
                 "objects": [
                     {
+                        "name": "sond_text",
+                        "entity": {
+                            "type": "Sound",
+                            "order": 1,
+                            "parameters": {
+                                "Volume": 100.0,
+                                "SoundBuffer": "sond_text"
+                            }
+                        },
+                        "addons": {
+                            "play_sound": {
+                                "empty": 0
+                            }
+                        }
+                    },
+                    {
                         "name": "text1",
                         "disable": 1,
                         "entity": {
@@ -146,9 +162,6 @@
                                 "time": 2000.0,
                                 "string": "                                                     Bienvenue!",
                                 "cursor": "cursor"
-                            },
-                            "play_sound": {
-                                "empty": 0
                             }
                         },
                         "children": {
@@ -193,10 +206,7 @@
                                 "time": 2000.0,
                                 "string": "                                      Voici le portail qui conduit\n\n                                a un monde peuple de Pokemon",
                                 "cursor": "cursor"
-                                },
-                                "play_sound": {
-                                    "empty": 0
-                                }
+                            }
                         },
                         "children": {
                             "objects": [
@@ -213,6 +223,22 @@
                                                 "x": 250.0,
                                                 "y": 325.0
                                             }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "sond_text",
+                                    "entity": {
+                                        "type": "Sound",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Volume": 100.0,
+                                            "SoundBuffer": "sond_text"
+                                        }
+                                    },
+                                    "addons": {
+                                        "play_sound": {
+                                            "empty": 0
                                         }
                                     }
                                 }
@@ -240,10 +266,10 @@
                                 "time": 2000.0,
                                 "string": "                       Par-dela ce portail vous attendent moult\n\n                aventures ainsi que de nouvelles experiences!",
                                 "cursor": "cursor"
-                                },
-                                "play_sound": {
-                                    "empty": 0
-                                }
+                            },
+                            "play_sound": {
+                                "empty": 0
+                            }
                         },
                         "children": {
                             "objects": [
@@ -287,10 +313,10 @@
                                 "time": 2000.0,
                                 "string": "                                    Avant de partir a l'aventure\n\n                  vous devez repondre a quelques questions.",
                                 "cursor": "cursor"
-                                },
-                                "play_sound": {
-                                    "empty": 0
-                                }
+                            },
+                            "play_sound": {
+                                "empty": 0
+                            }
                         },
                         "children": {
                             "objects": [
@@ -334,10 +360,10 @@
                                 "time": 2000.0,
                                 "string": "                                      Repondez y-honnetement!",
                                 "cursor": "cursor"
-                                },
-                                "play_sound": {
-                                    "empty": 0
-                                }
+                            },
+                            "play_sound": {
+                                "empty": 0
+                            }
                         },
                         "children": {
                             "objects": [
@@ -384,7 +410,7 @@
                                 "time": 2000.0,
                                 "string": "                                     Pouvons-nous commencer?",
                                 "cursor": "cursor"
-                                }
+                            }
                         },
                         "children": {
                             "objects": [
