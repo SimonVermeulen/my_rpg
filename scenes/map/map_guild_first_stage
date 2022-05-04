@@ -918,7 +918,7 @@
                     "FillColor": "red",
                     "Size": {
                         "x": 155.0,
-                        "y": 500.0
+                        "y": 100.0
                     },
                     "Position": {
                         "x": -200.0,
@@ -934,7 +934,7 @@
                         "left": 0.0,
                         "top": 0.0,
                         "width": 155.0,
-                        "height": 500.0
+                        "height": 100.0
                     }
                 }
             ]
@@ -948,7 +948,7 @@
                     "FillColor": "red",
                     "Size": {
                         "x": 155.0,
-                        "y": 500.0
+                        "y": 130.0
                     },
                     "Position": {
                         "x": 600.0,
@@ -964,7 +964,7 @@
                         "left": 0.0,
                         "top": 0.0,
                         "width": 155.0,
-                        "height": 500.0
+                        "height": 100.0
                     }
                 }
             ]
@@ -977,11 +977,11 @@
                 "parameters": {
                     "FillColor": "red",
                     "Size": {
-                        "x": 105.0,
+                        "x": 455.0,
                         "y": 100.0
                     },
                     "Position": {
-                        "x": -50.0,
+                        "x": -400.0,
                         "y": 500.0
                     }
                 }
@@ -993,7 +993,7 @@
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
-                        "width": 95.0,
+                        "width": 455.0,
                         "height": 100.0
                     }
                 }
@@ -1007,7 +1007,7 @@
                 "parameters": {
                     "FillColor": "red",
                     "Size": {
-                        "x": 105.0,
+                        "x": 500.0,
                         "y": 110.0
                     },
                     "Position": {
@@ -1019,12 +1019,72 @@
             "collisions": [
                 {
                     "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 500.0,
+                        "height": 100.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box9",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 140.0,
+                        "y": 500.0
+                    },
+                    "Position": {
+                        "x": 740.0,
+                        "y": 275.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
                     "trigger": 0,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
-                        "width": 95.0,
-                        "height": 100.0
+                        "width": 140.0,
+                        "height": 500.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box10",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 130.0,
+                        "y": 500.0
+                    },
+                    "Position": {
+                        "x": -300.0,
+                        "y": 275.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 130.0,
+                        "height": 500.0
                     }
                 }
             ]
