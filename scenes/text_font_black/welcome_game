@@ -181,6 +181,22 @@
                                             }
                                         }
                                     }
+                                },
+                                {
+                                    "name": "sond_text",
+                                    "entity": {
+                                        "type": "Sound",
+                                        "order": 1,
+                                        "parameters": {
+                                            "Volume": 100.0,
+                                            "SoundBuffer": "sond_text"
+                                        }
+                                    },
+                                    "addons": {
+                                        "play_sound": {
+                                            "empty": 0
+                                        }
+                                    }
                                 }
                             ]
                         }

@@ -42,7 +42,7 @@ int main(int argc, char **argv)
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("map_bedroom", engine) ||
+        !change_scene("map_beach", engine) ||
         !change_secondary_screen("black_screen", engine))
         return 84;
     return open_game(engine, 60);
