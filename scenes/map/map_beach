@@ -219,12 +219,132 @@
                 "parameters": {
                     "FillColor": "red",
                     "Size": {
-                        "x": 4000.0,
+                        "x": 10000.0,
                         "y": 50.0
                     },
                     "Position": {
-                        "x": -1000.0,
+                        "x": -3000.0,
                         "y": 120.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 4000.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box2",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 1200.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": -2000.0,
+                        "y": 200.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 1180.0,
+                        "height": 40.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box3",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 10000.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": -2000.0,
+                        "y": 425.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 10000.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box4",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 60.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": -655.0,
+                        "y": 230.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 10.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box5",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 30.0,
+                        "y": 30.0
+                    },
+                    "Position": {
+                        "x": -290.0,
+                        "y": 390.0
                     }
                 }
             },
@@ -235,8 +355,8 @@
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
-                        "width": 4000.0,
-                        "height": 50.0
+                        "width": 15.0,
+                        "height": 30.0
                     }
                 }
             ]
