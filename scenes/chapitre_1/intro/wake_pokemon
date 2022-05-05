@@ -57,18 +57,53 @@
                 "smooth": 1
             },
             {
-                "name": "portrait_evoli",
-                "path": "./assets/portrait/evoli/normal.png",
-                "smooth": 1
-            },
-            {
                 "name": "evoli",
                 "path": "./assets/sprites/pokemons/evoli/walk.png",
                 "smooth": 1
             },
             {
+                "name": "portrait_evoli",
+                "path": "./assets/portrait/evoli/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_determined",
+                "path": "./assets/portrait/evoli/determined.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_worried",
+                "path": "./assets/portrait/evoli/worried.png",
+                "smooth": 1
+            },
+            {
                 "name": "portrait_evoli_surprised",
                 "path": "./assets/portrait/evoli/surprised.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_sigh",
+                "path": "./assets/portrait/evoli/sigh.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_sad",
+                "path": "./assets/portrait/evoli/sad.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_happy",
+                "path": "./assets/portrait/evoli/happy.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_angry",
+                "path": "./assets/portrait/evoli/angry.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_teary_Eyed",
+                "path": "./assets/portrait/evoli/teary_Eyed.png",
                 "smooth": 1
             },
             {
@@ -1752,7 +1787,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_surprised"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -3011,7 +3046,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_happy"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -3666,7 +3701,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_surprised"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -3966,13 +4001,13 @@
                                     }
                                 },
                                 {
-                                    "name": "portrait_pika_surprised",
+                                    "name": "portrait_pika_normal",
                                     "entity": {
                                         "type": "Sprite",
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_pika_surprised"
+                                                "Name": "portrait_pika"
                                             },
                                             "Position": {
                                                 "x": 50.0,
@@ -4074,7 +4109,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_sad"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -4176,7 +4211,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_sad"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -4278,7 +4313,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_sad"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -4380,7 +4415,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_sad"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -4482,7 +4517,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_pika_surprised"
+                                                "Name": "portrait_pika"
                                             },
                                             "Position": {
                                                 "x": 50.0,
@@ -5333,7 +5368,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_angry"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -5478,7 +5513,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Nosferapti: On veut juste vous embeter!\n\nVous faite pas le poid, de toute facon!",
+                                "string": "Nosferapti: On veut juste vous embeter!\n\nVous faite pas le poids, de toute facon!",
                                 "cursor": "cursor"
                             }
                         },
@@ -5639,7 +5674,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_surprised"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -5843,7 +5878,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_surprised"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -6047,7 +6082,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_surprised"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -6192,7 +6227,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Smogo: Je pensais pas avoir a faire\n\na une poule mouillee apreille! ",
+                                "string": "Smogo: Je pensais pas avoir a faire\n\na une poule mouillee pareille! ",
                                 "cursor": "cursor"
                             }
                         },
@@ -6626,7 +6661,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Evoli: ...Ohoo...",
+                                "string": "Evoli: ...Oooh...",
                                 "cursor": "cursor"
                             }
                         },
@@ -6685,7 +6720,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_sad"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -6787,7 +6822,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_sad"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -6889,7 +6924,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_sad"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -6991,7 +7026,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_teary_Eyed"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -7093,7 +7128,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_determined"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -7195,7 +7230,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_determined"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -7297,7 +7332,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_happy"
                                             },
                                             "Position": {
                                                 "x": 442.0,
