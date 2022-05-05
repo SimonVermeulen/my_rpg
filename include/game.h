@@ -153,5 +153,7 @@ int init_pokemons_animation_addons(engine_t *engine);
 int init_interact_zone_addons(engine_t *engine);
 int init_data_addons(engine_t *engine);
 int init_load_data_object_addons(engine_t *engine);
+int init_particle_move_addons(engine_t *engine);
+int init_particle_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

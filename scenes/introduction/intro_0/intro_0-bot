@@ -84,6 +84,17 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "particle",
+            "addons": {
+                "particle": {
+                    "spawn_count": 20,
+                    "time": 1000.0,
+                    "count": 0.0,
+                    "particle_path": "./prefabs/particle_a"
+                }
+            }
         }
     ]
 }

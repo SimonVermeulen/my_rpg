@@ -43,6 +43,8 @@ SRC				=		src/index.c	\
 						src/addons/interact_zone/interact_zone.c	\
 						src/addons/data/data.c	\
 						src/addons/load_data_object/load_data_object.c	\
+						src/addons/particle/particle.c	\
+						src/addons/particle/particle_movement/particle_move.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 
