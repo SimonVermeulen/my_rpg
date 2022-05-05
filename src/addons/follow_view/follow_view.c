@@ -7,6 +7,21 @@
 
 #include "game.h"
 
+static int check_limit(list_t *list, sfVector2f pos)
+{
+    list_t *list_a = get_value_list(list, "a", 1);
+    list_t *list_b = get_value_list(list, "b", 1);
+    sfVector2f a = create_vector2f_list(list_a);
+    sfVector2f b = create_vector2f_list(list_b);
+
+    if (!list_a || !list_b)
+        return true;
+    if (a.x >= pos.x - 270 || a.y >= pos.y - 270 || b.x <= pos.x + 270 ||
+        b.y <= pos.y + 270)
+        return false;
+    return true;
+}
+
 static int tick_addon(object_t *object, engine_t *engine)
 {
     list_t *list = get_addon_data("follow_view", object);
@@ -19,10 +34,10 @@ static int tick_addon(object_t *object, engine_t *engine)
         return exit_game(engine, 84);
     if (!object_follow)
         object_follow = object;
-    if (*bloc == 1)
+    if (*bloc == 1 && check_limit(list, get_position(object_follow)))
         sfView_setCenter(secondary_screen->bloc_1,
             get_position(object_follow));
-    else
+    if (*bloc == 2 && check_limit(list, get_position(object_follow)))
         sfView_setCenter(secondary_screen->bloc_2,
             get_position(object_follow));
     return 0;
