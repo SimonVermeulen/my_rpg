@@ -47,6 +47,21 @@
             }
         },
         {
+            "name": "SkyByPressClick",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 0,
+                            "disable": 1,
+                            "value": 0.0,
+                            "object_enable": "skip_introduction" 
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "name": "SkipByTime",
             "addons": {
                 "event_manager": {
@@ -54,7 +69,7 @@
                         {
                             "type": 1,
                             "disable": 1,
-                            "value": 60000.0,
+                            "value": 3000.0,
                             "object_enable": "change_bloc_top" 
                         }
                     ]
