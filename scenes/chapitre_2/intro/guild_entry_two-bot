@@ -152,7 +152,7 @@
                 "smooth": 1
             },
             {
-                "name": "portrait_pikachu",
+                "name": "portrait_pika",
                 "path": "./assets/portrait/pikachu/normal.png",
                 "smooth": 1
             }
@@ -533,7 +533,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "evoli: Pour former une equipe\n\nd'exploration, c'est ici qu'il faut s'inscrire.",
+                                "string": "Evoli: Pour former une equipe\n\nd'exploration, c'est ici qu'il faut s'inscrire.",
                                 "cursor": "cursor"
                             }
                         },
@@ -585,7 +585,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "evoli: Ensuite, il faut s'entrainer\n\npour devenir une equipe d'exploration\n\nde premier ordre.",
+                                "string": "Evoli: Ensuite, il faut s'entrainer\n\npour devenir une equipe d'exploration\n\nde premier ordre.",
                                 "cursor": "cursor"
                             }
                         },
@@ -717,7 +717,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "evoli: B-b-brrr!",
+                                "string": "Evoli: B-b-brrr!",
                                 "cursor": "cursor"
                             }
                         },
@@ -820,7 +820,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "evoli: Cet endroit est un peu etrange,\n\ntu ne trouves pas?",
+                                "string": "Evoli: Cet endroit est un peu etrange,\n\ntu ne trouves pas?",
                                 "cursor": "cursor"
                             }
                         },
@@ -923,7 +923,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "evoli: Non... Cette fois, je suis\n\navec Pikachu",
+                                "string": "Evoli: Non... Cette fois, je suis\n\navec Pikachu",
                                 "cursor": "cursor"
                             }
                         },
@@ -1026,7 +1026,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "evoli: Il faut que je sois courageux.",
+                                "string": "Evoli: Il faut que je sois courageux.",
                                 "cursor": "cursor"
                             }
                         },
@@ -1289,57 +1289,6 @@
                                             "bloc": 1
                                         }
                                     }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
                                 }
                             ]
                         }
@@ -1392,57 +1341,6 @@
                                             "bloc": 1
                                         }
                                     }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
                                 }
                             ]
                         }
@@ -1487,57 +1385,6 @@
                                             "Position": {
                                                 "x": 255.0,
                                                 "y": 500.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
                                             }
                                         }
                                     },
@@ -1848,57 +1695,6 @@
                                             "Position": {
                                                 "x": 255.0,
                                                 "y": 500.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
                                             }
                                         }
                                     },
@@ -2306,7 +2102,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_evoli"
+                                                "Name": "portrait_evoli_worried"
                                             },
                                             "Position": {
                                                 "x": 50.0,
@@ -2470,13 +2266,13 @@
                                     }
                                 },
                                 {
-                                    "name": "portrait_pikachu",
+                                    "name": "portrait_pika",
                                     "entity": {
                                         "type": "Sprite",
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_pikachu"
+                                                "Name": "portrait_pika"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -2573,13 +2369,13 @@
                                     }
                                 },
                                 {
-                                    "name": "portrait_pikachu",
+                                    "name": "portrait_pika",
                                     "entity": {
                                         "type": "Sprite",
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_pikachu"
+                                                "Name": "portrait_pika"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -2676,13 +2472,13 @@
                                     }
                                 },
                                 {
-                                    "name": "portrait_pikachu",
+                                    "name": "portrait_pika",
                                     "entity": {
                                         "type": "Sprite",
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_pikachu"
+                                                "Name": "portrait_pika_worried"
                                             },
                                             "Position": {
                                                 "x": 442.0,
@@ -2779,67 +2575,16 @@
                                     }
                                 },
                                 {
-                                    "name": "portrait_pikachu",
+                                    "name": "portrait_pika",
                                     "entity": {
                                         "type": "Sprite",
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_pikachu"
+                                                "Name": "portrait_pika_worried"
                                             },
                                             "Position": {
                                                 "x": 442.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
                                                 "y": 300.0
                                             },
                                             "Scale": {
@@ -2949,57 +2694,6 @@
                                             "Position": {
                                                 "x": 255.0,
                                                 "y": 500.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
                                             }
                                         }
                                     },
@@ -3185,57 +2879,6 @@
                                             "bloc": 1
                                         }
                                     }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
                                 }
                             ]
                         }
@@ -3288,57 +2931,6 @@
                                             "bloc": 1
                                         }
                                     }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
                                 }
                             ]
                         }
@@ -3383,57 +2975,6 @@
                                             "Position": {
                                                 "x": 255.0,
                                                 "y": 500.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
                                             }
                                         }
                                     },
@@ -3538,57 +3079,6 @@
                                             "Position": {
                                                 "x": 255.0,
                                                 "y": 500.0
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "bulle_portrait",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 1,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 48.0,
-                                                "y": 293.0
-                                            },
-                                            "Scale": {
-                                                "x": 0.14,
-                                                "y": 0.58
-                                            }
-            
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "portrait_evoli",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "portrait_evoli"
-                                            },
-                                            "Position": {
-                                                "x": 50.0,
-                                                "y": 300.0
-                                            },
-                                            "Scale": {
-                                                "x": 1.6,
-                                                "y": 1.8
                                             }
                                         }
                                     },
