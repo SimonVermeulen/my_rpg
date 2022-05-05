@@ -193,64 +193,6 @@
                     ]
                 }
             }
-        },
-        {
-            "name": "skipByTime",
-            "addons": {
-                "event_manager": {
-                    "actions": [
-                        {
-                            "type": 1,
-                            "disable": 1,
-                            "value": 2200.0,
-                            "object_enable": "change_bloc_bot" 
-                        }
-                    ]
-                }
-            },
-            "children": {
-                "objects": [
-                    {
-                        "name": "change_bloc_bot",
-                        "disable": 1,
-                        "addons": {
-                            "change_scene": {
-                                "bloc": 1,
-                                "name": "wake_pokemon"
-                            }
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "skipByTime2",
-            "addons": {
-                "event_manager": {
-                    "actions": [
-                        {
-                            "type": 1,
-                            "disable": 1,
-                            "value": 2200.0,
-                            "object_enable": "change_bloc_top" 
-                        }
-                    ]
-                }
-            },
-            "children": {
-                "objects": [
-                    {
-                        "name": "change_bloc_top",
-                        "disable": 1,
-                        "addons": {
-                            "change_scene": {
-                                "bloc": 2,
-                                "name": "beach_sun_rise-top"
-                            }
-                        }
-                    }
-                ]
-            }
         }
     ]
 }
