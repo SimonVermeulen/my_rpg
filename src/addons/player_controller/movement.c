@@ -7,7 +7,7 @@
 
 #include "game.h"
 
-const sfVector2f position[5] =
+static const sfVector2f position[9] =
 {
     (sfVector2f) {0, -1},
     (sfVector2f) {0, 1},
@@ -20,7 +20,7 @@ const sfVector2f position[5] =
     (sfVector2f) {1, 1},
 };
 
-const char *name[5] =
+const char *name[9] =
 {
     "top",
     "bottom",

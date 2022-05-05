@@ -100,6 +100,8 @@ bool check_collision_event(engine_t *engine, list_t *scene);
 ///
 ////////////////////////////////////////////////////////////
 bool is_hover(engine_t *engine, object_t *object);
+bool is_hover_point(object_t *object, sfVector2f point);
+bool is_hover_all(engine_t *engine, sfVector2f point);
 
 ////////////////////////////////////////////////////////////
 /// \brief permet de voir si l'object survole un autre object avec le

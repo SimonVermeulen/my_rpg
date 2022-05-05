@@ -1,0 +1,110 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "2eme_poke",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "main_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 75.0,
+                        "y": 75.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "second_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "2eme_poke",
+                        "Rect": {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "controller",
+            "addons": {
+                "grid_controller": {
+                    "object": "main_pokemon"
+                }
+            }
+        },
+        {
+            "name": "AI_second",
+            "addons": {
+                "second_ai": {
+                    "empty": 0
+                }
+            }
+        }
+    ]
+}

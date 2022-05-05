@@ -122,10 +122,38 @@ typedef struct data_s {
     list_t *data;
 } data_t;
 
+typedef struct grid_controller_s {
+    sfVector2f move_point;
+    object_t *object;
+    list_t *list;
+} grid_controller_t;
+
+typedef struct grid_s {
+    char **map;
+    int width;
+    int height;
+    list_t *list;
+    list_t *cells;
+} grid_t;
+
+typedef struct cell_s {
+    int x;
+    int y;
+    bool visited;
+    list_t *neighbour;
+} element_t;
+
+typedef struct second_ai_s {
+    sfVector2f move;
+    bool is_moving;
+} second_ai_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 bool save_data_addon(engine_t *engine);
 data_t *get_data_addon(engine_t *engine);
+list_t *get_path(engine_t *engine, sfVector2i start, sfVector2i end);
+int free_path(list_t *path);
 
 ///////
 // ADDONS PROTOTYPE
@@ -155,5 +183,8 @@ int init_data_addons(engine_t *engine);
 int init_load_data_object_addons(engine_t *engine);
 int init_particle_move_addons(engine_t *engine);
 int init_particle_addons(engine_t *engine);
+int init_grid_controller_addons(engine_t *engine);
+int init_second_ai_addons(engine_t *engine);
+int init_grid_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

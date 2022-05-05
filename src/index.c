@@ -33,6 +33,8 @@ int (*const load_addons_func[])(engine_t *) =
     init_load_data_object_addons,
     init_particle_move_addons,
     init_particle_addons,
+    init_grid_controller_addons,
+    init_second_ai_addons,
     NULL
 };
 
@@ -46,7 +48,7 @@ int main(int argc, char **argv)
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("intro_0-bot", engine) ||
+        !change_scene("exemple_grid", engine) ||
         !change_secondary_screen("intro_0-top", engine))
         return 84;
     return open_game(engine, 60);

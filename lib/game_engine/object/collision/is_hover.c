@@ -38,3 +38,32 @@ bool is_hover(engine_t *engine, object_t *object)
     }
     return false;
 }
+
+bool is_hover_point(object_t *object, sfVector2f point)
+{
+    node_t *travel = object->collision.collisions->head;
+    collision_t *collision = NULL; 
+
+    for (int i = 0; i < object->collision.collisions->nb_elements; i++) {
+        collision = travel->value;
+        if (get_hover_by_point(collision, point))
+            return true;
+        travel = travel->next;
+    }
+    return false;
+}
+
+bool is_hover_all(engine_t *engine, sfVector2f point)
+{
+    node_t *travel = NULL;
+
+    if (!engine || !engine->actual_scene->object)
+        return NULL;
+    travel = engine->actual_scene->object->head;
+    for (int i = 0; i < engine->actual_scene->object->nb_elements; i++) {
+        if (is_hover_point(travel->value, point))
+            return true;
+        travel = travel->next;
+    }
+    return false;
+}
