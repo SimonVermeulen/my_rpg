@@ -67,18 +67,8 @@
                 "smooth": 1
             },
             {
-                "name": "portrait_evoli",
-                "path": "./assets/portrait/evoli/normal.png",
-                "smooth": 1
-            },
-            {
-                "name": "portrait_pikachu",
-                "path": "./assets/portrait/pikachu/normal.png",
-                "smooth": 1
-            },
-            {
-                "name": "portrait_pijako",
-                "path": "./assets/portrait/pijako/normal.png",
+                "name": "portrait_roucool",
+                "path": "./assets/portrait/roucool/normal.png",
                 "smooth": 1
             }
                 
@@ -592,8 +582,7 @@
             },
             "addons": {
                 "interact_zone": {
-                    "presskey": 1,
-                    "enable": "follow_player"
+                    "enable": "dialogue_roucool"
                 }
             },
             "collisions": [
@@ -601,10 +590,10 @@
                     "name": "box",
                     "trigger": 1,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 50.0,
-                        "height": 50.0
+                        "left": 345.0,
+                        "top": 410.0,
+                        "width": 40.0,
+                        "height": 40.0
                     }
                 }
             ]
@@ -689,7 +678,7 @@
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
@@ -1096,6 +1085,149 @@
                     "object": "main_pokemon",
                     "bloc": 1
                 }
+            }
+        },
+        {
+            "name": "dialogue_roucool",
+            "disable": 1,
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text1",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "bulle_portrait",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 1,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 48.0,
+                                    "y": 293.0
+                                },
+                                "Scale": {
+                                    "x": 0.14,
+                                    "y": 0.58
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "portrait_roucool",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "portrait_roucool"
+                                },
+                                "Position": {
+                                    "x": 50.0,
+                                    "y": 300.0
+                                },
+                                "Scale": {
+                                    "x": 1.6,
+                                    "y": 1.8
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text1",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Wsh y a quoi y a quoi je te prends je te retourne.\n\nFrero j'ai 4 de GPA.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         }
     ]

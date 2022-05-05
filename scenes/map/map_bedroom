@@ -185,19 +185,18 @@
             },
             "addons": {
                 "interact_zone": {
-                    "presskey": 1,
-                    "enable": "follow_player"
+                    "enable": "change_bot"
                 }
             },
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 0,
+                    "trigger": 1,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 50.0,
-                        "height": 50.0
+                        "left": -10.0,
+                        "top": 280.0,
+                        "width": 1.0,
+                        "height": 90.0
                     }
                 }
             ]
@@ -492,8 +491,28 @@
                         "width": 170.0,
                         "height": 25.0
                     }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 225.0,
+                        "width": 135.0,
+                        "height": 35.0
+                    }
                 }
             ]
+        },
+        {
+            "name": "change_bot",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "map_guild_second_stage"
+                }
+            }
         }
     ]
 }
