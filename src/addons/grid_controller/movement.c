@@ -35,8 +35,8 @@ int tick_grid_controller(object_t *object, engine_t *engine)
     sfVector2f normal = get_normalize_vector(get_position(controller->object),
         controller->move_point);
     
-    normal.x *= 5 * (get_delta(engine) / 100);
-    normal.y *= 5 * (get_delta(engine) / 100);
+    normal.x *= 15 * (get_delta(engine) / 100);
+    normal.y *= 15 * (get_delta(engine) / 100);
     move_vector(controller->object, normal);
     if (equal_vector2f_pov(get_position(controller->object),
         controller->move_point, 1))
