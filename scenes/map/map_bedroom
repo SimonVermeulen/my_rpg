@@ -94,7 +94,7 @@
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
@@ -192,7 +192,7 @@
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
@@ -325,7 +325,7 @@
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 140.0,
                         "top": 385.0,
@@ -335,7 +335,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 0.0,
                         "top": 360.0,
@@ -345,7 +345,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 175.0,
                         "top": 430.0,
@@ -355,7 +355,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 220.0,
                         "top": 450.0,
@@ -365,7 +365,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 335.0,
                         "top": 430.0,
@@ -375,7 +375,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 380.0,
                         "top": 415.0,
@@ -385,7 +385,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 400.0,
                         "top": 390.0,
@@ -395,7 +395,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 420.0,
                         "top": 350.0,
@@ -405,7 +405,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 430.0,
                         "top": 200.0,
@@ -415,7 +415,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 422.0,
                         "top": 50.0,
@@ -425,7 +425,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 405.0,
                         "top": 15.0,
@@ -435,7 +435,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 360.0,
                         "top": 10.0,
@@ -445,7 +445,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 200.0,
                         "top": 100.0,
@@ -455,7 +455,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 190.0,
                         "top": 170.0,
@@ -465,7 +465,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 155.0,
                         "top": 200.0,
@@ -475,7 +475,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 130.0,
                         "top": 230.0,
@@ -485,7 +485,7 @@
                 },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
                         "left": 170.0,
                         "top": 50.0,
