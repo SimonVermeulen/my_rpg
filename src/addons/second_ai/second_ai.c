@@ -20,7 +20,7 @@ static sfVector2f get_next_position(object_t *object, engine_t *engine)
     normal.y *= 75;
     normal.x += get_position(object).x;
     normal.y += get_position(object).y;
-    if (is_hover_all(engine, normal))
+    if (equal_vector2f(get_position(main), normal))
         return get_position(object);
     return normal;
 }

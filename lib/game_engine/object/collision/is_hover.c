@@ -53,7 +53,7 @@ bool is_hover_point(object_t *object, sfVector2f point)
     return false;
 }
 
-bool is_hover_all(engine_t *engine, sfVector2f point)
+object_t *is_hover_all(engine_t *engine, sfVector2f point)
 {
     node_t *travel = NULL;
 
@@ -62,8 +62,8 @@ bool is_hover_all(engine_t *engine, sfVector2f point)
     travel = engine->actual_scene->object->head;
     for (int i = 0; i < engine->actual_scene->object->nb_elements; i++) {
         if (is_hover_point(travel->value, point))
-            return true;
+            return travel->value;
         travel = travel->next;
     }
-    return false;
+    return NULL;
 }
