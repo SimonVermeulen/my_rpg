@@ -1191,7 +1191,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Evoli: Que ce passe-t-il la-bas?",
+                                "string": "Evoli: Que se passe-t-il la-bas?",
                                 "cursor": "cursor"
                             }
                         },
@@ -6125,7 +6125,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Smogo: Mouarf! Tu leves meme pas\n\nle petit doigt pour le recuperer? Qu'est qui\n\nt'arrive? T'as trop peur?",
+                                "string": "Smogo: Mouarf! Tu leves meme pas\n\nle petit doigt pour la recuperer? Qu'est-ce qui\n\nt'arrive? T'as trop peur?",
                                 "cursor": "cursor"
                             }
                         },
