@@ -16,9 +16,31 @@
                 "path": "./assets/sprites/lib/logo_game.png",
                 "smooth": 1
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "music-intro",
+                "path": "./assets/sounds/music_fin_chap_1.ogg"
+            }
         ]
     },
     "objects": [
+        {
+            "name": "music-intro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "SoundBuffer": "music-intro"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
         {
             "name": "background",
             "entity": {

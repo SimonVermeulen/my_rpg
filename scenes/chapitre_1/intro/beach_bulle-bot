@@ -16,9 +16,35 @@
                 "path": "./assets/sprites/pokemons/evoli/walk.png",
                 "smooth": 1
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "mer",
+                "path": "./assets/sounds/mer.ogg"
+            },
+            {
+                "name": "music",
+                "path": "./assets/sounds/sound_plage.ogg"
+            }
         ]
     },
     "objects": [
+        {
+            "name": "plage_music",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "SoundBuffer": "music"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
         {
             "name": "beach_sun_rise",
             "entity": {
@@ -96,6 +122,23 @@
                             "time": 300.0
                         }
                     ]
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "mer"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },
