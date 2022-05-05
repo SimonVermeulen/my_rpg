@@ -19,25 +19,33 @@ static int end_addon(object_t *object, engine_t *engine)
     return 0;
 }
 
+static int delete_object(object_t *object, engine_t *engine)
+{
+    return destroy_object(object);
+}
+
 static int tick_addon(object_t *object, engine_t *engine)
 {
     list_t *list = get_addon_data("particle_move", object);
     int *var = get_value_list(list, "variation", 3);
     double *time = get_value_list(list, "time", 2);
     double *count = get_value_list(list, "count", 2);
+    double *speed = get_value_list(list, "speed", 2);
     sfVector2f path = create_vector2f_list(get_value_list(list, "path", 1));
     sfVector2f normal;
 
     if (!var || !time || !count)
         return exit_game(engine, 84);
     *count += get_delta(engine);
-    if (*time > *count)
-        return 0;
+    if (*time < *count)
+        return add_function(delete_object, 0, object, engine);
+    path.x += get_position(object).x;
+    path.y += get_position(object).y;
+    path.x += rand() % *var * ((rand() % 2 == 1) ? -1 : 1);
+    path.y += rand() % *var * ((rand() % 2 == 1) ? -1 : 1);
     normal = get_normalize_vector(get_position(object), path);
-    if (rand() % 2)
-        *var *= -1;
-    normal.x += (rand() % *var) * -(rand() % 2);
-    normal.y += (rand() % *var) * -(rand() % 2);
+    normal.x *= get_delta(engine) / 100 * *speed;
+    normal.y *= get_delta(engine) / 100 * *speed;
     move_vector(object, normal);
 }
 

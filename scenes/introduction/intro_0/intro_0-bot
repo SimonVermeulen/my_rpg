@@ -1,5 +1,19 @@
 {
     "buffer": {
+        "Colors": [
+            {
+                "r": 1,
+                "g": 1,
+                "b": 255,
+                "name": "blue"
+            },
+            {
+                "r": 255,
+                "g": 1,
+                "b": 1,
+                "name": "red"
+            }
+        ],
         "Textures": [
             {
                 "name": "main_texture",
@@ -54,7 +68,7 @@
                         {
                             "type": 1,
                             "disable": 1,
-                            "value": 3000.0,
+                            "value": 60000.0,
                             "object_enable": "change_bloc_bot" 
                         }
                     ]
@@ -86,13 +100,32 @@
             }
         },
         {
-            "name": "particle",
+            "name": "particle_a",
             "addons": {
                 "particle": {
                     "spawn_count": 20,
-                    "time": 1000.0,
+                    "time": 150.0,
                     "count": 0.0,
-                    "particle_path": "./prefabs/particle_a"
+                    "particle_path": "./prefabs/particle_a",
+                    "position": {
+                        "x": 270.0,
+                        "y": 270.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "particle_b",
+            "addons": {
+                "particle": {
+                    "spawn_count": 50,
+                    "time": 1000.0,
+                    "count": 999.0,
+                    "particle_path": "./prefabs/particle_b",
+                    "position": {
+                        "x": 270.0,
+                        "y": 290.0
+                    }
                 }
             }
         }

@@ -19,6 +19,17 @@ static int end_addon(object_t *object, engine_t *engine)
     return 0;
 }
 
+static int create_particle(list_t *object_list, object_t *object,
+    list_t *particle)
+{
+    sfVector2f pos =
+        create_vector2f_list(get_value_list(particle, "position", 1));
+    object_t *child = create_object_list(object_list, object->childs,
+        object->engine, object);
+    
+    set_position_vector(child, pos);
+}
+
 static int tick_addon(object_t *object, engine_t *engine)
 {
     list_t *particle = get_addon_data("particle", object);
@@ -28,15 +39,17 @@ static int tick_addon(object_t *object, engine_t *engine)
     char *particle_path = get_value_list(particle, "particle_path", 4);
     list_t *object_list = NULL;
 
-    if (!spawn_count || !time || !count || !object_list)
+    if (!spawn_count || !time || !count || !particle_path)
         return exit_game(engine, 84);
+    if (!object->childs)
+        object->childs = create_empty_list();
     *count += get_delta(engine);
     object_list = launch_parsing(particle_path);
     if (*time > *count || !object_list)
-        return 0;
-    for (int i = 0; i < *spawn_count; i++) {
-        create_object_list(object_list, object->childs, engine, object);
-    }
+        return free_json_object(object_list);
+    for (int i = 0; i < *spawn_count; i++)
+        create_particle(object_list, object, particle);
+    free_json_object(object_list);
     *count = 0;
 }
 
