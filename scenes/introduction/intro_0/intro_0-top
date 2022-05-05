@@ -54,7 +54,7 @@
                         {
                             "type": 1,
                             "disable": 1,
-                            "value": 3000.0,
+                            "value": 60000.0,
                             "object_enable": "change_bloc_top" 
                         }
                     ]

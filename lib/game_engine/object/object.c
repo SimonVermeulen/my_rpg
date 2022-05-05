@@ -53,7 +53,6 @@ object_t *create_object(char const *name, list_t *scene, engine_t *engine)
 
 int destroy_object(object_t *object)
 {
-    node_t *node = NULL;
     node_t *next = NULL;
 
     if (object == NULL)
@@ -63,10 +62,9 @@ int destroy_object(object_t *object)
     destroy_entity(object);
     destroy_objects_list(object->childs);
     destroy_collision(object);
-    node = search_from_key(object->actual_scene, object->name);
     next = object->actual_scene->head;
     for (int i = 0; i < object->actual_scene->nb_elements; i++) {
-        if (next == node) {
+        if (next->value == object) {
             splice(object->actual_scene, i);
             return 0;
         }

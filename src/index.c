@@ -6,6 +6,7 @@
 */
 
 #include "game.h"
+#include <time.h>
 
 int (*const load_addons_func[])(engine_t *) =
 {
@@ -30,6 +31,8 @@ int (*const load_addons_func[])(engine_t *) =
     init_interact_zone_addons,
     init_data_addons,
     init_load_data_object_addons,
+    init_particle_move_addons,
+    init_particle_addons,
     NULL
 };
 
@@ -38,11 +41,12 @@ int main(int argc, char **argv)
     engine_t *engine = init_game((sfVideoMode) {800, 1080, 32},
         "[HACK-ROM] Pokemon donjon mystere lihme-line");
 
+    srand(time(NULL));
     if (!engine || !load_addons(engine, load_addons_func) ||
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("intro_0-bot", engine) ||
+        !change_scene("map_guild_first_stage", engine) ||
         !change_secondary_screen("intro_0-top", engine))
         return 84;
     return open_game(engine, 60);
