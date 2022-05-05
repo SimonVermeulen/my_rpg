@@ -452,7 +452,7 @@
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 0,
+                    "trigger": 1,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
@@ -542,7 +542,7 @@
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 0,
+                    "trigger": 1,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
@@ -602,7 +602,7 @@
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 0,
+                    "trigger": 1,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
@@ -632,12 +632,218 @@
             "collisions": [
                 {
                     "name": "box",
-                    "trigger": 0,
+                    "trigger": 1,
                     "box": {
                         "left": 0.0,
                         "top": 0.0,
                         "width": 250.0,
                         "height": 130.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box9",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 70.0,
+                        "y": 200.0
+                    },
+                    "Position": {
+                        "x": 350.0,
+                        "y": 15.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 70.0,
+                        "height": 170.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box10",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 500.0,
+                        "y": 200.0
+                    },
+                    "Position": {
+                        "x": 520.0,
+                        "y": 15.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 500.0,
+                        "height": 170.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box11",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 500.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": 630.0,
+                        "y": 215.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 500.0,
+                        "height": 20.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box12",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 80.0,
+                        "y": 50.0
+                    },
+                    "Position": {
+                        "x": -215.0,
+                        "y": 200.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 80.0,
+                        "height": 30.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box13",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 50.0,
+                        "y": 300.0
+                    },
+                    "Position": {
+                        "x": 175.0,
+                        "y": -200.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 35.0,
+                        "height": 300.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "box14",
+            "entity": {
+                "type": "RectangleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Size": {
+                        "x": 50.0,
+                        "y": 300.0
+                    },
+                    "Position": {
+                        "x": 305.0,
+                        "y": -200.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 300.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "circle1",
+            "entity": {
+                "type": "CircleShape",
+                "order": 1,
+                "parameters": {
+                    "FillColor": "red",
+                    "Radius": 30.0,
+                    "Position": {
+                        "x": -56.0,
+                        "y": 460.0
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
+                        "x": 30.0,
+                        "y": 30.0,
+                        "radius": 30.0
                     }
                 }
             ]
