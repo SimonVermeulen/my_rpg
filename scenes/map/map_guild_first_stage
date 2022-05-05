@@ -582,6 +582,7 @@
             },
             "addons": {
                 "interact_zone": {
+                    "presskey": 1,
                     "enable": "dialogue_roucool"
                 }
             },
