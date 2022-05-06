@@ -126,6 +126,7 @@ typedef struct grid_controller_s {
     sfVector2f move_point;
     object_t *object;
     list_t *list;
+    sfVector2f direction;
 } grid_controller_t;
 
 typedef struct grid_s {

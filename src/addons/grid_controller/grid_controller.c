@@ -33,6 +33,7 @@ static void *init_addon(list_t *list)
         return NULL;
     controller->object = NULL;
     controller->move_point = (sfVector2f) {0, 0};
+    controller->direction = (sfVector2f) {1, 1};
     return controller;
 }
 

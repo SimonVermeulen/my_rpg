@@ -7,11 +7,21 @@
 
 #include "game.h"
 
-int event_grid_controller(object_t *object, engine_t *engine)
+static const sfVector2f position[8] =
 {
-    grid_controller_t *controller = get_addon_data("grid_controller", object);
-    sfVector2f point = controller->move_point;
+    (sfVector2f) {0, -1},
+    (sfVector2f) {0, 1},
+    (sfVector2f) {1, 0},
+    (sfVector2f) {-1, 0},
+    (sfVector2f) {-1, -1},
+    (sfVector2f) {1, -1},
+    (sfVector2f) {-1, 1},
+    (sfVector2f) {1, 1},
+};
 
+static int event_controller(grid_controller_t *controller,
+    sfVector2f point, engine_t *engine)
+{
     if (calc_distance(get_position(controller->object),
         controller->move_point) > 75)
         return 0;
@@ -29,12 +39,35 @@ int event_grid_controller(object_t *object, engine_t *engine)
         controller->move_point.x += 75;
 }
 
+static int get_rotation(engine_t *engine, grid_controller_t *controller)
+{
+    for (int i = 0; i < 8; i++) {
+        if (equal_vector2f(position[i], controller->direction)) {
+            controller->direction = position[(i + 1) % 8];
+            break;
+        }
+    }
+}
+
+int event_grid_controller(object_t *object, engine_t *engine)
+{
+    grid_controller_t *controller = get_addon_data("grid_controller", object);
+    sfVector2f point = controller->move_point;
+
+    if (if_key_pressed(engine, sfKeyZ))
+        get_rotation(engine, controller);
+    event_controller(controller, point, engine);
+}
+
 int tick_grid_controller(object_t *object, engine_t *engine)
 {
     grid_controller_t *controller = get_addon_data("grid_controller", object);
     sfVector2f normal = get_normalize_vector(get_position(controller->object),
         controller->move_point);
-    
+
+    if (equal_vector2f(normal, (sfVector2f) {0, 0}))
+        return 0;
+    controller->direction = normal;
     normal.x *= 15 * (get_delta(engine) / 100);
     normal.y *= 15 * (get_delta(engine) / 100);
     move_vector(controller->object, normal);

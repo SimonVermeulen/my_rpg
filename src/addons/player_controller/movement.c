@@ -12,7 +12,7 @@ static const sfVector2f position[9] =
     (sfVector2f) {0, -1},
     (sfVector2f) {0, 1},
     (sfVector2f) {1, 0},
-    (sfVector2f) {1, 0},
+    (sfVector2f) {-1, 0},
     (sfVector2f) {0, 0},
     (sfVector2f) {-1, -1},
     (sfVector2f) {1, -1},
