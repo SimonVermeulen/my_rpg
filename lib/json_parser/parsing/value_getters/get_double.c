@@ -36,6 +36,7 @@ static int get_double_array(const char *buff, int nb_elements, double *result)
             len++;
         }
     }
+    len++;
     return (len);
 }
 

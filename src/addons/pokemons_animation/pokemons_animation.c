@@ -9,28 +9,7 @@
 #include "my.h"
 
 int tick_pokemon_anim(object_t *object, engine_t *engine);
-
-static int write_data(pokemon_anim_t *animation, list_t *list)
-{
-    double *wait = get_value_list(list, "waitbeforestart", 2);
-    char *name = get_value_list(list, "animation", 4);
-    char *enable = get_value_list(list, "enable", 4);
-    int *infini = get_value_list(list, "infini", 3);
-    double *time = get_value_list(list, "time", 2);
-    char *object_name = get_value_list(list, "object", 4);
-
-    if (!wait || !name || !enable || !infini || !time || !object_name)
-        return (false);
-    animation->width = animation->height = animation->row = 0;
-    animation->object_name = my_strdup(object_name);
-    animation->animation = my_strdup(name);
-    animation->infini = *infini;
-    animation->enable = my_strdup(enable);
-    animation->wait = *wait;
-    animation->time = *time;
-    animation->init = false;
-    return (true);
-}
+int write_data(pokemon_anim_t *animation, list_t *list);
 
 static void *init_addon(list_t *list)
 {
