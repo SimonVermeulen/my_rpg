@@ -55,6 +55,7 @@ SRC				=		src/index.c	\
 						src/addons/enemy_ai/enemy_ai.c	\
 						src/addons/grid_controller/receive_damage.c	\
 						src/addons/mobs/mobs.c	\
+						src/addons/health_check/health_check.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

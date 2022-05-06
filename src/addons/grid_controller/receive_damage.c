@@ -22,13 +22,11 @@ int send_damage(object_t *object)
         return exit_game(object->engine, 84);
     if (enemy)
         mob = get_addon_data("mobs", enemy->object);
-    printf("%p, %p\n", get_value_list(list, "enemy", 4), mob);
     if (get_value_list(list, "second_pokemon", 4) && mobs)
         *life_b -= mobs->damage;
     if (get_value_list(list, "main_pokemon", 4) && mobs)
         *life_a -= mobs->damage;
     if (get_value_list(list, "enemy", 4) && mob)
         mob->life -= *damage;
-    printf("%f, %f\n", *life_a, *life_b);
     return destroy_addons(list, true);
 }

@@ -38,6 +38,8 @@ static int start_addon(object_t *object, engine_t *engine)
     object_t *second = seach_object(engine, "second_pokemon");
     grid_controller_t *controller = get_addon_data("second_ai", object);
 
+    if (!second)
+        return exit_game(engine, 84);
     controller->object = second;
     controller->move_point = get_position(second);
     controller->coroutine = sfThread_create(coroutine_attack_event,
@@ -50,6 +52,8 @@ static int end_addon(object_t *object, engine_t *engine)
 {
     grid_controller_t *controller = get_addon_data("second_ai", object);
 
+    if (!controller->coroutine)
+        return 0;
     sfThread_terminate(controller->coroutine);
     sfThread_destroy(controller->coroutine);
     return 0;
@@ -66,6 +70,7 @@ static void *init_addon(list_t *list)
     controller->move_point = (sfVector2f) {0, 0};
     controller->is_attack = false;
     controller->time = 0;
+    controller->coroutine = NULL;
     return controller;
 }
 

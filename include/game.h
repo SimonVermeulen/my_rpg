@@ -199,5 +199,6 @@ int init_second_ai_addons(engine_t *engine);
 int init_grid_addons(engine_t *engine);
 int init_enemy_ai_addons(engine_t *engine);
 int init_mobs_addons(engine_t *engine);
+int init_health_check_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

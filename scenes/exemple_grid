@@ -151,6 +151,19 @@
             "addons": {
                 "grid_controller": {
                     "object": "main_pokemon"
+                },
+                "health_check": {
+                    "enable": "change"
+                }
+            }
+        },
+        {
+            "name": "change",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "intro_0-bot"
                 }
             }
         },
