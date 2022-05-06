@@ -384,7 +384,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Smogo: Nosferapti! t'as vu ca!?",
+                                "string": "Smogo: Hey, Nosferapti! t'as vu ca?!",
                                 "cursor": "cursor"
                             }
                         },

@@ -1,0 +1,60 @@
+{
+    "name": "mimigal",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "mimigal_attack",
+                    "path": "./assets/sprites/pokemons/mimigal/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "mimigal_dmg",
+                    "path": "./assets/sprites/pokemons/mimigal/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "mimigal_idle",
+                    "path": "./assets/sprites/pokemons/mimigal/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "mimigal_walk",
+                    "path": "./assets/sprites/pokemons/mimigal/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 64,
+                    "height": 72,
+                    "texture": "mimigal_attack"
+                },
+                "dmg": {
+                    "width": 48,
+                    "height": 56,
+                    "texture": "mimigal_dmg"
+                },
+                "idle": {
+                    "width": 24,
+                    "height": 24,
+                    "texture": "mimigal_idle"
+                },
+                "walk": {
+                    "width": 32,
+                    "height": 24,
+                    "texture": "mimigal_walk"
+                }
+            }
+        }
+    }
+}

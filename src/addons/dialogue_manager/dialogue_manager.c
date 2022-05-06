@@ -44,7 +44,7 @@ static int disable_addon(object_t *object, engine_t *engine)
     event->count = 0;
     event->active = false;
     event->count = 0;
-    event->wait = 0;
+    event->wait = 1;
 }
 
 static void *init_addon(list_t *list)
@@ -62,7 +62,7 @@ static void *init_addon(list_t *list)
     dialogue->data = copy;
     dialogue->texts = search_from_key(copy, "actions")->value;
     dialogue->count = 0;
-    dialogue->wait = 0;
+    dialogue->wait = 1;
     dialogue->active = false;
     dialogue->length = actions_node->len;
     dialogue->enable = get_value_list(copy, "enable", 4);

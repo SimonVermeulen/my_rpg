@@ -13,17 +13,76 @@
         "pokemons": {
             "buffer": [
                 {
+                    "name": "pikachu_eat",
+                    "path": "./assets/sprites/pokemons/pikachu/eat.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "pikachu_idle",
+                    "path": "./assets/sprites/pokemons/pikachu/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "pikachu_laying",
+                    "path": "./assets/sprites/pokemons/pikachu/laying.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "pikachu_pain",
+                    "path": "./assets/sprites/pokemons/pikachu/pain.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "pikachu_pose",
+                    "path": "./assets/sprites/pokemons/pikachu/pose.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "pikachu_sleep",
+                    "path": "./assets/sprites/pokemons/pikachu/sleep.png",
+                    "smooth": 1
+                },
+                {
                     "name": "pikachu_walk",
                     "path": "./assets/sprites/pokemons/pikachu/walk.png",
                     "smooth": 1
                 }
             ],
             "animations": {
+                "eat": {
+                    "height": 48,
+                    "width": 24,
+                    "texture": "pikachu_eat"
+                },
+                "idle": {
+                    "height": 56,
+                    "width": 40,
+                    "texture": "pikachu_idle"
+                },
+                "laying": {
+                    "height": 32,
+                    "width": 24,
+                    "texture": "pikachu_laying"
+                },
+                "pain": {
+                    "height": 48,
+                    "width": 40,
+                    "texture": "pikachu_pain"
+                },
+                "pose": {
+                    "height": 40,
+                    "width": 32,
+                    "texture": "pikachu_pose"
+                },
+                "sleep": {
+                    "height": 32,
+                    "width": 24,
+                    "texture": "pikachu_sleep"
+                },
                 "walk": {
                     "height": 40,
                     "width": 32,
-                    "texture": "pikachu_walk",
-                    "row": 0
+                    "texture": "pikachu_walk"
                 }
             }
         }

@@ -1,0 +1,60 @@
+{
+    "name": "kabuto",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "kabuto_attack",
+                    "path": "./assets/sprites/pokemons/kabuto/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "kabuto_dmg",
+                    "path": "./assets/sprites/pokemons/kabuto/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "kabuto_idle",
+                    "path": "./assets/sprites/pokemons/kabuto/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "kabuto_walk",
+                    "path": "./assets/sprites/pokemons/kabuto/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 64,
+                    "height": 64,
+                    "texture": "kabuto_attack"
+                },
+                "dmg": {
+                    "width": 32,
+                    "height": 40,
+                    "texture": "kabuto_dmg"
+                },
+                "idle": {
+                    "width": 24,
+                    "height": 24,
+                    "texture": "kabuto_idle"
+                },
+                "walk": {
+                    "width": 24,
+                    "height": 24,
+                    "texture": "kabuto_walk"
+                }
+            }
+        }
+    }
+}

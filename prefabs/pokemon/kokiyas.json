@@ -1,0 +1,60 @@
+{
+    "name": "kokiyas",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "kokiyas_attack",
+                    "path": "./assets/sprites/pokemons/kokiyas/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "kokiyas_dmg",
+                    "path": "./assets/sprites/pokemons/kokiyas/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "kokiyas_idle",
+                    "path": "./assets/sprites/pokemons/kokiyas/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "kokiyas_walk",
+                    "path": "./assets/sprites/pokemons/kokiyas/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 72,
+                    "height": 72,
+                    "texture": "kokiyas_attack"
+                },
+                "dmg": {
+                    "width": 40,
+                    "height": 56,
+                    "texture": "kokiyas_dmg"
+                },
+                "idle": {
+                    "width": 24,
+                    "height": 32,
+                    "texture": "kokiyas_idle"
+                },
+                "walk": {
+                    "width": 24,
+                    "height": 32,
+                    "texture": "kokiyas_walk"
+                }
+            }
+        }
+    }
+}

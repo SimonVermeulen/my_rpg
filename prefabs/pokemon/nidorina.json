@@ -1,0 +1,60 @@
+{
+    "name": "nidorina",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "nidorina_attack",
+                    "path": "./assets/sprites/pokemons/nidorina/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "nidorina_dmg",
+                    "path": "./assets/sprites/pokemons/nidorina/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "nidorina_idle",
+                    "path": "./assets/sprites/pokemons/nidorina/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "nidorina_walk",
+                    "path": "./assets/sprites/pokemons/nidorina/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 64,
+                    "height": 72,
+                    "texture": "nidorina_attack"
+                },
+                "dmg": {
+                    "width": 56,
+                    "height": 64,
+                    "texture": "nidorina_dmg"
+                },
+                "idle": {
+                    "width": 24,
+                    "height": 40,
+                    "texture": "nidorina_idle"
+                },
+                "walk": {
+                    "width": 24,
+                    "height": 32,
+                    "texture": "nidorina_walk"
+                }
+            }
+        }
+    }
+}

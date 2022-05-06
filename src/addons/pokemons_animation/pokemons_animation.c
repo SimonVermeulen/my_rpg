@@ -51,6 +51,13 @@ static int end_addon(object_t *object, engine_t *engine)
     free(pok->object_name);
 }
 
+static int disable_addon(object_t *object, engine_t *engine)
+{
+    pokemon_anim_t *pok = get_addon_data("pokemons_animation", object);
+
+    pok->init = false;
+}
+
 int init_pokemons_animation_addons(engine_t *engine)
 {
     addon_t *addon = malloc(sizeof(addon_t));
@@ -58,7 +65,7 @@ int init_pokemons_animation_addons(engine_t *engine)
     if (addon == NULL)
         return 84;
     addon->on_enable = NULL;
-    addon->on_disable = NULL;
+    addon->on_disable = disable_addon;
     addon->on_end = end_addon;
     addon->on_start = NULL;
     addon->on_event = NULL;

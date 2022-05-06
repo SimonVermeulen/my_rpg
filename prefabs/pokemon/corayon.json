@@ -1,0 +1,60 @@
+{
+    "name": "corayon",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "corayon_attack",
+                    "path": "./assets/sprites/pokemons/corayon/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "corayon_dmg",
+                    "path": "./assets/sprites/pokemons/corayon/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "corayon_idle",
+                    "path": "./assets/sprites/pokemons/corayon/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "corayon_walk",
+                    "path": "./assets/sprites/pokemons/corayon/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 64,
+                    "height": 72,
+                    "texture": "corayon_attack"
+                },
+                "dmg": {
+                    "width": 48,
+                    "height": 48,
+                    "texture": "corayon_dmg"
+                },
+                "idle": {
+                    "width": 24,
+                    "height": 32,
+                    "texture": "corayon_idle"
+                },
+                "walk": {
+                    "width": 24,
+                    "height": 32,
+                    "texture": "corayon_walk"
+                }
+            }
+        }
+    }
+}

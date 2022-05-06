@@ -9,7 +9,7 @@
 
 bool is_click_event(engine_t *engine, object_t *object, void *event)
 {
-    if (get_left_click_pressed(engine) && is_hover(engine, object))
+    if (get_left_click_pressed(engine))
         return true;
     return false;
 }

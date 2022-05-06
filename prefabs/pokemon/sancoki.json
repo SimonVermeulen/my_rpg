@@ -1,0 +1,60 @@
+{
+    "name": "sancoki",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "sancoki_attack",
+                    "path": "./assets/sprites/pokemons/sancoki/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "sancoki_dmg",
+                    "path": "./assets/sprites/pokemons/sancoki/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "sancoki_idle",
+                    "path": "./assets/sprites/pokemons/sancoki/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "sancoki_walk",
+                    "path": "./assets/sprites/pokemons/sancoki/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 72,
+                    "height": 64,
+                    "texture": "sancoki_attack"
+                },
+                "dmg": {
+                    "width": 32,
+                    "height": 48,
+                    "texture": "sancoki_dmg"
+                },
+                "idle": {
+                    "width": 24,
+                    "height": 24,
+                    "texture": "sancoki_idle"
+                },
+                "walk": {
+                    "width": 32,
+                    "height": 32,
+                    "texture": "sancoki_walk"
+                }
+            }
+        }
+    }
+}

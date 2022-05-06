@@ -8,10 +8,10 @@
 #include "game_engine.h"
 
 collision_t *compare_trigger(list_t *scene, object_t *main,
-    collision_t *collision);
+    collision_t *collision, list_t *collisions);
 
 collision_t *compare_inside_trigger(object_t *object, collision_t *collision,
-    object_t *main)
+    object_t *main, list_t *collisions)
 {
     node_t *travel = NULL;
     collision_t *second = NULL;
@@ -23,63 +23,52 @@ collision_t *compare_inside_trigger(object_t *object, collision_t *collision,
         second = travel->value;
         if (get_collision(collision, second) && object != main &&
             second->trigger)
-            return second;
+            create_add_node(second, 4, object->name, collisions);
         travel = travel->next;
     }
     if (object->childs)
-        return compare_trigger(object->childs, main, collision);
+        compare_trigger(object->childs, main, collision, collisions);
     return NULL;
 }
 
 collision_t *compare_trigger(list_t *scene, object_t *main,
-    collision_t *collision)
+    collision_t *collision, list_t *collisions)
 {
     node_t *travel = NULL;
-    collision_t *result = NULL;
 
     travel = scene->head;
     for (int i = 0; i < scene->nb_elements; i++, travel = travel->next) {
-        result = compare_inside_trigger(travel->value, collision, main);
-        if (result)
-            return result;
+        compare_inside_trigger(travel->value, collision, main, collisions);
     }
     return NULL;
 }
 
 collision_t *compare_trigger_engine(engine_t *engine, object_t *object,
-    collision_t *collision)
+    collision_t *collision, list_t *collisions)
 {
-    collision_t *result = NULL;
-
     if (!object->is_active)
         return NULL;
     if (engine->actual_scene) {
-        result = compare_trigger(engine->actual_scene->object, object,
-            collision);
-        if (result)
-            return result;
+        compare_trigger(engine->actual_scene->object, object,
+            collision, collisions);
     }
     if (engine->const_scene) {
-        result = compare_trigger(engine->const_scene->object, object,
-            collision);
-        if (result)
-            return result;
+        compare_trigger(engine->const_scene->object, object,
+            collision, collisions);
     }
     return NULL;
 }
 
-collision_t *is_trigger(engine_t *engine, object_t *object)
+list_t *is_trigger(engine_t *engine, object_t *object)
 {
     node_t *travel = object->collision.collisions->head;
     collision_t *collision = NULL;
-    collision_t *result = NULL;
+    list_t *collisions = create_empty_list();
 
     for (int i = 0; i < object->collision.collisions->nb_elements; i++) {
         collision = travel->value;
-        result = compare_trigger_engine(engine, object, collision);
-        if (result)
-            return result;
+        compare_trigger_engine(engine, object, collision, collisions);
         travel = travel->next;
     }
-    return NULL;
+    return collisions;
 }

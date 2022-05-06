@@ -7,12 +7,12 @@
 
 #include "game.h"
 
-const sfVector2f position[5] =
+static const sfVector2f position[9] =
 {
     (sfVector2f) {0, -1},
     (sfVector2f) {0, 1},
     (sfVector2f) {1, 0},
-    (sfVector2f) {1, 0},
+    (sfVector2f) {-1, 0},
     (sfVector2f) {0, 0},
     (sfVector2f) {-1, -1},
     (sfVector2f) {1, -1},
@@ -20,7 +20,7 @@ const sfVector2f position[5] =
     (sfVector2f) {1, 1},
 };
 
-const char *name[5] =
+const char *name[9] =
 {
     "top",
     "bottom",
@@ -52,6 +52,8 @@ static int enable_object(object_t *object, engine_t *engine,
 
 static int released_move(player_contoller_t *con, engine_t *engine)
 {
+    if (equal_vector2f(con->direction, (sfVector2f) {0, 0}))
+        return 0;
     if (if_key_released(engine, sfKeyUp) && con->direction.y < 1)
         con->direction.y += 1;
     if (if_key_released(engine, sfKeyDown) && con->direction.y > -1)

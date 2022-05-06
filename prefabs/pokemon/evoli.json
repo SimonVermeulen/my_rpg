@@ -1,0 +1,80 @@
+{
+    "name": "evoli",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "evoli_eat",
+                    "path": "./assets/sprites/pokemons/evoli/eat.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "evoli_idle",
+                    "path": "./assets/sprites/pokemons/evoli/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "evoli_pain",
+                    "path": "./assets/sprites/pokemons/evoli/pain.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "evoli_pose",
+                    "path": "./assets/sprites/pokemons/evoli/pose.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "evoli_sleep",
+                    "path": "./assets/sprites/pokemons/evoli/sleep.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "evoli_walk",
+                    "path": "./assets/sprites/pokemons/evoli/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "eat": {
+                    "height": 32,
+                    "width": 24,
+                    "texture": "evoli_eat"
+                },
+                "idle": {
+                    "height": 32,
+                    "width": 24,
+                    "texture": "evoli_idle"
+                },
+                "pain": {
+                    "height": 40,
+                    "width": 32,
+                    "texture": "evoli_pain"
+                },
+                "pose": {
+                    "height": 40,
+                    "width": 24,
+                    "texture": "evoli_pose"
+                },
+                "sleep": {
+                    "height": 16,
+                    "width": 24,
+                    "texture": "evoli_sleep"
+                },
+                "walk": {
+                    "height": 48,
+                    "width": 40,
+                    "texture": "evoli_walk"
+                }
+            }
+        }
+    }
+}

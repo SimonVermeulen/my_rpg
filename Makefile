@@ -34,7 +34,6 @@ SRC				=		src/index.c	\
 						src/addons/multi_enable/multi_enable.c	\
 						src/addons/multi_disable/multi_disable.c	\
 						src/addons/play_sound/play_sound.c	\
-						src/addons/mobs_animation/mobs_animation.c	\
 						src/addons/player_controller/player_controller.c	\
 						src/addons/player_controller/movement.c	\
 						src/addons/pokemons/pokemons.c	\
@@ -45,6 +44,12 @@ SRC				=		src/index.c	\
 						src/addons/load_data_object/load_data_object.c	\
 						src/addons/particle/particle.c	\
 						src/addons/particle/particle_movement/particle_move.c	\
+						src/addons/grid_controller/grid_controller.c	\
+						src/addons/grid_controller/movement.c	\
+						src/addons/second_ai/second_ai.c	\
+						src/addons/second_ai/attack_enemy.c	\
+						src/addons/second_ai/follow_main.c	\
+						src/addons/enemy_ai/enemy_ai.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

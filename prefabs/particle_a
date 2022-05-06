@@ -2,20 +2,21 @@
     "name": "particle_a",
     "entity": {
         "type": "CircleShape",
-        "order": 0,
+        "order": 5,
         "parameters": {
-            "FillColor": "blue",
+            "FillColor": "red",
             "Radius": 5.0
         }
     },
     "addons": {
         "particle_move": {
-            "variation": 5,
-            "time": 5000.0,
+            "variation": 20,
+            "time": 1000.0,
             "count": 0.0,
+            "speed": 20.0,
             "path": {
-                "x": -50.0,
-                "y": -50.0
+                "x": 0.0,
+                "y": -10.0
             }
         }
     }
