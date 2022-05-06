@@ -52,6 +52,8 @@ static int enable_object(object_t *object, engine_t *engine,
 
 static int released_move(player_contoller_t *con, engine_t *engine)
 {
+    if (equal_vector2f(con->direction, (sfVector2f) {0, 0}))
+        return 0;
     if (if_key_released(engine, sfKeyUp) && con->direction.y < 1)
         con->direction.y += 1;
     if (if_key_released(engine, sfKeyDown) && con->direction.y > -1)
