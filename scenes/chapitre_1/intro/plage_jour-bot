@@ -42,7 +42,7 @@
         ],
         "SoundBuffers": [
             {
-                "name": "rain",
+                "name": "mer",
                 "path": "./assets/sounds/mer.ogg"
             },
             {

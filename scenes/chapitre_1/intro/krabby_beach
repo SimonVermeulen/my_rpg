@@ -6,6 +6,12 @@
                 "path": "./assets/sprites/chapitre_1/krabby_beach.png",
                 "smooth": 1
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "mer",
+                "path": "./assets/sounds/mer.ogg"
+            }
         ]
     },
     "objects": [
@@ -32,6 +38,23 @@
                         "x": 0.0,
                         "y": 0.0
                     }
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "mer"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },

@@ -36,7 +36,7 @@
             },
             "addons": {
                 "rect_animation": {
-                    "infini": 0,
+                    "infini": 1,
                     "start": 0,
                     "count": 0.0,
                     "start-time": 0.0,

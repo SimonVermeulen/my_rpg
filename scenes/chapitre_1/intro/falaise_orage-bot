@@ -124,14 +124,14 @@
             }
         },
         {
-            "name": "soundIntro",
+            "name": "rain",
             "entity": {
                 "type": "Sound",
                 "order": 1,
                 "parameters": {
                     "Volume": 100.0,
                     "Loop": 1,
-                    "SoundBuffer": "rain_light"
+                    "SoundBuffer": "rain"
                 }
             },
             "addons": {

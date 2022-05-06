@@ -129,9 +129,43 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "mer",
+                "path": "./assets/sounds/mer.ogg"
+            }
         ]
     },
     "objects": [
+        {
+            "name": "disableSound2",
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "plage_music"
+                    ],
+                    "all": 1
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "mer"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
         {
             "name": "beach_sun_rise",
             "entity": {

@@ -127,6 +127,12 @@
             "name": "font",
             "path": "./assets/fonts/font.ttf"
         }
+    ],
+    "SoundBuffers": [
+        {
+            "name": "music",
+            "path": "./assets/sounds/final_donjon_litroral.ogg"
+        }
     ]
     },
     "objects": [
@@ -153,6 +159,23 @@
                         "x": 0.0,
                         "y": 0.0
                     }
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "music"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },

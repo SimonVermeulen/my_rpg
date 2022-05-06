@@ -24,12 +24,6 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
-        ],
-        "SoundBuffers": [
-            {
-                "name": "sond_text",
-                "path": "./assets/sounds/text.ogg"
-            }
         ]
     },
     "objects": [
@@ -125,22 +119,6 @@
             },
             "children": {
                 "objects": [
-                    {
-                        "name": "sond_text",
-                        "entity": {
-                            "type": "Sound",
-                            "order": 1,
-                            "parameters": {
-                                "Volume": 100.0,
-                                "SoundBuffer": "sond_text"
-                            }
-                        },
-                        "addons": {
-                            "play_sound": {
-                                "empty": 0
-                            }
-                        }
-                    },
                     {
                         "name": "text1",
                         "disable": 1,
