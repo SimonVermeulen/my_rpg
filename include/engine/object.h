@@ -116,7 +116,7 @@ object_t *is_hover_all(engine_t *engine, sfVector2f point);
 /// \return return collision ou il y a eu collision sinon il retourne NULL
 ///
 ////////////////////////////////////////////////////////////
-collision_t *is_trigger(engine_t *engine, object_t *object);
+list_t *is_trigger(engine_t *engine, object_t *object);
 
 ////////////////////////////////////////////////////////////
 /// Function système
