@@ -6,6 +6,12 @@
                 "path": "./assets/sprites/chapitre_1/beach_sun_rise.png",
                 "smooth": 1
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "mer",
+                "path": "./assets/sounds/mer.ogg"
+            }
         ]
     },
     "objects": [

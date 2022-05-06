@@ -21,6 +21,12 @@
                 "path": "./assets/sprites/pokemons/nosferapti/walk.png",
                 "smooth": 1
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "fire",
+                "path": "./assets/sounds/fire.ogg"
+            }
         ]
     },
     "objects": [
@@ -66,6 +72,23 @@
                             "speed": 7.0
                         }
                     ] 
+                }
+            }
+        },
+        {
+            "name": "fire",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "fire"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },

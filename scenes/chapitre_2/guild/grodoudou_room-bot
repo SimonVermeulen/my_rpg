@@ -81,6 +81,17 @@
     },
     "objects": [
         {
+            "name": "disableSound",
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "guild_music"
+                    ],
+                    "all": 1
+                }
+            }
+        },
+        {
             "name": "background",
             "entity": {
                 "type": "Sprite",

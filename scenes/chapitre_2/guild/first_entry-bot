@@ -103,9 +103,32 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "guild_music",
+                "path": "./assets/sounds/guild_music.ogg"
+            }
         ]
     },
     "objects": [
+        {
+            "name": "guild_music",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "guild_music"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
         {
             "name": "background",
             "entity": {
