@@ -1,0 +1,153 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/lib/map_fog.png",
+                "smooth": 1
+            },
+            {
+                "name": "1er_poke",
+                "path": "./assets/sprites/pokemons/pikachu/idle.png",
+                "smooth": 1
+            },
+            {
+                "name": "checkpoint",
+                "path": "./assets/sprites/lib/map_point.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 504,
+                            "height": 336
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.5,
+                        "y": 2.0
+                    },
+                    "Position": {
+                        "x": -300.0,
+                        "y": -25.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "1er_poke",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "1er_poke",
+                        "Rect": {
+                            "left": 12,
+                            "top": 5,
+                            "width": 20,
+                            "height": 29
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 215.0,
+                        "y": 255.0
+                    }
+                }
+            },
+            "addons": {
+                "rect_animation": {
+                    "infini": 1,
+                    "start": 0,
+                    "count": 0.0,
+                    "start-time": 0.0,
+                    "stop-time": 0.0,
+                    "waitBeforeStart": 0.0,
+                    "rects": [
+                        {
+                            "left": 12,
+                            "top": 5,
+                            "width": 20,
+                            "height": 29,
+                            "time": 300.0
+                        },
+                        {
+                            "left": 51,
+                            "top": 5,
+                            "width": 20,
+                            "height": 29,
+                            "time": 1000.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "checkpoint1",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "checkpoint",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 7,
+                            "height": 7
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 222.0,
+                        "y": 315.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "checkpoint2",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "checkpoint",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 7,
+                            "height": 7
+                        }
+                    },
+                    "Scale": {
+                        "x": 1.8,
+                        "y": 2.2
+                    },
+                    "Position": {
+                        "x": 222.0,
+                        "y": 355.0
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -49,7 +49,7 @@
             "name": "main_pokemon",
             "entity": {
                 "type": "Sprite",
-                "order": 1,
+                "order": 2,
                 "parameters": {
                     "Texture": {
                         "Name": "main_pokemon",
@@ -148,7 +148,7 @@
             }
         },
         {
-            "name": "interact",
+            "name": "change_scene",
             "entity": {
                 "type": "Sprite",
                 "order": 1,
@@ -164,8 +164,7 @@
             },
             "addons": {
                 "interact_zone": {
-                    "presskey": 1,
-                    "enable": "follow_player"
+                    "enable": "change_map"
                 }
             },
             "collisions": [
@@ -173,188 +172,73 @@
                     "name": "box",
                     "trigger": 1,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 50.0,
-                        "height": 50.0
+                        "left": 560.0,
+                        "top": 230.0,
+                        "width": 60.0,
+                        "height": 200.0
                     }
                 }
             ]
         },
         {
-            "name": "box",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 2000.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": 50.0,
-                        "y": 200.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 2000.0,
-                        "height": 50.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box1",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 10000.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": -3000.0,
-                        "y": 120.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 4000.0,
-                        "height": 50.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box2",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 1200.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": -2000.0,
-                        "y": 200.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 1180.0,
-                        "height": 40.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box3",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 10000.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": -2000.0,
-                        "y": 425.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 10000.0,
-                        "height": 50.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box4",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 60.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": -655.0,
-                        "y": 230.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 50.0,
-                        "height": 10.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box5",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 30.0,
-                        "y": 30.0
-                    },
-                    "Position": {
-                        "x": -290.0,
-                        "y": 390.0
-                    }
-                }
-            },
+            "name": "collision",
             "collisions": [
                 {
                     "name": "box",
                     "trigger": 0,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
+                        "left": 50.0,
+                        "top": 200.0,
+                        "width": 2000.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": -3000.0,
+                        "top": 1200.0,
+                        "width": 4000.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": -2000.0,
+                        "top": 200.0,
+                        "width": 1180.0,
+                        "height": 40.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": -2000.0,
+                        "top": 425.0,
+                        "width": 10000.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": -655.0,
+                        "top": 230.0,
+                        "width": 50.0,
+                        "height": 10.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": -290.0,
+                        "top": 390.0,
                         "width": 15.0,
                         "height": 30.0
                     }
@@ -375,6 +259,16 @@
                         "x": 1980.0,
                         "y": 960.0
                     }
+                }
+            }
+        },
+        {
+            "name": "change_map",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "map_beach_path_exit"
                 }
             }
         }

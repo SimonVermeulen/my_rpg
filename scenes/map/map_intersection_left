@@ -15,6 +15,32 @@
                 "name": "second_pokemon",
                 "path": "./assets/sprites/pokemons/evoli/walk.png",
                 "smooth": 1
+            },
+            {
+                "name": "bulle",
+                "path": "./assets/sprites/lib/text/bulle.png",
+                "smooth": 1
+            },
+            {
+                "name": "whiteArrow",
+                "path": "./assets/sprites/lib/text/white_arrow_down.png",
+                "smooth": 1
+            },
+            {
+                "name": "yellowArrow",
+                "path": "./assets/sprites/lib/text/yellow_arrow_right.png",
+                "smooth": 1
+            },
+            {
+                "name": "cross",
+                "path": "./assets/sprites/lib/cross.png",
+                "smooth": 1
+            }
+        ],
+        "Fonts": [
+            {
+                "name": "font",
+                "path": "./assets/fonts/font.ttf"
             }
         ]
     },
@@ -351,13 +377,357 @@
             ]
         },
         {
+            "name": "change_scene",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "controller"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "select_dungeon"
+                },
+                "multi_enable": {
+                    "objects": [
+                        "select1"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "exit_select",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "change_bot_right"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "help"
+                },
+                "multi_enable": {
+                    "objects": [
+                        "controller"
+                    ]
+                }
+            }
+        },
+        {
             "name": "change_bot_right",
             "disable": 1,
             "addons": {
-                "change_scene": {
-                    "bloc": 1,
-                    "name": "selection_dungeon"
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 2,
+                            "enable": "change_scene"
+                        }
+                    ],
+                    "disable": 1
                 }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "select1",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 417.0,
+                                            "y": 368.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 417.0,
+                                            "y": 398.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 417.0,
+                                            "y": 428.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 417.0,
+                                            "y": 462.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 515.0,
+                                            "y": 525.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "exit_select"
+                                    }
+                                ],
+                                "right": "select2",
+                                "cursor": "select_cursor",
+                                "dialogue_manager": "change_bot_right"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 25.0,
+                                                "y": 50.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.35,
+                                                "y": 1.62
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 400.0,
+                                                "y": 300.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "cross",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "cross"
+                                            },
+                                            "Position": {
+                                                "x": 160.0,
+                                                "y": 290.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 60.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 25,
+                                            "String": "Destination\n\n--------------\n\nGrotte Littorale\n\nFalaise Trempee\n\nMt Herisse\n\nGrotte Cascade"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select2",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 417.0,
+                                            "y": 368.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 417.0,
+                                            "y": 398.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 417.0,
+                                            "y": 428.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 417.0,
+                                            "y": 462.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 515.0,
+                                            "y": 525.0
+                                        },
+                                        "hover": "nom de l'object à activer lorsqu'on hover l'option",
+                                        "enable": "exit_select"
+                                    }
+                                ],
+                                "left": "select1",
+                                "cursor": "select2_cursor",
+                                "dialogue_manager": "change_bot_right"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 2,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 25.0,
+                                                "y": 50.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.35,
+                                                "y": 1.62
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select2_cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 50.0,
+                                                "y": 50.0
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 60.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 25,
+                                            "String": "Destination\n\n--------------\n\nBois au Pommes\n\nCote Escarpee\n\nMt.Corn\n\nGrotte Cascade"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "cross",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "cross"
+                                            },
+                                            "Position": {
+                                                "x": 160.0,
+                                                "y": 290.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
