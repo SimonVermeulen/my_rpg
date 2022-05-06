@@ -7,6 +7,8 @@
 
 #include "game.h"
 
+int send_damage(object_t *object);
+
 static void move_by_time(sfVector2f b, sfVector2f normal,
     double time, object_t *object)
 {
@@ -28,6 +30,7 @@ void coroutine_attack_event(grid_controller_t *controller)
     direction.y += get_position(controller->object).y;
     normal = get_normalize_vector(direction, get_position(controller->object));
     move_by_time(direction, controller->direction, 2, controller->object);
+    send_damage(controller->object);
     move_by_time(controller->move_point, normal, 2, controller->object);
     set_position_vector(controller->object, controller->move_point);
     controller->is_attack = false;

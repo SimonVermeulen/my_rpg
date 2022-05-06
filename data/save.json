@@ -1,1 +1,1 @@
-{"main_pokemon":"./prefabs/pokemon/pikachu.json"}
+{"main_pokemon":"./prefabs/pokemon/pikachu.json","lifea":100.0,"lifeb":100.0,"damage":20.0}

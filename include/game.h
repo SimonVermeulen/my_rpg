@@ -152,6 +152,11 @@ typedef struct second_ai_s {
     bool is_moving;
 } second_ai_t;
 
+typedef struct mobs_s {
+    double life;
+    double damage;
+} mobs_t;
+
 bool change_secondary_screen(const char *name, engine_t *engine);
 secondary_screen_t *get_secondary_screen_data(engine_t *engine);
 bool save_data_addon(engine_t *engine);
@@ -190,5 +195,6 @@ int init_grid_controller_addons(engine_t *engine);
 int init_second_ai_addons(engine_t *engine);
 int init_grid_addons(engine_t *engine);
 int init_enemy_ai_addons(engine_t *engine);
+int init_mobs_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

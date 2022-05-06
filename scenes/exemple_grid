@@ -139,6 +139,10 @@
             "addons": {
                 "enemy_ai": {
                     "empty": 0
+                },
+                "mobs": {
+                    "life": 100.0,
+                    "damage": 20.0
                 }
             }
         },
