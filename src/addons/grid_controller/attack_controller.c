@@ -22,7 +22,7 @@ void coroutine_attack_event(grid_controller_t *controller)
 {
     sfVector2f direction = controller->direction;
     sfVector2f normal;
-    
+
     controller->is_attack = true;
     direction.x *= 75;
     direction.y *= 75;

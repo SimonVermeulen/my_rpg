@@ -10,51 +10,7 @@
 void coroutine_attack_event(grid_controller_t *controller);
 int attack_ai(grid_controller_t *controller, object_t *enemy,
     engine_t *engine);
-
-static sfVector2f get_next_position(object_t *object, engine_t *engine)
-{
-    object_t *main = seach_object(engine, "main_pokemon");
-    object_t *cont = seach_object(engine, "controller");
-    grid_controller_t *controller = get_addon_data("grid_controller", cont);
-    sfVector2f normal = get_normalize_vector(get_position(object),
-        get_position(main));
-    
-    if (!controller)
-        return get_position(object);
-    normal.x = round(normal.x);
-    normal.y = round(normal.y);
-    normal.x *= 75;
-    normal.y *= 75;
-    normal.x += get_position(object).x;
-    normal.y += get_position(object).y;
-    if (equal_vector2f(controller->move_point, normal) ||
-        !if_collision(object, main))
-        return get_position(object);
-    return normal;
-}
-
-static int tick_addon(object_t *object, engine_t *engine)
-{
-    grid_controller_t *controller = get_addon_data("enemy_ai", object);
-    object_t *main = seach_object(engine, "main_pokemon");
-    sfVector2f normal = get_normalize_vector(get_position(object),
-        controller->move_point);
-    
-    normal.x *= 15 * (get_delta(engine) / 100);
-    normal.y *= 15 * (get_delta(engine) / 100);
-    controller->time -= (controller->time > 0) ? get_delta(engine) : 0;
-    move_vector(object, normal);
-    if (equal_vector2f_pov(get_position(object),
-        controller->move_point, 1)) {
-        set_position_vector(object, controller->move_point);
-        controller->move_point = get_next_position(object, engine);
-    }
-    if (equal_vector2f(get_position(object), controller->move_point) &&
-        controller->time <= 0) {
-        attack_ai(controller, main, engine);
-        controller->time = 1000;
-    }
-}
+int tick_enemy_ai(object_t *object, engine_t *engine);
 
 static int start_addon(object_t *object, engine_t *engine)
 {
@@ -79,7 +35,19 @@ static void *init_addon(list_t *list)
     controller->move_point = (sfVector2f) {0, 0};
     controller->time = 0;
     controller->is_attack = false;
+    controller->coroutine = NULL;
     return controller;
+}
+
+static int end_addon(object_t *object, engine_t *engine)
+{
+    grid_controller_t *controller = get_addon_data("second_ai", object);
+
+    if (!controller->coroutine)
+        return 0;
+    sfThread_terminate(controller->coroutine);
+    sfThread_destroy(controller->coroutine);
+    return 0;
 }
 
 int init_enemy_ai_addons(engine_t *engine)
@@ -93,7 +61,7 @@ int init_enemy_ai_addons(engine_t *engine)
     addon->on_end = NULL;
     addon->on_start = start_addon;
     addon->on_event = NULL;
-    addon->on_tick = tick_addon;
+    addon->on_tick = tick_enemy_ai;
     addon->init = init_addon;
     addon->on_collision = NULL;
     if (create_addon("enemy_ai", addon, engine) == sfFalse)

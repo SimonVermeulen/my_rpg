@@ -11,17 +11,14 @@ static int end_addon(object_t *object, engine_t *engine)
 {
     node_t *node = NULL;
 
+    if (!object || !object->addons_data)
+        return 0;
     node = search_from_key(object->addons_data, "particle_move");
     if (node == NULL)
         return 0;
     free_json_object(node->value);
     node->value = NULL;
     return 0;
-}
-
-static int delete_object(object_t *object, engine_t *engine)
-{
-    return destroy_object(object);
 }
 
 static int tick_addon(object_t *object, engine_t *engine)
@@ -38,7 +35,7 @@ static int tick_addon(object_t *object, engine_t *engine)
         return exit_game(engine, 84);
     *count += get_delta(engine);
     if (*time < *count)
-        return add_function(delete_object, 0, object, engine);
+        return add_function(destroy_object, 0, object, engine);
     path.x += get_position(object).x;
     path.y += get_position(object).y;
     path.x += rand() % *var * ((rand() % 2 == 1) ? -1 : 1);
