@@ -12,13 +12,13 @@ static int set_size_anim(pokemon_anim_t *pok, list_t *anim,
 {
     int *width = get_value_list(anim, "width", 3);
     int *height = get_value_list(anim, "height", 3);
-    int *row = get_value_list(anim, "row", 3);
 
     pok->width  = (width) ? *width : 0;
-    pok->row = (row) ? *row : 0;
     pok->height = (height) ? *height : 0;
-    set_texture_rect(objecta, (sfIntRect) {0, pok->row * pok->height,
+    set_texture_rect(objecta, (sfIntRect) {0, (pok->row - 1) * pok->height,
         pok->width, pok->height});
+    set_scale_vector(objecta, pok->scale);
+    set_position_vector(objecta, pok->position);
 }
 
 static int start_addons(object_t *object, engine_t *engine)
@@ -45,16 +45,17 @@ static int tick_addon(object_t *object, engine_t *engine,
     sfIntRect rect = sfSprite_getTextureRect(pok->object->entity->data);
 
     pok->wait -= (pok->wait > 0) ? get_delta(engine) : 0;
-    if (pok->wait > 0 || pok->time == -500)
+    if (pok->wait > 0 || pok->time == -500 || pok->nb_rep < 0)
         return 0;
     pok->count -= (pok->count > 0) ? get_delta(engine) : 0;
     if (pok->count > 0)
         return 0;
     rect.left = (rect.left >= pok->bounds.width - pok->width) ? 0 :
         rect.left + pok->width;
-    if (rect.left == 0 && pok->infini)
+    if (rect.left == 0 && (!pok->infini && !pok->nb_rep))
         pok->time = -500;
     pok->count = pok->time;
+    pok->nb_rep -= (rect.left >= pok->bounds.width - pok->width) ? 1 : 0;
     set_texture_rect(pok->object, rect);
 }
 
