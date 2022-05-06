@@ -13,6 +13,8 @@ bool get_hover_by_point(collision_t *a, sfVector2f point)
     float distance = 0;
     sfVector2f pa = get_position(a->object);
 
+    if (a->trigger)
+        return false;
     if (a->type == CIRCLE) {
         distance = sqrt(pow(point.x - (a->circle.point.x + pa.x), 2) +
             pow(point.y - (a->circle.point.y + pa.y), 2));

@@ -2,11 +2,10 @@
 ** EPITECH PROJECT, 2021
 ** my_rpg [WSL: Ubuntu]
 ** File description:
-** second_ai.c
+** enemi_ai.c
 */
 
 #include "game.h"
-#include <math.h>
 
 static sfVector2f get_next_position(object_t *object, engine_t *engine)
 {
@@ -24,34 +23,33 @@ static sfVector2f get_next_position(object_t *object, engine_t *engine)
     normal.y *= 75;
     normal.x += get_position(object).x;
     normal.y += get_position(object).y;
-    if (equal_vector2f(controller->move_point, normal))
+    if (equal_vector2f(controller->move_point, normal) ||
+        !if_collision(object, main))
         return get_position(object);
     return normal;
 }
 
 static int tick_addon(object_t *object, engine_t *engine)
 {
-    object_t *second = seach_object(engine, "second_pokemon");
-    grid_controller_t *controller = get_addon_data("second_ai", object);
-    sfVector2f normal = get_normalize_vector(get_position(second),
+    grid_controller_t *controller = get_addon_data("enemy_ai", object);
+    sfVector2f normal = get_normalize_vector(get_position(object),
         controller->move_point);
     
     normal.x *= 15 * (get_delta(engine) / 100);
     normal.y *= 15 * (get_delta(engine) / 100);
-    move_vector(second, normal);
-    if (equal_vector2f_pov(get_position(second),
+    move_vector(object, normal);
+    if (equal_vector2f_pov(get_position(object),
         controller->move_point, 1)) {
-        set_position_vector(second, controller->move_point);
-        controller->move_point = get_next_position(second, engine);
+        set_position_vector(object, controller->move_point);
+        controller->move_point = get_next_position(object, engine);
     }
 }
 
 static int start_addon(object_t *object, engine_t *engine)
 {
-    object_t *second = seach_object(engine, "second_pokemon");
-    grid_controller_t *controller = get_addon_data("second_ai", object);
+    grid_controller_t *controller = get_addon_data("enemy_ai", object);
 
-    controller->move_point = get_position(second);
+    controller->move_point = get_position(object);
 }
 
 static void *init_addon(list_t *list)
@@ -66,7 +64,7 @@ static void *init_addon(list_t *list)
     return controller;
 }
 
-int init_second_ai_addons(engine_t *engine)
+int init_enemy_ai_addons(engine_t *engine)
 {
     addon_t *addon = malloc(sizeof(addon_t));
 
@@ -80,7 +78,7 @@ int init_second_ai_addons(engine_t *engine)
     addon->on_tick = tick_addon;
     addon->init = init_addon;
     addon->on_collision = NULL;
-    if (create_addon("second_ai", addon, engine) == sfFalse)
+    if (create_addon("enemy_ai", addon, engine) == sfFalse)
         return 84;
     return 0;
 }

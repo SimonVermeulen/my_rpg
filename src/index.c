@@ -35,6 +35,7 @@ int (*const load_addons_func[])(engine_t *) =
     init_particle_addons,
     init_grid_controller_addons,
     init_second_ai_addons,
+    init_enemy_ai_addons,
     NULL
 };
 
