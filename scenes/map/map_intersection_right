@@ -55,8 +55,8 @@
                         "Name": "main_pokemon",
                         "Rect": {
                             "left": 0,
-                            "top": 82,
-                            "width": 25,
+                            "top": 242,
+                            "width": 32,
                             "height": 26
                         }
                     },
@@ -65,7 +65,7 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": -125.0,
+                        "x": 600.0,
                         "y": 500.0
                     }
                 }
@@ -93,7 +93,7 @@
                         "Name": "second_pokemon",
                         "Rect": {
                             "left": 0,
-                            "top": 99,
+                            "top": 291,
                             "width": 35,
                             "height": 35
                         }
@@ -103,7 +103,7 @@
                         "y": 2.5
                     },
                     "Position": {
-                        "x": -175.0,
+                        "x": 650.0,
                         "y": 490.0
                     }
                 }

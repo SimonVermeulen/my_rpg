@@ -148,7 +148,7 @@
             }
         },
         {
-            "name": "interact",
+            "name": "change_scene_up",
             "entity": {
                 "type": "Sprite",
                 "order": 1,
@@ -164,665 +164,269 @@
             },
             "addons": {
                 "interact_zone": {
-                    "presskey": 1,
-                    "enable": "follow_player"
+                    "enable": "change_bot_up"
                 }
             },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "circle": {
+                        "x": 292.0,
+                        "y": 200.0,
+                        "radius": 20.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "collision",
             "collisions": [
                 {
                     "name": "box",
                     "trigger": 0,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 50.0,
-                        "height": 50.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "circle",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 50.0,
-                    "Position": {
-                        "x": 125.0,
-                        "y": 478.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
                     "circle": {
-                        "x": 50.0,
-                        "y": 50.0,
+                        "x": 175.0,
+                        "y": 528.0,
                         "radius": 50.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle1",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
+                        "x": 155.0,
+                        "y": 484.0,
+                        "radius": 20.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
                         "x": 135.0,
-                        "y": 464.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger":1,
-                    "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "y": 472.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle2",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 115.0,
-                        "y": 452.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 120.0,
+                        "y": 460.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle3",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 100.0,
-                        "y": 440.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 105.0,
+                        "y": 447.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle4",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 85.0,
-                        "y": 427.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 93.0,
+                        "y": 430.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle5",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 73.0,
-                        "y": 410.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 93.0,
+                        "y": 430.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle6",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 62.0,
-                        "y": 390.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 82.0,
+                        "y": 410.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle7",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 54.0,
-                        "y": 370.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 74.0,
+                        "y": 390.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle7",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 50.0,
-                        "y": 350.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 70.0,
+                        "y": 370.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "box",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 180.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": 50.0,
-                        "y": 300.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
+                    "circle": {
+                        "x": 70.0,
+                        "y": 320.0,
+                        "radius": 20.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 180.0,
-                        "height": 25.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box1",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 60.0,
-                        "y": 100.0
-                    },
-                    "Position": {
-                        "x": 170.0,
-                        "y": 200.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
+                        "left": 170.0,
+                        "top": 200.0,
                         "width": 60.0,
                         "height": 100.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "box2",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 100.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": 170.0,
-                        "y": 150.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
+                        "left": 170.0,
+                        "top": 150.0,
                         "width": 50.0,
                         "height": 50.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle50",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 50.0,
-                    "Position": {
-                        "x": 355.0,
-                        "y": 478.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 50.0,
-                        "y": 50.0,
+                        "x": 405.0,
+                        "y": 528.0,
                         "radius": 50.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle51",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 420.0,
-                        "y": 464.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 440.0,
+                        "y": 484.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle52",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 435.0,
-                        "y": 452.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 455.0,
+                        "y": 472.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle53",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 450.0,
-                        "y": 440.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
                     "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
+                        "x": 470.0,
+                        "y": 460.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle54",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 460.0,
-                        "y": 427.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
+                    "trigger": 0,
+                    "circle": {
+                        "x": 480.0,
+                        "y": 447.0,
+                        "radius": 20.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
+                        "x": 490.0,
+                        "y": 430.0,
+                        "radius": 20.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
+                        "x": 500.0,
+                        "y": 410.0,
+                        "radius": 20.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
+                        "x": 504.0,
+                        "y": 390.0,
+                        "radius": 20.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
                     "circle": {
                         "x": 515.0,
-                        "y": 20.0,
+                        "y": 370.0,
                         "radius": 20.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "circle55",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 470.0,
-                        "y": 410.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger":1,
-                    "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
-                        "radius": 20.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "circle56",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 480.0,
-                        "y": 390.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger":1,
-                    "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
-                        "radius": 20.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "circle57",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 490.0,
-                        "y": 370.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger":1,
-                    "circle": {
-                        "x": 484.0,
-                        "y": 20.0,
-                        "radius": 20.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "circle57",
-            "entity": {
-                "type": "CircleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Radius": 20.0,
-                    "Position": {
-                        "x": 495.0,
-                        "y": 350.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger":1,
-                    "circle": {
-                        "x": 20.0,
-                        "y": 20.0,
-                        "radius": 20.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box5",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 180.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": 350.0,
-                        "y": 300.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
+                        "left": 350.0,
+                        "top": 300.0,
                         "width": 180.0,
                         "height": 25.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "box51",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 60.0,
-                        "y": 100.0
-                    },
-                    "Position": {
-                        "x": 350.0,
-                        "y": 200.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
+                        "left": 350.0,
+                        "top": 200.0,
                         "width": 60.0,
                         "height": 100.0
                     }
-                }
-            ]
-        },
-        {
-            "name": "box52",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 100.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": 310.0,
-                        "y": 150.0
-                    }
-                }
-            },
-            "collisions": [
+                },
                 {
                     "name": "box",
-                    "trigger": 1,
+                    "trigger": 0,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
+                        "left": 310.0,
+                        "top": 150.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "circle": {
+                        "x": 405.0,
+                        "y": 50.0,
+                        "radius": 50.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 200.0,
+                        "top": 150.0,
                         "width": 50.0,
                         "height": 50.0
                     }
@@ -830,17 +434,43 @@
             ]
         },
         {
-            "name": "circle50",
+            "name": "change_bot_up",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "map_guild_first_stage"
+                }
+            }
+        },
+        {
+            "name": "change_bot_down",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "map_guild_exit"
+                }
+            }
+        },
+        {
+            "name": "change_scene_down",
             "entity": {
-                "type": "CircleShape",
+                "type": "Sprite",
                 "order": 1,
                 "parameters": {
-                    "FillColor": "red",
-                    "Radius": 50.0,
+                    "Texture": {
+                        "Name": "invisible"
+                    },
                     "Position": {
-                        "x": 355.0,
-                        "y": 478.0
+                        "x": 0.0,
+                        "y": 0.0
                     }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "enable": "change_bot_down"
                 }
             },
             "collisions": [
@@ -848,9 +478,9 @@
                     "name": "box",
                     "trigger": 1,
                     "circle": {
-                        "x": 50.0,
-                        "y": 50.0,
-                        "radius": 50.0
+                        "x": 290.0,
+                        "y": 610.0,
+                        "radius": 100.0
                     }
                 }
             ]
