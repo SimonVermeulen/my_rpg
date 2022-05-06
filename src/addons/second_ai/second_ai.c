@@ -23,6 +23,7 @@ static int tick_addon(object_t *object, engine_t *engine)
         return exit_game(engine, 84);
     enemy = is_trigger(engine, second);
     collision = get_value_list(enemy, "enemy", 4);
+    destroy_addons(enemy, true);
     if (collision)
         return second_ai_attack_enemy(second, controller, collision->object);
     second_ai_follow_main(second, controller);

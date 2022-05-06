@@ -16,20 +16,21 @@ static int tick_player_controller(object_t *object, engine_t *engine)
     object_t *main = seach_object(engine, "main_pokemon");
     object_t *second = seach_object(engine, "second_pokemon");
     sfVector2f normal;
-    collision_t *collision = NULL;
+    list_t *list = NULL;
 
     if (!main || !second)
         return 0;
     normal.x = controller->direction.x * engine->time.delta / 100 * 10;
     normal.y = controller->direction.y * engine->time.delta / 100 * 10;
     move_vector(main, normal);
-    collision = is_trigger(engine, main);
-    if (collision && collision->object == second)
-        return 0;
+    list = is_trigger(engine, main);
+    if (get_value_list(list, "second_pokemon", 4))
+        return destroy_addons(list, true);
     normal = get_normalize_vector(get_position(second), get_position(main));
     normal.x *= engine->time.delta / 100 * 10;
     normal.y *= engine->time.delta / 100 * 10;
     move_vector(second, normal);
+    destroy_addons(list, true);
 }
 
 static int end_addon(object_t *object, engine_t *engine)

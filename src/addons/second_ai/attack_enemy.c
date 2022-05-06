@@ -39,7 +39,6 @@ int second_ai_attack_enemy(object_t *second, grid_controller_t *controller,
     move_vector(second, normal);
     if (equal_vector2f_pov(get_position(second),
         controller->move_point, 1)) {
-        printf("%f, %f\n", normal.x, normal.y);
         set_position_vector(second, controller->move_point);
         controller->move_point = get_next_position(second, second->engine,
             direction);
