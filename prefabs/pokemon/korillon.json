@@ -1,0 +1,60 @@
+{
+    "name": "korillon",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "korillon_attack",
+                    "path": "./assets/sprites/pokemons/korillon/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "korillon_dmg",
+                    "path": "./assets/sprites/pokemons/korillon/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "korillon_idle",
+                    "path": "./assets/sprites/pokemons/korillon/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "korillon_walk",
+                    "path": "./assets/sprites/pokemons/korillon/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 72,
+                    "height": 72,
+                    "texture": "korillon_attack"
+                },
+                "dmg": {
+                    "width": 32,
+                    "height": 48,
+                    "texture": "korillon_dmg"
+                },
+                "idle": {
+                    "width": 32,
+                    "height": 32,
+                    "texture": "korillon_idle"
+                },
+                "walk": {
+                    "width": 40,
+                    "height": 48,
+                    "texture": "korillon_walk"
+                }
+            }
+        }
+    }
+}

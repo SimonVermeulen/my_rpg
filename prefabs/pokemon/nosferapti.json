@@ -1,0 +1,60 @@
+{
+    "name": "nosferapti",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "nosferapti_attack",
+                    "path": "./assets/sprites/pokemons/nosferapti/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "nosferapti_dmg",
+                    "path": "./assets/sprites/pokemons/nosferapti/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "nosferapti_idle",
+                    "path": "./assets/sprites/pokemons/nosferapti/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "nosferapti_walk",
+                    "path": "./assets/sprites/pokemons/nosferapti/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 72,
+                    "height": 80,
+                    "texture": "nosferapti_attack"
+                },
+                "dmg": {
+                    "width": 40,
+                    "height": 48,
+                    "texture": "nosferapti_dmg"
+                },
+                "idle": {
+                    "width": 32,
+                    "height": 56,
+                    "texture": "nosferapti_idle"
+                },
+                "walk": {
+                    "width": 32,
+                    "height": 56,
+                    "texture": "nosferapti_walk"
+                }
+            }
+        }
+    }
+}

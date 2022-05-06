@@ -1,0 +1,60 @@
+{
+    "name": "racaillou",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "racaillou_attack",
+                    "path": "./assets/sprites/pokemons/racaillou/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "racaillou_dmg",
+                    "path": "./assets/sprites/pokemons/racaillou/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "racaillou_idle",
+                    "path": "./assets/sprites/pokemons/racaillou/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "racaillou_walk",
+                    "path": "./assets/sprites/pokemons/racaillou/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 72,
+                    "height": 80,
+                    "texture": "racaillou_attack"
+                },
+                "dmg": {
+                    "width": 40,
+                    "height": 48,
+                    "texture": "racaillou_dmg"
+                },
+                "idle": {
+                    "width": 32,
+                    "height": 24,
+                    "texture": "racaillou_idle"
+                },
+                "walk": {
+                    "width": 32,
+                    "height": 32,
+                    "texture": "racaillou_walk"
+                }
+            }
+        }
+    }
+}

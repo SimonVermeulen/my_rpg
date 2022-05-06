@@ -1,0 +1,60 @@
+{
+    "name": "smogo",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "smogo_attack",
+                    "path": "./assets/sprites/pokemons/smogo/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "smogo_dmg",
+                    "path": "./assets/sprites/pokemons/smogo/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "smogo_idle",
+                    "path": "./assets/sprites/pokemons/smogo/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "smogo_walk",
+                    "path": "./assets/sprites/pokemons/smogo/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 72,
+                    "height": 80,
+                    "texture": "smogo_attack"
+                },
+                "dmg": {
+                    "width": 48,
+                    "height": 56,
+                    "texture": "smogo_dmg"
+                },
+                "idle": {
+                    "width": 32,
+                    "height": 56,
+                    "texture": "smogo_idle"
+                },
+                "walk": {
+                    "width": 32,
+                    "height": 56,
+                    "texture": "smogo_walk"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "name": "lilia",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "lilia_attack",
+                    "path": "./assets/sprites/pokemons/lilia/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "lilia_dmg",
+                    "path": "./assets/sprites/pokemons/lilia/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "lilia_idle",
+                    "path": "./assets/sprites/pokemons/lilia/walk.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "lilia_walk",
+                    "path": "./assets/sprites/pokemons/lilia/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 72,
+                    "height": 72,
+                    "texture": "lilia_attack"
+                },
+                "dmg": {
+                    "width": 48,
+                    "height": 64,
+                    "texture": "lilia_dmg"
+                },
+                "idle": {
+                    "width": 24,
+                    "height": 32,
+                    "texture": "lilia_idle"
+                },
+                "walk": {
+                    "width": 24,
+                    "height": 32,
+                    "texture": "lilia_walk"
+                }
+            }
+        }
+    }
+}

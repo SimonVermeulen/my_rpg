@@ -1,0 +1,60 @@
+{
+    "name": "anorith",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "anorith_attack",
+                    "path": "./assets/sprites/pokemons/anorith/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "anorith_dmg",
+                    "path": "./assets/sprites/pokemons/anorith/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "anorith_idle",
+                    "path": "./assets/sprites/pokemons/anorith/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "anorith_walk",
+                    "path": "./assets/sprites/pokemons/anorith/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 80,
+                    "height": 80,
+                    "texture": "anorith_attack"
+                },
+                "dmg": {
+                    "width": 48,
+                    "height": 72,
+                    "texture": "anorith_dmg"
+                },
+                "idle": {
+                    "width": 40,
+                    "height": 40,
+                    "texture": "anorith_idle"
+                },
+                "walk": {
+                    "width": 40,
+                    "height": 40,
+                    "texture": "anorith_walk"
+                }
+            }
+        }
+    }
+}

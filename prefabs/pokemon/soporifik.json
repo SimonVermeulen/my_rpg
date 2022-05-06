@@ -1,0 +1,60 @@
+{
+    "name": "soporifik",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "soporifik_attack",
+                    "path": "./assets/sprites/pokemons/soporifik/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "soporifik_dmg",
+                    "path": "./assets/sprites/pokemons/soporifik/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "soporifik_idle",
+                    "path": "./assets/sprites/pokemons/soporifik/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "soporifik_walk",
+                    "path": "./assets/sprites/pokemons/soporifik/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 80,
+                    "height": 72,
+                    "texture": "soporifik_attack"
+                },
+                "dmg": {
+                    "width": 48,
+                    "height": 64,
+                    "texture": "soporifik_dmg"
+                },
+                "idle": {
+                    "width": 32,
+                    "height": 40    ,
+                    "texture": "soporifik_idle"
+                },
+                "walk": {
+                    "width": 32,
+                    "height": 40,
+                    "texture": "soporifik_walk"
+                }
+            }
+        }
+    }
+}

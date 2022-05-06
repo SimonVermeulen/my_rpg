@@ -1,0 +1,60 @@
+{
+    "name": "machoc",
+    "entity": {
+        "type": "Sprite",
+        "order": 1,
+        "parameters": {
+            "Texture": {
+                "Name": "sans_nom"
+            }
+        }
+    },
+    "addons": {
+        "pokemons": {
+            "buffer": [
+                {
+                    "name": "machoc_attack",
+                    "path": "./assets/sprites/pokemons/machoc/attack.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "machoc_dmg",
+                    "path": "./assets/sprites/pokemons/machoc/dmg.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "machoc_idle",
+                    "path": "./assets/sprites/pokemons/machoc/idle.png",
+                    "smooth": 1
+                },
+                {
+                    "name": "machoc_walk",
+                    "path": "./assets/sprites/pokemons/machoc/walk.png",
+                    "smooth": 1
+                }
+            ],
+            "animations": {
+                "attack": {
+                    "width": 64,
+                    "height": 80,
+                    "texture": "machoc_attack"
+                },
+                "dmg": {
+                    "width": 40,
+                    "height": 56,
+                    "texture": "machoc_dmg"
+                },
+                "idle": {
+                    "width": 24,
+                    "height": 40,
+                    "texture": "machoc_idle"
+                },
+                "walk": {
+                    "width": 24,
+                    "height": 32,
+                    "texture": "machoc_walk"
+                }
+            }
+        }
+    }
+}
