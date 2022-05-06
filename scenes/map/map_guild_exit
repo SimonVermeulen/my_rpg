@@ -49,7 +49,7 @@
             "name": "main_pokemon",
             "entity": {
                 "type": "Sprite",
-                "order": 1,
+                "order": 2,
                 "parameters": {
                     "Texture": {
                         "Name": "main_pokemon",
@@ -148,7 +148,81 @@
             }
         },
         {
-            "name": "interact",
+            "name": "camera",
+            "addons": {
+                "follow_view": {
+                    "object": "main_pokemon",
+                    "bloc": 1
+                }
+            }
+        },
+        {
+            "name": "collision",
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 340.0,
+                        "top": 0.0,
+                        "width": 200.0,
+                        "height": 275.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 340.0,
+                        "top": 400.0,
+                        "width": 200.0,
+                        "height": 1000.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 465.0,
+                        "top": 0.0,
+                        "width": 240.0,
+                        "height": 600.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 200.0,
+                        "height": 265.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 400.0,
+                        "width": 200.0,
+                        "height": 1000.0
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 75.0,
+                        "height": 600.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "change_scene_up",
             "entity": {
                 "type": "Sprite",
                 "order": 1,
@@ -164,8 +238,7 @@
             },
             "addons": {
                 "interact_zone": {
-                    "presskey": 1,
-                    "enable": "follow_player"
+                    "enable": "change_bot_up"
                 }
             },
             "collisions": [
@@ -173,123 +246,32 @@
                     "name": "box",
                     "trigger": 1,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 50.0,
-                        "height": 50.0
+                        "left": 255.0,
+                        "top": 160.0,
+                        "width": 100.0,
+                        "height": 20.0
                     }
                 }
             ]
         },
         {
-            "name": "camera",
+            "name": "change_bot_up",
+            "disable": 1,
             "addons": {
-                "follow_view": {
-                    "object": "main_pokemon",
-                    "bloc": 1
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "map_guild_scale_entry"
                 }
             }
         },
         {
-            "name": "box",
+            "name": "change_scene_down",
             "entity": {
-                "type": "RectangleShape",
+                "type": "Sprite",
                 "order": 1,
                 "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 200.0,
-                        "y": 300.0
-                    },
-                    "Position": {
-                        "x": 340.0,
-                        "y": 0.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 200.0,
-                        "height": 275.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box1",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 200.0,
-                        "y": 1000.0
-                    },
-                    "Position": {
-                        "x": 340.0,
-                        "y": 400.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 200.0,
-                        "height": 1000.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box2",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 240.0,
-                        "y": 600.0
-                    },
-                    "Position": {
-                        "x": 465.0,
-                        "y": 0.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 240.0,
-                        "height": 600.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box3",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 200.0,
-                        "y": 300.0
+                    "Texture": {
+                        "Name": "invisible"
                     },
                     "Position": {
                         "x": 0.0,
@@ -297,34 +279,9 @@
                     }
                 }
             },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 200.0,
-                        "height": 265.0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "box4",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 200.0,
-                        "y": 1000.0
-                    },
-                    "Position": {
-                        "x": 0.0,
-                        "y": 400.0
-                    }
+            "addons": {
+                "interact_zone": {
+                    "enable": "change_bot_down"
                 }
             },
             "collisions": [
@@ -332,43 +289,23 @@
                     "name": "box",
                     "trigger": 1,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 200.0,
-                        "height": 1000.0
+                        "left": 225.0,
+                        "top": 915.0,
+                        "width": 100.0,
+                        "height": 20.0
                     }
                 }
             ]
         },
         {
-            "name": "box5",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 75.0,
-                        "y": 600.0
-                    },
-                    "Position": {
-                        "x": 0.0,
-                        "y": 0.0
-                    }
+            "name": "change_bot_down",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "map_intersection_up"
                 }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 75.0,
-                        "height": 600.0
-                    }
-                }
-            ]
+            }
         }
     ]
 }

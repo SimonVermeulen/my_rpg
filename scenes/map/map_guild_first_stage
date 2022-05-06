@@ -637,6 +637,39 @@
             ]
         },
         {
+            "name": "change_scene_second",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "invisible"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "enable": "change_bot_second"
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 300.0,
+                        "top": 165.0,
+                        "width": 30.0,
+                        "height": 25.0
+                    }
+                }
+            ]
+        },
+        {
             "name": "collision",
             "collisions": [
                 {
@@ -1075,7 +1108,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Keunotor : Arrete de regarder mon fiak,\n\nJe suis tout shy UwU",
+                                "string": "Keunotor : Ici c'est le coin des quetes\n\npour les aventuriers tah les pro.\n\nC'est pas pour toi, va jouer autre part.",
                                 "cursor": "cursor"
                             }
                         },
@@ -1119,34 +1152,14 @@
             }
         },
         {
-            "name": "box3",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 15.0,
-                        "y": 21.0
-                    },
-                    "Position": {
-                        "x": 493.0,
-                        "y": 280.0
-                    }
+            "name": "change_bot_second",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "map_guild_second_stage"
                 }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 0,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 15.0,
-                        "height": 21.0
-                    }
-                }
-            ]
+            }
         },
         {
             "name": "interact_keunotor",
@@ -1183,56 +1196,4 @@
             ]
         }
     ]
-}
-
-
-{
-    "name": "box",
-    "trigger": 0,
-    "box": {
-        "left": 355.0,
-        "top": 415.0,
-        "width": 30.0,
-        "height": 30.0
-    }
-},
-{
-    "name": "box",
-    "trigger": 0,
-    "box": {
-        "left": 400.0,
-        "top": 415.0,
-        "width": 20.0,
-        "height": 30.0
-    }
-},
-{
-    "name": "box",
-    "trigger": 0,
-    "box": {
-        "left": 168.0,
-        "top": 390.0,
-        "width": 20.0,
-        "height": 30.0
-    }
-},
-{
-    "name": "box",
-    "trigger": 0,
-    "box": {
-        "left": 130.0,
-        "top": 420.0,
-        "width": 20.0,
-        "height": 30.0
-    }
-},
-{
-    "name": "box",
-    "trigger": 0,
-    "box": {
-        "left": -200.0,
-        "top": -100.0,
-        "width": 405.0,
-        "height": 350.0
-    }
 }
