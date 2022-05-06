@@ -510,7 +510,7 @@
             "addons": {
                 "change_scene": {
                     "bloc": 1,
-                    "name": "map_guild_second_stage"
+                    "name": "map_guild_second_stage_right"
                 }
             }
         }
