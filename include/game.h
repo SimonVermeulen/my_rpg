@@ -127,6 +127,8 @@ typedef struct grid_controller_s {
     object_t *object;
     list_t *list;
     sfVector2f direction;
+    sfThread *coroutine;
+    bool is_attack;
 } grid_controller_t;
 
 typedef struct grid_s {

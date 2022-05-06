@@ -6,6 +6,9 @@
 */
 
 #include "game.h"
+#include <math.h>
+
+int attack_controller(grid_controller_t *controller, engine_t *engine);
 
 static const sfVector2f position[8] =
 {
@@ -54,6 +57,10 @@ int event_grid_controller(object_t *object, engine_t *engine)
     grid_controller_t *controller = get_addon_data("grid_controller", object);
     sfVector2f point = controller->move_point;
 
+    if (controller->is_attack)
+        return 0;
+    if (if_key_pressed(engine, sfKeyA))
+        attack_controller(controller, engine);
     if (if_key_pressed(engine, sfKeyZ))
         get_rotation(engine, controller);
     event_controller(controller, point, engine);
@@ -65,9 +72,9 @@ int tick_grid_controller(object_t *object, engine_t *engine)
     sfVector2f normal = get_normalize_vector(get_position(controller->object),
         controller->move_point);
 
-    if (equal_vector2f(normal, (sfVector2f) {0, 0}))
+    if (equal_vector2f(normal, (sfVector2f) {0, 0}) || controller->is_attack)
         return 0;
-    controller->direction = normal;
+    controller->direction = (sfVector2f) {round(normal.x), round(normal.y)};
     normal.x *= 15 * (get_delta(engine) / 100);
     normal.y *= 15 * (get_delta(engine) / 100);
     move_vector(controller->object, normal);

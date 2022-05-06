@@ -11,6 +11,8 @@ int event_grid_controller(object_t *object, engine_t *engine);
 
 int tick_grid_controller(object_t *object, engine_t *engine);
 
+void coroutine_attack_event(grid_controller_t *controller);
+
 static int start_addon(object_t *object, engine_t *engine)
 {
     grid_controller_t *controller = get_addon_data("grid_controller", object);
@@ -20,6 +22,10 @@ static int start_addon(object_t *object, engine_t *engine)
     if (!controller->object)
         return exit_game(engine, 84);
     controller->move_point = get_position(controller->object);
+    controller->coroutine = sfThread_create(coroutine_attack_event,
+        controller);
+    if (!controller->coroutine)
+        return exit_game(engine, 84);
 }
 
 static void *init_addon(list_t *list)
@@ -34,6 +40,7 @@ static void *init_addon(list_t *list)
     controller->object = NULL;
     controller->move_point = (sfVector2f) {0, 0};
     controller->direction = (sfVector2f) {1, 1};
+    controller->is_attack = false;
     return controller;
 }
 
@@ -41,6 +48,8 @@ static int end_addon(object_t *object, engine_t *engine)
 {
     grid_controller_t *controller = get_addon_data("grid_controller", object);
 
+    sfThread_terminate(controller->coroutine);
+    sfThread_destroy(controller->coroutine);
     free_json_object(controller->list);
     return 0;
 }

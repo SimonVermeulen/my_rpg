@@ -47,4 +47,6 @@ bool equal_prov(float a, float b, float pov);
 
 double calc_distance(sfVector2f a, sfVector2f b);
 
+void sleep(double ms);
+
 #endif

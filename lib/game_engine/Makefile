@@ -70,6 +70,7 @@ SRC	=	addon/addon.c	\
 		utils/create_vector_list.c	\
 		utils/equal_prov.c	\
 		utils/vector_distance.c	\
+		utils/sleep.c	\
 
 OBJ	=	$(SRC:.c=.o)
 
