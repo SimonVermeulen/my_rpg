@@ -657,7 +657,7 @@
             "addons": {
                 "change_scene": {
                     "bloc": 1,
-                    "name": "map_grodoudou_room"
+                    "name": "map_guild_grodoudou_room"
                 }
             }
         }

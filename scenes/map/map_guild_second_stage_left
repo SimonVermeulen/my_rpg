@@ -668,7 +668,7 @@
             "addons": {
                 "change_scene": {
                     "bloc": 1,
-                    "name": "map_grodoudou_room"
+                    "name": "map_guild_grodoudou_room"
                 }
             }
         },
@@ -680,36 +680,6 @@
                     "bloc": 1
                 }
             }
-        },
-        {
-            "name": "box3",
-            "entity": {
-                "type": "RectangleShape",
-                "order": 1,
-                "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 50.0,
-                        "y": 50.0
-                    },
-                    "Position": {
-                        "x": 890.0,
-                        "y": 0.0
-                    }
-                }
-            },
-            "collisions": [
-                {
-                    "name": "box",
-                    "trigger": 1,
-                    "box": {
-                        "left": 0.0,
-                        "top": 0.0,
-                        "width": 50.0,
-                        "height": 50.0
-                    }
-                }
-            ]
         }
     ]
 }
