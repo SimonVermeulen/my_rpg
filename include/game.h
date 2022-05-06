@@ -174,7 +174,6 @@ int init_position_by_view_addons(engine_t *engine);
 int init_multi_enable_addons(engine_t *engine);
 int init_multi_disable_addons(engine_t *engine);
 int init_play_sound_addons(engine_t *engine);
-int init_mobs_animation_addons(engine_t *engine);
 int init_player_controller_addons(engine_t *engine);
 int init_pokemons_addons(engine_t *engine);
 int init_pokemons_animation_addons(engine_t *engine);
