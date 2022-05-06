@@ -7,6 +7,10 @@
 
 #include "game.h"
 
+int attack_controller(grid_controller_t *controller, engine_t *engine);
+int attack_ai(grid_controller_t *controller, object_t *enemy,
+    engine_t *engine);
+
 static sfVector2f get_next_position(object_t *object, engine_t *engine,
     object_t *direction)
 {
@@ -42,5 +46,10 @@ int second_ai_attack_enemy(object_t *second, grid_controller_t *controller,
         set_position_vector(second, controller->move_point);
         controller->move_point = get_next_position(second, second->engine,
             direction);
+    }
+    if (equal_vector2f(get_position(second), controller->move_point) &&
+        controller->time <= 0) {
+        attack_ai(controller, direction, second->engine);
+        controller->time = 1000;
     }
 }

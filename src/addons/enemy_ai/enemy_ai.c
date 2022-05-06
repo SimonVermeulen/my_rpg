@@ -7,6 +7,10 @@
 
 #include "game.h"
 
+void coroutine_attack_event(grid_controller_t *controller);
+int attack_ai(grid_controller_t *controller, object_t *enemy,
+    engine_t *engine);
+
 static sfVector2f get_next_position(object_t *object, engine_t *engine)
 {
     object_t *main = seach_object(engine, "main_pokemon");
@@ -32,16 +36,23 @@ static sfVector2f get_next_position(object_t *object, engine_t *engine)
 static int tick_addon(object_t *object, engine_t *engine)
 {
     grid_controller_t *controller = get_addon_data("enemy_ai", object);
+    object_t *main = seach_object(engine, "main_pokemon");
     sfVector2f normal = get_normalize_vector(get_position(object),
         controller->move_point);
     
     normal.x *= 15 * (get_delta(engine) / 100);
     normal.y *= 15 * (get_delta(engine) / 100);
+    controller->time -= (controller->time > 0) ? get_delta(engine) : 0;
     move_vector(object, normal);
     if (equal_vector2f_pov(get_position(object),
         controller->move_point, 1)) {
         set_position_vector(object, controller->move_point);
         controller->move_point = get_next_position(object, engine);
+    }
+    if (equal_vector2f(get_position(object), controller->move_point) &&
+        controller->time <= 0) {
+        attack_ai(controller, main, engine);
+        controller->time = 1000;
     }
 }
 
@@ -49,7 +60,12 @@ static int start_addon(object_t *object, engine_t *engine)
 {
     grid_controller_t *controller = get_addon_data("enemy_ai", object);
 
+    controller->object = object;
     controller->move_point = get_position(object);
+    controller->coroutine = sfThread_create(coroutine_attack_event,
+        controller);
+    if (!controller->coroutine)
+        return exit_game(engine, 84);
 }
 
 static void *init_addon(list_t *list)
@@ -61,6 +77,8 @@ static void *init_addon(list_t *list)
     controller->list = NULL;
     controller->object = NULL;
     controller->move_point = (sfVector2f) {0, 0};
+    controller->time = 0;
+    controller->is_attack = false;
     return controller;
 }
 
