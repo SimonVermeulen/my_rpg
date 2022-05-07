@@ -41,6 +41,7 @@ static void *init_addon(list_t *list)
     controller->move_point = (sfVector2f) {0, 0};
     controller->direction = (sfVector2f) {1, 1};
     controller->is_attack = false;
+    controller->coroutine = NULL;
     return controller;
 }
 
@@ -48,6 +49,8 @@ static int end_addon(object_t *object, engine_t *engine)
 {
     grid_controller_t *controller = get_addon_data("grid_controller", object);
 
+    if (!controller->coroutine)
+        return 0;
     sfThread_terminate(controller->coroutine);
     sfThread_destroy(controller->coroutine);
     free_json_object(controller->list);

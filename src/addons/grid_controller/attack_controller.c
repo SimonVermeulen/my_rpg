@@ -24,8 +24,8 @@ void coroutine_attack_event(grid_controller_t *controller)
     sfVector2f normal;
 
     controller->is_attack = true;
-    direction.x *= 75;
-    direction.y *= 75;
+    direction.x *= 49;
+    direction.y *= 49;
     direction.x += get_position(controller->object).x;
     direction.y += get_position(controller->object).y;
     normal = get_normalize_vector(direction, get_position(controller->object));
@@ -43,8 +43,8 @@ int attack_controller(grid_controller_t *controller, engine_t *engine)
     if (!equal_vector2f(get_position(controller->object),
         controller->move_point))
         return 0;
-    direction.x *= 75;
-    direction.y *= 75;
+    direction.x *= 49;
+    direction.y *= 49;
     direction.x += get_position(controller->object).x;
     direction.y += get_position(controller->object).y;
     if (!controller->is_attack && !is_hover_all(engine, direction))
