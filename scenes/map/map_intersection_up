@@ -57,7 +57,7 @@
                             "left": 0,
                             "top": 0,
                             "width": 415,
-                            "height": 353
+                            "height": 460
                         }
                     },
                     "Scale": {
@@ -66,7 +66,7 @@
                     },
                     "Position": {
                         "x": -195.0,
-                        "y": 0.0
+                        "y": -5.0
                     }
                 }
             }
@@ -223,24 +223,15 @@
             "addons": {
                 "follow_view": {
                     "object": "main_pokemon",
-                    "bloc": 1
-                }
-            }
-        },
-        {
-            "name": "camera",
-            "addons": {
-                "move_view": {
                     "bloc": 1,
-                    "start": 0,
-                    "waitBeforeStart": 0.0,
-                    "path": [
-                        {
-                        "x": 270.0,
-                        "y": 600.0,
-                        "speed": 10.0
-                        }
-                    ]
+                    "a": {
+                        "x": -190.0,
+                        "y": 0.0
+                    },
+                    "b": {
+                        "x": 710.0,
+                        "y": 1000.0
+                    }
                 }
             }
         },

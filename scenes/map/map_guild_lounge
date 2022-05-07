@@ -57,7 +57,7 @@
                             "left": 0,
                             "top": 0,
                             "width": 493,
-                            "height": 285
+                            "height": 352
                         }
                     },
                     "Scale": {
@@ -204,7 +204,15 @@
             "addons": {
                 "follow_view": {
                     "object": "main_pokemon",
-                    "bloc": 1
+                    "bloc": 1,
+                    "a": {
+                        "x": -400.0,
+                        "y": -500.0
+                    },
+                    "b": {
+                        "x": 550.0,
+                        "y": 800.0
+                    }
                 }
             }
         },
