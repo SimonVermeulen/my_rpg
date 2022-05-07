@@ -45,6 +45,11 @@
                 "name": "confirme",
                 "path": "./assets/sprites/lib/confirme.png",
                 "smooth": 1
+            },
+            {
+                "name": "cross",
+                "path": "./assets/sprites/lib/cross.png",
+                "smooth": 1
             }
         ],
         "Fonts": [
@@ -279,13 +284,13 @@
                 },
                 "multi_enable": {
                     "objects": [
-                        "selections_parameters"
+                        "selection_parameters"
                     ]
                 }
             }
         },
         {
-            "name": "selections_parameters",
+            "name": "selection_parameters",
             "disable": 1,
             "addons": {
                 "dialogue_manager": {
@@ -320,7 +325,7 @@
                                             "y": 118.0
                                         },
                                         "hover": "oui",
-                                        "enable": "oui"
+                                        "enable": "change_volume"
                                     },
                                     {
                                         "position": {
@@ -328,7 +333,7 @@
                                             "y": 157.0
                                         },
                                         "hover": "oui",
-                                        "enable": "oui"
+                                        "enable": "change_fps"
                                     },
                                     {
                                         "position": {
@@ -430,20 +435,36 @@
                 },
                 "multi_enable": {
                     "objects": [
-                        "window"
+                        "window_parameter"
                     ]
                 }
             }
         },
         {
-            "name": "window",
+            "name": "change_volume",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "selection_parameters"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "volume_parameter"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "volume_parameter",
             "disable": 1,
             "addons": {
                 "dialogue_manager": {
                     "actions": [
                         {
                             "type": 2,
-                            "enable": "select2"
+                            "enable": "select4"
                         }
                     ],
                     "disable": 1
@@ -452,7 +473,7 @@
             "children": {
                 "objects": [
                     {
-                        "name": "select2",
+                        "name": "select4",
                         "disable": 1,
                         "addons": {
                             "select_manager": {
@@ -463,12 +484,20 @@
                                             "y": 155.0
                                         },
                                         "hover": "oui",
-                                        "enable": "jifo"
+                                        "enable": "ndfi"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
                                     }
                                 ],
-                                "right": "select3",
+                                "right": "select5",
                                 "cursor": "select_cursor",
-                                "dialogue_manager": "window"
+                                "dialogue_manager": "volume_parameter"
                             }
                         },
                         "children": {
@@ -531,6 +560,788 @@
                                             "Position": {
                                                 "x": 190.0,
                                                 "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres de la musique\n\n-----------------\n\nVolume                               100"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select5",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "left": "select4",
+                                "right": "select6",
+                                "cursor": "select_cursor2",
+                                "dialogue_manager": "volume_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor2",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres de la musique\n\n-----------------\n\nVolume                               75"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select6",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "left": "select5",
+                                "right": "select7",
+                                "cursor": "select_cursor3",
+                                "dialogue_manager": "volume_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor3",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres de la musique\n\n-----------------\n\nVolume                               50"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select7",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "left": "select6",
+                                "right": "select8",
+                                "cursor": "select_cursor4",
+                                "dialogue_manager": "volume_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor4",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres de la musique\n\n-----------------\n\nVolume                               25"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select8",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "left": "select7",
+                                "cursor": "select_cursor5",
+                                "dialogue_manager": "volume_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor5",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres de la musique\n\n-----------------\n\nVolume                               0"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "window_parameter",
+            "disable": 1,
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 2,
+                            "enable": "select2"
+                        }
+                    ],
+                    "disable": 1
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "select2",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "ndfi"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "right": "select3",
+                                "cursor": "select_cursor",
+                                "dialogue_manager": "window_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
                                             }
                                         },
                                         "addons": {
@@ -578,11 +1389,201 @@
                                         },
                                         "hover": "oui",
                                         "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
                                     }
                                 ],
                                 "left": "select2",
+                                "cursor": "select_cursor2",
+                                "dialogue_manager": "window_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor2",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres de la fenetre\n\n-----------------\n\nType d'affichage            2"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "change_fps",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "selection_parameters"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "fps_parameter"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "fps_parameter",
+            "disable": 1,
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 2,
+                            "enable": "select9"
+                        }
+                    ],
+                    "disable": 1
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "select9",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "ndfi"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "right": "select10",
                                 "cursor": "select_cursor",
-                                "dialogue_manager": "window"
+                                "dialogue_manager": "fps_parameter"
                             }
                         },
                         "children": {
@@ -655,6 +1656,31 @@
                                     }
                                 },
                                 {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
                                     "name": "Page1",
                                     "entity": {
                                         "order": 4,
@@ -667,7 +1693,598 @@
                                             "Color": "white",
                                             "Font": "font",
                                             "CharacterSize": 30,
-                                            "String": "Parametres de la fenetre\n\n-----------------\n\nType d'affichage            2"
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                      100"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select10",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "left": "select9",
+                                "right": "select11",
+                                "cursor": "select_cursor2",
+                                "dialogue_manager": "fps_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor2",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       75"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select11",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "left": "select10",
+                                "right": "select12",
+                                "cursor": "select_cursor3",
+                                "dialogue_manager": "fps_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor3",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       50"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select12",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "left": "select11",
+                                "right": "select13",
+                                "cursor": "select_cursor4",
+                                "dialogue_manager": "fps_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor4",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       25"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "select13",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "jifo"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 230.0,
+                                            "y": 215.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "left": "select12",
+                                "cursor": "select_cursor5",
+                                "dialogue_manager": "fps_parameter"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.55,
+                                                "y": 1.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor5",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "arrow",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "arrow"
+                                            },
+                                            "Position": {
+                                                "x": 190.0,
+                                                "y": 152.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "confirme",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "confirme"
+                                            },
+                                            "Position": {
+                                                "x": 250.0,
+                                                "y": 210.0
+                                            },
+                                            "Scale": {
+                                                "x": 1.0,
+                                                "y": 1.3
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       0"
                                         }
                                     },
                                     "addons": {
