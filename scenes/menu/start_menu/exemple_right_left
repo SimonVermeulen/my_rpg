@@ -1,0 +1,39 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/menu/start_menu/ecran_gauche_droite.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 1432,
+                            "height": 524
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.45,
+                        "y": 1.2
+                    },
+                    "Position": {
+                        "x": -50.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        }
+    ]
+}
