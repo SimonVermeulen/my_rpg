@@ -303,7 +303,15 @@
             "addons": {
                 "follow_view": {
                     "object": "main_pokemon",
-                    "bloc": 1
+                    "bloc": 1,
+                    "a": {
+                        "x": -130.0,
+                        "y": 0.0
+                    },
+                    "b": {
+                        "x": 718.0,
+                        "y": 1600.0
+                    }
                 }
             }
         },
