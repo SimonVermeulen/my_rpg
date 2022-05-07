@@ -1,0 +1,56 @@
+{
+    "buffer": {
+        "Colors": [
+            {
+                "r": 0,
+                "g": 0,
+                "b": 0,
+                "name": "black"
+            }
+        ],
+        "Textures": [
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/menu/start_menu/ecran_haut_bas.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "black",
+            "type": "rectangle",
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "fill": "black"
+        },
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 716,
+                            "height": 1056
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.4,
+                        "y": 0.52
+                    },
+                    "Position": {
+                        "x": 120.0,
+                        "y": 0.0
+                    }
+                }
+            }
+        }
+    ]
+}

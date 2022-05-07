@@ -35,6 +35,71 @@
                 "name": "portrait_evoli",
                 "path": "./assets/portrait/evoli/normal.png",
                 "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_dizzy",
+                "path": "./assets/portrait/evoli/dizzy.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_determined",
+                "path": "./assets/portrait/evoli/determined.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_worried",
+                "path": "./assets/portrait/evoli/worried.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_surprised",
+                "path": "./assets/portrait/evoli/surprised.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_sigh",
+                "path": "./assets/portrait/evoli/sigh.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_sad",
+                "path": "./assets/portrait/evoli/sad.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_happy",
+                "path": "./assets/portrait/evoli/happy.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_angry",
+                "path": "./assets/portrait/evoli/angry.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_teary_Eyed",
+                "path": "./assets/portrait/evoli/teary_Eyed.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_pain",
+                "path": "./assets/portrait/evoli/pain.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_shouting",
+                "path": "./assets/portrait/evoli/shouting.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_inspired",
+                "path": "./assets/portrait/evoli/inspired.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_evoli_joyous",
+                "path": "./assets/portrait/evoli/joyous.png",
+                "smooth": 1
             }
         ],
         "Fonts": [
