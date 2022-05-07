@@ -112,6 +112,11 @@
                 "smooth": 1
             },
             {
+                "name": "portrait_pika_dizzy",
+                "path": "./assets/portrait/pikachu/dizzy.png",
+                "smooth": 1
+            },
+            {
                 "name": "portrait_pika_worried",
                 "path": "./assets/portrait/pikachu/worried.png",
                 "smooth": 1
