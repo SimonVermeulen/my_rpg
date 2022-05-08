@@ -64,9 +64,36 @@
                             "height": 0,
                             "time": 200.0
                         }
+                    ],
+                    "enable": "step2"
+                }
+            }
+        },
+        {
+            "name": "step2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "lightning"
                     ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "change_bot"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "change_bot",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "litorale_stage_finale"
                 }
             }
         }
     ]
-}
+}    
