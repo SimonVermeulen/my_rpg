@@ -19,6 +19,26 @@
                 "name": "escalier",
                 "path": "./assets/sprites/donjon/escalier.png",
                 "smooth": 1
+            },
+            {
+                "name": "kokiyas",
+                "path": "./assets/sprites/pokemons/kokiyas/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "kabuto",
+                "path": "./assets/sprites/pokemons/kabuto/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "corayon",
+                "path": "./assets/sprites/pokemons/corayon/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "sancoki",
+                "path": "./assets/sprites/pokemons/sancoki/idle.png",
+                "smooth": 1
             }
         ]
     },
@@ -30702,6 +30722,230 @@
                 "change_scene": {
                     "bloc": 1,
                     "name": "grotte_litorale_etage4-bot"
+                }
+            }
+        },
+        {
+            "name": "enemy",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "kokiyas",
+                        "Rect": {
+                            "left": 2,
+                            "top": 4,
+                            "width": 19,
+                            "height": 20
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 329.0001,
+                        "y": 300.0001
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "circle",
+                    "trigger": 1,
+                    "circle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "radius": 150.0
+                    }
+                }
+            ],
+            "addons": {
+                "enemy_ai": {
+                    "empty": 0
+                },
+                "mobs": {
+                    "life": 100.0,
+                    "damage": 5.0
+                }
+            }
+        },
+        {
+            "name": "enemy",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "kabuto",
+                        "Rect": {
+                            "left": 2,
+                            "top": 4,
+                            "width": 19,
+                            "height": 20
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 735.0001,
+                        "y": 620.0001
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "circle",
+                    "trigger": 1,
+                    "circle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "radius": 150.0
+                    }
+                }
+            ],
+            "addons": {
+                "enemy_ai": {
+                    "empty": 0
+                },
+                "mobs": {
+                    "life": 100.0,
+                    "damage": 5.0
+                }
+            }
+        },
+        {
+            "name": "enemy",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "corayon",
+                        "Rect": {
+                            "left": 2,
+                            "top": 4,
+                            "width": 19,
+                            "height": 20
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 910.0001,
+                        "y": 935.0001
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "circle",
+                    "trigger": 1,
+                    "circle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "radius": 150.0
+                    }
+                }
+            ],
+            "addons": {
+                "enemy_ai": {
+                    "empty": 0
+                },
+                "mobs": {
+                    "life": 100.0,
+                    "damage": 5.0
+                }
+            }
+        },
+        {
+            "name": "enemy",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "sancoki",
+                        "Rect": {
+                            "left": 2,
+                            "top": 4,
+                            "width": 19,
+                            "height": 20
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 460.0001,
+                        "y": 830.0001
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "circle",
+                    "trigger": 1,
+                    "circle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "radius": 150.0
+                    }
+                }
+            ],
+            "addons": {
+                "enemy_ai": {
+                    "empty": 0
+                },
+                "mobs": {
+                    "life": 100.0,
+                    "damage": 5.0
                 }
             }
         }
