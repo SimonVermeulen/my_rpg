@@ -58,7 +58,7 @@ int usage(int argc, char **argv)
         my_printf(stdout, "\n\n%s",
             "To start the game, you will first have to compile it.\nPleas");
         my_printf(stdout, "e type through your shell: make\nNow that the %s",
-            "gagme compiled, please type: ./myrpg\nYour game will launch.");
+            "game compiled, please type: ./myrpg\nYour game will launch.");
         my_printf(stdout, "\n\nYou can set your own settings with the menu %s",
             "'Paramètres'.\nUse your keyboard arrows to navigate and 'A' to");
         my_printf(stdout, " interact.\nIn order to begin your journey, %s",
