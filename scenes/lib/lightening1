@@ -9,7 +9,7 @@
         ],
         "SoundBuffers": [
             {
-                "name": "music-intro",
+                "name": "lightening",
                 "path": "./assets/sounds/lightening.ogg"
             },
             {
@@ -79,13 +79,13 @@
             }
         },
         {
-            "name": "soundIntro",
+            "name": "rain_obj",
             "entity": {
                 "type": "Sound",
                 "order": 1,
                 "parameters": {
-                    "Volume": 100.0,
-                    "SoundBuffer": "music-intro"
+                    "Volume": 50.0,
+                    "SoundBuffer": "rain"
                 }
             },
             "addons": {
@@ -95,14 +95,13 @@
             }
         },
         {
-            "name": "soundIntro",
+            "name": "lightening",
             "entity": {
                 "type": "Sound",
                 "order": 1,
                 "parameters": {
                     "Volume": 100.0,
-                    "Loop": 1,
-                    "SoundBuffer": "rain"
+                    "SoundBuffer": "lightening"
                 }
             },
             "addons": {
