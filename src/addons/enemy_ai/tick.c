@@ -36,8 +36,8 @@ int tick_enemy_ai(object_t *object, engine_t *engine)
     sfVector2f normal = get_normalize_vector(get_position(object),
         controller->move_point);
     
-    normal.x *= 15 * (get_delta(engine) / 100);
-    normal.y *= 15 * (get_delta(engine) / 100);
+    normal.x *= 15 * (engine->time.delta / 100);
+    normal.y *= 15 * (engine->time.delta / 100);
     controller->time -= (controller->time > 0) ? get_delta(engine) : 0;
     move_vector(object, normal);
     if (equal_vector2f_pov(get_position(object),

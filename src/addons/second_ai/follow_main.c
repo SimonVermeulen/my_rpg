@@ -33,8 +33,8 @@ int second_ai_follow_main(object_t *second, grid_controller_t *controller)
     sfVector2f normal = get_normalize_vector(get_position(second),
         controller->move_point);
     
-    normal.x *= 15 * (get_delta(second->engine) / 100);
-    normal.y *= 15 * (get_delta(second->engine) / 100);
+    normal.x *= 15 * (second->engine->time.delta / 100);
+    normal.y *= 15 * (second->engine->time.delta / 100);
     move_vector(second, normal);
     if (equal_vector2f_pov(get_position(second),
         controller->move_point, 1)) {

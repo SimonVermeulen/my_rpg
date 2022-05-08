@@ -76,8 +76,8 @@ int tick_grid_controller(object_t *object, engine_t *engine)
     if (equal_vector2f(normal, (sfVector2f) {0, 0}) || controller->is_attack)
         return 0;
     controller->direction = (sfVector2f) {round(normal.x), round(normal.y)};
-    normal.x *= 15 * (get_delta(engine) / 100);
-    normal.y *= 15 * (get_delta(engine) / 100);
+    normal.x *= 15 * (engine->time.delta / 100);
+    normal.y *= 15 * (engine->time.delta / 100);
     move_vector(controller->object, normal);
     if (equal_vector2f_pov(get_position(controller->object),
         controller->move_point, 1))
