@@ -227,9 +227,43 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "alarme",
+                "path": "./assets/sounds/alarme.ogg"
+            }
         ]
     },
     "objects": [
+        {
+            "name": "disableSound",
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "grodoudou_room"
+                    ],
+                    "all": 1
+                }
+            }
+        },
+        {
+            "name": "alarm",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 0,
+                    "SoundBuffer": "alarme"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
         {
             "name": "background",
             "entity": {

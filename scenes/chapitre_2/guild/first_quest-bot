@@ -242,9 +242,32 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "music_okay",
+                "path": "./assets/sounds/before_sleep.ogg"
+            }
         ]
     },
     "objects": [
+        {
+            "name": "musique_obj",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "music_okay"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
         {
             "name": "background",
             "entity": {
@@ -295,7 +318,7 @@
                         "y": 175.0
                     }
                 }
-            },
+            }
         },
         {
             "name": "2eme_poke",
