@@ -129,7 +129,7 @@
                 "type": "Sound",
                 "order": 1,
                 "parameters": {
-                    "Volume": 100.0,
+                    "Volume": 50.0,
                     "Loop": 1,
                     "SoundBuffer": "rain"
                 }
