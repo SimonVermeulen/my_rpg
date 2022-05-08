@@ -32,6 +32,11 @@
                 "name": "portrait_pikachu",
                 "path": "./assets/portrait/pikachu/normal.png",
                 "smooth": 1
+            },
+            {
+                "name": "portrait_pikachu_pain",
+                "path": "./assets/portrait/pikachu/pain.png",
+                "smooth": 1
             }
         ],
         "Fonts": [
@@ -300,7 +305,7 @@
                                         "order": 2,
                                         "parameters": {
                                             "Texture": {
-                                                "Name": "portrait_pikachu"
+                                                "Name": "portrait_pikachu_pain"
                                             },
                                             "Position": {
                                                 "x": 50.0,
