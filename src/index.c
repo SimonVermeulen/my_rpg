@@ -43,6 +43,8 @@ int (*const load_addons_func[])(engine_t *) =
     init_parameter_volume_addons,
     init_save_scene_addons,
     init_load_scene_addons,
+    init_quit_game_addons,
+    init_pause_addons,
     NULL
 };
 

@@ -34,7 +34,7 @@ static int tick_addon(object_t *object, engine_t *engine)
         return exit_game(engine, 84);
     *count += get_delta(engine);
     if (*time < *count)
-        return add_function(destroy_object, 0, object, engine);
+        return set_active(false, object, engine);
     path.x += get_position(object).x;
     path.y += get_position(object).y;
     path.x += rand() % *var * ((rand() % 2 == 1) ? -1 : 1);
