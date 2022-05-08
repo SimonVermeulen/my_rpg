@@ -159,6 +159,24 @@
             }
         },
         {
+            "name": "load_scene",
+            "disable": 1,
+            "addons": {
+                "load_scene": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "quit_game",
+            "disable": 1,
+            "addons": {
+                "quit_game": {
+                    "empty": 0
+                }
+            }
+        },
+        {
             "name": "selection",
             "addons": {
                 "dialogue_manager": {
@@ -185,7 +203,7 @@
                                             "y": 79.0
                                         },
                                         "hover": "soundSelect",
-                                        "enable": "launch_new_game"
+                                        "enable": "load_scene"
                                     },
                                     {
                                         "position": {
@@ -194,6 +212,14 @@
                                         },
                                         "hover": "info",
                                         "enable": "parameters"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 157.0
+                                        },
+                                        "hover": "info",
+                                        "enable": "quit_game"
                                     }
                                 ],
                                 "cursor": "select_cursor",
@@ -216,8 +242,8 @@
                                                 "y": 55.0
                                             },
                                             "Scale": {
-                                                "x": 0.35,
-                                                "y": 0.8
+                                                "x": 0.37,
+                                                "y": 1.0
                                             }
                                         }
                                     },
@@ -261,7 +287,7 @@
                                             "Color": "white",
                                             "Font": "font",
                                             "CharacterSize": 30,
-                                            "String": "Nouvelle partie\n\nParametres"
+                                            "String": "Charger la partie\n\nParametres\n\nQuitter"
                                         }
                                     },
                                     "addons": {
@@ -353,6 +379,10 @@
                     "objects": [
                         "selection_parameters"
                     ]
+                },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "help"
                 }
             }
         },
@@ -362,7 +392,8 @@
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "parameters"
+                        "parameters",
+                        "deleted"
                     ]
                 },
                 "multi_enable": {
@@ -560,6 +591,51 @@
             }
         },
         {
+            "name": "parameter_volume100",
+            "disable": 1,
+            "addons": {
+                "parameter_volume": {
+                    "number": 100.0
+                }
+            }
+        },
+        {
+            "name": "parameter_volume75",
+            "disable": 1,
+            "addons": {
+                "parameter_volume": {
+                    "number": 75.0
+                }
+            }
+        },
+        {
+            "name": "parameter_volume50",
+            "disable": 1,
+            "addons": {
+                "parameter_volume": {
+                    "number": 50.0
+                }
+            }
+        },
+        {
+            "name": "parameter_volume25",
+            "disable": 1,
+            "addons": {
+                "parameter_volume": {
+                    "number": 25.0
+                }
+            }
+        },
+        {
+            "name": "parameter_volume0",
+            "disable": 1,
+            "addons": {
+                "parameter_volume": {
+                    "number": 0.0
+                }
+            }
+        },
+        {
             "name": "volume_parameter",
             "disable": 1,
             "addons": {
@@ -586,7 +662,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_volume100",
                                         "enable": "ndfi"
                                     },
                                     {
@@ -733,7 +809,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_volume75",
                                         "enable": "jifo"
                                     },
                                     {
@@ -881,7 +957,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_volume50",
                                         "enable": "jifo"
                                     },
                                     {
@@ -1029,7 +1105,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_volume25",
                                         "enable": "jifo"
                                     },
                                     {
@@ -1177,7 +1253,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_volume0",
                                         "enable": "jifo"
                                     },
                                     {
@@ -1329,6 +1405,32 @@
                     "objects": [
                         "select2"
                     ]
+                }
+            }
+        },
+        {
+            "name": "change_right_left",
+            "disable": 1,
+            "addons": {
+                "parameter_window": {
+                    "number": 2
+                },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "exemple_right_left"
+                }
+            }
+        },
+        {
+            "name": "change_up_down",
+            "disable": 1,
+            "addons": {
+                "parameter_window": {
+                    "number": 1
+                },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "exemple_up_down"
                 }
             }
         },
@@ -1680,6 +1782,42 @@
             }
         },
         {
+            "name": "parameter_fps150",
+            "disable": 1,
+            "addons": {
+                "parameter_fps": {
+                    "number": 150
+                }
+            }
+        },
+        {
+            "name": "parameter_fps120",
+            "disable": 1,
+            "addons": {
+                "parameter_fps": {
+                    "number": 120
+                }
+            }
+        },
+        {
+            "name": "parameter_fps85",
+            "disable": 1,
+            "addons": {
+                "parameter_fps": {
+                    "number": 85
+                }
+            }
+        },
+        {
+            "name": "parameter_fps60",
+            "disable": 1,
+            "addons": {
+                "parameter_fps": {
+                    "number": 60
+                }
+            }
+        },
+        {
             "name": "fps_parameter",
             "disable": 1,
             "addons": {
@@ -1706,7 +1844,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_fps155",
                                         "enable": "ndfi"
                                     },
                                     {
@@ -1853,7 +1991,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_fps120",
                                         "enable": "jifo"
                                     },
                                     {
@@ -2001,7 +2139,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_fps85",
                                         "enable": "jifo"
                                     },
                                     {
@@ -2149,7 +2287,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "parameter_fps60",
                                         "enable": "jifo"
                                     },
                                     {
@@ -2498,7 +2636,7 @@
                                             "y": 155.0
                                         },
                                         "hover": "oui",
-                                        "enable": "ndfi"
+                                        "enable": "deleted"
                                     },
                                     {
                                         "position": {
@@ -2587,6 +2725,39 @@
                         }
                     }
                 ]
+            }
+        },
+        {
+            "name": "deleted",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "selection",
+                        "window_parameter",
+                        "select2",
+                        "select4",
+                        "disable4",
+                        "volume_parameter",
+                        "fps_parameter",
+                        "disable10",
+                        "select9",
+                        "confirmation",
+                        "select14",
+                        "disable20",
+                        "disable2",
+                        "delete_data"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "selection_parameters"
+                    ]
+                },
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "help"
+                }
             }
         }
     ]
