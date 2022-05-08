@@ -20,7 +20,7 @@ static void *init_addons(list_t *list)
     mobs_t *mob = malloc(sizeof(mobs_t));
     double *life = get_value_list(list, "life", 2);
     double *damage = get_value_list(list, "damage", 2);
-    
+
     if (!mob || !life || !damage)
         return NULL;
     mob->life = *life;

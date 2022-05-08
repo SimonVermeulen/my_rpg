@@ -187,7 +187,7 @@ int get_string(const char *buff, node_t *new_node, int nb_elements);
 * 
 * @param list the json_object to save
 * @param path the path you want the list to be saved to
-* @param type the type of save you want (1 pour rajouter à la fin du fichier) (0 to replace file)
+* @param type the type of save you want (1 to add at the end or 0)
 * @return int returns 1 if error or 0
 */
 int launch_writing(list_t *list, char *path, int type);
@@ -258,7 +258,5 @@ int copy_int(node_t *src, node_t *dest);
 * @return int 0 if no errors -1 if error
 */
 int copy_string(node_t *src, node_t *dest);
-
-
 
 #endif

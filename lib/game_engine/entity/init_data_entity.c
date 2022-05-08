@@ -7,7 +7,6 @@
 
 #include "game_engine.h"
 
-
 ///////
 // TYPE LIST
 ////////////
@@ -138,7 +137,7 @@ void init_data_entity(list_t *entity_list, object_t *object)
         return;
     for (int i = 0; parameter_list[i] != 0; i++) {
         (*function_list[i])(object, get_value_list(entity_list,
-            parameter_list[i], 1));   
+            parameter_list[i], 1));
     }
     for (int i = 0; parameter_char[i] != 0; i++) {
         (*function_char[i])(object, get_value_list(entity_list,

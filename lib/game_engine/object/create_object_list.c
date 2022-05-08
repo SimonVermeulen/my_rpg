@@ -65,7 +65,7 @@ object_t *create_object_list(list_t *list, list_t *scene, engine_t *engine,
     object_t *object = NULL;
     char *prefab = get_value_list(list, "PrefabPath", 4);
     list_t *object_list = NULL;
-    
+
     if (!prefab)
         return init_object_list(list, scene, engine, parent);
     object_list = launch_parsing(prefab);

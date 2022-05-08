@@ -12,6 +12,6 @@ void my_putchar(FILE *fd, char c)
 {
     char array[1] = {0};
 
-    array[0] = c; 
+    array[0] = c;
     fwrite(array, sizeof(char), 1, fd);
 }

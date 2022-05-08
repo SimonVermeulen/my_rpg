@@ -37,7 +37,7 @@ static void get_respawn(translation_animation_t *trans,
     sfVector2f position = get_position(object);
     vector_speed_t *start = trans->positions->head->value;
 
-    position.x =  position.x - end->position.x;
+    position.x = position.x - end->position.x;
     position.y = position.y - end->position.y;
     position.x = start->position.x + position.x;
     position.y = start->position.y + position.y;

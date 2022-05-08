@@ -67,7 +67,9 @@ OBJ 			=		$(SRC:.c=.o)
 
 NAME 			= 		my_rpg
 
-LIBFLAG 		= 		lib/game_engine.a -Lcsfml-window -lcsfml-graphics -lcsfml-system -lcsfml-audio lib/liblist.a lib/libjson_parser.a lib/libmy.a -lm
+LIBFLAG 		= 		lib/game_engine.a -Lcsfml-window -lcsfml-graphics -lcsfml-system 
+
+LIBFLAGS		=		-lcsfml-audio lib/liblist.a lib/libjson_parser.a lib/libmy.a -lm
 
 CFLAGS 			+= 		-I ./include -g3
 
@@ -78,7 +80,7 @@ $(NAME): 	$(OBJ)
 		$(MAKE) -C ./lib/my
 		$(MAKE) -C ./lib/linked_list
 		$(MAKE) -C ./lib/json_parser
-		$(CC) -o $(NAME) $(OBJ) $(LIBFLAG)
+		$(CC) -o $(NAME) $(OBJ) $(LIBFLAG) $(LIBFLAGS)
 
 clean:
 		$(MAKE) -C ./lib/game_engine clean

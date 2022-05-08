@@ -21,7 +21,7 @@ bool get_collision_rect_circle(collision_t *a, collision_t *b)
         return false;
     if (dy > (a->box.height / 2 + b->circle.radius))
         return false;
-    if (dx <= (a->box.width  / 2))
+    if (dx <= (a->box.width / 2))
         return true;
     if (dy <= (a->box.height / 2))
         return true;

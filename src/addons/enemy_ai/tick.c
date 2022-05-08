@@ -14,7 +14,7 @@ static sfVector2f get_next_position(object_t *object, engine_t *engine)
     grid_controller_t *controller = get_addon_data("grid_controller", cont);
     sfVector2f normal = get_normalize_vector(get_position(object),
         get_position(main));
-    
+
     if (!controller)
         return get_position(object);
     normal.x = round(normal.x);
@@ -35,7 +35,7 @@ int tick_enemy_ai(object_t *object, engine_t *engine)
     object_t *main = seach_object(engine, "main_pokemon");
     sfVector2f normal = get_normalize_vector(get_position(object),
         controller->move_point);
-    
+
     normal.x *= 15 * (engine->time.delta / 100);
     normal.y *= 15 * (engine->time.delta / 100);
     controller->time -= (controller->time > 0) ? get_delta(engine) : 0;
