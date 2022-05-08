@@ -1,1 +1,1 @@
-{"main_pokemon":"./prefabs/pokemon/pikachu.json","lifea":100.0,"lifeb":100.0,"damage":20.0,"volume":100.0,"scene_1":"welcome_game","scene_2":"black_screen"}
+{"main_pokemon":"./prefabs/pokemon/pikachu.json","lifea":100.0,"lifeb":100.0,"damage":20.0,"volume":0.0,"scene_1":"welcome_game","scene_2":"black_screen"}
