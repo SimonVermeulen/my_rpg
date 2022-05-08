@@ -20,7 +20,7 @@ static int end_addons(object_t *object, engine_t *engine)
 static int start_addons(object_t *object, engine_t *engine)
 {
     data_t *data = get_data_addon(engine);
-    float *volume = get_value_list(data->data, "volume", 2);
+    double *volume = get_value_list(data->data, "volume", 2);
 
     if (!volume)
         return exit_game(engine, 84);
