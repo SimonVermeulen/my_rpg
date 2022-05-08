@@ -337,7 +337,6 @@
                         "selection",
                         "window_parameter",
                         "select2",
-<<<<<<< HEAD
                         "select4",
                         "disable4",
                         "volume_parameter",
@@ -346,10 +345,8 @@
                         "select9",
                         "confirmation",
                         "select14",
-                        "disable20"
-=======
+                        "disable20",
                         "disable2"
->>>>>>> refs/remotes/origin/main
                     ]
                 },
                 "multi_enable": {
