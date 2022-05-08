@@ -44,6 +44,8 @@ int (*const load_addons_func[])(engine_t *) =
     init_parameter_volume_addons,
     init_save_scene_addons,
     init_load_scene_addons,
+    init_pause_addons,
+    init_click_pause_addons,
     NULL
 };
 
@@ -81,7 +83,7 @@ int main(int argc, char **argv)
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("intro_0-bot", engine) ||
+        !change_scene("map_guild_grodoudou_room", engine) ||
         !change_secondary_screen("intro_0-top", engine))
         return 84;
     return open_game(engine, 60);

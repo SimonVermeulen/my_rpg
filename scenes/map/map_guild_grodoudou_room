@@ -336,6 +336,63 @@
                     "name": "map_guild_second_stage_grodoudou"
                 }
             }
+        },
+        {
+            "name": "SkyByPressAA",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 4,
+                            "disable": 0,
+                            "value": 36.0,
+                            "object_enable": "pause" 
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "echap",
+            "addons": {
+                "click_pause": {
+                    "enable": "pause"
+                }
+            }
+        },
+        {
+            "name": "pause",
+            "disable": 1,
+            "addons": {
+                "pause": {
+                    "empty": 0
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "echapp",
+                        "addons": {
+                            "click_pause": {
+                                "enable": "disableAA"
+                            }
+                        }
+                    },
+                    {
+                        "name": "disableAA",
+                        "disable": 1,
+                        "addons": {
+                            "multi_disable": {
+                                "objects": [
+                                    "pause",
+                                    "disableAA"
+                                ],
+                                "all": 1
+                            }
+                        }
+                    }
+                ]
+            }
         }
     ]
 }

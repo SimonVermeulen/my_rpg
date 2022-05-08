@@ -208,5 +208,6 @@ int init_load_scene_addons(engine_t *engine);
 int init_quit_game_addons(engine_t *engine);
 int init_pause_addons(engine_t *engine);
 int init_change_color_addons(engine_t *engine);
+int init_click_pause_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */

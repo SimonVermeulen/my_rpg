@@ -19,7 +19,8 @@ int on_pause(list_t *scene, engine_t *engine, bool condition, object_t *out)
         object = node->value;
         if (object == out)
             continue;
-        object->is_active = condition;
+        object->is_pause = condition;
+        //on_pause(object->childs, engine, condition, out);
     }
     return 0;
 }
