@@ -336,7 +336,16 @@
                     "objects": [
                         "selection",
                         "window_parameter",
-                        "select2"
+                        "select2",
+                        "select4",
+                        "disable4",
+                        "volume_parameter",
+                        "fps_parameter",
+                        "disable10",
+                        "select9",
+                        "confirmation",
+                        "select14",
+                        "disable20"
                     ]
                 },
                 "multi_enable": {
@@ -521,12 +530,30 @@
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "selection_parameters"
+                        "selection_parameters",
+                        "disable",
+                        "select1"
                     ]
                 },
                 "multi_enable": {
                     "objects": [
                         "volume_parameter"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "disable4",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "change_volume"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "select4"
                     ]
                 }
             }
@@ -539,7 +566,7 @@
                     "actions": [
                         {
                             "type": 2,
-                            "enable": "select4"
+                            "enable": "disable4"
                         }
                     ],
                     "disable": 1
@@ -1623,12 +1650,30 @@
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "selection_parameters"
+                        "selection_parameters",
+                        "select1",
+                        "disable"
                     ]
                 },
                 "multi_enable": {
                     "objects": [
                         "fps_parameter"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "disable10",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "change_fps"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "select9"
                     ]
                 }
             }
@@ -1641,7 +1686,7 @@
                     "actions": [
                         {
                             "type": 2,
-                            "enable": "select9"
+                            "enable": "disable10"
                         }
                     ],
                     "disable": 1
@@ -2396,12 +2441,30 @@
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "selection_parameters"
+                        "selection_parameters",
+                        "select1",
+                        "disable"
                     ]
                 },
                 "multi_enable": {
                     "objects": [
                         "confirmation"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "disable20",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "delete_data"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "select14"
                     ]
                 }
             }
@@ -2414,7 +2477,7 @@
                     "actions": [
                         {
                             "type": 2,
-                            "enable": "select14"
+                            "enable": "disable20"
                         }
                     ],
                     "disable": 1
