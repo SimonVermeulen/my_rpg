@@ -59,7 +59,7 @@ int init_multi_enable_addons(engine_t *engine)
     addon->on_enable = start_addon;
     addon->on_disable = NULL;
     addon->on_end = end_addon;
-    addon->on_start = NULL;
+    addon->on_start = start_addon;
     addon->on_event = NULL;
     addon->on_tick = NULL;
     addon->init = init_addon;
