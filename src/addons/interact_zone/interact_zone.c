@@ -29,9 +29,10 @@ static int tick_addon(object_t *object, engine_t *engine)
 
     if (!main || interact)
         return 0;
-    if (if_collision(main, object))
+    if (if_collision(main, object)) {
         set_active(true, seek_object_scene(object->actual_scene,
             get_value_list(interact_zone, "enable", 4)), engine);
+    }
 }
 
 static int end_addon(object_t *object, engine_t *engine)
