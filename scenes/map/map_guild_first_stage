@@ -27,8 +27,8 @@
                 "smooth": 1
             },
             {
-                "name": "grainipiot",
-                "path": "./assets/sprites/pokemons/grainipiot/idle.png",
+                "name": "graininho",
+                "path": "./assets/sprites/pokemons/graininho/idle.png",
                 "smooth": 1
             },
             {
@@ -79,6 +79,26 @@
             {
                 "name": "portrait_coxy_happy",
                 "path": "./assets/portrait/coxy/happy.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_heliatronc_special0",
+                "path": "./assets/portrait/heliatronc/special0.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_graininho_angry",
+                "path": "./assets/portrait/graininho/angry.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_heledelle_normal",
+                "path": "./assets/portrait/heledelle/normal.png",
+                "smooth": 1
+            },
+            {
+                "name": "portrait_chenipotte_dizzy",
+                "path": "./assets/portrait/chenipotte/dizzy.png",
                 "smooth": 1
             }
         ],
@@ -247,7 +267,7 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 0.0,
+                    "count": 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
@@ -271,16 +291,16 @@
             }
         },
         {
-            "name": "grainipiot",
+            "name": "graininho",
             "entity": {
                 "type": "Sprite",
                 "order": 1,
                 "parameters": {
                     "Texture": {
-                        "Name": "grainipiot",
+                        "Name": "graininho",
                         "Rect": {
                             "left": 4,
-                            "top":  193,
+                            "top": 193,
                             "width": 16,
                             "height": 21
                         }
@@ -299,21 +319,21 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 0.0,
+                    "count": 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 4,
-                            "top":  193,
+                            "top": 193,
                             "width": 16,
                             "height": 21,
                             "time": 750.0
                         },
                         {
                             "left": 30,
-                            "top":  193,
+                            "top": 193,
                             "width": 16,
                             "height": 21,
                             "time": 750.0
@@ -332,7 +352,7 @@
                         "Name": "roucool",
                         "Rect": {
                             "left": 3,
-                            "top":  84,
+                            "top": 84,
                             "width": 20,
                             "height": 23
                         }
@@ -351,28 +371,28 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 0.0,
+                    "count": 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 3,
-                            "top":  84,
+                            "top": 84,
                             "width": 20,
                             "height": 23,
                             "time": 200.0
                         },
                         {
                             "left": 27,
-                            "top":  84,
+                            "top": 84,
                             "width": 20,
                             "height": 23,
                             "time": 200.0
                         },
                         {
                             "left": 51,
-                            "top":  84,
+                            "top": 84,
                             "width": 20,
                             "height": 23,
                             "time": 200.0
@@ -391,7 +411,7 @@
                         "Name": "heledelle",
                         "Rect": {
                             "left": 7,
-                            "top":  467,
+                            "top": 467,
                             "width": 23,
                             "height": 21
                         }
@@ -417,7 +437,7 @@
                         "Name": "chenipotte",
                         "Rect": {
                             "left": 3,
-                            "top":  98,
+                            "top": 98,
                             "width": 19,
                             "height": 22
                         }
@@ -443,7 +463,7 @@
                         "Name": "coxy",
                         "Rect": {
                             "left": 0,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33
                         }
@@ -462,84 +482,84 @@
                 "rect_animation": {
                     "infini": 1,
                     "start": 0,
-                    "count" : 0.0,
+                    "count": 0.0,
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
                     "rects": [
                         {
                             "left": 0,
-                            "top":  193,
+                            "top": 193,
                             "width": 33,
                             "height": 36,
                             "time": 0.0
                         },
                         {
                             "left": 40,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 80,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 120,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 160,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 200,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 240,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 120,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 80,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 40,
-                            "top":  193,
+                            "top": 193,
                             "width": 36,
                             "height": 33,
                             "time": 100.0
                         },
                         {
                             "left": 0,
-                            "top":  193,
+                            "top": 193,
                             "width": 33,
                             "height": 36,
                             "time": 100.0
@@ -1358,7 +1378,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "Coxy: ",
+                                "string": "Coxy: -Keziah voice- M'enfin frero fais pas le beau\n\nc'est evident que tu vas pas me toucher, je vole et \n\nt'es a pattes connard",
                                 "cursor": "cursor"
                             }
                         },
@@ -1392,20 +1412,24 @@
             }
         },
         {
-            "name": "box",
+            "name": "interact_heliatronc",
             "entity": {
-                "type": "RectangleShape",
+                "type": "Sprite",
                 "order": 1,
                 "parameters": {
-                    "FillColor": "red",
-                    "Size": {
-                        "x": 50.0,
-                        "y": 50.0
+                    "Texture": {
+                        "Name": "invisible"
                     },
                     "Position": {
-                        "x": 200.0,
-                        "y": 300.0
+                        "x": 0.0,
+                        "y": 0.0
                     }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "presskey": 1,
+                    "enable": "dialogue_heliatronc"
                 }
             },
             "collisions": [
@@ -1413,13 +1437,825 @@
                     "name": "box",
                     "trigger": 1,
                     "box": {
-                        "left": 0.0,
-                        "top": 0.0,
+                        "left": 485.0,
+                        "top": 280.0,
                         "width": 50.0,
-                        "height": 50.0
+                        "height": 60.0
                     }
                 }
             ]
+        },
+        {
+            "name": "dialogue_heliatronc",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "controller"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text4",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "controller"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "bulle_portrait",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 1,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 48.0,
+                                    "y": 293.0
+                                },
+                                "Scale": {
+                                    "x": 0.14,
+                                    "y": 0.58
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "portrait_heliatronc",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "portrait_heliatronc_special0"
+                                },
+                                "Position": {
+                                    "x": 50.0,
+                                    "y": 300.0
+                                },
+                                "Scale": {
+                                    "x": 1.6,
+                                    "y": 1.8
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text4",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Heliatronc: Ce soir je fume un gros gros teh,\n\nJ'tema ton posterieur, j'veux le meme en po-poster.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "interact_graininho",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "invisible"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "presskey": 1,
+                    "enable": "dialogue_graininho"
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 390.0,
+                        "top": 410.0,
+                        "width": 50.0,
+                        "height": 60.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "dialogue_graininho",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "controller"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text5",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text6",
+                            "wait": 1000.0
+                        },
+                        {
+                            "type": 1,
+                            "enable": "text7",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "controller"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "bulle_portrait",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 1,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 48.0,
+                                    "y": 293.0
+                                },
+                                "Scale": {
+                                    "x": 0.14,
+                                    "y": 0.58
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "portrait_graininho_angry",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "portrait_graininho_angry"
+                                },
+                                "Position": {
+                                    "x": 50.0,
+                                    "y": 300.0
+                                },
+                                "Scale": {
+                                    "x": 1.6,
+                                    "y": 1.8
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text5",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Graininho: Vise le million t'auras des milliers,\ntout ecrit tout est destine.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text6",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Graininho: On m'avait dit de bien choisir mes amis \n\nj'ai choisis les mauvais.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text7",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Graininho: J'ai la balle, j'suis tout pres du but \n\nmais je fais la passe, j'ai l'esprit d'equipe",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "interact_heledelle",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "invisible"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "presskey": 1,
+                    "enable": "dialogue_heledelle"
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 160.0,
+                        "top": 370.0,
+                        "width": 50.0,
+                        "height": 75.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "dialogue_heledelle",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "controller"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text8",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "controller"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "bulle_portrait",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 1,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 48.0,
+                                    "y": 293.0
+                                },
+                                "Scale": {
+                                    "x": 0.14,
+                                    "y": 0.58
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "portrait_heledelle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "portrait_heledelle_normal"
+                                },
+                                "Position": {
+                                    "x": 50.0,
+                                    "y": 300.0
+                                },
+                                "Scale": {
+                                    "x": 1.6,
+                                    "y": 1.8
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text8",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Heledelle: On vient de me raconter l'histoire du\n\ncorbeau et du renard, non il etait vraiment bete\n\nil nous vraiment honte.",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "interact_chenipotte",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "invisible"
+                    },
+                    "Position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    }
+                }
+            },
+            "addons": {
+                "interact_zone": {
+                    "presskey": 1,
+                    "enable": "dialogue_chenipotte"
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 120.0,
+                        "top": 410.0,
+                        "width": 50.0,
+                        "height": 75.0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "dialogue_chenipotte",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "controller"
+                    ]
+                },
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "enable": "text9",
+                            "wait": 1000.0
+                        }
+                    ],
+                    "disable": 1,
+                    "enable": "controller"
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "bulle",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 33.0,
+                                    "y": 380.0
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "bulle_portrait",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 1,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "bulle"
+                                },
+                                "Position": {
+                                    "x": 48.0,
+                                    "y": 293.0
+                                },
+                                "Scale": {
+                                    "x": 0.14,
+                                    "y": 0.58
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "portrait_chenipotte_dizzy",
+                        "entity": {
+                            "type": "Sprite",
+                            "order": 2,
+                            "parameters": {
+                                "Texture": {
+                                    "Name": "portrait_chenipotte_dizzy"
+                                },
+                                "Position": {
+                                    "x": 50.0,
+                                    "y": 300.0
+                                },
+                                "Scale": {
+                                    "x": 1.6,
+                                    "y": 1.8
+                                }
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            }
+                        }
+                    },
+                    {
+                        "name": "text9",
+                        "disable": 1,
+                        "entity": {
+                            "order": 3,
+                            "type": "Text",
+                            "parameters": {
+                                "Position": {
+                                    "x": 53.0,
+                                    "y": 390.0
+                                },
+                                "Color": "white",
+                                "Font": "font",
+                                "CharacterSize": 30
+                            }
+                        },
+                        "addons": {
+                            "position_by_view": {
+                                "bloc": 1
+                            },
+                            "text_animation": {
+                                "time": 2000.0,
+                                "string": "Chenipotte: J'suis pas bien frero",
+                                "cursor": "cursor"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "cursor",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "whiteArrow"
+                                            },
+                                            "Position": {
+                                                "x": 255.0,
+                                                "y": 500.0
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
         }
     ]
 }
