@@ -12,6 +12,10 @@
             {
                 "name": "music",
                 "path": "./assets/sounds/sound_plage.ogg"
+            },
+            {
+                "name": "grodoudou_room",
+                "path": "./assets/sounds/groudoudou_room.ogg"
             }
         ]
     },
@@ -42,6 +46,58 @@
                     "Volume": 100.0,
                     "Loop": 1,
                     "SoundBuffer": "guild_music"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "music",
+            "disable": 1,
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "music"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "grodoudou_room",
+            "disable": 1,
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "grodoudou_room"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "SoundBuffer": "music-intro"
                 }
             },
             "addons": {

@@ -160,14 +160,6 @@
                     }
                 ]
             }
-        },
-        {
-            "name": "load_scene",
-            "addons": {
-                "load_scene": {
-                    "empty": 0
-                }
-            }
         }
     ]
 }

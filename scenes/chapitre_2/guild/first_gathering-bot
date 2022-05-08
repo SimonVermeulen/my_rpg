@@ -391,6 +391,17 @@
     },
     "objects": [
         {
+            "name": "guild",
+            "addons": {
+                "multi_enable": {
+                    "objects": [
+                        "guild_music"
+                    ],
+                    "all": 1
+                }
+            }
+        },
+        {
             "name": "background",
             "entity": {
                 "type": "Sprite",
@@ -1085,7 +1096,7 @@
                         }
                     ],
                     "disable": 1,
-                    "enable": "step2"
+                    "enable": "disable_guild"
                 }
             },
             "children": {
@@ -1829,12 +1840,34 @@
             }
         },
         {
+            "name": "disable_guild",
+            "disable": 1,
+            "addons": {
+                "multi_enable": {
+                    "objects": [
+                        "grodoudou_room",
+                        "step2"
+                    ],
+                    "all": 1
+                },
+                "multi_disable": {
+                    "objects": [
+                        "guild",
+                        "step1",
+                        "guild_music"
+                    ],
+                    "all": 1
+                }
+            }
+        },
+        {
             "name": "step2",
             "disable": 1,
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "step1"
+                        "disable_guild",
+                        "guild"
                     ]
                 },
                 "translation_animation": {
@@ -4594,7 +4627,26 @@
                             "time": 1500.0
                         }
                     ],
-                    "enable": "step31"
+                    "enable": "disable_room"
+                }
+            }
+        },
+        {
+            "name": "disable_room",
+            "disable": 1,
+            "addons": {
+                "multi_enable": {
+                    "objects": [
+                        "step31"
+                    ],
+                    "all": 1
+                },
+                "multi_disable": {
+                    "objects": [
+                        "grodoudou_room",
+                        "step30"
+                    ],
+                    "all": 1
                 }
             }
         },
@@ -4604,7 +4656,7 @@
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "step30"
+                        "disable_room"
                     ]
                 },
                 "change_scene": {

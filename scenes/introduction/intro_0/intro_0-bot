@@ -145,35 +145,10 @@
             }
         },
         {
-            "name": "parameter_window",
-            "addons": {
-                "parameter_window": {
-                    "number": 1
-                }
-            }
-        },
-        {
-            "name": "parameter_fps",
-            "addons": {
-                "parameter_fps": {
-                    "number": 144
-                }
-            }
-        },
-        {
             "name": "parameter_volume",
             "addons": {
                 "parameter_volume": {
                     "number": 55.0
-                }
-            }
-        },
-        {
-            "name": "save_scene",
-            "addons": {
-                "save_scene": {
-                    "scene_1": "intro_0-bot",
-                    "scene_2": "intro_0-top"
                 }
             }
         }

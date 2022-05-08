@@ -307,15 +307,32 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "grodoudou_room",
+                "path": "./assets/sounds/groudoudou_room.ogg"
+            }
         ]
     },
     "objects": [
+            {
+                "name": "disableSound",
+                "addons": {
+                    "multi_disable": {
+                        "objects": [
+                            "guild_music"
+                        ],
+                        "all": 1
+                    }
+                }
+            },
         {
-            "name": "disableSound",
+            "name": "SoundEnable",
             "addons": {
-                "multi_disable": {
+                "multi_enable": {
                     "objects": [
-                        "guild_music"
+                        "grodoudou_room"
                     ],
                     "all": 1
                 }
