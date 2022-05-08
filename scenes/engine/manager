@@ -8,6 +8,10 @@
             {
                 "name": "guild_music",
                 "path": "./assets/sounds/guild_music.ogg"
+            },
+            {
+                "name": "music",
+                "path": "./assets/sounds/sound_plage.ogg"
             }
         ]
     },
@@ -38,22 +42,6 @@
                     "Volume": 100.0,
                     "Loop": 1,
                     "SoundBuffer": "guild_music"
-                }
-            },
-            "addons": {
-                "play_sound": {
-                    "empty": 0
-                }
-            }
-        },
-        {
-            "name": "soundIntro",
-            "entity": {
-                "type": "Sound",
-                "order": 1,
-                "parameters": {
-                    "Volume": 100.0,
-                    "SoundBuffer": "music-intro"
                 }
             },
             "addons": {
