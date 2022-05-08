@@ -334,8 +334,10 @@
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "selection"
-                    ],
+                        "selection",
+                        "window_parameter",
+                        "select2"
+                    ]
                 },
                 "multi_enable": {
                     "objects": [
@@ -351,7 +353,7 @@
                 "multi_disable": {
                     "objects": [
                         "parameters"
-                    ],
+                    ]
                 },
                 "multi_enable": {
                     "objects": [
@@ -501,7 +503,9 @@
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "selection_parameters"
+                        "selection_parameters",
+                        "disable",
+                        "select1"
                     ]
                 },
                 "multi_enable": {
@@ -1285,6 +1289,22 @@
             }
         },
         {
+            "name": "disable2",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "change_window"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "select2"
+                    ]
+                }
+            }
+        },
+        {
             "name": "window_parameter",
             "disable": 1,
             "addons": {
@@ -1292,7 +1312,7 @@
                     "actions": [
                         {
                             "type": 2,
-                            "enable": "select2"
+                            "enable": "disable2"
                         }
                     ],
                     "disable": 1
