@@ -23,8 +23,8 @@ static sfVector2f get_next_position(object_t *object, engine_t *engine,
         return get_position(object);
     normal.x = round(normal.x);
     normal.y = round(normal.y);
-    normal.x *= 75;
-    normal.y *= 75;
+    normal.x *= 49;
+    normal.y *= 49;
     normal.x += get_position(object).x;
     normal.y += get_position(object).y;
     if (equal_vector2f(controller->move_point, normal))

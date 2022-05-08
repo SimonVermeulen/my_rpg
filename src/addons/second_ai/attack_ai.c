@@ -17,7 +17,7 @@ int attack_ai(grid_controller_t *controller, object_t *enemy,
     direction = (sfVector2f) {round(direction.x), round(direction.y)};
     if (!equal_vector2f(get_position(controller->object),
         controller->move_point) || calc_distance(
-        get_position(controller->object), get_position(enemy)) > 75)
+        get_position(controller->object), get_position(enemy)) > 49)
         return 0;
     controller->direction = direction;
     if (!controller->is_attack)
