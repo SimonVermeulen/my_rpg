@@ -143,14 +143,6 @@
                     }
                 }
             }
-        },
-        {
-            "name": "parameter_volume",
-            "addons": {
-                "parameter_volume": {
-                    "number": 55.0
-                }
-            }
         }
     ]
 }
