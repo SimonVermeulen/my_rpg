@@ -26,20 +26,21 @@ static int event_controller(grid_controller_t *controller,
     sfVector2f point, engine_t *engine)
 {
     if (calc_distance(get_position(controller->object),
-        controller->move_point) > 75)
+        controller->move_point) > 49)
         return 0;
+
     if (if_key_pressed(engine, sfKeyUp) &&
-        !is_hover_all(engine, (sfVector2f) {point.x, point.y - 75}))
-        controller->move_point.y += -75;
+        !is_hover_all(engine, (sfVector2f) {point.x, point.y - 49}))
+        controller->move_point.y += -49;
     if (if_key_pressed(engine, sfKeyDown) &&
-        !is_hover_all(engine, (sfVector2f) {point.x, point.y + 75}))
-        controller->move_point.y += 75;
+        !is_hover_all(engine, (sfVector2f) {point.x, point.y + 49}))
+        controller->move_point.y += 49;
     if (if_key_pressed(engine, sfKeyLeft) &&
-        !is_hover_all(engine, (sfVector2f) {point.x - 75, point.y}))
-        controller->move_point.x += -75;
+        !is_hover_all(engine, (sfVector2f) {point.x - 49, point.y}))
+        controller->move_point.x += -49;
     if (if_key_pressed(engine, sfKeyRight) &&
-        !is_hover_all(engine, (sfVector2f) {point.x + 75, point.y}))
-        controller->move_point.x += 75;
+        !is_hover_all(engine, (sfVector2f) {point.x + 49, point.y}))
+        controller->move_point.x += 49;
 }
 
 static int get_rotation(engine_t *engine, grid_controller_t *controller)

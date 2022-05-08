@@ -1693,7 +1693,7 @@
                                             "Color": "white",
                                             "Font": "font",
                                             "CharacterSize": 30,
-                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                      100"
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                      150"
                                         }
                                     },
                                     "addons": {
@@ -1841,7 +1841,7 @@
                                             "Color": "white",
                                             "Font": "font",
                                             "CharacterSize": 30,
-                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       75"
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                      120"
                                         }
                                     },
                                     "addons": {
@@ -1989,7 +1989,7 @@
                                             "Color": "white",
                                             "Font": "font",
                                             "CharacterSize": 30,
-                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       50"
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       85"
                                         }
                                     },
                                     "addons": {
@@ -2137,7 +2137,7 @@
                                             "Color": "white",
                                             "Font": "font",
                                             "CharacterSize": 30,
-                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       25"
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       60"
                                         }
                                     },
                                     "addons": {
@@ -2284,7 +2284,142 @@
                                             "Color": "white",
                                             "Font": "font",
                                             "CharacterSize": 30,
-                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       0"
+                                            "String": "Parametres des FPS\n\n-----------------\n\nFPS                                       30"
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "delete_data",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "selection_parameters"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "confirmation"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "confirmation",
+            "disable": 1,
+            "addons": {
+                "dialogue_manager": {
+                    "actions": [
+                        {
+                            "type": 2,
+                            "enable": "select14"
+                        }
+                    ],
+                    "disable": 1
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "select14",
+                        "disable": 1,
+                        "addons": {
+                            "select_manager": {
+                                "items": [
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 155.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "ndfi"
+                                    },
+                                    {
+                                        "position": {
+                                            "x": 18.0,
+                                            "y": 195.0
+                                        },
+                                        "hover": "oui",
+                                        "enable": "parameters"
+                                    }
+                                ],
+                                "cursor": "select_cursor10",
+                                "dialogue_manager": "confirmation"
+                            }
+                        },
+                        "children": {
+                            "objects": [
+                                {
+                                    "name": "bulle",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 3,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "bulle"
+                                            },
+                                            "Position": {
+                                                "x": 20.0,
+                                                "y": 55.0
+                                            },
+                                            "Scale": {
+                                                "x": 0.72,
+                                                "y": 1.29
+                                            }
+                                        }
+                                    },
+                                    "addons": {
+                                        "position_by_view": {
+                                            "bloc": 1
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "select_cursor10",
+                                    "entity": {
+                                        "type": "Sprite",
+                                        "order": 4,
+                                        "parameters": {
+                                            "Texture": {
+                                                "Name": "yellowArrow"
+                                            },
+                                            "Position": {
+                                                "x": 18.0,
+                                                "y": 155.0
+                                            }
+                                        },
+                                        "addons": {
+                                            "position_by_view": {
+                                                "bloc": 1
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "Page1",
+                                    "entity": {
+                                        "order": 4,
+                                        "type": "Text",
+                                        "parameters": {
+                                            "Position": {
+                                                "x": 35.0,
+                                                "y": 70.0
+                                            },
+                                            "Color": "white",
+                                            "Font": "font",
+                                            "CharacterSize": 30,
+                                            "String": "Voulez-vous supprimer les donnees?\n\n-----------------\n\noui\n\nnon"
                                         }
                                     },
                                     "addons": {
