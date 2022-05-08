@@ -335,11 +335,27 @@
                 "multi_disable": {
                     "objects": [
                         "selection"
-                    ]
+                    ],
                 },
                 "multi_enable": {
                     "objects": [
                         "selection_parameters"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "disable",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "parameters"
+                    ],
+                },
+                "multi_enable": {
+                    "objects": [
+                        "select1"
                     ]
                 }
             }
@@ -352,7 +368,7 @@
                     "actions": [
                         {
                             "type": 2,
-                            "enable": "select1"
+                            "enable": "disable"
                         }
                     ],
                     "disable": 1

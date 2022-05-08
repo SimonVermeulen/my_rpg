@@ -15,7 +15,7 @@ static int apply_select(object_t *object, object_t *cursor,
     char *hover = get_value_list(select->data, "hover", 4);
 
     set_position_vector(cursor, position);
-    set_active(true, seach_object(object->actual_scene, hover),
+    set_active(true, seach_object(object->engine, hover),
         object->engine);
     return 0;
 }
