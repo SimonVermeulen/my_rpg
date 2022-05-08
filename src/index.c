@@ -38,6 +38,11 @@ int (*const load_addons_func[])(engine_t *) =
     init_enemy_ai_addons,
     init_mobs_addons,
     init_health_check_addons,
+    init_parameter_window_addons,
+    init_parameter_fps_addons,
+    init_parameter_volume_addons,
+    init_save_scene_addons,
+    init_load_scene_addons,
     NULL
 };
 
@@ -51,7 +56,7 @@ int main(int argc, char **argv)
         !init_scenes_path("./scenes", engine))
         return 84;
     if (!set_const_scene("manager", engine) ||
-        !change_scene("stage_01", engine) ||
+        !change_scene("intro_0-bot", engine) ||
         !change_secondary_screen("intro_0-top", engine))
         return 84;
     return open_game(engine, 60);

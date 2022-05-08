@@ -57,6 +57,11 @@ SRC				=		src/index.c	\
 						src/addons/mobs/mobs.c	\
 						src/addons/health_check/health_check.c	\
 						src/addons/enemy_ai/tick.c	\
+						src/addons/parameter_window/parameter_window.c	\
+						src/addons/parameter_fps/parameter_fps.c	\
+						src/addons/parameter_volume/parameter_volume.c	\
+						src/addons/save_scene/save_scene.c	\
+						src/addons/load_scene/load_scene.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 

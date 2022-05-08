@@ -200,5 +200,10 @@ int init_grid_addons(engine_t *engine);
 int init_enemy_ai_addons(engine_t *engine);
 int init_mobs_addons(engine_t *engine);
 int init_health_check_addons(engine_t *engine);
+int init_parameter_window_addons(engine_t *engine);
+int init_parameter_fps_addons(engine_t *engine);
+int init_parameter_volume_addons(engine_t *engine);
+int init_save_scene_addons(engine_t *engine);
+int init_load_scene_addons(engine_t *engine);
 
 #endif /* !GAME_H_ */
