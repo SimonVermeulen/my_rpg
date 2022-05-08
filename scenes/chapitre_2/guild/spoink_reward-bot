@@ -314,14 +314,10 @@
                             "type": 1,
                             "enable": "text9",
                             "wait": 1000.0
-                        },
-                        {
-                            "type": 2,
-                            "enable": "select1",
-                            "wait": 1000.0
                         }
                     ],
-                    "disable": 1
+                    "disable": 1,
+                    "enable": "step2"
                 }
             },
             "children": {
@@ -1112,120 +1108,6 @@
                                 }
                             ]
                         }
-                    },
-                    {
-                        "name": "select1",
-                        "disable": 1,
-                        "addons": {
-                            "select_manager": {
-                                "items": [
-                                    {
-                                        "position": {
-                                            "x": 343.0,
-                                            "y": 299.0 
-                                        },
-                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
-                                    },
-                                    {
-                                        "position": {
-                                            "x": 343.0,
-                                            "y": 346.0 
-                                        },
-                                        "enable": "step2"
-                                    }
-                                ],
-                                "cursor": "select_cursor",
-                                "dialogue_manager": "step1"
-                            }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "bulle",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 340.0,
-                                                "y": 293.0 
-                                            },
-                                            "Scale": {
-                                                "x": 0.4,
-                                                "y": 0.58
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "select_cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "yellowArrow"
-                                            },
-                                            "Position": {
-                                                "x": 443.0,
-                                                "y": 299.0
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "choice",
-                                    "entity": {
-                                        "order": 3,
-                                        "type": "Text",
-                                        "parameters": {
-                                            "Position": {
-                                                "x": 370.0,
-                                                "y": 293.0 
-                                            },
-                                            "Color": "white",
-                                            "Font": "font",
-                                            "CharacterSize": 30,
-                                            "String": "Jeter un objet\n\nJeter Proteine"
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "text",
-                                    "entity": {
-                                        "order": 3,
-                                        "type": "Text",
-                                        "parameters": {
-                                            "Position": {
-                                                "x": 53.0,
-                                                "y": 390.0
-                                            },
-                                            "Color": "white",
-                                            "Font": "font",
-                                            "CharacterSize": 30
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        },
-                                        "text_animation": {
-                                            "time": 2000.0,
-                                            "string": "Le Sac a Tresor est plein. Voulez-vous\n\njeter un objet du Sac a Tresor?",
-                                            "cursor": "cursor"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
                     }
                 ]
             }
@@ -1316,7 +1198,7 @@
                             },
                             "text_animation": {
                                 "time": 2000.0,
-                                "string": "                     Vous avez jete l'objet Proteine.",
+                                "string": "                     Vous avez gagne l'objet Proteine.",
                                 "cursor": "cursor"
                             }
                         },
