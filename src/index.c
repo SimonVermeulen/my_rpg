@@ -6,6 +6,7 @@
 */
 
 #include "game.h"
+#include "my.h"
 #include <time.h>
 
 int (*const load_addons_func[])(engine_t *) =
@@ -46,11 +47,35 @@ int (*const load_addons_func[])(engine_t *) =
     NULL
 };
 
+int usage(int argc, char **argv)
+{
+    if (argc == 2 && !my_strcmp(argv[1], "-h")) {
+        my_printf(stdout, "Welcome to the french version of Pokemon %s",
+            "Mystery Dungeon : Explorators of the sky.\n\nThe only journey");
+        my_printf(stdout, " game in which you incarnate an actual pokemon.%s",
+            "\nThroughout your journey, you will have to face some pokemons");
+        my_printf(stdout, " in order to completes your tasks and dungeons.");
+        my_printf(stdout, "\n\n%s",
+            "To start the game, you will first have to compile it.\nPleas");
+        my_printf(stdout, "e type through your shell: make\nNow that the %s",
+            "gagme compiled, please type: ./myrpg\nYour game will launch.");
+        my_printf(stdout, "\n\nYou can set your own settings with the menu %s",
+            "'Paramètres'.\nUse your keyboard arrows to navigate and 'A' to");
+        my_printf(stdout, " interact.\nIn order to begin your journey, %s",
+            "please select 'Charger partie'.\nHave fun.\n");
+        return (1);
+    }
+    return (0);
+}
+
 int main(int argc, char **argv)
 {
-    engine_t *engine = init_game((sfVideoMode) {800, 1080, 32},
-        "[HACK-ROM] Pokemon donjon mystere lihme-line");
+    engine_t *engine = NULL;
 
+    if (usage(argc, argv))
+        return 0;
+    engine = init_game((sfVideoMode) {800, 1080, 32},
+        "[HACK-ROM] Pokemon donjon mystere lihme-line");
     srand(time(NULL));
     if (!engine || !load_addons(engine, load_addons_func) ||
         !init_scenes_path("./scenes", engine))
