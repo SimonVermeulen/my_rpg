@@ -12,7 +12,7 @@ static int apply_select(object_t *object, object_t *cursor,
 {
     sfVector2f position = create_vector2f_list(get_value_list(list,
         "position", 1));
-    char *hover = get_value_list(select->data, "hover", 4);
+    char *hover = get_value_list(list, "hover", 4);
 
     set_position_vector(cursor, position);
     set_active(true, seach_object(object->engine, hover),

@@ -10,9 +10,9 @@
 static int enable_addon(object_t *object, engine_t *engine)
 {
     list_t *list = get_addon_data("parameter_volume", object);
-    float *number = get_value_list(list, "number", 2);
+    double *number = get_value_list(list, "number", 2);
     data_t *data = get_data_addon(engine);
-    float *volume = get_value_list(data->data, "volume", 2);
+    double *volume = get_value_list(data->data, "volume", 2);
 
     if (!number || !volume)
         return exit_game(engine, 84);
