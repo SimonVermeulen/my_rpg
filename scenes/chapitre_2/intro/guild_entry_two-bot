@@ -167,6 +167,10 @@
             {
                 "name": "fire",
                 "path": "./assets/sounds/fire.ogg"
+            },
+            {
+                "name": "detect",
+                "path": "./assets/sounds/detected.ogg"
             }
         ]
     },
@@ -1186,7 +1190,42 @@
                         }
                     ],
                     "name": "2eme_poke",
-                    "name_enable": "step5"
+                    "name_enable": "step25"
+                }
+            }
+        },
+        {
+            "name": "step25",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step4"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step5",
+                        "soundDetected"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "soundDetected",
+            "disable": 1,
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 0,
+                    "SoundBuffer": "detect"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },
@@ -2773,7 +2812,7 @@
                             "time": 275.0
                         }
                     ],
-                    "enable": "step11"
+                    "enable": "step26"
                 },
                 "translation_animation": {
                     "infini": 0,
@@ -2787,6 +2826,41 @@
                         }
                     ],
                     "name": "1er_poke"
+                }
+            }
+        },
+        {
+            "name": "step26",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step4"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step5",
+                        "soundDetected2"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "soundDetected2",
+            "disable": 1,
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 0,
+                    "SoundBuffer": "detect"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },
