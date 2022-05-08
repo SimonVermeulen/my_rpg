@@ -1,0 +1,3379 @@
+{
+    "buffer": {
+        "Textures": [
+            {
+                "name": "tilesheet",
+                "path": "./assets/sprites/lib/text/invisible.png"
+            },
+            {
+                "name": "main_pokemon",
+                "path": "./assets/sprites/pokemons/pikachu/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "second_pokemon",
+                "path": "./assets/sprites/pokemons/evoli/walk.png",
+                "smooth": 1
+            },
+            {
+                "name": "main_texture",
+                "path": "./assets/sprites/chapitre_1/figth_map.png",
+                "smooth": 1
+            }
+        ]
+    },
+    "objects": [
+        {
+            "name": "collisions",
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 0.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 0.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 48.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 192.0001,
+                        "top": 48.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 240.0001,
+                        "top": 48.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 288.0001,
+                        "top": 48.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 336.0001,
+                        "top": 48.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 384.0001,
+                        "top": 48.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 432.0001,
+                        "top": 48.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 48.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 96.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 96.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 144.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 144.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 192.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 192.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 240.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 240.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 288.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 288.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 336.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 336.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 384.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 384.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 144.0001,
+                        "top": 432.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 192.0001,
+                        "top": 432.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 240.0001,
+                        "top": 432.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 288.0001,
+                        "top": 432.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 336.0001,
+                        "top": 432.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 384.0001,
+                        "top": 432.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 432.0001,
+                        "top": 432.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                },
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 480.0001,
+                        "top": 432.0001,
+                        "width": 48.9999,
+                        "height": 48.9999
+                    }
+                }
+            ]
+        },
+        {
+            "name": "controller",
+            "addons": {
+                "grid_controller": {
+                    "object": "main_pokemon"
+                },
+                "health_check": {
+                    "enable": "change"
+                }
+            }
+        },
+        {
+            "name": "AI_second",
+            "addons": {
+                "second_ai": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 425,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 400,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 550,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 425,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 575,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 425,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 550,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 0.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 450,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 125,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 0,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 49.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 575,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 375,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 425,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 98.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 375,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 425,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 575,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 575,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 550,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 147.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 400,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 375,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 425,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 400,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 125,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 196.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 125,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 400,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 125,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 525,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 450,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 375,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 125,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 245.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 450,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 400,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 425,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "main_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0000001,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 294.0001
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 5,
+                        "top": 5,
+                        "width": 45,
+                        "height": 45
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "second_pokemon",
+            "entity": {
+                "type": "Sprite",
+                "order": 1,
+                "parameters": {
+                    "Texture": {
+                        "Name": "second_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 195,
+                            "width": 35,
+                            "height": 35
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0000001,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 294.0001
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0,
+                        "top": 0,
+                        "width": 50,
+                        "height": 50
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 425,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 450,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 294.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 375,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 475,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 550,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 475,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 525,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 450,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 125,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 343.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 475,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 475,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 375,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 400,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 500,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 392.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 50,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 0.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 400,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 49.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 100,
+                            "top": 550,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 98.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 0,
+                            "top": 25,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 147.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 25,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 196.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 25,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 245.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 25,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 294.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 25,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 343.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 25,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 392.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 25,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "tile",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "tilesheet",
+                        "Rect": {
+                            "left": 75,
+                            "top": 0,
+                            "width": 24,
+                            "height": 24
+                        }
+                    },
+                    "Position": {
+                        "x": 490.0001,
+                        "y": 441.0001
+                    },
+                    "Scale": {
+                        "x": 2.083,
+                        "y": 2.083
+                    }
+                }
+            }
+        },
+        {
+            "name": "camera",
+            "addons": {
+                "move_view": {
+                    "bloc": 1,
+                    "start": 0,
+                    "waitBeforeStart": 0.0,
+                    "path": [
+                        {
+                            "x": 345.0,
+                            "y": 160.0,
+                            "speed": 150.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "background",
+            "entity": {
+                "type": "Sprite",
+                "order": 0,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_texture",
+                        "Rect": {
+                            "left": 0,
+                            "top": 0,
+                            "width": 720,
+                            "height": 540
+                        }
+                    },
+                    "Scale": {
+                        "x": 0.75,
+                        "y": 1.0
+                    },
+                    "Position": {
+                        "x": 75.0,
+                        "y": -100.0
+                    }
+                }
+            }
+        },
+        {
+            "name": "skipByTime",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 10000.0,
+                            "object_enable": "change_bloc_bot" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_bot",
+                        "disable": 1,
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 1,
+                                "name": "finish_fight"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
