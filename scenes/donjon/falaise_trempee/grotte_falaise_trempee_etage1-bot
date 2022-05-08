@@ -30,6 +30,34 @@
                     }
                 }
             }
+        },
+        {
+            "name": "SkipByTime",
+            "addons": {
+                "event_manager": {
+                    "actions": [
+                        {
+                            "type": 1,
+                            "disable": 1,
+                            "value": 1500.0,
+                            "object_enable": "change_bloc_bot" 
+                        }
+                    ]
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "change_bloc_bot",
+                        "addons": {
+                            "change_scene": {
+                                "bloc": 1,
+                                "name": "falaise_stage_02"
+                            }
+                        }
+                    }
+                ]
+            }
         }
     ]
 }
