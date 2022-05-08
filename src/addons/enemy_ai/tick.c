@@ -47,7 +47,6 @@ int tick_enemy_ai(object_t *object, engine_t *engine)
     }
     if (equal_vector2f(get_position(object), controller->move_point) &&
         controller->time <= 0) {
-        attack_ai(controller, main, engine);
         controller->time = 1000;
     }
 }

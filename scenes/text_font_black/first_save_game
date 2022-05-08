@@ -163,6 +163,15 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "save_scene",
+            "addons": {
+                "save_scene": {
+                    "scene_1": "intro_chap_2-bot",
+                    "scene_2": "black_screen"
+                }
+            }
         }
     ]
 }
