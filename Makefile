@@ -64,6 +64,7 @@ SRC				=		src/index.c	\
 						src/addons/load_scene/load_scene.c	\
 						src/addons/quit_game/quit_game.c	\
 						src/addons/pause/pause.c	\
+						src/addons/change_color/change_color.c	\
 
 OBJ 			=		$(SRC:.c=.o)
 
