@@ -111,6 +111,48 @@
     },
     "objects": [
         {
+            "name": "echap",
+            "addons": {
+                "click_pause": {
+                    "enable": "pause"
+                }
+            }
+        },
+        {
+            "name": "pause",
+            "disable": 1,
+            "addons": {
+                "pause": {
+                    "empty": 0
+                }
+            },
+            "children": {
+                "objects": [
+                    {
+                        "name": "echapp",
+                        "addons": {
+                            "click_pause": {
+                                "enable": "disableAA"
+                            }
+                        }
+                    },
+                    {
+                        "name": "disableAA",
+                        "disable": 1,
+                        "addons": {
+                            "multi_disable": {
+                                "objects": [
+                                    "pause",
+                                    "disableAA"
+                                ],
+                                "all": 1
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "name": "background",
             "entity": {
                 "type": "Sprite",

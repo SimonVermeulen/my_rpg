@@ -338,21 +338,6 @@
             }
         },
         {
-            "name": "SkyByPressAA",
-            "addons": {
-                "event_manager": {
-                    "actions": [
-                        {
-                            "type": 4,
-                            "disable": 0,
-                            "value": 36.0,
-                            "object_enable": "pause" 
-                        }
-                    ]
-                }
-            }
-        },
-        {
             "name": "echap",
             "addons": {
                 "click_pause": {
