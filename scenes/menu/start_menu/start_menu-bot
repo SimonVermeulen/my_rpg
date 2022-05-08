@@ -336,7 +336,8 @@
                     "objects": [
                         "selection",
                         "window_parameter",
-                        "select2"
+                        "select2",
+                        "disable2"
                     ]
                 },
                 "multi_enable": {
