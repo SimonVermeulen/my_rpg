@@ -2840,7 +2840,7 @@
                 },
                 "multi_enable": {
                     "objects": [
-                        "step5",
+                        "step11",
                         "soundDetected2"
                     ]
                 }

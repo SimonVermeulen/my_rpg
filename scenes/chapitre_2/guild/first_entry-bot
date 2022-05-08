@@ -197,6 +197,16 @@
                 "smooth": 1
             },
             {
+                "name": "pijako2",
+                "path": "./assets/sprites/pokemons/pijako/fly.png",
+                "smooth": 1
+            },
+            {
+                "name": "pijako3",
+                "path": "./assets/sprites/pokemons/pijako/wiggle.png",
+                "smooth": 1
+            },
+            {
                 "name": "portrait_pijako",
                 "path": "./assets/portrait/pijako/normal.png",
                 "smooth": 1
