@@ -64,6 +64,10 @@
             {
                 "name": "fire",
                 "path": "./assets/sounds/fire.ogg"
+            },
+            {
+                "name": "soundDetected",
+                "path": "./assets/sounds/detected.ogg"
             }
         ]
     },
@@ -1100,7 +1104,7 @@
                     "paths": [
                         {
                             "x": 220.0,
-                            "y": 230.0,
+                            "y": 220.0,
                             "speed": 15.0
                         }
                     ],
@@ -1151,7 +1155,42 @@
                             "time": 150.0
                         }
                     ],
-                    "enable": "step5"
+                    "enable": "step25"
+                }
+            }
+        },
+        {
+            "name": "step25",
+            "disable": 1,
+            "addons": {
+                "multi_disable": {
+                    "objects": [
+                        "step4"
+                    ]
+                },
+                "multi_enable": {
+                    "objects": [
+                        "step5",
+                        "soundDetected"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "soundDetected",
+            "disable": 1,
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 0,
+                    "SoundBuffer": "soundDetected"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },

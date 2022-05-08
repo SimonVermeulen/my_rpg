@@ -57,6 +57,16 @@
                 "name": "font",
                 "path": "./assets/fonts/font.ttf"
             }
+        ],
+        "SoundBuffers": [
+            {
+                "name": "music",
+                "path": "./assets/sounds/menu_theme.ogg"
+            },
+            {
+                "name": "change",
+                "path": "./assets/sounds/select.ogg"
+            }
         ]
     },
     "objects": [
@@ -83,6 +93,41 @@
                         "x": 0.0,
                         "y": 0.0
                     }
+                }
+            }
+        },
+        {
+            "name": "soundIntro",
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "music"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
+                }
+            }
+        },
+        {
+            "name": "soundSelect",
+            "disable": 1,
+            "entity": {
+                "type": "Sound",
+                "order": 1,
+                "parameters": {
+                    "Volume": 100.0,
+                    "Loop": 1,
+                    "SoundBuffer": "change"
+                }
+            },
+            "addons": {
+                "play_sound": {
+                    "empty": 0
                 }
             }
         },
@@ -139,7 +184,7 @@
                                             "x": 18.0,
                                             "y": 79.0
                                         },
-                                        "hover": "info",
+                                        "hover": "soundSelect",
                                         "enable": "launch_new_game"
                                     },
                                     {
@@ -260,6 +305,16 @@
                 "change_scene": {
                     "bloc": 2,
                     "name": "black_screen"
+                }
+            }
+        },
+        {
+            "name": "change_right_left",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "exemple_right_left"
                 }
             }
         },
@@ -1240,7 +1295,7 @@
                                             "x": 18.0,
                                             "y": 155.0
                                         },
-                                        "hover": "oui",
+                                        "hover": "change_right_left",
                                         "enable": "ndfi"
                                     },
                                     {
