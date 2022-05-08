@@ -36,7 +36,7 @@ static int event_controller(grid_controller_t *controller,
         !is_hover_all(engine, (sfVector2f) {point.x, point.y + 49}))
         controller->move_point.y += 49;
     if (if_key_pressed(engine, sfKeyLeft) &&
-        !is_hover_all(engine, (sfVector2f) {point.x - 50, point.y}))
+        !is_hover_all(engine, (sfVector2f) {point.x - 49, point.y}))
         controller->move_point.x += -49;
     if (if_key_pressed(engine, sfKeyRight) &&
         !is_hover_all(engine, (sfVector2f) {point.x + 49, point.y}))

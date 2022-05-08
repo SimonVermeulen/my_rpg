@@ -5174,6 +5174,62 @@
             }
         },
         {
+            "name": "enemy",
+            "entity": {
+                "type": "Sprite",
+                "order": 2,
+                "parameters": {
+                    "Texture": {
+                        "Name": "main_pokemon",
+                        "Rect": {
+                            "left": 0,
+                            "top": 162,
+                            "width": 25,
+                            "height": 26
+                        }
+                    },
+                    "Scale": {
+                        "x": 2.0,
+                        "y": 2.5
+                    },
+                    "Position": {
+                        "x": 441.0001,
+                        "y": 196.0001
+                    }
+                }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                },
+                {
+                    "name": "circle",
+                    "trigger": 1,
+                    "circle": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "radius": 150.0
+                    }
+                }
+            ],
+            "addons": {
+                "enemy_ai": {
+                    "empty": 0
+                },
+                "mobs": {
+                    "life": 100.0,
+                    "damage": 20.0
+                }
+            }
+        },
+        {
             "name": "tile",
             "entity": {
                 "type": "Sprite",
