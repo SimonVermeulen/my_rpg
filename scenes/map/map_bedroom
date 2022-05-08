@@ -513,6 +513,15 @@
                     "name": "map_guild_second_stage_right"
                 }
             }
+        },
+        {
+            "name": "save_scene",
+            "addons": {
+                "save_scene": {
+                    "scene_1": "map_bedroom",
+                    "scene_2": "black_screen"
+                }
+            }
         }
     ]
 }

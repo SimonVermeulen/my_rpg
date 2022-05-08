@@ -50,16 +50,6 @@
             }
         },
         {
-            "name": "change_bloc_bot",
-            "disable": 1,
-            "addons": {
-                "change_scene": {
-                    "bloc": 1,
-                    "name": "intro_chap_2-bot"
-                }
-            }
-        },
-        {
             "name": "step1",
             "addons": {
                 "dialogue_manager": {
@@ -295,6 +285,15 @@
                 "change_scene": {
                     "bloc": 1,
                     "name": "save_info"
+                }
+            }
+        },
+        {
+            "name": "save_scene",
+            "addons": {
+                "save_scene": {
+                    "scene_1": "first_wake_up-bot",
+                    "scene_2": "black_screen"
                 }
             }
         }

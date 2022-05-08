@@ -7,12 +7,12 @@
                 "smooth": 1
             },
             {
-                "name": "1er_poke",
+                "name": "main_pokemon",
                 "path": "./assets/sprites/pokemons/pikachu/pain.png",
                 "smooth": 1
             },
             {
-                "name": "2eme_poke",
+                "name": "second_pokemon",
                 "path": "./assets/sprites/pokemons/evoli/pain.png",
                 "smooth": 1
             },
@@ -309,13 +309,13 @@
             }
         },
         {
-            "name": "1er_poke",
+            "name": "main_pokemon",
             "entity": {
                 "type": "Sprite",
                 "order": 2,
                 "parameters": {
                     "Texture": {
-                        "Name": "1er_poke",
+                        "Name": "main_pokemon",
                         "Rect": {
                             "left": 210,
                             "top": 6,
@@ -332,16 +332,28 @@
                         "y": 295.0
                     }
                 }
-            }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 0,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
         },
         {
-            "name": "2eme_poke",
+            "name": "second_pokemon",
             "entity": {
                 "type": "Sprite",
                 "order": 2,
                 "parameters": {
                     "Texture": {
-                        "Name": "2eme_poke",
+                        "Name": "second_pokemon",
                         "Rect": {
                             "left": 195,
                             "top": 85,
@@ -358,7 +370,19 @@
                         "y": 295.0
                     }
                 }
-            }
+            },
+            "collisions": [
+                {
+                    "name": "box",
+                    "trigger": 1,
+                    "box": {
+                        "left": 0.0,
+                        "top": 0.0,
+                        "width": 50.0,
+                        "height": 50.0
+                    }
+                }
+            ]
         },
         {
             "name": "ramboum2",
@@ -938,7 +962,7 @@
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
-                    "object_name": "1er_poke",
+                    "object_name": "main_pokemon",
                     "rects": [
                         {
                             "left": 0,
@@ -962,7 +986,7 @@
                     "start-time": 0.0,
                     "stop-time": 0.0,
                     "waitBeforeStart": 0.0,
-                    "object_name": "2eme_poke",
+                    "object_name": "second_pokemon",
                     "rects": [
                         {
                             "left": 0,
@@ -1020,12 +1044,12 @@
                             "time": 500.0
                         }
                     ],
-                    "enable": "step12"
+                    "enable": "move"
                 }
             }
         },
         {
-            "name": "step12",
+            "name": "move",
             "disable": 1,
             "addons": {
                 "multi_disable": {
@@ -1036,243 +1060,37 @@
                         "step11"
                     ]
                 },
-                "dialogue_manager": {
-                    "actions": [
-                        {
-                            "type": 2,
-                            "enable": "select"
-                        }
-                    ],
-                    "disable": 1,
-                    "enable": "dfds"
-                }
-            },
-            "children": {
-                "objects": [
-                    {
-                        "name": "bulle",
-                        "entity": {
-                            "type": "Sprite",
-                            "order": 3,
-                            "parameters": {
-                                "Texture": {
-                                    "Name": "bulle"
-                                },
-                                "Position": {
-                                    "x": 33.0,
-                                    "y": 380.0
-                                }
-                            }
-                        },
-                        "addons": {
-                            "position_by_view": {
-                                "bloc": 1
-                            }
-                        }
-                    },
-                    {
-                        "name": "select",
-                        "disable": 1,
-                        "addons": {
-                            "select_manager": {
-                                "items": [
-                                    {
-                                        "position": {
-                                            "x": 193.0,
-                                            "y": 263.0 
-                                        },
-                                        "enable": "zzz"
-                                    },
-                                    {
-                                        "position": {
-                                            "x": 193.0,
-                                            "y": 301.5 
-                                        },
-                                        "enable": "nom de l'object à activer lorsqu'on clique l'option"
-                                    },
-                                    {
-                                        "position": {
-                                            "x": 193.0,
-                                            "y": 337.0 
-                                        },
-                                        "enable": "cdsnk"
-                                    }
-                                ],
-                                "cursor": "select_cursor",
-                                "dialogue_manager": "step12"
-                            }
-                        },
-                        "children": {
-                            "objects": [
-                                {
-                                    "name": "bulle",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 2,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "bulle"
-                                            },
-                                            "Position": {
-                                                "x": 190.0,
-                                                "y": 253.0 
-                                            },
-                                            "Scale": {
-                                                "x": 0.67,
-                                                "y": 0.85
-                                            }
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "select_cursor",
-                                    "entity": {
-                                        "type": "Sprite",
-                                        "order": 4,
-                                        "parameters": {
-                                            "Texture": {
-                                                "Name": "yellowArrow"
-                                            },
-                                            "Position": {
-                                                "x": 193.0,
-                                                "y": 263.0
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "choice",
-                                    "entity": {
-                                        "order": 3,
-                                        "type": "Text",
-                                        "parameters": {
-                                            "Position": {
-                                                "x": 220.0,
-                                                "y": 253.0 
-                                            },
-                                            "Color": "white",
-                                            "Font": "font",
-                                            "CharacterSize": 30,
-                                            "String": "Sauvegarder et continuer\n\nSauvegarder et revenir au menu\n\nNe pas sauvagarder"
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "text",
-                                    "entity": {
-                                        "order": 3,
-                                        "type": "Text",
-                                        "parameters": {
-                                            "Position": {
-                                                "x": 53.0,
-                                                "y": 390.0
-                                            },
-                                            "Color": "white",
-                                            "Font": "font",
-                                            "CharacterSize": 30
-                                        }
-                                    },
-                                    "addons": {
-                                        "position_by_view": {
-                                            "bloc": 1
-                                        },
-                                        "text_animation": {
-                                            "time": 2000.0,
-                                            "string": "         Voulez-vous sauvegarder votre aventure ?",
-                                            "cursor": "cursor"
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "no_save",
-            "disable": 1,
-            "addons": {
-                "multi_disable": {
+                "multi_enable": {
                     "objects": [
-                        "step12"
+                        "tah",
+                        "fah"
                     ]
                 }
             }
         },
         {
-            "name": "stay_and_save",
+            "name": "tah",
             "disable": 1,
             "addons": {
                 "multi_disable": {
                     "objects": [
-                        "step12"
+                        "move"
                     ]
                 },
-                "dialogue_manager": {
-                    "actions": [
-                        {
-                            "type": 3,
-                            "enable": "text0",
-                            "wait": 5000.0
-                        }
-                    ],
-                    "disable": 1,
-                    "enable": "step3"
+                "change_scene": {
+                    "bloc": 1,
+                    "name": "map_bedroom"
                 }
-            },
-            "children": {
-                "objects": [
-                    {
-                        "name": "bulle",
-                        "entity": {
-                            "type": "Sprite",
-                            "order": 2,
-                            "parameters": {
-                                "Texture": {
-                                    "Name": "bulle"
-                                },
-                                "Position": {
-                                    "x": 33.0,
-                                    "y": 380.0
-                                }
-                            }
-                        },
-                        "addons": {
-                            "position_by_view": {
-                                "bloc": 1
-                            }
-                        }
-                    },
-                    {
-                        "name": "text10",
-                        "disable": 1,
-                        "entity": {
-                            "order": 3,
-                            "type": "Text",
-                            "parameters": {
-                                "Position": {
-                                    "x": 53.0,
-                                    "y": 390.0
-                                },
-                                "Color": "white",
-                                "Font": "font",
-                                "CharacterSize": 30
-                            }
-                        },
-                        "addons": {
-                            "text_animation": {
-                                "time": 2000.0,
-                                "string": "                               Sauvegarde en cours...\n\n                           Ne pas fermer la machine\n\n                            ni stopper le programme."
-                            }
-                        }
-                    }
-                ]
+            }
+        },
+        {
+            "name": "fah",
+            "disable": 1,
+            "addons": {
+                "change_scene": {
+                    "bloc": 2,
+                    "name": "help"
+                }
             }
         }
     ]
