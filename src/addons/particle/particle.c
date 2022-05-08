@@ -26,7 +26,7 @@ static int create_particle(list_t *object_list, object_t *object,
         create_vector2f_list(get_value_list(particle, "position", 1));
     object_t *child = create_object_list(object_list, object->childs,
         object->engine, object);
-    
+
     set_position_vector(child, pos);
 }
 

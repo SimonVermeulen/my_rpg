@@ -13,7 +13,7 @@ static int set_size_anim(pokemon_anim_t *pok, list_t *anim,
     int *width = get_value_list(anim, "width", 3);
     int *height = get_value_list(anim, "height", 3);
 
-    pok->width  = (width) ? *width : 0;
+    pok->width = (width) ? *width : 0;
     pok->height = (height) ? *height : 0;
     set_texture_rect(objecta, (sfIntRect) {0, (pok->row - 1) * pok->height,
         pok->width, pok->height});
@@ -62,7 +62,7 @@ static int tick_addon(object_t *object, engine_t *engine,
 int tick_pokemon_anim(object_t *object, engine_t *engine)
 {
     pokemon_anim_t *pok = get_addon_data("pokemons_animation", object);
-    
+
     if (pok->init) {
         tick_addon(object, engine, pok);
     } else {

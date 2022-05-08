@@ -19,7 +19,7 @@ int end_rect_animation(object_t *object, engine_t *engine)
         return 0;
     objecta = search_from_key(node->value, "object");
     if (objecta)
-        objecta->value = NULL;    
+        objecta->value = NULL;
     free_json_object(node->value);
     node->value = NULL;
     return 0;

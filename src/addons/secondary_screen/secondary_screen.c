@@ -17,7 +17,7 @@ int event_secondary_screen(object_t *object, engine_t *engine)
 {
     secondary_screen_t *secondary_screen = get_addon_data("secondary_screen",
         object);
-    
+
     if (secondary_screen->second)
         return loop_track_on_event(secondary_screen->second->object, engine);
     return 0;
@@ -39,7 +39,6 @@ int tick_secondary_screen(object_t *object, engine_t *engine)
     }
     sfRenderWindow_setView(engine->window, secondary_screen->bloc_1);
 }
-
 
 int start_secondary_screen(object_t *object, engine_t *engine)
 {

@@ -38,6 +38,5 @@ int launch_loop(list_t *list, FILE *fd)
         node = node->next;
         put_comma(i, list->nb_elements, fd);
     }
-    my_printf(fd, "}");
-    return (0);
+    return my_printf(fd, "}");
 }

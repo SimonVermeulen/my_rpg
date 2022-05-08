@@ -19,7 +19,7 @@ static int tick_addon(object_t *object, engine_t *engine)
     grid_controller_t *controller = get_addon_data("second_ai", object);
     list_t *enemy = NULL;
     collision_t *collision = NULL;
-    
+
     if (!second || !controller)
         return exit_game(engine, 84);
     if (controller->is_attack)

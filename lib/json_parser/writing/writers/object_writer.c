@@ -22,7 +22,7 @@ int object_writer(FILE *fd, node_t *node)
         my_printf(fd, "[");
         for (int i = 0; i < node->len && !stop; i++) {
             stop = launch_loop(list_array[i], fd);
-            put_comma(i, node->len, fd);            
+            put_comma(i, node->len, fd);
         }
         my_printf(fd, "]");
     }

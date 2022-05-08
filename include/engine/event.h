@@ -19,7 +19,7 @@
 ///
 /// La position global de la souris c'est en gros ou est le curseur sur la map
 ///
-/// \return la position de l'object, renvoie les valeurs à 0 si l'object est pas compatible
+/// \return la position de l'object, renvoie les valeurs à 0 si pas compatible
 ///
 ////////////////////////////////////////////////////////////
 sfVector2f get_mouse_position(engine_t *engine);

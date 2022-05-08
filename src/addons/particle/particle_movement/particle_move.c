@@ -30,7 +30,6 @@ static int tick_addon(object_t *object, engine_t *engine)
     double *speed = get_value_list(list, "speed", 2);
     sfVector2f path = create_vector2f_list(get_value_list(list, "path", 1));
     sfVector2f normal;
-
     if (!var || !time || !count)
         return exit_game(engine, 84);
     *count += get_delta(engine);

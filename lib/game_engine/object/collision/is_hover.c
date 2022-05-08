@@ -30,7 +30,7 @@ bool is_hover(engine_t *engine, object_t *object)
 {
     sfVector2f mouse = get_mouse_position(engine);
     node_t *travel = object->collision.collisions->head;
-    collision_t *collision = NULL; 
+    collision_t *collision = NULL;
 
     for (int i = 0; i < object->collision.collisions->nb_elements; i++) {
         collision = travel->value;
@@ -44,7 +44,7 @@ bool is_hover(engine_t *engine, object_t *object)
 bool is_hover_point(object_t *object, sfVector2f point)
 {
     node_t *travel = object->collision.collisions->head;
-    collision_t *collision = NULL; 
+    collision_t *collision = NULL;
 
     for (int i = 0; i < object->collision.collisions->nb_elements; i++) {
         collision = travel->value;

@@ -25,7 +25,7 @@ void init_data_entity(list_t *entity_list, object_t *object);
 ///
 /// \param object l'object en question
 ///
-/// \return la position de l'object, renvoie x: 0 y: 0 si l'object est pas compatible
+/// \return la position de l'object, renvoie x: 0 y: 0 si pas compatible
 ///
 ////////////////////////////////////////////////////////////
 sfVector2f get_position(object_t *object);
@@ -38,7 +38,7 @@ sfVector2f get_position(object_t *object);
 ///
 /// \param object l'object en question
 ///
-/// \return la position de l'object, renvoie les valeurs à 0 si l'object est pas compatible
+/// \return la position de l'object, renvoie les valeurs à 0 si pas compatible
 ///
 ////////////////////////////////////////////////////////////
 sfFloatRect get_local_bounds(object_t *object);
@@ -51,7 +51,7 @@ sfFloatRect get_local_bounds(object_t *object);
 //
 /// \param object l'object en question
 ///
-/// \return la position de l'object, renvoie les valeurs à 0 si l'object est pas compatible
+/// \return la position de l'object, renvoie les valeurs à 0 si pas compatible
 ///
 ////////////////////////////////////////////////////////////
 sfFloatRect get_global_bounds(object_t *object);
@@ -247,7 +247,8 @@ bool set_texture(object_t *object, const char *name, sfBool reset_rect);
 /// \return renvoie si il a réussi à le set ou non
 ///
 ////////////////////////////////////////////////////////////
-bool set_texture_with_rect(object_t *object, const char *name, sfIntRect rect);
+bool set_texture_with_rect(object_t *object, const char *name,
+    sfIntRect rect);
 
 ////////////////////////////////////////////////////////////
 /// \brief set la texture

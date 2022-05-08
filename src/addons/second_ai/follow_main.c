@@ -14,7 +14,7 @@ static sfVector2f get_next_position(object_t *object, engine_t *engine)
     grid_controller_t *controller = get_addon_data("grid_controller", cont);
     sfVector2f normal = get_normalize_vector(get_position(object),
         get_position(main));
-    
+
     if (!controller)
         return get_position(object);
     normal.x = round(normal.x);
@@ -32,7 +32,7 @@ int second_ai_follow_main(object_t *second, grid_controller_t *controller)
 {
     sfVector2f normal = get_normalize_vector(get_position(second),
         controller->move_point);
-    
+
     normal.x *= 15 * (second->engine->time.delta / 100);
     normal.y *= 15 * (second->engine->time.delta / 100);
     move_vector(second, normal);

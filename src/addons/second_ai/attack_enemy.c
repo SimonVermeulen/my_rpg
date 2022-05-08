@@ -18,7 +18,7 @@ static sfVector2f get_next_position(object_t *object, engine_t *engine,
         direction);
     sfVector2f normal = get_normalize_vector(get_position(object),
         get_position(direction));
-    
+
     if (!controller)
         return get_position(object);
     normal.x = round(normal.x);
